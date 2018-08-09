@@ -52,6 +52,9 @@
 <link href="../include/assets/css/responsive.css" rel="stylesheet" type="text/css" />
 <script src="../include/assets/js/modernizr.min.js"></script>
 <script src="../include/assets/js/float-panel.js"></script>
+<script src="../include/assets/js/jquery.min.js"></script>
+<script src="../include/plugins/ckeditor/ckeditor.js"></script>
+<script src="../include/plugins/ckeditor/adapters/jquery.js"></script>
 <style type="text/css">
 body {
         font-family: "Futura BT W01 Book",OpenSansRegular,"Open Sans Regular",sans-serif;

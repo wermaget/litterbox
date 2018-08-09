@@ -19,7 +19,7 @@ $firstRemoteTeam = remote_team()->list("isDeleted='0' order by `Id` limit 1");
       <img class="pull-right" width="30%" height="30%" src="../media/<?=$row->uploadedImage;?>">
       <h3 class="text-blue"><?=$row->title;?></h3>
 
-      <p><?=nl2br($row->content);?></p>
+      <?php echo html_entity_decode(nl2br($row->content));?>
     <?php } ?>
   <?php }else{ ?>
     <h4 class="text-center text-muted" style="margin-right: 35%;"><i class="fa fa-file-text-o fa-5x"></i><br><br> New content will be coming soon </h4>

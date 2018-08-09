@@ -1,5 +1,4 @@
 <!-- jQuery  -->
-<script src="../include/assets/js/jquery.min.js"></script>
 <script src="../include/assets/js/tether.min.js"></script><!-- Tether for Bootstrap -->
 <script src="../include/assets/js/bootstrap.min.js"></script>
 <script src="../include/assets/js/metisMenu.min.js"></script>
@@ -377,6 +376,8 @@ $(document).ready(function() {
         });
 
     });
+
+    
 
 });
 </script>
