@@ -139,7 +139,7 @@ function formatDate($val){
 
                       <div class="form-group">
                       <label>Content</label>
-                      <textarea class="jaco form-control wysiwyg" name="content"
+                      <textarea class="form-control textarea-wysiwyg" name="content"
                                         data-parsley-trigger="keyup" data-parsley-minlength="20"
                                         data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                         data-parsley-validation-threshold="10"><?=$row->content;?></textarea>
@@ -164,14 +164,13 @@ function formatDate($val){
   </div><!-- /.modal -->
 <?php } ?>
 
-<div class="manokagidaw">
-<textarea id="editor1" class="form-control textarea-wysiwyg"></textarea>
-</div>
 <script type="text/javascript">
-$('textarea').ckeditor();
-  //ClassicEditor.create(document.getElementById('textarea-wysiwyg'));
-
-// $(document).ready(function() {
-//   alert("asd");
-// });
+ClassicEditor
+    .create( document.querySelector( '.textarea-wysiwyg' ) )
+    .then( editor => {
+        console.log( editor );
+    } )
+    .catch( error => {
+        console.error( error );
+    } );
 </script>
