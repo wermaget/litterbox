@@ -4,7 +4,7 @@ $projects = projects()->get("Id='$Id'");
 $firstProject = projects()->list("isDeleted='0' order by `Id` limit 1");
 ?>
 
-<div>
+<div class="cms-content cms-font">
   <?php if($projects) {?>
     <?php if ($projects->uploadedImage != ""){ ?>
       <img class="pull-right" width="30%" height="30%" src="../media/<?=$projects->uploadedImage;?>">

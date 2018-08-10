@@ -17,6 +17,10 @@ File: Components
     margin-top: 0;
     font-weight: 600; }
 
+    .cms-font {
+      font-family: 'Nunito Sans' !important;
+    }
+
 #topnav {
   right: 0;
   left: 0;

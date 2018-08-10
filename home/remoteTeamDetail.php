@@ -4,7 +4,7 @@ $remoteTeam = remote_team()->get("Id='$Id'");
 $firstRemoteTeam = remote_team()->list("isDeleted='0' order by `Id` limit 1");
 ?>
 
-<div>
+<div class="cms-content cms-font">
   <?php if($remoteTeam) {?>
     <?php if($remoteTeam->uploadedImage != ""){ ?>
       <img class="pull-right" width="30%" height="30%" src="../media/<?=$remoteTeam->uploadedImage;?>">
