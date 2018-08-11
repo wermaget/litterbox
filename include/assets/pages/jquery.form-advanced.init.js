@@ -57,33 +57,33 @@ $("input[name='demo0']").TouchSpin({});
 
 
 //Bootstrap-MaxLength
-$('input#defaultconfig').maxlength()
+// $('input#defaultconfig').maxlength();
 
-$('input#thresholdconfig').maxlength({
-    threshold: 20
-});
+// $('input#thresholdconfig').maxlength({
+//     threshold: 20
+// });
 
-$('input#moreoptions').maxlength({
-    alwaysShow: true,
-    warningClass: "label label-success",
-    limitReachedClass: "label label-danger"
-});
-
-$('input#alloptions').maxlength({
-    alwaysShow: true,
-    warningClass: "label label-success",
-    limitReachedClass: "label label-danger",
-    separator: ' out of ',
-    preText: 'You typed ',
-    postText: ' chars available.',
-    validate: true
-});
-
-$('textarea#textarea').maxlength({
-    alwaysShow: true
-});
-
-$('input#placement').maxlength({
-    alwaysShow: true,
-    placement: 'top-left'
-});
+// $('input#moreoptions').maxlength({
+//     alwaysShow: true,
+//     warningClass: "label label-success",
+//     limitReachedClass: "label label-danger"
+// });
+//
+// $('input#alloptions').maxlength({
+//     alwaysShow: true,
+//     warningClass: "label label-success",
+//     limitReachedClass: "label label-danger",
+//     separator: ' out of ',
+//     preText: 'You typed ',
+//     postText: ' chars available.',
+//     validate: true
+// });
+//
+// $('textarea#textarea').maxlength({
+//     alwaysShow: true
+// });
+//
+// $('input#placement').maxlength({
+//     alwaysShow: true,
+//     placement: 'top-left'
+// });

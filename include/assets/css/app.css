@@ -1,0 +1,1155 @@
+
+body {
+    font-family: "Nunito Sans", "Futura BT W01 Book", OpenSansRegular, "Open Sans Regular", sans-serif;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+/* New Styling */
+.cms-content {
+    margin: 0 auto;
+    padding-top: 84px;
+    width: 1024px;
+}
+/* End of New Styling */
+#container {
+    margin: 0 auto;
+    max-width: 890px;
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    margin:0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.3) ;
+}
+
+#logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size:20px;
+    line-height: 60px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    float: left ;
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display:inline-block;
+    float: left;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Styling the links */
+nav a {
+    display:block;
+    padding: 10px 25px;
+    color:#fff;
+    font-weight: 600;
+    text-decoration:none;
+    font-size: 17px;
+}
+
+
+nav ul li ul li:hover { background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 52px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:block;
+    z-index: 100;
+
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:250px;
+    float:none;
+    display:list-item;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-bottom: 2px solid #545e65;
+}
+nav ul ul li a{
+
+    color: #fff;
+}
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top:-60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left:170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ''; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 1200px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        background-color: rgba(46, 46, 46, 0.5);
+        padding: 10px 20px;
+        color: #ffffff;
+        font-size:17px;
+        text-decoration:none;
+        min-width: 1350px;
+        border:none;
+        margin-bottom: 0;
+        border-bottom: 2px solid rgba(46, 46, 46, 0.2);
+        font-family: "Century Gothic", sans-serif; }
+
+    .toggle:hover {
+        background-color: rgba(46, 46, 46, 0.6);
+        color: #ffffff;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+    }
+
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: #113b83;
+        color: #ffffff;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a{
+        padding:14px 20px;
+        color:#fff;
+        font-size:17px;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: rgba(26, 71, 149, 0.4);
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position:static;
+        color: #fff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+        color: #fff;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+}
+
+
+#above-nav ul {
+    list-style: none;
+}
+#above-nav li {
+    display: inline-block;
+    padding-right: -20px;
+
+}
+#above-nav a:hover, a:focus, a:active {
+
+    text-decoration: none;
+    background-color: transparent;
+
+
+}
+#above-nav a {
+    color: #0064c8;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+
+}
+#above-nav a {
+    position: relative;
+    display: block;
+    padding: 2px 0;
+    margin: 0 12px;
+    line-height: 16px;
+    color: #0064c8;
+    font-family: "Futura BT W01 Book",OpenSansRegular,"Open Sans Regular",sans-serif;
+}
+#above-nav a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+
+    transform-origin: right top;
+    transform: scale(0, 0);
+    border-bottom: 0.5px solid #0064c8;
+}
+#above-nav a:active::before {
+    background-color: #337ab7;
+}
+#above-nav a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+
+}
+
+
+
+.toggle1,
+[id^=drop1] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+.top {
+    margin:0;
+    padding: 0;
+    background-color: rgba(2, 38, 100, 0.7);
+}
+
+
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+.top:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+.top ul {
+    float: left ;
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+.top ul li {
+    margin: 0px;
+    display:inline-block;
+    float: left;
+    background-color: #022664;
+}
+
+/* Styling the links */
+.top a {
+    display:block;
+    padding: 10px 25px;
+    color:#fff;
+    font-weight: 600;
+    text-decoration:none;
+    font-size: 17px;
+}
+
+
+.top ul li ul li:hover { background-color: #021844;
+
+}
+
+/* Background color change on Hover */
+.top a:hover {
+    background-color: #021844;
+    color: #fff;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+.top ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 50px;
+}
+
+/* Display Dropdowns on Hover */
+.top ul li:hover > ul {
+    display:block;
+    z-index: 100;
+
+}
+
+/* Fisrt Tier Dropdown */
+.top ul ul li {
+    width:250px;
+    float:none;
+    display:list-item;
+    position: relative;
+    background-color: #232d33;
+    color: #fff;
+    border-bottom: 2px solid #545e65;
+}
+.top ul ul li a{
+
+    color: #fff;
+}
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+.top ul ul ul li {
+    position: relative;
+    top:-60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left:170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+.top  li > a:after { content:  ''; }
+.top  li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 1200px) {
+    #above-nav{
+        display: none;
+    }
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .top {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle1 + a,
+    .menu1 {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle1 {
+        display: block;
+        background-color: rgba(33, 33, 33, 0.5);
+        padding: 0px 20px;
+        color:#3399cc;
+        font-size:17px;
+        text-decoration:none;
+        border:none;
+        margin-bottom: 0;
+        border-bottom: 2px solid #545e65;
+        font-family: "Century Gothic", sans-serif;  }
+
+    .toggle1:hover {
+        background-color: rgba(33, 33, 33, 1);
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop1]:checked + ul {
+        display: block;
+    }
+
+
+    /* Change menu item's width to 100% */
+    .top ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .top ul ul .toggle1,
+    .top ul ul a {
+        padding: 0 20px;
+    }
+
+    .top ul ul ul a {
+        padding: 0 80px;
+    }
+
+    .top a:hover,
+    .top ul ul ul a {
+        background-color: rgba(33, 33, 33, 0.5);
+        color: #fff;
+    }
+
+    .top ul li ul li .toggle1,
+    .top ul ul a,
+    .top ul ul ul a{
+        padding:14px 20px;
+        color:#fff;
+        font-size:17px;
+    }
+
+
+    .top ul li ul li .toggle1,
+    .top ul ul a {
+        background-color: #212121;
+        color: #fff;
+        height: 20px;
+    }
+
+    /* Hide Dropdowns by Default */
+    .top ul ul {
+        float: none;
+        position:static;
+        color: #fff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    .top ul ul li:hover > ul,
+    .top ul li:hover > ul {
+        display: none;
+        color: #fff;
+    }
+
+    /* Fisrt Tier Dropdown */
+    .top ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .top ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+
+}
+
+
+
+
+
+.slideanim {
+    visibility: hidden;
+    visibility: visible \9; /*For old IE browsers IE6-8 */
+}
+
+.slideanim.slide {
+    visibility: visible;
+    animation: slide 1s;
+}
+
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button-back {
+    background-color: #477cbd !important;
+    border: 1px solid #477cbd !important;
+    color: #ffffff !important;
+}
+
+.main-text {
+    position: absolute;
+    top: 200px;
+    color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .main-text {
+        position: relative;
+        margin-top: -800px;
+        margin-bottom: 50px;
+        color: #fff;
+    }
+
+    .bgimg-1 {
+        min-height: 678px;
+        margin-top: 0px !important;
+    }
+
+    .tagline {
+        font-size: 40px;
+        margin: 0 auto;
+        line-height: 1;
+        font-weight: bold;
+        color: #2a3c71;
+        width: 100% !important;
+    }
+
+    .categ-margin {
+        margin-top: 90px;
+    }
+
+    .top-cont {
+        width: 370px;
+        margin: 0 auto;
+    }
+
+    .categ-cont {
+        width: 400px;
+        background-color: blue;
+    }
+
+    .categ-select {
+        height: 50px;
+        min-width: 100% !important;
+        border: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .job-search {
+        margin-bottom: 5px;
+        min-width: 100%;
+    }
+
+    .job-categ {
+        margin: 0 auto;
+        min-width: 100%;
+    }
+
+    .xs-btn {
+        width: 100% !important;
+    }
+
+    .categ-btn {
+        width: 100% !important;
+    }
+
+    .search-job-btn {
+        height: 51px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-mobile {
+        width: 260px;
+        height: 70px;
+        margin-left: 35px;
+        margin-top: 10px;
+    }
+
+    .btn-search-mobile {
+        width: 260px;
+        height: 70px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .btn-search-xs-mobile {
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        margin-left: 1px;
+        margin-top: 10px;
+        padding: 15px !important;
+    }
+
+    .text-mobile {
+        max-width: 300px !important;
+        font-size: 23px;
+        margin-left: none !important;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    .text-xs-mobile {
+        max-width: 300px;
+        height: 50px;
+        margin-left: -25px;
+        font-size: 16px;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    .btn-xs-mobile {
+        width: 210px !important;
+        padding: 15px !important;
+        margin-top: 10px;
+        margin: 0 auto;
+    }
+
+    .btn-sm-mobile {
+        width: 100% !important;
+        padding: 15px !important;
+        margin-top: 10px;
+        margin: 0 auto;
+    }
+
+    .select-xs-mobile {
+        width: 110% !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .select-sm-mobile {
+        width: 100% !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 0px !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    .main-text {
+        position: relative;
+        margin-top: -800px;
+        margin-bottom: 50px;
+        color: #fff;
+    }
+
+    .bgimg-1 {
+        min-height: 678px;
+        margin-top: 0px !important;
+    }
+
+    .tagline {
+        font-size: 40px;
+        margin: 0 auto;
+        line-height: 1;
+        font-weight: bold;
+        color: #2a3c71;
+        width: 100% !important;
+    }
+
+    .categ-margin {
+        margin-top: 90px;
+    }
+
+    .top-cont {
+        width: 370px;
+        margin: 0 auto;
+    }
+
+    .categ-cont {
+        width: 400px;
+        background-color: blue;
+    }
+
+    .categ-select {
+        height: 50px;
+        min-width: 100% !important;
+        border: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .job-search {
+        margin-bottom: 5px;
+        min-width: 100%;
+    }
+
+    .job-categ {
+        margin: 0 auto;
+        min-width: 100%;
+    }
+
+    .xs-btn {
+        width: 100% !important;
+    }
+
+    .categ-btn {
+        width: 100% !important;
+    }
+
+    .search-job-btn {
+        height: 51px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-mobile {
+        width: 260px;
+        height: 70px;
+        margin-left: 35px;
+        margin-top: 10px;
+    }
+
+    .btn-search-mobile {
+        width: 260px;
+        height: 70px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .btn-search-xs-mobile {
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        margin-left: 1px;
+        margin-top: 10px;
+        padding: 15px !important;
+    }
+
+    .text-mobile {
+        max-width: 300px !important;
+        font-size: 23px;
+        margin-left: 15%;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    .text-xs-mobile {
+        max-width: 300px;
+        height: 50px;
+        margin-left: 15%;
+        font-size: 16px;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    .btn-xs-mobile {
+        width: 210px !important;
+        padding: 15px !important;
+        margin-top: 10px;
+        margin: 0 auto;
+    }
+
+    .btn-sm-mobile {
+        width: 100% !important;
+        padding: 15px !important;
+        margin-top: 10px;
+        margin-left: 35px !important;
+    }
+
+    .btn-md-mobile {
+        width: 600px !important;
+        padding: 15px !important;
+        margin-top: 10px;
+        margin-left: 35px !important;
+    }
+
+    .btn-lg-mobile {
+        width: 100% !important;
+        padding: 15px !important;
+        margin-top: 10px;
+        margin-left: 0px !important;
+    }
+
+    .btn-lg-search-mobile {
+        width: 100% !important;
+        padding: 15px !important;
+        margin-top: 10px;
+        margin-left: 25px !important;
+    }
+
+    .select-xs-mobile {
+        width: 110% !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .select-sm-mobile {
+        width: 100% !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 35px !important;
+    }
+
+    .select-md-mobile {
+        width: 600px !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    .select-lg-mobile {
+        width: 100% !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+
+    .img-circle-md-mobile {
+        margin-left: 32% !important;
+    }
+}
+
+.tagline {
+    font-size: 24px;
+    width: 1350px;
+    margin: 0 auto;
+    line-height: 1;
+    font-weight: bold;
+    color: #2a3c71;
+}
+
+.top-cont {
+    width: 1350px;
+}
+
+.categ-margin {
+    margin-top: 200px;
+}
+
+.categ-cont {
+    width: 603px;
+}
+
+.categ-select {
+    height: 50px;
+    width: 435px !important;
+    border: none;
+}
+
+.job-search {
+    height: 50px;
+    width: 278px !important;
+    border: none;
+}
+
+.job-categ {
+    height: 50px;
+    width: 290px;
+    border: none;
+}
+
+.categ-btn {
+    width: 165px;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-clear {
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+
+.btn-clear:hover {
+    color: #000;
+    background-color: #FFF;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.carousel-caption {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, .9);
+    font-size: 17px
+}
+
+.carousel-caption h3 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #f8f9fa;
+
+}
+
+.hovereffect:hover .image {
+    opacity: 0.3;
+
+}
+
+.hovereffect:hover .middle {
+    opacity: 1;
+}
+
+#box-design {
+    background-color: #fff;
+
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1%;
+
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: center;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+
+}
+
+.course {
+    text-align: center;
+    color: green;
+}
+
+.course1 {
+    text-align: center;
+    font-family: Bradley Hand ITC;
+}
+
+.cours2 {
+    margin-top: 30px;
+}
+
+.cours2 {
+    position: relative;
+    margin-bottom: 50px;
+
+}
+
+.cours3 {
+    -border: 1px solid red;
+    position: absolute;
+    top: -100px;
+    opacity: 0;
+    -bottom: 100px;
+    -background-color: rgba(142, 198, 63, .8);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10 p;
+}
+
+.cours2:hover .cours3 {
+    opacity: 1;
+    top: 0px;
+    transition: 1s;
+}
+
+.cours4 {
+    position: absolute;
+    -border: 1px solid red;
+    -margin-top: -80px;
+    padding-top: 20px;
+    width: 100%;
+    height: 80px;
+    opacity: 0;
+    bottom: -50px;
+    -background-color: rgba(142, 198, 63, .8);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cours2:hover .cours4 {
+    opacity: 1;
+    bottom: 0;
+    transition: 1s;
+}
+
+.cours2:hover .hover {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.cours7 {
+    border: 1px solid rgb(73, 183, 43);
+    background-color: rgb(73, 183, 43);
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px 20px;
+}
+
+.cours7:hover {
+    background-color: transparent;
+    color: rgb(73, 183, 43);
+    border: 1px solid rgb(73, 183, 43);
+    transition: 1s;
+}
+
+.cou:hover {
+    background-color: transparent !important;
+    color: rgb(237, 78, 110) !important;
+    border: 1px solid rgb(237, 78, 110) !important;
+}
+
+.stepy-navigator a {
+    height: 40px;
+    width: 150px;
+    padding: 7px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .stepy-navigator a {
+        height: 40px;
+        width: 45%;
+        padding: 7px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .bg-img3 {
+        min-height: 800px;
+    }
+}

@@ -57,7 +57,7 @@ h4,
 h5,
 h6 {
   color: #666f7b;
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   margin: 10px 0;
   font-weight: 700;
 }
@@ -72,7 +72,7 @@ p {
 }
 b,
 strong {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 a:hover {
   outline: 0;

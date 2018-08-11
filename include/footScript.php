@@ -126,39 +126,7 @@ $(function() {
     }
 }
 
-var textBox = document.getElementById("ltr");
 
-
-textBox.onfocus = function() {
-    moveCaretToStart(textBox);
-
-    // Work around Chrome's little problem
-    window.setTimeout(function() {
-        moveCaretToStart(textBox);
-    }, 1);
-};
-var textBox2 = document.getElementById("ltr2");
-
-
-textBox2.onfocus = function() {
-    moveCaretToStart(textBox2);
-
-    // Work around Chrome's little problem
-    window.setTimeout(function() {
-        moveCaretToStart(textBox2);
-    }, 1);
-};
-var textBox3 = document.getElementById("ltr3");
-
-
-textBox3.onfocus = function() {
-    moveCaretToStart(textBox3);
-
-    // Work around Chrome's little problem
-    window.setTimeout(function() {
-        moveCaretToStart(textBox3);
-    }, 1);
-};
 </script>
 <!--script for triggering chatbot-->
 <!-- <script type="text/javascript">
@@ -293,7 +261,7 @@ $( "#myLinkShowResume" ).click(function() {
 
 
         <!-- Sparkline charts -->
-<script src="../include/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+<script src="../include/assets/pages/jquery.charts-sparkline.js"></script>
 
 <!-- SCRIPTS -->
 <script src="../include/plugins/switchery/switchery.min.js"></script>
@@ -302,7 +270,6 @@ $( "#myLinkShowResume" ).click(function() {
 <script src="../include/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
 <script src="../include/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
 <script src="../include/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js" type="text/javascript"></script>
-<script src="../include/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="../include/plugins/autocomplete/jquery.mockjax.js"></script>
 <script type="text/javascript" src="../include/plugins/autocomplete/jquery.autocomplete.min.js"></script>
@@ -332,6 +299,8 @@ $( "#myLinkShowResume" ).click(function() {
 <!-- App js -->
 <script src="../include/assets/js/jquery.core.js"></script>
 <script src="../include/assets/js/jquery.app.js"></script>
+<script src="../include/assets/js/bootstrap-ckeditor-fix.js"></script>
+
 <script type="text/javascript">
             $(document).ready(function() {
                 $('form').parsley();

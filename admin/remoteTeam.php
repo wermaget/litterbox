@@ -164,13 +164,18 @@ function formatDate($val){
   </div><!-- /.modal -->
 <?php } ?>
 
+<textarea id="checking"></textarea>
+
 <script type="text/javascript">
+    ClassicEditor.create(document.querySelector('#checking'));
 ClassicEditor
-    .create( document.querySelector( '.textarea-wysiwyg' ) )
+    .create(document.querySelector( '.textarea-wysiwyg' ))
     .then( editor => {
         console.log( editor );
     } )
     .catch( error => {
         console.error( error );
     } );
+
+
 </script>
