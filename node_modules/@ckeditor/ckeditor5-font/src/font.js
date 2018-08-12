@@ -7,7 +7,7 @@
  * @module font/font
  */
 
-import Plugin from '/node_modules/@ckeditor/ckeditor5-core/src/plugin';
+import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 
 import FontFamily from './fontfamily';
 import FontSize from './fontsize';
