@@ -95,20 +95,26 @@ function formatDate($val)
                     <div class="row m-t-20">
                         <div class="col-sm-12">
                             <div class="form-group">
+                                <label>Header Image</label>
+                                <input type="file" class="form-control" name="header_image"
+                                       value="<?= $row->headerImage; ?>" accept=".png, .jpg, .jpeg">
+                                <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
+                            </div>
+                            <div class="form-group">
                                 <label>Title</label>
                                 <input type="text" class="form-control" name="title" placeholder="">
                             </div>
 
                             <div class="form-group">
                                 <label>Content</label>
-                                <textarea id="message" class="form-control" name="content"
+                                <textarea id="message" class="form-control textarea-wysiwyg" name="content"
                                           data-parsley-trigger="keyup" data-parsley-minlength="20"
                                           data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                           data-parsley-validation-threshold="10"></textarea>
                             </div>
 
                             <div class="form-group">
-                                <label>Upload Image</label>
+                                <label>Attach Image</label>
                                 <input type="file" class="form-control" name="upload_file" placeholder=""
                                        accept=".png, .jpg, .jpeg">
                                 <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
@@ -145,10 +151,16 @@ function formatDate($val)
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label>Header Image</label>
+                                    <?php if($row->headerImage) {?>
+                                    <div class="header-img-preview">
+                                        <div class="header-img-wrapper">
+                                            <img src="../media/<?= $row->headerImage; ?>" alt="" title=""/>
+                                        </div>
+                                    </div>
+                                    <?php } ?>
                                     <input type="file" class="form-control" name="header_image"
                                            value="<?= $row->headerImage; ?>" accept=".png, .jpg, .jpeg">
                                     <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
-                                    <span><a href="../media/<?= $row->headerImage; ?>" target="blank_">Click to view image</a></span>
                                 </div>
                                 <div class="form-group">
                                     <label>Title</label>
@@ -164,11 +176,15 @@ function formatDate($val)
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Upload Image</label>
+                                    <label>Attach Image</label>
+                                    <div class="header-img-preview">
+                                        <div class="header-img-wrapper">
+                                            <img src="../media/<?= $row->uploadedImage; ?>" alt="" title=""/>
+                                        </div>
+                                    </div>
                                     <input type="file" class="form-control" name="upload_file"
                                            value="<?= $row->uploadedImage; ?>" accept=".png, .jpg, .jpeg">
                                     <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
-                                    <span><a href="../media/<?= $row->uploadedImage; ?>" target="blank_">Click to view image</a></span>
                                 </div>
                             </div>
                         </div>
@@ -192,8 +208,6 @@ function formatDate($val)
     //import Font from '/teamire/@ckeditor/ckeditor5-font/src/font';
 
     ClassicEditor.create(document.querySelector('#checking'));
-
-
     ClassicEditor
         .create(document.querySelector('.textarea-wysiwyg'))
         .then(editor => {
@@ -202,6 +216,4 @@ function formatDate($val)
         .catch(error => {
             console.error(error);
         });
-
-
 </script>
