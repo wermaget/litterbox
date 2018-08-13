@@ -107,7 +107,7 @@ function formatDate($val)
 
                             <div class="form-group">
                                 <label>Content</label>
-                                <textarea id="message" class="form-control textarea-wysiwyg" name="content"
+                                <textarea id="message" class="form-control ckeditor" name="content"
                                           data-parsley-trigger="keyup" data-parsley-minlength="20"
                                           data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                           data-parsley-validation-threshold="10"></textarea>
@@ -169,7 +169,7 @@ function formatDate($val)
 
                                 <div class="form-group">
                                     <label>Content</label>
-                                    <textarea class="form-control textarea-wysiwyg" name="content"
+                                    <textarea class="form-control ckeditor" name="content"
                                               data-parsley-trigger="keyup" data-parsley-minlength="20"
                                               data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                               data-parsley-validation-threshold="10"><?= $row->content; ?></textarea>
@@ -202,18 +202,8 @@ function formatDate($val)
     </div><!-- /.modal -->
 <?php } ?>
 
-<textarea id="checking"></textarea>
-<script src="/teamire/@ckeditor/ckeditor5-font/src/font.js"></script>
-<script type="text/javascript">
-    //import Font from '/teamire/@ckeditor/ckeditor5-font/src/font';
+<textarea id="js-my-textarea"></textarea>
 
-    ClassicEditor.create(document.querySelector('#checking'));
-    ClassicEditor
-        .create(document.querySelector('.textarea-wysiwyg'))
-        .then(editor => {
-            console.log(editor);
-        })
-        .catch(error => {
-            console.error(error);
-        });
+<script type="text/javascript">
+    CKEDITOR.replace('js-my-textarea');
 </script>

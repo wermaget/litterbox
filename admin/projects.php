@@ -106,7 +106,7 @@ function formatDate($val)
                             </div>
                             <div class="form-group">
                                 <label>Content</label>
-                                <textarea id="message" class="form-control textarea-wysiwyg" name="content"
+                                <textarea id="message" class="form-control ckeditor" name="content"
                                           data-parsley-trigger="keyup" data-parsley-minlength="20"
                                           data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                           data-parsley-validation-threshold="10"></textarea>
@@ -200,14 +200,3 @@ function formatDate($val)
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 <?php } ?>
-
-<script>
-    ClassicEditor
-        .create(document.querySelector('.textarea-wysiwyg'))
-        .then(editor => {
-            console.log(editor);
-        })
-        .catch(error => {
-            console.error(error);
-        });
-</script>

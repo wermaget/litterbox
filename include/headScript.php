@@ -57,7 +57,7 @@
 <script src="../include/assets/js/modernizr.min.js"></script>
 <script src="../include/assets/js/float-panel.js"></script>
 <script src="../include/assets/js/jquery.min.js"></script>
-<script src="../include/plugins/ckeditor5-build-classic/ckeditor.js"></script>
+<script src="../include/plugins/ckeditor/ckeditor.js"></script>
 <script src="../include/plugins/parallax/parallax.min.js" type="text/javascript"></script>
 
 <!-- <script src="../include/plugins/ckeditor/adapters/jquery.js"></script> -->
