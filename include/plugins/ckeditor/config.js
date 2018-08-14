@@ -10,7 +10,7 @@ CKEDITOR.editorConfig = function( config ) {
     // config.enterMode = CKEDITOR.ENTER_P;
     // config.shiftEnterMode = CKEDITOR.ENTER_P;
     config.extraPlugins = 'imagebrowser';
-    config.imageBrowser_listUrl = "/ckeditor-imagebrowser/demo/images/images_list.json";
+    config.imageBrowser_listUrl = "../../../../../../media/images_list.json";
     config.removeButtons = 'Textarea,Form,Checkbox,Radio,TextField,Select,Button,HiddenField,ImageButton,Flash,Iframe';
     //config.removeButtons = 'Form,Checkbox,Radio,Textfield,Textarea,Select,Button,HiddenField,Iframe,InsertPie';
 };

@@ -150,13 +150,14 @@ function formatDate($val)
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label>Header Image</label>
-                                    <?php if($row->headerImage) {?>
+                                    <?php if ($row->headerImage) { ?>
                                         <div class="header-img-preview">
                                             <div class="header-img-wrapper">
                                                 <img src="../media/<?= $row->headerImage; ?>" alt="" title=""/>
                                             </div>
                                         </div>
                                     <?php } ?>
+
                                     <input type="file" class="form-control" name="header_image"
                                            value="<?= $row->headerImage; ?>" accept=".png, .jpg, .jpeg">
                                     <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
@@ -179,7 +180,9 @@ function formatDate($val)
                                     <label>Attach Image</label>
                                     <div class="header-img-preview">
                                         <div class="header-img-wrapper">
-                                            <img src="../media/<?= $row->uploadedImage; ?>" alt="" title=""/>
+                                            <?php if ($row->uploadedImage) { ?>
+                                                <img src="../media/<?= $row->uploadedImage; ?>" alt="" title=""/>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                     <input type="file" class="form-control" name="upload_file"

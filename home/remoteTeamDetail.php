@@ -11,22 +11,17 @@ $remoteTeam = remote_team()->get("Id='$Id'");
         </div>
     </div>
     <div class="cms-content">
-  <?php if($remoteTeam) {?>
-    <?php if($remoteTeam->uploadedImage != ""){ ?>
-      <img class="pull-right" width="30%" height="30%" src="../media/<?=$remoteTeam->uploadedImage;?>">
-    <?php }else{ ?>
-      <div style="width:30%; height:30%;"></div>
-    <?php } ?>
-    <h3 class="text-blue"><?=$remoteTeam->title;?></h3>
-
-    <p><?= html_entity_decode(nl2br($remoteTeam->content));?></p>
-  <?php }else{ ?>
-    <h4 class="text-center text-muted" style="margin-right: 35%;"><i class="fa fa-file-text-o fa-5x"></i><br><br> New content will be coming soon </h4>
-  <?php } ?>
+        <?php if ($remoteTeam) { ?>
+            <h3 class="cms-page-title"><?= $remoteTeam->title; ?></h3>
+            <p><?= html_entity_decode(nl2br($remoteTeam->content)); ?></p>
+        <?php } else { ?>
+            <h4 class="text-center text-muted" style="margin-right: 35%;"><i
+                        class="fa fa-file-text-o fa-5x"></i><br><br> New content will be coming soon </h4>
+        <?php } ?>
     </div>
 </div>
 <script>
-    if(!Modernizr.touch){
+    if (!Modernizr.touch) {
         $('.parallax-window').parallax({imageSrc: '../media/<?=$remoteTeam->headerImage;?>'});
     }
 </script>

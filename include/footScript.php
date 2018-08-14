@@ -41,6 +41,14 @@
                         "buttonText": "Change columns"
                     }
                 });
+                $('#remote-table').DataTable({
+                    columnDefs: [{
+                        targets: 1,
+                        render: function (data) {
+                            return data.substr(0,300)+"....";
+                        }
+                    }]
+                });
                 $('#datatable-scroller').DataTable({
                     ajax: "../plugins/datatables/json/scroller-demo.json",
                     deferRender: true,

@@ -11,6 +11,7 @@ function formatDate($val)
     return date_format($date, "F d, Y g:i A");
 }
 
+include 'scanImages.php';
 ?>
 <div class="row">
     <div class="col-sm-12">
@@ -34,20 +35,17 @@ function formatDate($val)
         <?php } ?>
         <div class="card-box table-responsive">
             <h4 class="page-title">Remote Team</h4><br>
-            <table id="datatable" class="table table-striped table-bordered">
+            <table id="remote-table" class="table table-striped table-bordered">
                 <thead>
                 <tr>
                     <th>Title</th>
                     <th>Content</th>
                     <th>Posted Date</th>
                     <th></th>
-                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
-
                 <?php foreach ($remoteTeamList as $row) {
-
                     if ($row->isDeleted == 0) {
                         $id = $row->Id;
                         ?>
@@ -59,8 +57,6 @@ function formatDate($val)
                                 <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
                                    class=" btn btn-info btn-xs" title="Click To View" data-trigger="hover"
                                    data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
-                            </td>
-                            <td>
                                 <a href="process.php?action=removeRemoteTeam&Id=<?= $row->Id; ?>"
                                    class=" btn btn-danger btn-xs tooltips" title="Click To Edit"><span
                                             class="fa fa-close"></span>Remove</a>
@@ -151,12 +147,12 @@ function formatDate($val)
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label>Header Image</label>
-                                    <?php if($row->headerImage) {?>
-                                    <div class="header-img-preview">
-                                        <div class="header-img-wrapper">
-                                            <img src="../media/<?= $row->headerImage; ?>" alt="" title=""/>
+                                    <?php if ($row->headerImage) { ?>
+                                        <div class="header-img-preview">
+                                            <div class="header-img-wrapper">
+                                                <img src="../media/<?= $row->headerImage; ?>" alt="" title=""/>
+                                            </div>
                                         </div>
-                                    </div>
                                     <?php } ?>
                                     <input type="file" class="form-control" name="header_image"
                                            value="<?= $row->headerImage; ?>" accept=".png, .jpg, .jpeg">
@@ -176,12 +172,14 @@ function formatDate($val)
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Attach Image</label>
-                                    <div class="header-img-preview">
-                                        <div class="header-img-wrapper">
-                                            <img src="../media/<?= $row->uploadedImage; ?>" alt="" title=""/>
+                                    <label>Upload Image</label>
+                                    <?php if ($row->uploadedImage) { ?>
+                                        <div class="header-img-preview">
+                                            <div class="header-img-wrapper">
+                                                <img src="../media/<?= $row->uploadedImage; ?>" alt="" title=""/>
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php } ?>
                                     <input type="file" class="form-control" name="upload_file"
                                            value="<?= $row->uploadedImage; ?>" accept=".png, .jpg, .jpeg">
                                     <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>

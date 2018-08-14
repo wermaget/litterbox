@@ -9,8 +9,35 @@ body {
 /* New Styling */
 .cms-content {
     margin: 0 auto;
-    padding-top: 84px;
-    width: 1024px;
+    padding: 60px 40px 16px 40px;
+    max-width: 1024px;
+}
+.cms-content p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.cms-content h1,
+.cms-content h2,
+.cms-content h3,
+.cms-content h4,
+.cms-content h5,
+.cms-content h6 {
+    margin: 16px 0;
+}
+table tbody td {
+    vertical-align: middle;
+}
+#remote-table .btn {
+    width: 100%;
+}
+
+.cms-page-title {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    font-family: 'Open Sans';
 }
 
 .header-img-preview {

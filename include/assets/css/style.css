@@ -530,9 +530,9 @@ File: Components
 body {
   margin: 0;
   overflow-x: hidden;
-  color: #797979;
   font-size: 16px;
   font-weight: 400;
+  color: #333;
   line-height: 1.5;
   background-color: #ffffff;
   font-family: "Nunito Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
