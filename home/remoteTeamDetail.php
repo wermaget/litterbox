@@ -6,9 +6,6 @@ $remoteTeam = remote_team()->get("Id='$Id'");
 
 <div class="cms-container">
     <div class="parallax-window" data-parallax="scroll">
-        <div class="">
-            <span>Sample</span>
-        </div>
     </div>
     <div class="cms-content">
         <?php if ($remoteTeam) { ?>

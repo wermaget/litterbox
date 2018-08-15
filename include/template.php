@@ -20,7 +20,7 @@
           </div>
         </header>
         <!-- End Navigation Bar-->
-        <div class="wrapper">
+        <div class="page-main wrapper">
           <div style="width: 1350px; max-width: 100%; margin: 0 auto;">
               <?php
                 include $content;

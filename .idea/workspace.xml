@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf9e280-a9de-4886-9f96-8301167e7f2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/scanImages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/scanImages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accountList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accounts.php" beforeDir="false" />
@@ -2382,12 +2380,11 @@
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/resumeList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetDetail.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/remoteTeamDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/remoteTeamDetail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/components.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/scss/_form-elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/scss/_form-elements.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/plugins/ckeditor/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/include/plugins/ckeditor/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/navVisitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/navVisitor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/template.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2417,43 +2414,43 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="17" />
+          <entry key="css" value="18" />
           <entry key="html" value="2" />
           <entry key="js" value="20" />
           <entry key="json" value="5" />
-          <entry key="php" value="39" />
+          <entry key="php" value="43" />
           <entry key="png" value="1" />
           <entry key="scss" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="17" />
+          <entry key="CSS" value="18" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="20" />
-          <entry key="PHP" value="39" />
+          <entry key="PHP" value="43" />
           <entry key="SCSS" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="818" />
+          <entry key="css" value="1700" />
           <entry key="js" value="386" />
           <entry key="json" value="240" />
           <entry key="less" value="1" />
-          <entry key="php" value="3322" />
+          <entry key="php" value="3454" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="818" />
+          <entry key="CSS" value="1700" />
           <entry key="JSON" value="240" />
           <entry key="JavaScript" value="386" />
           <entry key="Less" value="1" />
-          <entry key="PHP" value="3322" />
+          <entry key="PHP" value="3454" />
           <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
@@ -2461,29 +2458,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/assets/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="335">
+              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/remoteTeam.php">
+        <entry file="file://$PROJECT_DIR$/include/navVisitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-173">
-              <caret line="181" column="46" selection-start-line="181" selection-start-column="46" selection-end-line="181" selection-end-column="46" />
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/scss/_form-elements.scss">
+        <entry file="file://$PROJECT_DIR$/include/template_homepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="353">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#center#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2497,20 +2497,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/scanImages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="368">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/scss/_variables.scss">
+        <entry file="file://$PROJECT_DIR$/include/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="506">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/remoteTeamDetail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -2519,7 +2528,7 @@
         <entry file="file://$PROJECT_DIR$/media/images_list.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
+              <caret column="51" selection-start-column="51" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -2536,17 +2545,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="2849" column="15" selection-start-line="2849" selection-start-column="15" selection-end-line="2849" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/projectDetail.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -2562,15 +2562,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ckeditor</find>
-      <find>textarea-wysiwyg</find>
-      <find>font</find>
-      <find>font_name</find>
-      <find>shiftentermode</find>
-      <find>replaceclass</find>
-      <find>breakBeforeOpen</find>
-      <find>breakbeforeopen</find>
-      <find>breakbeforeclose</find>
       <find>breakafteropen</find>
       <find>removeButtons</find>
       <find>extraPlugins</find>
@@ -2590,12 +2581,22 @@
       <find>.datatable</find>
       <find>datatable</find>
       <find>width: 1024</find>
-      <find>border-radius</find>
       <find>border-radius: 4px;</find>
+      <find>footer</find>
+      <find>&lt;!-- Foo</find>
+      <find>sample</find>
+      <find>end navigation</find>
+      <find>.wrapper {</find>
+      <find>background-color: transparent</find>
+      <find>style=&quot;font</find>
+      <find>border-radius</find>
+      <find>img {</find>
+      <find>chevron</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\teamire\include\plugins\ckeditor</dir>
       <dir>C:\xampp\htdocs\teamire</dir>
+      <dir>C:\xampp\htdocs\teamire\include</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -2614,26 +2615,27 @@
         <option value="$PROJECT_DIR$/@ckeditor/ckeditor5-font/src/font.js" />
         <option value="$PROJECT_DIR$/node_modules/@ckeditor/ckeditor5-font/src/font.js" />
         <option value="$PROJECT_DIR$/admin/process.php" />
-        <option value="$PROJECT_DIR$/include/navVisitor.php" />
         <option value="$PROJECT_DIR$/include/headScript.php" />
         <option value="$PROJECT_DIR$/include/plugins/ckeditor/ckeditor.js" />
         <option value="$PROJECT_DIR$/admin/projects.php" />
         <option value="$PROJECT_DIR$/include/assets/css/core.css" />
         <option value="$PROJECT_DIR$/include/assets/css/parallax.css" />
         <option value="$PROJECT_DIR$/home/projectDetail.php" />
-        <option value="$PROJECT_DIR$/home/remoteTeamDetail.php" />
         <option value="$PROJECT_DIR$/include/footScript.php" />
         <option value="$PROJECT_DIR$/include/plugins/ckeditor/images_list.json" />
         <option value="$PROJECT_DIR$/images_list.json" />
         <option value="$PROJECT_DIR$/media/images_list.json" />
         <option value="$PROJECT_DIR$/include/plugins/ckeditor/plugins/imagebrowser/browser/browser.css" />
         <option value="$PROJECT_DIR$/admin/remoteTeam.php" />
-        <option value="$PROJECT_DIR$/include/assets/css/app.css" />
         <option value="$PROJECT_DIR$/include/assets/scss/_form-elements.scss" />
         <option value="$PROJECT_DIR$/include/assets/css/components.css" />
-        <option value="$PROJECT_DIR$/include/assets/css/style.css" />
         <option value="$PROJECT_DIR$/include/plugins/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/admin/scanImages.php" />
+        <option value="$PROJECT_DIR$/home/remoteTeamDetail.php" />
+        <option value="$PROJECT_DIR$/include/template.php" />
+        <option value="$PROJECT_DIR$/include/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/include/navVisitor.php" />
+        <option value="$PROJECT_DIR$/include/assets/css/app.css" />
       </list>
     </option>
   </component>
@@ -2678,12 +2680,28 @@
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teamire" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="ckeditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teamire" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="ckeditor" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2742,12 +2760,12 @@
       <workItem from="1534070303237" duration="13519000" />
       <workItem from="1534166175436" duration="8753000" />
       <workItem from="1534252358843" duration="13139000" />
-      <workItem from="1534343905871" duration="2763000" />
+      <workItem from="1534343905871" duration="8103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54619000" />
+    <option name="totallyTimeSpent" value="59959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -2938,13 +2956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/navVisitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1932">
-          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/projects.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -2966,13 +2977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/template_homepage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="121" column="53" selection-start-line="121" selection-start-column="53" selection-end-line="121" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/headScript.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -2984,13 +2988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/remoteTeamDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -3015,6 +3012,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
           <caret line="215" column="335" selection-start-line="215" selection-start-column="335" selection-end-line="215" selection-end-column="335" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3046,13 +3046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/remoteTeam.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-173">
@@ -3081,10 +3074,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/media/images_list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/scanImages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/remoteTeamDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="2849" column="15" selection-start-line="2849" selection-start-column="15" selection-end-line="2849" selection-end-column="15" />
+        <state relative-caret-position="253">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/template_homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#center#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3095,17 +3126,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/images_list.json">
+    <entry file="file://$PROJECT_DIR$/include/navVisitor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/scanImages.php">
+    <entry file="file://$PROJECT_DIR$/include/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="335">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
         </state>
       </provider>
     </entry>
