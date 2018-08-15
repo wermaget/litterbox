@@ -38,6 +38,10 @@ table tbody td {
     font-weight: 700;
     letter-spacing: -0.8px;
     font-family: 'Open Sans';
+
+    padding-bottom: 23px;
+    margin-bottom: 38px !important;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .header-img-preview {

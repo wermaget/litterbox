@@ -1,5 +1,4 @@
 <?php
-
 $list = array();
 $dir = "../media/";
 $a_dir = "/teamire/media/";
