@@ -10,13 +10,10 @@
     <body>
         <!-- Navigation Bar-->
         <header id="topnav">
-          <div class="">
               <?php
                 include 'navVisitor.php';
               ?>
-              <div class="clearfix"></div>
             <!-- end topbar-main -->
-          </div>
         </header>
         <!-- End Navigation Bar-->
         <div class="page-main wrapper">

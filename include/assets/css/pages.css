@@ -411,20 +411,7 @@ File: Menu
   line-height: 20px;
   text-align: center;
 }
-.social-links li a {
-  border-radius: 50%;
-  color: rgba(121, 121, 121, 0.5);
-  display: inline-block;
-  height: 30px;
-  line-height: 27px;
-  border: 2px solid rgba(121, 121, 121, 0.5);
-  text-align: center;
-  width: 30px;
-}
-.social-links li a:hover {
-  color: #797979;
-  border: 2px solid #797979;
-}
+
 /* =============
    Timeline
 ============= */

@@ -44,6 +44,34 @@ body {
 }
 .nav-top-bar {
     background: #2298d0;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+}
+.nav-top-bar:before,
+.nav-top-bar:after {
+    content: '';
+    position: absolute;
+    background: #2298d0;
+    width: 1000%;
+    top: 0;
+    height: 100%;
+}
+.nav-top-bar:before {
+    left: -1000%;
+}
+.nav-top-bar:after {
+    right: -1000%;
+}
+.nav-top-bar .nav-top-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav-top-bar ul.social-links {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
 }
 
 .nav-top-bar .social-links li {
@@ -52,7 +80,7 @@ body {
 }
 
 .page-main.wrapper {
-    padding-top: 140px;
+    padding-top: 110px;
 }
 
 .cms-content {

@@ -1,17 +1,24 @@
 <div class="nav-top-bar">
-    <ul class="social-links">
-        <li style="width: 25px;"><a class="icons" href="https://www.facebook.com/" target="blank_"><img
-                        src="../include/assets/images/facebook.png"></a></li>
-        <li style="width: 25px;"><a class="icons" href="https://www.twitter.com/" target="blank_"><img
-                        src="../include/assets/images/twitter.png"></a></li>
-        <li style="width: 25px;"><a class="icons" href="https://www.linkedin.com/" target="blank_"><img
-                        src="../include/assets/images/linkedin.png"></a></li>
-        <li style="width: 25px;"><a class="icons" href="https://www.google.com/" target="blank_"><img
-                        src="../include/assets/images/google.png"></a></li>
-        <li style="width: 25px;"><a class="icons" href="https://www.youtube.com/" target="blank_"><img
-                        src="../include/assets/images/youtube.png"></a></li>
-        <li><?php echo html_entity_decode("Who is Teamireâ€™s remote team");?></li>
-    </ul>
+    <div class="nav-top-wrapper">
+        <span class="">
+            <span><i class="fa fa-phone"></i>1300 513 650 & (+61) 433 374 955</span>
+            <span><i class="fa fa-envelope"></i> info@teamire.com</span>
+            <span class=""> | </span>
+        </div>
+        <ul class="social-links">
+            <li><a class="icons" href="https://www.facebook.com/" target="blank_"><img
+                            src="../include/assets/images/facebook.png"></a></li>
+            <li><a class="icons" href="https://www.twitter.com/" target="blank_"><img
+                            src="../include/assets/images/twitter.png"></a></li>
+            <li><a class="icons" href="https://www.linkedin.com/" target="blank_"><img
+                            src="../include/assets/images/linkedin.png"></a></li>
+            <li><a class="icons" href="https://www.google.com/" target="blank_"><img
+                            src="../include/assets/images/google.png"></a></li>
+            <li><a class="icons" href="https://www.youtube.com/" target="blank_"><img
+                            src="../include/assets/images/youtube.png"></a></li>
+        </ul>
+    </div>
+
 </div>
 <div class="nav-wrapper">
     <div class="logo-wrapper">
@@ -65,15 +72,6 @@
             <li><a class="m-l-3 m-r-3" href="../home/?view=hiringForm">Request Talent</a></li>
             <li><a class="m-l-3 m-r-3" href="../home/?view=contactUs">Contact Us</a></li>
         </ul>
-        <div class="pull-right m-t-10" style="padding-right: 2%;">
-        <span class="text-white pull-left m-r-5"
-              style="margin-top: 1px; text-align: right; line-height: 13px; margin-top: 0px;"><i
-                    class="fa fa-phone"></i> 1300 513 650   &   (+61) 433 374 955
-          <br><i class="fa fa-envelope"></i> info@teamire.com</span>
-            <span class="text-white pull-left m-r-5" style="text-align: right;"> | </span>
-
-        </div>
-
     </nav>
 </div>
 <div class="row">
