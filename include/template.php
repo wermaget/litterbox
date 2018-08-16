@@ -5,7 +5,6 @@
           include_once($headScript);
           $jfList = job_function()->list("isDeleted=0 order by `option` asc");
         ?>
-
         <link rel="stylesheet" type="text/css" href="../include/assets/css/footer_responsive.css">
     </head>
     <body>

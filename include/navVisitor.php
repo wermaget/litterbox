@@ -10,6 +10,7 @@
                         src="../include/assets/images/google.png"></a></li>
         <li style="width: 25px;"><a class="icons" href="https://www.youtube.com/" target="blank_"><img
                         src="../include/assets/images/youtube.png"></a></li>
+        <li><?php echo html_entity_decode("Who is Teamireâ€™s remote team");?></li>
     </ul>
 </div>
 <div class="nav-wrapper">

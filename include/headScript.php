@@ -1,9 +1,9 @@
-<meta charset="utf-8" />
-<title>Teamire - Catalyst for Continuous Improvement</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta content="Catalyst for Continuous Improvement" name="description" />
 <meta content="Teamire" name="author" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Teamire - Catalyst for Continuous Improvement</title>
 <link rel="shortcut icon" href="">
 
 <!-- App favicon -->

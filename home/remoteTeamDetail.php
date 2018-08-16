@@ -9,7 +9,7 @@ $remoteTeam = remote_team()->get("Id='$Id'");
     </div>
     <div class="cms-content">
         <?php if ($remoteTeam) { ?>
-            <h3 class="cms-page-title"><?= $remoteTeam->title; ?></h3>
+            <h3 class="cms-page-title"><?= html_entity_decode($remoteTeam->title); ?></h3>
             <p><?= html_entity_decode(nl2br($remoteTeam->content)); ?></p>
         <?php } else { ?>
             <h4 class="text-center text-muted" style="margin-right: 35%;"><i
