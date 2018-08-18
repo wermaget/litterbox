@@ -1874,54 +1874,11 @@ a:focus {
     border-right-color: #64c5b1;
 }
 
-/* =============
-   Buttons
-============= */
-.btn {
-    border-radius: 0.3rem;
-    font-size: 18px;
-    padding: 20px 65px;
-    outline: none !important;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Futura BT W01 Book", OpenSansRegular, "Open Sans Regular", sans-serif;
-}
-
-.btn-small {
-    border-radius: 0.3rem;
-    font-size: 18px;
-    padding: 15.5px 45px;
-    margin-top: 1px;
-    outline: none !important;
-    font-weight: 600;
-    font-family: "Futura BT W01 Book", OpenSansRegular, "Open Sans Regular", sans-serif;
-}
-
-.btn-md {
-    padding: 9px 18px;
-}
-
 .btn-contact-us {
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
 }
-
-.btn-group-lg > .btn, .btn-lg {
-    padding: 12px 20px !important;
-    font-size: 18px;
-}
-
-.btn-group-sm > .btn, .btn-sm {
-    padding: 5px 10px !important;
-    font-size: 14px;
-}
-
-.btn-group-xs > .btn, .btn-xs {
-    padding: 1px 5px !important;
-    font-size: 12px;
-}
-
 .btn-group.open .dropdown-toggle {
     -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
@@ -2040,8 +1997,7 @@ a:focus {
 }
 
 .btn-blue {
-    background-color: #477cbd !important;
-    border: 1px solid #477cbd !important;
+    background-color: #008df0 !important;
 }
 
 .btn-blue:hover, .btn-blue:focus, .btn-blue:active {
@@ -3764,12 +3720,12 @@ textarea.form-control {
 }
 
 .form-control {
-    border: 1px solid #c7c7c7;
-    border-radius: 2px;
+    border: 1px solid #fff;
+    border-radius: 0;
     padding: 7px 12px;
-    height: 50px;
     max-width: 100%;
-    font-size: 16.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: all 300ms linear;

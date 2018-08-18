@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf9e280-a9de-4886-9f96-8301167e7f2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-Hairline.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-HairlineItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Lato-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/images/business-chairs-commerce.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/images/teamire-logo-light-min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/images/teamire-logo-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/images/teamire-logo-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/assets/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/assets/fonts/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/assets/fonts/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/assets/fonts/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/assets/fonts/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/assets/fonts/fontello.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/assets/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accountList.php" beforeDir="false" />
@@ -2398,16 +2391,9 @@
       <change beforePath="$PROJECT_DIR$/home/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/components.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/core.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/menu_light.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/menu_light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/menu_light_sm.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/menu_light_sm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/menu_sm.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/menu_sm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/pages.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/pages.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/images/teamire-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/images/teamire-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/footScript.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/footScript.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/headScript.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/headScript.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/navVisitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/navVisitor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/template.php" afterDir="false" />
     </list>
@@ -2442,43 +2428,43 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="24" />
+          <entry key="css" value="30" />
           <entry key="html" value="2" />
-          <entry key="js" value="20" />
+          <entry key="js" value="22" />
           <entry key="json" value="5" />
-          <entry key="php" value="54" />
-          <entry key="png" value="1" />
-          <entry key="scss" value="5" />
+          <entry key="php" value="59" />
+          <entry key="png" value="2" />
+          <entry key="scss" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="24" />
+          <entry key="CSS" value="30" />
           <entry key="HTML" value="2" />
-          <entry key="Image" value="1" />
+          <entry key="Image" value="2" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="20" />
-          <entry key="PHP" value="54" />
-          <entry key="SCSS" value="5" />
+          <entry key="JavaScript" value="22" />
+          <entry key="PHP" value="59" />
+          <entry key="SCSS" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2855" />
-          <entry key="js" value="386" />
+          <entry key="css" value="4112" />
+          <entry key="js" value="403" />
           <entry key="json" value="240" />
           <entry key="less" value="1" />
-          <entry key="php" value="4528" />
+          <entry key="php" value="5260" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2855" />
+          <entry key="CSS" value="4112" />
           <entry key="JSON" value="240" />
-          <entry key="JavaScript" value="386" />
+          <entry key="JavaScript" value="403" />
           <entry key="Less" value="1" />
-          <entry key="PHP" value="4528" />
+          <entry key="PHP" value="5260" />
           <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
@@ -2517,33 +2503,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/assets/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+            <state relative-caret-position="254">
+              <caret line="309" column="31" selection-start-line="309" selection-start-column="31" selection-end-line="309" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/css/fonts.css">
+        <entry file="file://$PROJECT_DIR$/include/assets/css/components.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="296">
+              <caret line="1918" column="39" lean-forward="true" selection-start-line="1918" selection-start-column="39" selection-end-line="1918" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="3736" column="14" lean-forward="true" selection-start-line="3736" selection-start-column="14" selection-end-line="3736" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/navVisitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/assets/css/fontello.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="430">
+              <caret line="66" column="86" selection-start-line="66" selection-start-column="86" selection-end-line="66" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/assets/js/custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="62" selection-start-column="3" selection-end-line="23" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/footScript.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/headScript.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -2554,41 +2602,42 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;!-- Foo</find>
-      <find>sample</find>
-      <find>end navigation</find>
-      <find>.wrapper {</find>
-      <find>background-color: transparent</find>
-      <find>style=&quot;font</find>
-      <find>border-radius</find>
-      <find>img {</find>
-      <find>chevron</find>
-      <find>nav-top-bar</find>
-      <find>header id=&quot;</find>
-      <find>social</find>
-      <find>box-shadow</find>
-      <find>NunitoSans</find>
-      <find>nunito sans</find>
-      <find>lato</find>
-      <find>#topnav</find>
+      <find>.form-control {</find>
+      <find>border-radius: 0.3rem</find>
+      <find>btn-sm {</find>
+      <find>padding: 5px 10px !important;</find>
+      <find>padding: 5px 10px</find>
+      <find>font-family: &quot;futur</find>
+      <find>search job</find>
+      <find>.btn</find>
+      <find>.btn {</find>
+      <find>height: 51</find>
+      <find>btn-show-search</find>
+      <find>fontawesome-webfont</find>
+      <find>fonts.css</find>
+      <find>.form-control</find>
+      <find>logo-wrapper</find>
+      <find>.menu</find>
+      <find>:after</find>
       <find>employers</find>
-      <find>about us</find>
-      <find>It is our Business to Identify your</find>
-      <find>page-main wrapper</find>
+      <find>moderni</find>
+      <find>&lt;body&gt;</find>
+      <find>id=&quot;topnav</find>
       <find>main-content</find>
-      <find>default</find>
-      <find>page-main</find>
-      <find>$content</find>
-      <find>looking for</find>
-      <find>looking</find>
-      <find>job_fun</find>
-      <find>categ-margin</find>
-      <find>need to hire</find>
+      <find>#topnav</find>
+      <find>btn-blue {</find>
+      <find>home-search-job</find>
+      <find>find can</find>
+      <find>slogan</find>
+      <find>border-radius: 2px</find>
+      <find>#home-s</find>
+      <find>search</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -2619,29 +2668,33 @@
         <option value="$PROJECT_DIR$/admin/projects.php" />
         <option value="$PROJECT_DIR$/include/assets/css/core.css" />
         <option value="$PROJECT_DIR$/include/assets/css/parallax.css" />
-        <option value="$PROJECT_DIR$/include/footScript.php" />
         <option value="$PROJECT_DIR$/include/plugins/ckeditor/images_list.json" />
         <option value="$PROJECT_DIR$/images_list.json" />
         <option value="$PROJECT_DIR$/media/images_list.json" />
         <option value="$PROJECT_DIR$/include/plugins/ckeditor/plugins/imagebrowser/browser/browser.css" />
         <option value="$PROJECT_DIR$/admin/remoteTeam.php" />
         <option value="$PROJECT_DIR$/include/assets/scss/_form-elements.scss" />
-        <option value="$PROJECT_DIR$/include/assets/css/components.css" />
         <option value="$PROJECT_DIR$/include/plugins/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/admin/scanImages.php" />
         <option value="$PROJECT_DIR$/home/remoteTeamDetail.php" />
         <option value="$PROJECT_DIR$/home/projectDetail.php" />
         <option value="$PROJECT_DIR$/admin/process.php" />
-        <option value="$PROJECT_DIR$/include/headScript.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/include/assets/css/pages.css" />
-        <option value="$PROJECT_DIR$/include/navVisitor.php" />
-        <option value="$PROJECT_DIR$/include/assets/css/style.css" />
         <option value="$PROJECT_DIR$/include/assets/css/fonts.css" />
+        <option value="$PROJECT_DIR$/include/assets/css/icons.css" />
+        <option value="$PROJECT_DIR$/include/assets/css/fontello.css" />
+        <option value="$PROJECT_DIR$/include/navVisitor.php" />
+        <option value="$PROJECT_DIR$/include/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/include/headScript.php" />
+        <option value="$PROJECT_DIR$/include/footScript.php" />
+        <option value="$PROJECT_DIR$/include/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/include/template.php" />
-        <option value="$PROJECT_DIR$/home/home.php" />
+        <option value="$PROJECT_DIR$/include/assets/css/components.css" />
+        <option value="$PROJECT_DIR$/include/assets/css/style.css" />
         <option value="$PROJECT_DIR$/include/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/home/home.php" />
       </list>
     </option>
   </component>
@@ -2663,8 +2716,9 @@
       <path value="$PROJECT_DIR$/node_modules/ckeditor5/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-27" />
+    <option name="y" value="-19" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -2699,7 +2753,7 @@
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2764,18 +2818,18 @@
       <workItem from="1534382940016" duration="1456000" />
       <workItem from="1534429790526" duration="3187000" />
       <workItem from="1534568062799" duration="1318000" />
-      <workItem from="1534570079297" duration="7782000" />
+      <workItem from="1534570079297" duration="19626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73702000" />
+    <option name="totallyTimeSpent" value="85546000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1386" height="788" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19457014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19515885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2824,37 +2878,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/assets/pages/jquery.form-advanced.init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="63" column="6" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/projects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/@ckeditor/ckeditor5-core/src/plugin.js" />
-    <entry file="file://$PROJECT_DIR$/@ckeditor/ckeditor5-ui/src/icon/iconview.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@ckeditor/ckeditor5-font/src/font.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/@ckeditor/ckeditor5-font/src/font.js" />
-    <entry file="file://$PROJECT_DIR$/config/CRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hr/pickerFootScript.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -2974,13 +2997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/components.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="1925" column="18" selection-start-line="1925" selection-start-column="18" selection-end-line="1925" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/images_list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -3030,13 +3046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/headScript.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/template_homepage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -3051,13 +3060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/navVisitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -3069,23 +3071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding>
-            <element signature="e#136971#137132#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/footScript.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="337" column="28" selection-start-line="337" selection-start-column="28" selection-end-line="337" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -3110,27 +3095,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-806">
           <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3141,21 +3109,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/home.php">
+    <entry file="file://$PROJECT_DIR$/include/assets/scss/_tables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="525">
+          <caret line="714" column="9" selection-start-line="714" selection-start-column="9" selection-end-line="714" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/scss/_checkbox-radios.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="305" column="32" selection-start-line="305" selection-start-column="32" selection-end-line="305" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/fontello.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/images/teamire-home-img.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/navVisitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/headScript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/footScript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="62" selection-start-column="3" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/components.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="1918" column="39" lean-forward="true" selection-start-line="1918" selection-start-column="39" selection-end-line="1918" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="3736" column="14" lean-forward="true" selection-start-line="3736" selection-start-column="14" selection-end-line="3736" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+        <state relative-caret-position="254">
+          <caret line="309" column="31" selection-start-line="309" selection-start-column="31" selection-end-line="309" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="66" column="86" selection-start-line="66" selection-start-column="86" selection-end-line="66" selection-end-column="86" />
         </state>
       </provider>
     </entry>

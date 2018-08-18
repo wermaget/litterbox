@@ -47,6 +47,7 @@
 <link href="../include/assets/css/components.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/icons.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/fonts.css" rel="stylesheet" type="text/css" />
+<link href="../include/assets/css/fontello.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/style.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/pages.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />

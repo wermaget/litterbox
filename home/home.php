@@ -35,7 +35,10 @@ function getPositionName($Id)
                                     <option value="1">Transportation</option>
                                     <option value="9">Warehousing</option>
                                 </select>
-                                <button type="submit" class="btn btn-sm btn-blue pull-right m-l-5 waves-effect waves-light categ-btn" style="height: 51px;"><i class="fa fa-search m-r-5"></i> Find Candidates</button>
+                                <button type="submit"
+                                        class="btn btn-sm btn-blue waves-effect waves-light categ-btn">
+                                    <i class="fa fa-search m-r-5"></i> Find Candidates
+                                </button>
                             </div>
                         </form>
                         <a id="btn-show-search-job">LOOKING FOR A JOB?</a>
@@ -46,7 +49,8 @@ function getPositionName($Id)
                         <form class="form-inline" method="GET">
                             <div class="form-group">
                                 <input type="hidden" name="view" value="searchJob">
-                                <input type="text" name="s" class="form-control job-search" placeholder="Job Title, Skills or Keywords">
+                                <input type="text" name="s" class="form-control job-search"
+                                       placeholder="Job Title, Skills or Keywords">
                                 <select name="c" class="form-control job-categ" required="">
                                     <option value="">Select Category</option>
                                     <option value="6">Demand Planning</option>
@@ -59,7 +63,9 @@ function getPositionName($Id)
                                     <option value="1">Transportation</option>
                                     <option value="9">Warehousing</option>
                                 </select>
-                                <button type="submit" class="btn btn-sm waves-effect waves-light btn-blue search-job-btn" style="height: 51px;"><i class="fa fa-search m-r-5"></i>Search Job</button>
+                                <button type="submit" class="btn btn-sm waves-effect btn-blue search-job-btn"><i
+                                            class="fa fa-search m-r-5"></i>Search Jobs
+                                </button>
 
                             </div>
                         </form>
@@ -457,14 +463,29 @@ function getPositionName($Id)
     <br>
 </div>
 <script>
-    $(document).ready(function (){
-        $('#btn-show-search-job').on("click", function (e){
-            $('#home-search-job').css('display','block');
-            $('#home-search-talent').css('display','none');
+    $(document).ready(function () {
+        if ($(window).scrollTop() != 0) {
+            $("#topnav").addClass('scrolled');
+        } else {
+            $("#topnav").removeClass('scrolled');
+        }
+
+        $('#btn-show-search-job').on("click", function (e) {
+            $('#home-search-talent').css('display', 'none');
+            $('#home-search-job').css('display', 'block');
         });
-        $('#btn-show-search-talent').on("click", function (e){
-            $('#home-search-talent').css('display','block');
-            $('#home-search-job').css('display','none');
+
+        $('#btn-show-search-talent').on("click", function (e) {
+            $('#home-search-talent').css('display', 'block');
+            $('#home-search-job').css('display', 'none');
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() != 0) {
+                $("#topnav").addClass('scrolled');
+            } else {
+                $("#topnav").removeClass('scrolled');
+            }
         });
     });
 </script>

@@ -9,7 +9,7 @@
 </head>
 <body>
 <!-- Navigation Bar-->
-<header id="topnav">
+<header id="topnav" class="<?php if($content != 'home.php'){?>scrolled<?php }?>">
     <?php
     include 'navVisitor.php';
     ?>
@@ -18,7 +18,7 @@
 <!-- End Navigation Bar-->
 <div class="page-main wrapper">
         <?php if ($content != "home.php") { ?>
-            <div class="main-content" style="padding-top:100px;">
+            <div class="main-content" style="padding-top: 64px;">
         <?php }else{ ?><div class="main-content">
             <?php
             }

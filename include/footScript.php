@@ -5,6 +5,7 @@
 <script src="../include/assets/js/waves.js"></script>
 <script src="../include/assets/js/jquery.slimscroll.js"></script>
 <script src="../include/assets/js/jquery.scrollTo.min.js"></script>
+<script src="../include/assets/js/custom.js"></script>
 <script src="../include/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="../include/plugins/datatables/dataTables.bootstrap.js"></script>
 
