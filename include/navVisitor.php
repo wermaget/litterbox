@@ -1,29 +1,7 @@
-<div class="nav-top-bar">
-    <div class="nav-top-wrapper">
-        <span class="">
-            <span><i class="fa fa-phone"></i>1300 513 650 & (+61) 433 374 955</span>
-            <span><i class="fa fa-envelope"></i> info@teamire.com</span>
-            <span class=""> | </span>
-        </div>
-        <ul class="social-links">
-            <li><a class="icons" href="https://www.facebook.com/" target="blank_"><img
-                            src="../include/assets/images/facebook.png"></a></li>
-            <li><a class="icons" href="https://www.twitter.com/" target="blank_"><img
-                            src="../include/assets/images/twitter.png"></a></li>
-            <li><a class="icons" href="https://www.linkedin.com/" target="blank_"><img
-                            src="../include/assets/images/linkedin.png"></a></li>
-            <li><a class="icons" href="https://www.google.com/" target="blank_"><img
-                            src="../include/assets/images/google.png"></a></li>
-            <li><a class="icons" href="https://www.youtube.com/" target="blank_"><img
-                            src="../include/assets/images/youtube.png"></a></li>
-        </ul>
-    </div>
-
-</div>
 <div class="nav-wrapper">
     <div class="logo-wrapper">
         <a href="index.php" class="logo logo-mobile">
-            <img src="../include/assets/images/teamire-logo.png">
+            <img src="../include/assets/images/teamire-logo-light-min.png">
         </a>
     </div>
     <nav>
@@ -33,7 +11,7 @@
         <ul class="menu">
             <li>
                 <!-- First Tier Drop Down -->
-                <label for="drop-1" class="toggle">Employers <b class="fa fa-chevron-down m-l-15 text-blue"></b></label>
+                <label for="drop-1" class="toggle">Employers<b class="fa fa-chevron-down m-l-15 text-blue"></b></label>
                 <a href="#">Employers <b class="fa fa-chevron-down text-primary"></b></a>
                 <input type="checkbox" id="drop-1"/>
                 <ul>
@@ -45,7 +23,7 @@
             </li>
             <li>
                 <!-- First Tier Drop Down -->
-                <label for="drop-2" class="toggle">Job Seekers <b
+                <label for="drop-2" class="toggle">JobSeekers <b
                             class="fa fa-chevron-down m-l-15 text-blue"></b></label>
                 <a href="#">Job Seekers <b class="fa fa-chevron-down text-primary"></b></a>
                 <input type="checkbox" id="drop-2"/>
@@ -66,11 +44,19 @@
                     <li><a href="../home/?view=aboutUs">About Us</a></li>
                 </ul>
             </li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=projects">Supply Chain Projects</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-3" class="toggle">Blog<b
+                            class="fa fa-chevron-down m-l-15 text-blue"></b></label>
+                <a href="#">Blog<b class="fa fa-chevron-down text-primary"></b></a>
+                <input type="checkbox" id="drop-3"/>
+                <ul>
+                    <li><a class="m-l-3 m-r-3" href="../home/?view=projects">Supply Chain Projects</a></li>
+                    <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
+                </ul>
+            </li>
             <li><a class="m-l-3 m-r-3" href="../home/?view=logins">Timesheets</a></li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=hiringForm">Request Talent</a></li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=contactUs">Contact Us</a></li>
+            <li><a class="m-l-3 m-r-3" href="../home/?view=contactUs">Contact</a></li>
         </ul>
     </nav>
 </div>

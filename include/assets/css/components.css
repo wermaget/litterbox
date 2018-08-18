@@ -56,7 +56,7 @@ File: Components
 }
 /* Tooltips */
 .tooltip {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .tooltip .tooltip-inner {
   padding: 4px 10px;
@@ -104,7 +104,7 @@ File: Components
   font-size: 14px;
   padding: 7px 14px;
   outline: none !important;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .btn-md {
   padding: 9px 18px;
@@ -484,7 +484,7 @@ File: Components
 .panel-title {
   font-weight: 700;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .panel-sub-title {
   color: rgba(255, 255, 255, 0.7) !important;
@@ -1317,7 +1317,7 @@ File: Components
   line-height: 22px;
 }
 .jq-toast-single h2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .jq-toast-single a {
   font-size: 14px;
@@ -1572,7 +1572,7 @@ File: Components
   color: #313a46;
   display: block;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .inbox-widget .inbox-item .inbox-item-text {
   display: block;
@@ -1619,7 +1619,7 @@ File: Components
   line-height: 32px;
   text-align: center;
   border-radius: 50%;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
 /* Table widget */
@@ -1711,7 +1711,7 @@ File: Components
   border: none;
   padding: 8px 16px 8px 46px;
   background: #f3f3f3;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .custom-dd-empty .dd-list .dd3-content:hover {
   color: #64c5b1;
@@ -1776,12 +1776,12 @@ File: Components
 .fc-toolbar h2 {
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 30px;
   text-transform: uppercase;
 }
 .fc-day-grid-event .fc-time {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .fc-day {
   background: #ffffff;
@@ -1892,12 +1892,12 @@ File: Components
 .fc-basic-view td.fc-week-number span {
   padding-right: 8px;
   font-weight: 700;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .fc-basic-view td.fc-day-number {
   padding-right: 8px;
   font-weight: 700;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 /* =============
    Form
@@ -1907,7 +1907,7 @@ label {
   font-size: 14px;
   color: #313a46;
   letter-spacing: 0.01em;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 select[multiple] option + option,
 select[size] option + option {
@@ -2477,7 +2477,7 @@ textarea.form-control {
   background-color: #64c5b1 !important;
 }
 .mce-window-head .mce-title {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .mce-window {
   padding: 20px !important;
@@ -2520,7 +2520,7 @@ textarea.form-control {
   padding: 7px;
 }
 th {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .table-centered td {
   vertical-align: middle !important;
@@ -2572,7 +2572,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before
   background-color: #f96a74;
 }
 table.dataTable > tbody > tr.child span.dtr-title {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 /* ColVid Tables */
 div.ColVis {
@@ -2788,7 +2788,7 @@ table.dataTable thead th.sorting_desc:after {
 .tablesaw thead tr:first-child th {
   font-weight: 600;
   border: none;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .tablesaw td {
   border-top: 1px solid rgba(243, 243, 243, 0.7) !important;
@@ -3056,7 +3056,7 @@ table.dataTable thead th.sorting_desc:after {
 }
 .legend tr {
   height: 30px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .legendLabel {
   padding-left: 5px !important;
@@ -3194,7 +3194,7 @@ table.dataTable thead th.sorting_desc:after {
 .c3-chart-arcs-title {
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .c3-tooltip tr {
   border: none !important;
@@ -3204,14 +3204,14 @@ table.dataTable thead th.sorting_desc:after {
 }
 .c3-tooltip .value {
   font-weight: 600;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .c3-line {
   stroke-width: 2px;
 }
 .c3-legend-item {
   font-size: 13px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 /* Echart chart */
 .echarts-tooltip {
@@ -3339,7 +3339,7 @@ table.dataTable thead th.sorting_desc:after {
   padding: 5px 12px 5px 12px;
   margin-left: -30px;
   margin-bottom: 15px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   -o-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
@@ -3427,7 +3427,7 @@ table.dataTable thead th.sorting_desc:after {
 .ribbon-box .ribbon-two span {
   font-size: 13px;
   color: #ffffff;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: center;
   line-height: 20px;
   transform: rotate(-45deg);
