@@ -56,10 +56,10 @@ function formatDate($val)
                             <td><?= formatDate($row->createDate); ?></td>
                             <td>
                                 <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
-                                   class=" btn btn-info btn-xs" title="Click To View" data-trigger="hover"
+                                   class="btn btn-xs" title="Click To View" data-trigger="hover"
                                    data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
-                                <a href="process.php?action=removeProjects&Id=<?= $row->Id; ?>"
-                                   class=" btn btn-danger btn-xs tooltips" title="Click To Edit"><span
+                                <a id="<?= $row->Id; ?>"
+                                   class="btn btn-xs btn-cms-project-delete" title="Click To Edit"><span
                                             class="fa fa-close"></span>Remove</a>
                             </td>
                         </tr>
@@ -89,7 +89,7 @@ function formatDate($val)
                     <p class="m-b-0">
                         <?= $error ?>
                     </p>
-                    <div class="row m-t-20">
+                    <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Header Image</label>
@@ -107,13 +107,6 @@ function formatDate($val)
                                           data-parsley-trigger="keyup" data-parsley-minlength="20"
                                           data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                           data-parsley-validation-threshold="10"></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Upload Image</label>
-                                <input type="file" class="form-control" name="upload_file" placeholder=""
-                                       accept=".png, .jpg, .jpeg">
-                                <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
                             </div>
                         </div>
                     </div>
@@ -143,7 +136,7 @@ function formatDate($val)
                             <?= $error ?>
                         </p>
                         <input type="hidden" name="Id" value="<?= $row->Id; ?>">
-                        <div class="row m-t-20">
+                        <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label>Header Image</label>
@@ -167,24 +160,10 @@ function formatDate($val)
 
                                 <div class="form-group">
                                     <label>Content</label>
-                                    <textarea class="form-control" name="content"
+                                    <textarea class="form-control ckeditor" name="content"
                                               data-parsley-trigger="keyup" data-parsley-minlength="20"
                                               data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                               data-parsley-validation-threshold="10"><?= $row->content; ?></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Attach Image</label>
-                                    <div class="header-img-preview">
-                                        <div class="header-img-wrapper">
-                                            <?php if ($row->uploadedImage) { ?>
-                                                <img src="../media/<?= $row->uploadedImage; ?>" alt="" title=""/>
-                                            <?php } ?>
-                                        </div>
-                                    </div>
-                                    <input type="file" class="form-control" name="upload_file"
-                                           value="<?= $row->uploadedImage; ?>" accept=".png, .jpg, .jpeg">
-                                    <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
                                 </div>
                             </div>
                         </div>
@@ -200,3 +179,21 @@ function formatDate($val)
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 <?php } ?>
+
+
+<textarea id="wada"></textarea>
+<script>
+    CKEDITOR.replace('wada');
+    $(document).ready(function(){
+        $(".btn-cms-project-delete").on("click", function(e){
+            var id = $(this).attr('id');
+
+            if(confirm("Are you sure you want to delete this?")){
+                window.location = "process.php?action=removeProjects&Id="+id;
+            }
+            else{
+                return false;
+            }
+        });
+    });
+</script>

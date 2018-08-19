@@ -442,56 +442,34 @@ function addFAQ()
 
 function addProject()
 {
-    $upload = uploadFile($_FILES['upload_file']);
-    $header_image = uploadFile($_FILES['header_image']);
+    $header_upload = uploadFile($_FILES['header_image']);
 
     $projects = projects();
 
-    if ($header_image) {
-        $projects->obj['headerImage'] = $header_image;
-    }
-    if ($upload) {
+    if ($header_upload) {
         $projects->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
         $projects->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
-        $projects->obj['uploadedImage'] = $upload;
+        $projects->obj['headerImage'] = $header_upload;
+
         $projects->obj['createDate'] = "NOW()";
         $projects->create();
 
         header('Location: ../admin/?view=projects&message=You have successfully added a new project.');
-    } else if (!$upload) {
-        $projects = projects();
-        $projects->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
-        $projects->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
-        $projects->obj['createDate'] = "NOW()";
-        $projects->create();
-
-        header('Location: ../admin/?view=projects&message=You have successfully added a new project.');
-    } else {
+    }else{
         header('Location: ../admin/?view=projects&error=Not uploaded');
     }
 }
 
 function addRemoteTeam()
 {
-    $upload = uploadFile($_FILES['upload_file']);
-    $header_image = uploadFile($_FILES['header_image']);
+    $header_upload = uploadFile($_FILES['header_image']);
 
     $remoteTeam = remote_team();
 
-    if ($header_image) {
-        $remoteTeam->obj['headerImage'] = $header_image;
-    }
-    if ($upload) {
+    if ($header_upload) {
         $remoteTeam->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
         $remoteTeam->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
-        $remoteTeam->obj['uploadedImage'] = $upload;
-        $remoteTeam->obj['createDate'] = "NOW()";
-        $remoteTeam->create();
-
-        header('Location: ../admin/?view=remoteTeam&message=You have successfully added a new article.');
-    } else if (!$upload) {
-        $remoteTeam->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
-        $remoteTeam->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
+        $remoteTeam->obj['headerImage'] = $header_upload;
         $remoteTeam->obj['createDate'] = "NOW()";
         $remoteTeam->create();
 
@@ -559,23 +537,20 @@ function updateFaq()
 
 function updateProjects()
 {
-    $upload = uploadFile($_FILES['upload_file']);
     $header_upload = uploadFile($_FILES['header_image']);
     $Id = $_POST['Id'];
 
     $projects = projects();
 
     if ($header_upload) {
-        $projects->obj['headerImage'] = $header_upload;
-    }
-    if ($upload) {
         $projects->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
         $projects->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
-        $projects->obj['uploadedImage'] = $upload;
+        $projects->obj['headerImage'] = $header_upload;
+
         $projects->update("Id='$Id'");
 
         header('Location: ../admin/?view=projects&message=You have succesfully updated a Projects.');
-    } else if (!$upload) {
+    } else if (!$header_upload) {
         $projects->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
         $projects->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
         $projects->update("Id='$Id'");

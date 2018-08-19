@@ -4,6 +4,21 @@ body {
     line-height: 32px;
     margin: 0;
     padding: 0;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 /* New Styling */
@@ -46,7 +61,8 @@ body {
     display: inline-block;
     width: 20%;
     vertical-align: middle;
-    padding: 20px 0;
+    padding: 15px 0;
+    line-height: 0;
 }
 
 .nav-wrapper .logo-wrapper a {
@@ -93,6 +109,12 @@ body {
 .nav-top-bar .social-links li {
     display: inline-block;
     vertical-align: middle;
+}
+.page-main .main-content {
+    padding-top: 65px;
+}
+.page-main .main-content.index-page {
+    padding-top: 0 !important;
 }
 .page-main .main-content .home-hero-banner {
     display: flex;
@@ -149,8 +171,8 @@ body {
     max-width: 1024px;
 }
 .cms-content p {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.8;
 }
 
@@ -171,7 +193,7 @@ table tbody td {
 }
 
 .cms-page-title {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: -0.8px;
     font-family: 'Open Sans';
@@ -239,7 +261,9 @@ nav .menu {
 /* Positioning the navigation items inline */
 nav .menu li {
     margin: 0 20px 0 0;
-    display:inline-block;
+    display: block;
+    float: left;
+    padding: 11px 0;
 }
 
 nav .menu li a.nav-item-drop:after {
@@ -250,8 +274,8 @@ nav .menu li a.nav-item-drop:after {
 
 /* Styling the links */
 nav a {
-    display:block;
-    padding: 0 0;
+    display: block;
+    padding: 0;
     color: #ffffff;
     font-weight: 600;
     text-decoration:none;
@@ -271,7 +295,7 @@ nav .menu .nav-level2 {
     display: none;
     position: absolute;
     /* has to be the same number as the "line-height" of "nav a" */
-    top: 22px;
+    top: 55px;
     padding: 0;
 }
 
@@ -288,14 +312,16 @@ nav .menu .nav-level2 li {
     display:block;
     position: relative;
     margin: 0;
-
+    float: none;
+    padding: 0;
 }
 nav .menu .nav-level2 li a{
+    display: block;
     color: initial;
     font-family: 'Open Sans';
     font-size: 13.5px;
     font-weight: 600;
-    padding: 7px 10px;
+    padding: 1px 10px;
     text-transform: capitalize;
 }
 nav .menu .nav-level2 li a:hover {

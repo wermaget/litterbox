@@ -5,6 +5,7 @@ $firstProject = projects()->list("isDeleted='0' order by `Id` limit 1");
 ?>
 
 <div class="cms-container">
+    <img src="<?= '../media/'.$projects->headerImage; ?>">
     <div class="parallax-window" data-parallax="scroll"></div>
     <div class="cms-content">
         <?php if($projects) {?>
@@ -16,7 +17,7 @@ $firstProject = projects()->list("isDeleted='0' order by `Id` limit 1");
     </div>
 </div>
 <script>
-    if(!Modernizr.touch){
-        $('.parallax-window').parallax({imageSrc: '../media/hero-banner-sample.jpg'});
-    }
+
+    $('.parallax-window').parallax({imageSrc: '../media/1534682616.jpg'});
+
 </script>

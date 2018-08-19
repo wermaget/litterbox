@@ -14,15 +14,14 @@ if (isset($_GET['Id']) && $_GET['Id'] != "") {
             <h2 class="m-t-20 text-center">Supply Chain Projects</h2>
             <hr>
             <!-- Start of Projects List-->
-            <div class="col-lg-12 row">
-                <div class="col-lg-12">
-                    <ul style="list-style-type: none; padding-left: 10px !important; padding: 10px;">
-                        <?php foreach ($projectList as $row) { ?>
-                            <li class="project-list"><a
-                                        href="../home/?view=projects&Id=<?= $row->Id; ?>"><?= $row->title; ?></a></li>
-                        <?php } ?>
-                    </ul>
-                </div>
+            <div class="row">
+                <?php foreach ($projectList as $row) { ?>
+                    <div class="col-lg-2">
+                        <div class="project-list">
+                            <a href="../home/?view=projects&Id=<?= $row->Id; ?>"><?= $row->title; ?></a>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
             <div class="clearfix"></div>
             <!-- End of Project List -->

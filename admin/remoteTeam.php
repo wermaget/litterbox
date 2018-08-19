@@ -55,10 +55,9 @@ include 'scanImages.php';
                             <td><?= formatDate($row->createDate); ?></td>
                             <td>
                                 <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
-                                   class="" title="Click To View" data-trigger="hover"
+                                   class="btn btn-xs" title="Click To View" data-trigger="hover"
                                    data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
-                                <a href="process.php?action=removeRemoteTeam&Id=<?= $row->Id; ?>"
-                                   class="" title="Click To Edit"><span
+                                <a id="<?php echo $row->Id; ?>" class="btn btn-xs btn-cms-remote-delete" title="Click To Edit"><span
                                             class="fa fa-close"></span>Remove</a>
                             </td>
                         </tr>
@@ -88,7 +87,7 @@ include 'scanImages.php';
                     <p class="m-b-0">
                         <?= $error ?>
                     </p>
-                    <div class="row m-t-20">
+                    <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Header Image</label>
@@ -143,7 +142,7 @@ include 'scanImages.php';
                             <?= $error ?>
                         </p>
                         <input type="hidden" name="Id" value="<?= $row->Id; ?>">
-                        <div class="row m-t-20">
+                        <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <label>Header Image</label>
@@ -170,20 +169,6 @@ include 'scanImages.php';
                                               data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                               data-parsley-validation-threshold="10"><?= $row->content; ?></textarea>
                                 </div>
-
-                                <div class="form-group">
-                                    <label>Upload Image</label>
-                                    <?php if ($row->uploadedImage) { ?>
-                                        <div class="header-img-preview">
-                                            <div class="header-img-wrapper">
-                                                <img src="../media/<?= $row->uploadedImage; ?>" alt="" title=""/>
-                                            </div>
-                                        </div>
-                                    <?php } ?>
-                                    <input type="file" class="form-control" name="upload_file"
-                                           value="<?= $row->uploadedImage; ?>" accept=".png, .jpg, .jpeg">
-                                    <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
-                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -204,4 +189,17 @@ include 'scanImages.php';
 
 <script type="text/javascript">
     CKEDITOR.replace('js-my-textarea');
+
+    $(document).ready(function(){
+        $(".btn-cms-remote-delete").on("click", function(e){
+            var id = $(this).attr('id');
+
+            if(confirm("Are you sure you want to delete this?")){
+                window.location = "process.php?action=removeRemoteTeam&Id="+id;
+            }
+            else{
+                return false;
+            }
+        });
+    });
 </script>

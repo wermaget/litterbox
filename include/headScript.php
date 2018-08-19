@@ -9,6 +9,7 @@
 <!-- App favicon -->
 <link rel="shortcut icon" href="../include/assets/images/favicon.ico">
 
+
 <!-- Custom box css -->
 <link href="../include/plugins/custombox/css/custombox.min.css" rel="stylesheet">
 
@@ -62,7 +63,6 @@
 <script src="../include/assets/js/float-panel.js"></script>
 <script src="../include/assets/js/jquery.min.js"></script>
 <script src="../include/plugins/ckeditor/ckeditor.js"></script>
+<script src="../include/plugins/parallax/parallax.js"></script>
 <script src="../include/plugins/ckeditor/adapters/jquery.js"></script>
-
-<!-- <script src="../include/plugins/ckeditor/adapters/jquery.js"></script> -->
 
