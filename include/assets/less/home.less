@@ -1,6 +1,64 @@
 @import "variables.less";
 @import "elements.less";
 
+
+//Distributed Teamire Crew
+.distributed-teamire {
+  &.bgimg-3 {
+    background-image: none;
+
+    .stepy-header {
+      display: none;
+    }
+
+    .title-tabs {
+      &.hire-tab {
+        text-align: right;
+      }
+
+      &.job-tab {
+        text-align: left;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: latoregular;
+      }
+    }
+
+    .block-title {
+      font-size: 30px;
+      font-family: latobold;
+    }
+
+    .crew-content {
+      text-align: center;
+    }
+
+    .nav-tabs{
+      &.nav-justified{
+        >.active {
+          > a {
+            border:0;
+          }
+        }
+      }
+
+      li {
+        a {
+          background-color: transparent;
+          border: none;
+
+          &:hover{
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 //Find Great Candidates Here
 .find-candidates {
   background-color: @curious-blue;

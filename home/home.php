@@ -1,6 +1,6 @@
 <?php
-$jobFunctionList = job_function()->list("isDeleted='0' order by `option` asc");
-$cityList = city_option()->list();
+$jobFunctionList = job_function()->lists("isDeleted='0' order by `option` asc");
+$cityList = city_option()->lists();
 
 function getPositionName($Id)
 {
@@ -180,21 +180,21 @@ function getPositionName($Id)
             </div>
         </div>
         <!-- Basic Form Wizard -->
-        <div class="bgimg-3" style="min-height: 910px; padding: 0px !important;">
-            <div class="text-center" style="font-size: 25px; font-weight: 900; padding-top: 18px;">
+        <div class="bgimg-3 distributed-teamire">
+            <div class="text-center block-title">
                 Distributed Teamire Crew
             </div>
             <div class="container-80 center-page">
 
-                <ul class="nav nav-tabs navtab-bg nav-justified" style="padding-top: 450px;">
-                    <li class="active" style="background-color:#f2f2f2; border-radius: 5px; color: #fff;">
-                        <a href="#home1" data-toggle="tab" aria-expanded="false">
+                <ul class="nav nav-tabs navtab-bg nav-justified">
+                    <li class="active">
+                        <a class="title-tabs hire-tab" href="#home1" data-toggle="tab" aria-expanded="false">
                             <span class="visible-xs"><i class="mdi mdi-format-list-bulleted-type"></i></span>
                             <span class="hidden-xs ">Four Simple Steps to Hire</span>
                         </a>
                     </li>
-                    <li class="" style="background-color: #f2f2f2; border-radius:5px;">
-                        <a href="#profile1" data-toggle="tab" aria-expanded="true">
+                    <li class="">
+                        <a class="title-tabs job-tab" href="#profile1" data-toggle="tab" aria-expanded="true">
                             <span class="visible-xs"><i class="mdi mdi-account-search"></i></span>
                             <span class="hidden-xs ">How We Help You Find a Job</span>
                         </a>
@@ -207,12 +207,12 @@ function getPositionName($Id)
                             <fieldset title="1">
                                 <legend>Tell us about your hiring needs</legend>
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="../include/assets/images/wizard-img1.png"
-                                             style="width: 40%;height:40%;"
-                                             class="img-circle img-circle-mobile  img-circle-md-mobile img-thumbnail">
-                                    </div>
-                                    <div class="col-md-8">
+<!--                                    <div class="col-md-4">-->
+<!--                                        <img src="../include/assets/images/wizard-img1.png"-->
+<!--                                             style="width: 40%;height:40%;"-->
+<!--                                             class="img-circle img-circle-mobile  img-circle-md-mobile img-thumbnail">-->
+<!--                                    </div>-->
+                                    <div class="col-md-12 crew-content">
                                         <h4 class=""><strong>Step 1: Tell us about your hiring
                                                 needs</strong></h4>
                                         <p class="wizard-content-mobile">
@@ -232,12 +232,12 @@ function getPositionName($Id)
                                 <legend>Your staffing options</legend>
 
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="../include/assets/images/wizard-img2.png"
-                                             style=" width: 40%;height:40%;"
-                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
-                                    </div>
-                                    <div class="col-md-8">
+<!--                                    <div class="col-md-4">-->
+<!--                                        <img src="../include/assets/images/wizard-img2.png"-->
+<!--                                             style=" width: 40%;height:40%;"-->
+<!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
+<!--                                    </div>-->
+                                    <div class="col-md-12 crew-content">
                                         <h4 class=""><strong>Step 2: Your staffing options</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Teamire is known for providing a selection of highly skilled
@@ -256,12 +256,12 @@ function getPositionName($Id)
                                 <legend>Review and select candidates</legend>
 
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="../include/assets/images/wizard-img3.png"
-                                             style=" width: 40%;height:40%;"
-                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
-                                    </div>
-                                    <div class="col-md-8">
+<!--                                    <div class="col-md-4">-->
+<!--                                        <img src="../include/assets/images/wizard-img3.png"-->
+<!--                                             style=" width: 40%;height:40%;"-->
+<!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
+<!--                                    </div>-->
+                                    <div class="col-md-12 crew-content">
                                         <h4 class=""><strong>Step 3: Review and select candidates</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
@@ -279,12 +279,12 @@ function getPositionName($Id)
                                 <legend>Service and your happiness</legend>
 
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="../include/assets/images/wizard-img4.png"
-                                             style=" width: 40%;height:40%;"
-                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
-                                    </div>
-                                    <div class="col-md-8">
+<!--                                    <div class="col-md-4">-->
+<!--                                        <img src="../include/assets/images/wizard-img4.png"-->
+<!--                                             style=" width: 40%;height:40%;"-->
+<!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
+<!--                                    </div>-->
+                                    <div class="col-md-12 crew-content">
                                         <h4 class=""><strong>Step 4: Service and your happiness</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
@@ -313,12 +313,12 @@ function getPositionName($Id)
                             <fieldset title="1">
                                 <legend>Search for jobs and apply</legend>
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="../include/assets/images/wizard-img5.png"
-                                             style=" width: 40%;height:40%;"
-                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
-                                    </div>
-                                    <div class="col-md-8">
+<!--                                    <div class="col-md-4">-->
+<!--                                        <img src="../include/assets/images/wizard-img5.png"-->
+<!--                                             style=" width: 40%;height:40%;"-->
+<!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
+<!--                                    </div>-->
+                                    <div class="col-md-12 crew-content">
                                         <h4 class=""><strong>Step 1: Search for jobs and apply</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
@@ -336,12 +336,12 @@ function getPositionName($Id)
                                 <legend>Upload your resume</legend>
 
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="../include/assets/images/wizard-img6.png"
-                                             style=" width: 40%;height:40%;"
-                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
-                                    </div>
-                                    <div class="col-md-8">
+<!--                                    <div class="col-md-4">-->
+<!--                                        <img src="../include/assets/images/wizard-img6.png"-->
+<!--                                             style=" width: 40%;height:40%;"-->
+<!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
+<!--                                    </div>-->
+                                    <div class="col-md-12 crew-content">
                                         <h4 class=""><strong>Step 2: Upload your resume</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Our online form makes it easy to send us your resume or upload the
@@ -357,12 +357,12 @@ function getPositionName($Id)
                                 <legend>Getting to know you</legend>
 
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="../include/assets/images/wizard-img7.png"
-                                             style=" width: 40%;height:40%;"
-                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
-                                    </div>
-                                    <div class="col-md-8">
+<!--                                    <div class="col-md-4">-->
+<!--                                        <img src="../include/assets/images/wizard-img7.png"-->
+<!--                                             style=" width: 40%;height:40%;"-->
+<!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
+<!--                                    </div>-->
+                                    <div class="col-md-12 crew-content">
                                         <h4 class=""><strong>Step 3: Getting to know you</strong></h4>
                                         <p class="wizard-content-mobile">
                                             You are more than just a resume or an application. That is why we work
@@ -375,12 +375,12 @@ function getPositionName($Id)
                             <fieldset title="4">
                                 <legend>While we find the right fit</legend>
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="../include/assets/images/wizard-img8.png"
-                                             style=" width: 40%;height:40%;"
-                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
-                                    </div>
-                                    <div class="col-md-8">
+<!--                                    <div class="col-md-4">-->
+<!--                                        <img src="../include/assets/images/wizard-img8.png"-->
+<!--                                             style=" width: 40%;height:40%;"-->
+<!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
+<!--                                    </div>-->
+                                    <div class="col-md-12 crew-content">
                                         <h4 class=""><strong>Step 4: While we find the right fit</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
@@ -407,12 +407,18 @@ function getPositionName($Id)
         </div>
         <!-- End row -->
     </div>
+
+    <div class="find-candidates">
+        <h3 class="block-title">Find great candidates fast.</h3>
+        <p class="subtitle">We at Teamire do great things in helping you find the right candidates.</p>
+        <button class="request-button"><span>Request for Talent</span></button>
+    </div>
     <!-- Start Location Panels-->
-    <div style="position: relative; min-height: 500px;">
+    <div class="business-partners">
         <img style="position: absolute; top:0; width: 100%;" src="../include/assets/images/our-services-bg.png">
         <div class="container center-page slideanim" style="padding-top: 5%;">
-            <h2 class="text-center m-t-30 ">Business Partners</h2>
-            <div class="center-page" style="height: 2px; width: 20%; background-color: #0064c8;"></div>
+            <h2 class="text-center m-t-30 business-title">Business Partners</h2>
+            <div class="center-page"><p class="subtitle">Expanding our services around the world</p></div>
             <div class="row m-t-30">
                 <div class="col-lg-1"></div>
 

@@ -56,7 +56,6 @@
 <link href="../include/assets/css/footer.css" rel="stylesheet" type="text/css"/>
 <link href="../include/assets/css/app.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/home.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/fonts.css" rel="stylesheet" type="text/css" />
 
 <link href="../include/assets/css/responsive.css" rel="stylesheet" type="text/css" />
 <script src="../include/assets/js/modernizr.min.js"></script>

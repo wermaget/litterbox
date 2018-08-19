@@ -1,3 +1,37 @@
+.distributed-teamire.bgimg-3 {
+  background-image: none;
+}
+.distributed-teamire.bgimg-3 .stepy-header {
+  display: none;
+}
+.distributed-teamire.bgimg-3 .title-tabs.hire-tab {
+  text-align: right;
+}
+.distributed-teamire.bgimg-3 .title-tabs.job-tab {
+  text-align: left;
+}
+.distributed-teamire.bgimg-3 .title-tabs span {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: latoregular;
+}
+.distributed-teamire.bgimg-3 .block-title {
+  font-size: 30px;
+  font-family: latobold;
+}
+.distributed-teamire.bgimg-3 .crew-content {
+  text-align: center;
+}
+.distributed-teamire.bgimg-3 .nav-tabs.nav-justified > .active > a {
+  border: 0;
+}
+.distributed-teamire.bgimg-3 .nav-tabs li a {
+  background-color: transparent;
+  border: none;
+}
+.distributed-teamire.bgimg-3 .nav-tabs li a:hover {
+  border: none;
+}
 .find-candidates {
   background-color: #3399CC;
   padding: 75px 0;
