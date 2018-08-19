@@ -51,6 +51,10 @@ select {
     margin: 0 auto;
 }
 
+.parallax-window {
+    min-height: 300px;
+}
+
 .nav-wrapper nav {
     display: inline-block;
     width: 80%;
@@ -111,7 +115,7 @@ select {
     vertical-align: middle;
 }
 .page-main .main-content {
-    padding-top: 65px;
+    padding-top: 55px;
 }
 .page-main .main-content.index-page {
     padding-top: 0 !important;
@@ -295,7 +299,7 @@ nav .menu .nav-level2 {
     display: none;
     position: absolute;
     /* has to be the same number as the "line-height" of "nav a" */
-    top: 55px;
+    top: 48px;
     padding: 0;
 }
 

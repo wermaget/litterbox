@@ -5,8 +5,7 @@ $firstProject = projects()->list("isDeleted='0' order by `Id` limit 1");
 ?>
 
 <div class="cms-container">
-    <img src="<?= '../media/'.$projects->headerImage; ?>">
-    <div class="parallax-window" data-parallax="scroll"></div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="../media/<?= $projects->headerImage; ?>"></div>
     <div class="cms-content">
         <?php if($projects) {?>
             <h3 class="cms-page-title"><?= html_entity_decode($projects->title); ?></h3>
@@ -18,6 +17,6 @@ $firstProject = projects()->list("isDeleted='0' order by `Id` limit 1");
 </div>
 <script>
 
-    $('.parallax-window').parallax({imageSrc: '../media/1534682616.jpg'});
+
 
 </script>
