@@ -1,6 +1,6 @@
 <?php
-$jobFunctionList = job_function()->list("isDeleted='0' order by `option` asc");
-$cityList = city_option()->list();
+$jobFunctionList = job_function()->listing("isDeleted='0' order by `option` asc");
+$cityList = city_option()->listing();
 
 function getPositionName($Id){
   $job = position_type()->get("Id='$Id'");
@@ -23,7 +23,7 @@ function getPositionName($Id){
 
                 <div class="row m-b-20 categ-margin">
                   <button id="myBtn1" class="btn btn-sm xs-btn" style="width:300px; height: 50px;">NEED TO HIRE?</button>
-                  <button id="myBtn2" class="btn btn-sm xs-btn" style="width:300px; height: 50px;">LOOKING FOR A JOB?</button>
+                  <button id="myBtn2" class="btn btn-sm xs-btn primary-button" style="width:300px; height: 50px;">LOOKING FOR A JOB?</button>
                 </div>
 
             <div class="">
@@ -341,48 +341,55 @@ function getPositionName($Id){
                      </div>
                         <!-- End row -->
 </div>
+      <div class="find-candidates">
+          <h3 class="block-title">Find great candidates fast.</h3>
+          <p class="subtitle">We at Teamire do great things in helping you find the right candidates.</p>
+          <button class="request-button"><span>Request for Talent</span></button>
+      </div>
   <!-- Start Location Panels-->
-    <div style="position: relative; min-height: 500px;">
-      <img style="position: absolute; top:0; width: 100%;" src="../include/assets/images/our-services-bg.png">
+    <div class="business-partners" style="position: relative; min-height: 500px;">
+<!--      <img style="position: absolute; top:0; width: 100%;" src="../include/assets/images/our-services-bg.png">-->
       <div class="container center-page slideanim" style="padding-top: 5%;">
-        <h2 class="text-center m-t-30 text-blue">Business Partners</h2>
-        <div class="center-page" style="height: 2px; width: 20%; background-color: #0064c8;"></div>
+        <h2 class="text-center m-t-30 business-title">Business Partners</h2>
+        <div class="center-page">
+            <p class="subtitle">Expanding our services around the world</p>
+        </div>
         <div class="row m-t-30">
           <div class="col-lg-1"></div>
 
           <div class="col-lg-2 text-center">
             <div class="annex-img">
-              <img src="../include/assets/images/home-img4.png">
+              <h3 class="center-page text-blue">SYDNEY HQ</h3>
+              <img src="../include/assets/images/home-img4.png" />
             </div>
-            <h3 class="center-page text-blue">SYDNEY HQ</h3>
           </div>
 
           <div class="col-lg-2 text-center">
             <div class="annex-img">
-            	<img src="../include/assets/images/home-img1.png">
+                <h3 class="center-page text-blue">SYDNEY HQ</h3>
+            	<img src="../include/assets/images/home-img1.png"/>
             </div>
-            <h3 class="center-page text-blue">MANILA</h3>
           </div>
 
             <div class="col-lg-2 text-center">
               <div class="annex-img">
-              	<img src="../include/assets/images/home-img2.png">
+                <h3 class="center-page text-blue">DELHI</h3>
+              	<img src="../include/assets/images/home-img2.png"/>
               </div>
-              <h3 class="center-page text-blue">DELHI</h3>
             </div>
 
             <div class="col-lg-2 text-center">
               <div class="annex-img">
+                <h3 class="center-page text-blue">BANGALORE</h3>
               	<img src="../include/assets/images/home-img3.png">
               </div>
-              <h3 class="center-page text-blue">BANGALORE</h3>
             </div>
 
             <div class="col-lg-2 text-center">
               <div class="annex-img">
+                <h3 class="center-page text-blue">PROVIDENCE</h3>
                 <img src="../include/assets/images/home-img5.png">
               </div>
-              <h3 class="center-page text-blue">PROVIDENCE</h3>
             </div>
             <div class="col-lg-1"></div>
         </div>

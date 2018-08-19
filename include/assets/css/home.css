@@ -1,0 +1,29 @@
+.find-candidates {
+  background-color: #3399CC;
+  padding: 75px 0;
+  text-align: center;
+}
+.find-candidates h3,
+.find-candidates p {
+  color: #ffffff;
+  text-align: center;
+}
+.find-candidates .block-title {
+  font-size: 25px;
+  font-family: latobold;
+}
+.find-candidates .subtitle {
+  font-size: 16px;
+  font-family: latoregular;
+}
+.business-partners .business-title {
+  color: #3D464D;
+  font-size: 30px;
+  font-family: latobold;
+}
+.business-partners .subtitle {
+  color: #3D464D;
+  text-align: center;
+  font-size: 16px;
+  font-family: latoregular;
+}

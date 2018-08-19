@@ -1,0 +1,37 @@
+.footer-updated {
+  background-color: #005371;
+  padding: 25px;
+}
+.footer-updated .footer-logo {
+  max-width: 150px;
+  margin: auto;
+}
+.footer-updated .about-teamire {
+  margin-top: 25px;
+}
+.footer-updated .about-teamire p {
+  font-size: 15px;
+  font-family: latoregular;
+}
+.footer-updated .footer-items-container .footer-items ul {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-updated .footer-items-container .footer-items h4 {
+  color: #5d7d87;
+  padding-left: 0;
+  font-size: 16px;
+  font-family: latobold;
+}
+.footer-updated .footer-items-container .footer-items li,
+.footer-updated .footer-items-container .footer-items a {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: latoregular;
+}
+.footer-updated .about-teamire p {
+  color: #ffffff;
+}
+.footer-updated .footer-form .form-group label {
+  display: none;
+}

@@ -1,0 +1,28 @@
+.primary-button {
+  background-color: #797979;
+}
+.submit-button {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  background-clip: padding-box;
+  background-color: #008DF0;
+  padding: 10px;
+  border: none;
+}
+.submit-button span {
+  color: #ffffff;
+  font-family: latobold;
+}
+.request-button {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-clip: padding-box;
+  background-color: #ffffff;
+  padding: 10px;
+  border: none;
+}
+.request-button span {
+  color: #333333;
+}
