@@ -1102,14 +1102,12 @@ li > a:only-child:after { content: ''; }
     border: none;
 }
 
-.job-search {
-    height: 50px;
+.form-control.job-search {
     width: 278px;
     border: none;
 }
 
 .job-categ {
-    height: 50px;
     width: 290px;
     border: none;
 }
