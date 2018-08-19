@@ -184,12 +184,7 @@ include 'scanImages.php';
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 <?php } ?>
-
-<textarea id="js-my-textarea"></textarea>
-
 <script type="text/javascript">
-    CKEDITOR.replace('js-my-textarea');
-
     $(document).ready(function(){
         $(".btn-cms-remote-delete").on("click", function(e){
             var id = $(this).attr('id');

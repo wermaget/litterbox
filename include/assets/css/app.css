@@ -130,7 +130,7 @@ select {
                     rgba(0, 0, 0, 0.45),
                     rgba(0, 0, 0, 0.45)
             ),
-            url("../images/business-chairs-commerce.jpg") no-repeat;
+            url("../images/home-hero-2.jpg") no-repeat;
     background-size: cover;
     background-position: center 100%;
 }
@@ -207,15 +207,13 @@ table tbody td {
     border-bottom: 1px solid #d9d9d9;
 }
 
-.header-img-preview {
-    margin-bottom: 10px;
-}
 .header-img-wrapper {
     height: 120px;
     border: 1px solid #c7c7c7;
     border-radius: 2px;
     padding: 8px;
     display: inline-block;
+    width: 100%;
 
 }
 .header-img-wrapper img {
@@ -843,7 +841,6 @@ li > a:only-child:after { content: ''; }
     }
 
     .categ-select {
-        height: 50px;
         min-width: 100% !important;
         border: none;
         margin: 0 auto;
@@ -1127,7 +1124,6 @@ li > a:only-child:after { content: ''; }
 }
 
 .categ-select {
-    height: 50px;
     width: 387px !important;
     border: none;
 }

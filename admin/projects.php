@@ -179,11 +179,7 @@ function formatDate($val)
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 <?php } ?>
-
-
-<textarea id="wada"></textarea>
-<script>
-    CKEDITOR.replace('wada');
+<script type="text/javascript">
     $(document).ready(function(){
         $(".btn-cms-project-delete").on("click", function(e){
             var id = $(this).attr('id');
