@@ -64,29 +64,13 @@ function getPositionName($Id)
                                     <option value="9">Warehousing</option>
                                 </select>
                                 <button type="submit" class="btn btn-sm waves-effect btn-blue search-job-btn"><i
-                                            class="fa fa-search m-r-5"></i>Search Jobs
+                                        class="fa fa-search m-r-5"></i>Search Jobs
                                 </button>
 
                             </div>
                         </form>
                         <a id="btn-show-search-talent">Need to Hire? Click here to find Candidates.</a>
                     </div>
-
-<div>
-  <div>
-    <div class="bgimg-1" style="height: 678px; margin-top: -147px; z-index:-1; position: relative;"></div>
-    <div>
-      <div class="main-text">
-            <div class="text-center container">
-                <p class="m-t-30 slideanim tagline">
-                  It is our Business to Identify your Needs, Interests, Concerns and Expectations
-                  <br>
-                  We're Remote Supply Chain Data driven experts.....
-                </p>
-
-                <div class="row m-b-20 categ-margin">
-                  <button id="myBtn1" class="btn btn-sm xs-btn" style="width:300px; height: 50px;">NEED TO HIRE?</button>
-                  <button id="myBtn2" class="btn btn-sm xs-btn primary-button" style="width:300px; height: 50px;">LOOKING FOR A JOB?</button>
                 </div>
             </div>
         </div>
@@ -409,75 +393,71 @@ function getPositionName($Id)
 
                             </fieldset>
 
-                                       <button style="display: none;" type="submit" class="btn btn-blue btn-sm stepy-finish">Submit</button>
-                                   </form>
-                                     <center>
-                                           <a href="../home/?view=submitResume"  class="btn btn-blue m-t-30 m-b-30">SUBMIT RESUME</a>
-                                       </center>
-                                       </div>
-                                   </div>
-                               </div>
-                     </div>
-                        <!-- End row -->
-</div>
-      <div class="find-candidates">
-          <h3 class="block-title">Find great candidates fast.</h3>
-          <p class="subtitle">We at Teamire do great things in helping you find the right candidates.</p>
-          <button class="request-button"><span>Request for Talent</span></button>
-      </div>
-  <!-- Start Location Panels-->
-    <div class="business-partners" style="position: relative; min-height: 500px;">
-<!--      <img style="position: absolute; top:0; width: 100%;" src="../include/assets/images/our-services-bg.png">-->
-      <div class="container center-page slideanim" style="padding-top: 5%;">
-        <h2 class="text-center m-t-30 business-title">Business Partners</h2>
-        <div class="center-page">
-            <p class="subtitle">Expanding our services around the world</p>
+                            <button style="display: none;" type="submit" class="btn btn-blue btn-sm stepy-finish">
+                                Submit
+                            </button>
+                        </form>
+                        <center>
+                            <a href="../home/?view=submitResume" class="btn btn-blue m-t-30 m-b-30">SUBMIT
+                                RESUME</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row m-t-30">
-          <div class="col-lg-1"></div>
+        <!-- End row -->
+    </div>
+    <!-- Start Location Panels-->
+    <div style="position: relative; min-height: 500px;">
+        <img style="position: absolute; top:0; width: 100%;" src="../include/assets/images/our-services-bg.png">
+        <div class="container center-page slideanim" style="padding-top: 5%;">
+            <h2 class="text-center m-t-30 ">Business Partners</h2>
+            <div class="center-page" style="height: 2px; width: 20%; background-color: #0064c8;"></div>
+            <div class="row m-t-30">
+                <div class="col-lg-1"></div>
 
-          <div class="col-lg-2 text-center">
-            <div class="annex-img">
-              <h3 class="center-page text-blue">SYDNEY HQ</h3>
-              <img src="../include/assets/images/home-img4.png" />
-            </div>
-          </div>
+                <div class="col-lg-2 text-center">
+                    <div class="annex-img">
+                        <img src="../include/assets/images/home-img4.png">
+                    </div>
+                    <h3 class="center-page ">SYDNEY HQ</h3>
+                </div>
 
-          <div class="col-lg-2 text-center">
-            <div class="annex-img">
-                <h3 class="center-page text-blue">SYDNEY HQ</h3>
-            	<img src="../include/assets/images/home-img1.png"/>
-            </div>
-          </div>
+                <div class="col-lg-2 text-center">
+                    <div class="annex-img">
+                        <img src="../include/assets/images/home-img1.png">
+                    </div>
+                    <h3 class="center-page ">MANILA</h3>
+                </div>
 
-            <div class="col-lg-2 text-center">
-              <div class="annex-img">
-                <h3 class="center-page text-blue">DELHI</h3>
-              	<img src="../include/assets/images/home-img2.png"/>
-              </div>
-            </div>
+                <div class="col-lg-2 text-center">
+                    <div class="annex-img">
+                        <img src="../include/assets/images/home-img2.png">
+                    </div>
+                    <h3 class="center-page ">DELHI</h3>
+                </div>
 
-            <div class="col-lg-2 text-center">
-              <div class="annex-img">
-                <h3 class="center-page text-blue">BANGALORE</h3>
-              	<img src="../include/assets/images/home-img3.png">
-              </div>
-            </div>
+                <div class="col-lg-2 text-center">
+                    <div class="annex-img">
+                        <img src="../include/assets/images/home-img3.png">
+                    </div>
+                    <h3 class="center-page ">BANGALORE</h3>
+                </div>
 
-            <div class="col-lg-2 text-center">
-              <div class="annex-img">
-                <h3 class="center-page text-blue">PROVIDENCE</h3>
-                <img src="../include/assets/images/home-img5.png">
-              </div>
+                <div class="col-lg-2 text-center">
+                    <div class="annex-img">
+                        <img src="../include/assets/images/home-img5.png">
+                    </div>
+                    <h3 class="center-page ">PROVIDENCE</h3>
+                </div>
+                <div class="col-lg-1"></div>
             </div>
-            <div class="col-lg-1"></div>
         </div>
-      </div>
-      <div class="clearfix"></div>
+        <div class="clearfix"></div>
         <!-- end row -->
-  <!-- End Location Panels-->
-  </div>
-  <br>
+        <!-- End Location Panels-->
+    </div>
+    <br>
 </div>
 <script>
     $(document).ready(function () {
