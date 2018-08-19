@@ -25,8 +25,8 @@ function formatDate($val){
     <form class="form-inline" method="GET">
     <div class="form-group">
       <input type="hidden" name="view" value="searchJob">
-      <input type="text" name="s" class="form-control select-sm-mobile" placeholder="Job Title, Skills or Keywords" style="height: 67px;width:450px;">
-      <select name="c" class="form-control select-sm-mobile" style="height: 67px; width:200px;" required>
+      <input type="text" name="s" class="form-control select-sm-mobile" placeholder="Job Title, Skills or Keywords">
+      <select name="c" class="form-control select-sm-mobile" required>
         <option value="">Select Category</option>
         <?php foreach($jobFunctionList as $row){ ?>
           <option value="<?=$row->Id;?>"><?=$row->option;?></option>

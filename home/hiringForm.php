@@ -191,7 +191,7 @@ $ptList = position_type()->list();
                       <button type="submit" class="btn btn-primary stepy-finish"> SEND REQUEST </button>
                   </div>
                   <div class="text-center m-t-30">
-                      <p style="color: #000000;">Call us at <strong class="text-blue">1300 513 650 & (+61) 433 374 955</strong></p>
+                      <p style="color: #000000;">Call us at <strong >1300 513 650 & (+61) 433 374 955</strong></p>
                   </div>
             </form>
 

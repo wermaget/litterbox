@@ -41,7 +41,7 @@ function getPositionName($Id)
                                 </button>
                             </div>
                         </form>
-                        <a id="btn-show-search-job">LOOKING FOR A JOB?</a>
+                        <a id="btn-show-search-job">Looking for a Job?</a>
                     </div>
                     <div id="demo1" style=""></div>
                     <div id="demo"></div>
@@ -78,16 +78,13 @@ function getPositionName($Id)
 </div>
 <div>
     <div>
-        <div class="bgimg-2" style="min-height: 678px;">
+        <div class="home-supply-chain" style="min-height: 678px;">
             <div class="container">
                 <div class="container-fluid m-t-30 m-b-30" style="padding-top: 6%;">
                     <div class="container-80 text-center center-page">
-                        <h2 class="text-blue slideanim">
+                        <h2 class="slideanim">
                             Our Supply Chain Services
                         </h2>
-                        <div class="center-page slideanim"
-                             style="height: 2px; width: 20%; background-color: #0064c8;"></div>
-                        <br>
                     </div>
                     <div class="row slideanim">
                         <div class="col-lg-1"></div>
@@ -184,7 +181,7 @@ function getPositionName($Id)
         </div>
         <!-- Basic Form Wizard -->
         <div class="bgimg-3" style="min-height: 910px; padding: 0px !important;">
-            <div class="text-center text-blue" style="font-size: 25px; font-weight: 900; padding-top: 18px;">
+            <div class="text-center" style="font-size: 25px; font-weight: 900; padding-top: 18px;">
                 Distributed Teamire Crew
             </div>
             <div class="container-80 center-page">
@@ -193,20 +190,20 @@ function getPositionName($Id)
                     <li class="active" style="background-color:#f2f2f2; border-radius: 5px; color: #fff;">
                         <a href="#home1" data-toggle="tab" aria-expanded="false">
                             <span class="visible-xs"><i class="mdi mdi-format-list-bulleted-type"></i></span>
-                            <span class="hidden-xs text-blue">Four Simple Steps to Hire</span>
+                            <span class="hidden-xs ">Four Simple Steps to Hire</span>
                         </a>
                     </li>
                     <li class="" style="background-color: #f2f2f2; border-radius:5px;">
                         <a href="#profile1" data-toggle="tab" aria-expanded="true">
                             <span class="visible-xs"><i class="mdi mdi-account-search"></i></span>
-                            <span class="hidden-xs text-blue">How We Help You Find a Job</span>
+                            <span class="hidden-xs ">How We Help You Find a Job</span>
                         </a>
                     </li>
 
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane" id="home1">
-                        <form id="wizard-clickable" class="text-blue">
+                        <form id="wizard-clickable" class="">
                             <fieldset title="1">
                                 <legend>Tell us about your hiring needs</legend>
                                 <div class="row">
@@ -216,7 +213,7 @@ function getPositionName($Id)
                                              class="img-circle img-circle-mobile  img-circle-md-mobile img-thumbnail">
                                     </div>
                                     <div class="col-md-8">
-                                        <h4 class="text-blue"><strong>Step 1: Tell us about your hiring
+                                        <h4 class=""><strong>Step 1: Tell us about your hiring
                                                 needs</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Submit your job opening online in just minutes, or simply call us.
@@ -241,7 +238,7 @@ function getPositionName($Id)
                                              class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
                                     </div>
                                     <div class="col-md-8">
-                                        <h4 class="text-blue"><strong>Step 2: Your staffing options</strong></h4>
+                                        <h4 class=""><strong>Step 2: Your staffing options</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Teamire is known for providing a selection of highly skilled
                                             professionals, and our staffing professionals can provide you with
@@ -265,7 +262,7 @@ function getPositionName($Id)
                                              class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
                                     </div>
                                     <div class="col-md-8">
-                                        <h4 class="text-blue"><strong>Step 3: Review and select candidates</strong>
+                                        <h4 class=""><strong>Step 3: Review and select candidates</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
                                             Finding candidates who are just the right fit for your role is our top
@@ -288,7 +285,7 @@ function getPositionName($Id)
                                              class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
                                     </div>
                                     <div class="col-md-8">
-                                        <h4 class="text-blue"><strong>Step 4: Service and your happiness</strong>
+                                        <h4 class=""><strong>Step 4: Service and your happiness</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
                                             Ensuring you are happy with your hiring experience is what defines
@@ -312,7 +309,7 @@ function getPositionName($Id)
 
                     </div>
                     <div class="tab-pane active" id="profile1">
-                        <form id="default-wizard" class="text-blue">
+                        <form id="default-wizard" class="">
                             <fieldset title="1">
                                 <legend>Search for jobs and apply</legend>
                                 <div class="row">
@@ -322,7 +319,7 @@ function getPositionName($Id)
                                              class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
                                     </div>
                                     <div class="col-md-8">
-                                        <h4 class="text-blue"><strong>Step 1: Search for jobs and apply</strong>
+                                        <h4 class=""><strong>Step 1: Search for jobs and apply</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
                                             Quickly and easily search our open positions to find one that fits your
@@ -345,7 +342,7 @@ function getPositionName($Id)
                                              class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
                                     </div>
                                     <div class="col-md-8">
-                                        <h4 class="text-blue"><strong>Step 2: Upload your resume</strong></h4>
+                                        <h4 class=""><strong>Step 2: Upload your resume</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Our online form makes it easy to send us your resume or upload the
                                             details of your LinkedIn profile. We’ll then contact you if your
@@ -366,7 +363,7 @@ function getPositionName($Id)
                                              class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
                                     </div>
                                     <div class="col-md-8">
-                                        <h4 class="text-blue"><strong>Step 3: Getting to know you</strong></h4>
+                                        <h4 class=""><strong>Step 3: Getting to know you</strong></h4>
                                         <p class="wizard-content-mobile">
                                             You are more than just a resume or an application. That is why we work
                                             so hard to understand your career goals, so that we can help you find a
@@ -384,7 +381,7 @@ function getPositionName($Id)
                                              class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">
                                     </div>
                                     <div class="col-md-8">
-                                        <h4 class="text-blue"><strong>Step 4: While we find the right fit</strong>
+                                        <h4 class=""><strong>Step 4: While we find the right fit</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
                                             In addition to helping find your next career move, we are also here to
@@ -414,7 +411,7 @@ function getPositionName($Id)
     <div style="position: relative; min-height: 500px;">
         <img style="position: absolute; top:0; width: 100%;" src="../include/assets/images/our-services-bg.png">
         <div class="container center-page slideanim" style="padding-top: 5%;">
-            <h2 class="text-center m-t-30 text-blue">Business Partners</h2>
+            <h2 class="text-center m-t-30 ">Business Partners</h2>
             <div class="center-page" style="height: 2px; width: 20%; background-color: #0064c8;"></div>
             <div class="row m-t-30">
                 <div class="col-lg-1"></div>
@@ -423,35 +420,35 @@ function getPositionName($Id)
                     <div class="annex-img">
                         <img src="../include/assets/images/home-img4.png">
                     </div>
-                    <h3 class="center-page text-blue">SYDNEY HQ</h3>
+                    <h3 class="center-page ">SYDNEY HQ</h3>
                 </div>
 
                 <div class="col-lg-2 text-center">
                     <div class="annex-img">
                         <img src="../include/assets/images/home-img1.png">
                     </div>
-                    <h3 class="center-page text-blue">MANILA</h3>
+                    <h3 class="center-page ">MANILA</h3>
                 </div>
 
                 <div class="col-lg-2 text-center">
                     <div class="annex-img">
                         <img src="../include/assets/images/home-img2.png">
                     </div>
-                    <h3 class="center-page text-blue">DELHI</h3>
+                    <h3 class="center-page ">DELHI</h3>
                 </div>
 
                 <div class="col-lg-2 text-center">
                     <div class="annex-img">
                         <img src="../include/assets/images/home-img3.png">
                     </div>
-                    <h3 class="center-page text-blue">BANGALORE</h3>
+                    <h3 class="center-page ">BANGALORE</h3>
                 </div>
 
                 <div class="col-lg-2 text-center">
                     <div class="annex-img">
                         <img src="../include/assets/images/home-img5.png">
                     </div>
-                    <h3 class="center-page text-blue">PROVIDENCE</h3>
+                    <h3 class="center-page ">PROVIDENCE</h3>
                 </div>
                 <div class="col-lg-1"></div>
             </div>

@@ -75,7 +75,7 @@ function getJobFunction($Id){
 <!-- Left lists -->
     <div class="col-lg-6">
         <div class="card-box">
-            <h4 class="m-t-0 header-title text-blue"><b>Recent Talent Requests</b></h4>
+            <h4 class="m-t-0 header-title "><b>Recent Talent Requests</b></h4>
             <div class="table-responsive">
                 <table class="table table-hover m-0 table-actions-bar">
                     <thead>
@@ -112,7 +112,7 @@ function getJobFunction($Id){
 <!-- Right lists -->
 <div class="col-lg-6">
     <div class="card-box">
-        <h4 class="m-t-0 header-title text-blue"><b>Recent Invoices</b></h4>
+        <h4 class="m-t-0 header-title "><b>Recent Invoices</b></h4>
         <div class="table-responsive">
             <table class="table table-hover m-0 table-actions-bar">
                 <thead>

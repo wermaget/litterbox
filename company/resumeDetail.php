@@ -15,7 +15,7 @@ function getCity($Id){
 
 <div class="container container-fluid">
   <div class="col-12 m-t-30 m-b-30">
-    <h2 class="text-blue"> <?=$resume->lastName;?>, <?=$resume->firstName;?> </h2>
+    <h2 class=""> <?=$resume->lastName;?>, <?=$resume->firstName;?> </h2>
     <p><label class="m-r-5 m-t-15">Job Category: </label><?=getJobFunction($resume->jobFunctionId);?><p>
     <p><label class="m-r-5">Email: </label><?=$resume->email;?></p>
     <p><label class="m-r-5">Birthdate: </label><?=$resume->birthdate;?></p>

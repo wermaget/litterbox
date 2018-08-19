@@ -762,9 +762,9 @@ File: Components
 body {
     margin: 0;
     overflow-x: hidden;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: #3d464d;
     line-height: 1.5;
     background-color: #ffffff;
     font-family: "Lato", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -773,11 +773,6 @@ body {
 html {
     position: relative;
     min-height: 100%;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    color: #292b2c;
-    margin: 10px 0;
 }
 
 h5 {
@@ -1428,7 +1423,7 @@ a:focus {
     color: #9aebff !important;
 }
 
-.text-blue {
+. {
     color: #0064c8 !important;
 }
 
@@ -3720,7 +3715,7 @@ textarea.form-control {
 }
 
 .form-control {
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     border-radius: 0;
     padding: 7px 12px;
     max-width: 100%;
@@ -7550,7 +7545,7 @@ ul.sitemap-icon ul li a {
 /** Candidate Contact Button **/
 .btn-candidate-contact {
     width: 197px;
-    height: 67px;
+    /*height: 67px;*/
     border-radius: 3px;
 }
 

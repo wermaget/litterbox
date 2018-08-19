@@ -158,8 +158,8 @@ $jobFunc = job_function()->get("code='$code'");
                 <form class="form-inline" method="GET">
                 <div class="form-group">
                   <input type="hidden" name="view" value="searchJob">
-                  <input type="text" name="s" class="m-r-5 form-control select-xs-mobile select-lg-mobile" placeholder="Job Title, Skills or Keywords" style="height: 67px;width:500px; border-radius: 5px;">
-                  <select name="c" class="form-control m-r-5 select-xs-mobile select-lg-mobile" style="height: 67px; width:265px; border-radius: 5px;" required>
+                  <input type="text" name="s" class="m-r-5 form-control select-xs-mobile select-lg-mobile" placeholder="Job Title, Skills or Keywords">
+                  <select name="c" class="form-control m-r-5 select-xs-mobile select-lg-mobile" required>
                     <option value="">Select Category</option>
                     <?php foreach($jobFunctionList as $row){ ?>
                       <option value="<?=$row->Id;?>"><?=$row->option;?></option>

@@ -22,7 +22,7 @@ $companyList = company()->list("isDeleted=0");
                   <h3 class="m-b-5"><?=$row->name;?></h3>
                   <hr>
                   <p class="text-black"><i class="fa fa-user m-r-5"></i><b><?=$row->contactPerson;?></b><br>
-                  <i class="fa fa-envelope m-r-5 text-blue"></i><a href="#" class="text-blue"><?=$row->email;?></a>
+                  <i class="fa fa-envelope m-r-5 "></i><a href="#" class=""><?=$row->email;?></a>
                   </p>
               </div>
 

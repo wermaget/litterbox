@@ -124,7 +124,7 @@ function formatDate($val){
       <form method="GET" accept-charset="UTF-8">
         <input type="hidden" name="view" value="searchJob">
           <input class="job-detail-search-form m-b-20 select-sm-mobile" size="60" maxlength="128" type="text" name="s" placeholder="Job Title, Skills or Keywords">
-          <select name="c" class="form-control m-b-20 select-sm-mobile" style="height: 67px; width:250px;" required>
+          <select name="c" class="form-control m-b-20 select-sm-mobile" required>
             <option value="">Select Category</option>
             <?php foreach($jobFunctionList as $row){ ?>
               <option value="<?=$row->Id;?>"><?=$row->option;?></option>
