@@ -9,7 +9,6 @@
 <!-- App favicon -->
 <link rel="shortcut icon" href="../include/assets/images/favicon.ico">
 
-<link rel="stylesheet" href="../include/assets/css/app.css">
 
 <!-- Custom box css -->
 <link href="../include/plugins/custombox/css/custombox.min.css" rel="stylesheet">
@@ -17,6 +16,7 @@
 <link rel="stylesheet" href="../include/plugins/morris/morris.css">
 <!--<link href="http://db.onlinewebfonts.com/c/31aefc600de86877c5f9f991836a7fbb?family=Futura+BT+W01+Book" rel="stylesheet" type="text/css"/>-->
    <!-- DataTables -->
+<link href="../include/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../include/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
 <link href="../include/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="../include/plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@
 <!-- Bootstrap fileupload css -->
 <link href="../include/plugins/bootstrap-fileupload/bootstrap-fileupload.css" rel="stylesheet" />
 <!-- App css -->
-<link href="../include/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/core.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/components.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/icons.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/fonts.css" rel="stylesheet" type="text/css" />
+<link href="../include/assets/css/fontello.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/style.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/pages.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
@@ -54,15 +54,15 @@
 <link href="../include/assets/css/menu.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/buttons.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/footer.css" rel="stylesheet" type="text/css"/>
-<link href="../include/assets/css/app.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/home.css" rel="stylesheet" type="text/css" />
+<link href="../include/assets/css/fonts.css" rel="stylesheet" type="text/css" />
+<link href="../include/assets/css/app.css" rel="stylesheet" type="text/css" />
 
 <link href="../include/assets/css/responsive.css" rel="stylesheet" type="text/css" />
 <script src="../include/assets/js/modernizr.min.js"></script>
 <script src="../include/assets/js/float-panel.js"></script>
 <script src="../include/assets/js/jquery.min.js"></script>
 <script src="../include/plugins/ckeditor/ckeditor.js"></script>
+<script src="../include/plugins/parallax/parallax.js"></script>
 <script src="../include/plugins/ckeditor/adapters/jquery.js"></script>
-
-<!-- <script src="../include/plugins/ckeditor/adapters/jquery.js"></script> -->
 

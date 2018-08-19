@@ -9,7 +9,7 @@
     </head>
     <body>
         <!-- Navigation Bar-->
-        <header id="topnav">
+        <header id="topnav" class="<?= (($content != 'home.php') ? 'scrolled' : '') ?>">
               <?php
                 include 'navVisitor.php';
               ?>
@@ -17,7 +17,7 @@
         </header>
         <!-- End Navigation Bar-->
         <div class="page-main wrapper">
-          <div style="width: 1350px; max-width: 100%; margin: 0 auto;">
+          <div class="main-content <?= (($content != 'home.php') ? '' : 'index-page') ?>">
               <?php
                 include $content;
               ?>

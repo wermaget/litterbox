@@ -318,6 +318,7 @@ $( "#myLinkShowResume" ).click(function() {
 <script src="../include/assets/js/jquery.app.js"></script>
 <script src="../include/assets/js/bootstrap-ckeditor-fix.js"></script>
 
+
 <script type="text/javascript">
             $(document).ready(function() {
                 $('form').parsley();
