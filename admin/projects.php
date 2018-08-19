@@ -34,13 +34,12 @@ function formatDate($val)
         <?php } ?>
         <div class="card-box table-responsive">
             <h4 class="page-title">Special Projects</h4><br>
-            <table id="datatable" class="table table-striped table-bordered">
+            <table id="projects-table" class="table table-striped table-bordered">
                 <thead>
                 <tr>
                     <th>Project Name</th>
                     <th>Content</th>
                     <th>Posted Date</th>
-                    <th></th>
                     <th></th>
                 </tr>
                 </thead>
@@ -59,8 +58,6 @@ function formatDate($val)
                                 <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
                                    class=" btn btn-info btn-xs" title="Click To View" data-trigger="hover"
                                    data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
-                            </td>
-                            <td>
                                 <a href="process.php?action=removeProjects&Id=<?= $row->Id; ?>"
                                    class=" btn btn-danger btn-xs tooltips" title="Click To Edit"><span
                                             class="fa fa-close"></span>Remove</a>

@@ -1,29 +1,8 @@
-<div class="nav-top-bar">
-    <div class="nav-top-wrapper">
-        <span class="">
-            <span><i class="fa fa-phone"></i>1300 513 650 & (+61) 433 374 955</span>
-            <span><i class="fa fa-envelope"></i> info@teamire.com</span>
-            <span class=""> | </span>
-        </div>
-        <ul class="social-links">
-            <li><a class="icons" href="https://www.facebook.com/" target="blank_"><img
-                            src="../include/assets/images/facebook.png"></a></li>
-            <li><a class="icons" href="https://www.twitter.com/" target="blank_"><img
-                            src="../include/assets/images/twitter.png"></a></li>
-            <li><a class="icons" href="https://www.linkedin.com/" target="blank_"><img
-                            src="../include/assets/images/linkedin.png"></a></li>
-            <li><a class="icons" href="https://www.google.com/" target="blank_"><img
-                            src="../include/assets/images/google.png"></a></li>
-            <li><a class="icons" href="https://www.youtube.com/" target="blank_"><img
-                            src="../include/assets/images/youtube.png"></a></li>
-        </ul>
-    </div>
-
-</div>
 <div class="nav-wrapper">
     <div class="logo-wrapper">
         <a href="index.php" class="logo logo-mobile">
-            <img src="../include/assets/images/teamire-logo.png">
+            <img class="logo-light" src="../include/assets/images/teamire-logo-light-min.png">
+            <img class="logo-dark" src="../include/assets/images/teamire-logo-min.png">
         </a>
     </div>
     <nav>
@@ -33,10 +12,10 @@
         <ul class="menu">
             <li>
                 <!-- First Tier Drop Down -->
-                <label for="drop-1" class="toggle">Employers <b class="fa fa-chevron-down m-l-15 text-blue"></b></label>
-                <a href="#">Employers <b class="fa fa-chevron-down text-primary"></b></a>
+                <label for="drop-1" class="toggle">Employers</label>
+                <a href="#" class="nav-item-drop">Employers</a>
                 <input type="checkbox" id="drop-1"/>
-                <ul>
+                <ul class="nav-level2">
                     <li><a href="../home/?view=hiringForm">Request Talent</a></li>
                     <li><a href="../home/?view=searchResume">Search Candidates</a></li>
                     <li><a href="../home/?view=clientForm">Employer Registration</a></li>
@@ -45,11 +24,10 @@
             </li>
             <li>
                 <!-- First Tier Drop Down -->
-                <label for="drop-2" class="toggle">Job Seekers <b
-                            class="fa fa-chevron-down m-l-15 text-blue"></b></label>
-                <a href="#">Job Seekers <b class="fa fa-chevron-down text-primary"></b></a>
+                <label for="drop-2" class="toggle">JobSeekers</label>
+                <a href="#" class="nav-item-drop">Job Seekers</a>
                 <input type="checkbox" id="drop-2"/>
-                <ul>
+                <ul class="nav-level2">
                     <li><a href="../home/?view=searchJob">Search Job</a></li>
                     <li><a href="../home/?view=submitResume">Submit Resume</a></li>
 
@@ -57,20 +35,26 @@
             </li>
             <li>
                 <!-- First Tier Drop Down -->
-                <label for="drop-3" class="toggle">Work With Us <b
-                            class="fa fa-chevron-down m-l-15 text-blue"></b></label>
-                <a href="#">Work With Us <b class="fa fa-chevron-down text-primary"></b></a>
+                <label for="drop-3" class="toggle">Work With Us</label>
+                <a href="#" class="nav-item-drop">Work With Us</a>
                 <input type="checkbox" id="drop-3"/>
-                <ul>
+                <ul class="nav-level2">
                     <li><a href="../home/?view=services">Our Services</a></li>
                     <li><a href="../home/?view=aboutUs">About Us</a></li>
                 </ul>
             </li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=projects">Supply Chain Projects</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-3" class="toggle">Blog</label>
+                <a href="#" class="nav-item-drop">Blog</a>
+                <input type="checkbox" id="drop-3"/>
+                <ul class="nav-level2">
+                    <li><a class="m-l-3 m-r-3" href="../home/?view=projects">Supply Chain Projects</a></li>
+                    <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
+                </ul>
+            </li>
             <li><a class="m-l-3 m-r-3" href="../home/?view=logins">Timesheets</a></li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=hiringForm">Request Talent</a></li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=contactUs">Contact Us</a></li>
+            <li><a class="m-l-3 m-r-3" href="../home/?view=contactUs">Contact</a></li>
         </ul>
     </nav>
 </div>

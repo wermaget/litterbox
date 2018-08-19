@@ -55,10 +55,10 @@ include 'scanImages.php';
                             <td><?= formatDate($row->createDate); ?></td>
                             <td>
                                 <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
-                                   class=" btn btn-info btn-xs" title="Click To View" data-trigger="hover"
+                                   class="" title="Click To View" data-trigger="hover"
                                    data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
                                 <a href="process.php?action=removeRemoteTeam&Id=<?= $row->Id; ?>"
-                                   class=" btn btn-danger btn-xs tooltips" title="Click To Edit"><span
+                                   class="" title="Click To Edit"><span
                                             class="fa fa-close"></span>Remove</a>
                             </td>
                         </tr>

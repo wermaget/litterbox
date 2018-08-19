@@ -43,7 +43,7 @@ function getPositionName($Id){
          solution is transparent, speedy and effective.
       </p>
       </div>
-    <span id="readMore" class="text-blue">Read More</span>
+    <span id="readMore" class="">Read More</span>
     </div>
   </div>
 
@@ -77,7 +77,7 @@ function getPositionName($Id){
          where TEAMIRE can step in to help you find the right solution to your problems.
        </p>
     </div>
-    <span class="text-blue" id="readMore1">Read More</span>
+    <span class="" id="readMore1">Read More</span>
   </div>
     <div class="col-md-3">
       <img src="../include/assets/images/aboutus-img2.png" style="width: 100%; border-radius: 50%;">
@@ -105,7 +105,7 @@ function getPositionName($Id){
          objectives.
       </p>
       </div>
-    <span id="readMore2" class="text-blue">Read More</span>
+    <span id="readMore2" class="">Read More</span>
     </div>
   </div>
 
@@ -128,7 +128,7 @@ function getPositionName($Id){
          ever so demanding and complex Supply Chain Management.
       </p>
     </div>
-    <span class="text-blue" id="readMore3">Read More</span>
+    <span class="" id="readMore3">Read More</span>
     </div>
     <div class="col-md-3">
       <img src="../include/assets/images/aboutus-img4.png" style="width: 100%; border-radius: 50%;">
@@ -167,7 +167,7 @@ function getPositionName($Id){
          or military status in any of its activities or operations.
       </p>
     </div>
-    <span class="text-blue" id="readMore4"><a>Read More</a></span>
+    <span class="" id="readMore4"><a>Read More</a></span>
   </div>
   </div>
 
@@ -180,8 +180,8 @@ function getPositionName($Id){
                 <form class="form-inline" method="GET">
                 <div class="form-group">
                   <input type="hidden" name="view" value="searchJob">
-                  <input type="text" name="s" class="form-control select-sm-mobile" placeholder="Job Title, Skills or Keywords" style="height: 67px;width:340px; margin-left: 5px;">
-                  <select name="c" class="form-control select-sm-mobile" style="height: 67px; width:290px;" required>
+                  <input type="text" name="s" class="form-control select-sm-mobile" placeholder="Job Title, Skills or Keywords">
+                  <select name="c" class="form-control select-sm-mobile" required>
                     <option value="">Select Category</option>
                     <?php foreach($jobFunctionList as $row){ ?>
                       <option value="<?=$row->Id;?>"><?=$row->option;?></option>

@@ -35,7 +35,7 @@ function formatDate($val){
   </div>
 <?php }?>
   <div class="col-12 m-t-30 m-b-30">
-    <h2 class="text-blue"><?=$job->position;?></h2>
+    <h2 class=""><?=$job->position;?></h2>
         <p><label class="m-r-5">Required Experience: </label><span class="text-black"><?=$job->requiredExperience;?></span></p>
         <p><label class="m-r-5">Company: </label><span class="text-black"><?=$job->company;?></span></p>
         <p><label class="m-r-5">Address: </label><span class="text-black"><?=$job->address;?></span></p>

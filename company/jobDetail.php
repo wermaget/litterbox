@@ -15,7 +15,7 @@ function getPosition($Id){
 
 <div class="container container-fluid">
   <div class="col-12 m-t-30 m-b-30">
-    <h2 class="text-blue"><?=$job->position;?></h2>
+    <h2 class=""><?=$job->position;?></h2>
         <p><label class="m-r-5">Required Experience: </label><?=$job->requiredExperience;?></p>
         <p><label class="m-r-5">Company: </label><?=$job->company;?></p>
         <p><label class="m-r-5">Address: </label><?=$job->address;?></p>

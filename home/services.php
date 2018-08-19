@@ -15,8 +15,6 @@ function getPositionName($Id){
       <h2 class="slideanim">
         Our Supply Chain Services
       </h2>
-      <div class="center-page slideanim" style="height: 2px; width: 20%; background-color: #3a3a3a;"></div>
-      <br>
     </div>
   <div class="row slideanim">
     <div class="col-lg-1"></div>
