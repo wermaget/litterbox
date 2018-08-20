@@ -1,13 +1,12 @@
 <?php
-$jobFunctionList = job_function()->lists("isDeleted='0' order by `option` asc");
-$cityList = city_option()->lists();
+$jobFunctionList = job_function()->list("isDeleted='0' order by `option` asc");
+$cityList = city_option()->list();
 
 function getPositionName($Id)
 {
     $job = position_type()->get("Id='$Id'");
     echo $job->option;
 }
-
 ?>
 <div class="">
     <div class="home-hero-banner">
@@ -25,7 +24,12 @@ function getPositionName($Id)
                                 <input type="hidden" name="view" value="searchResume">
                                 <select name="j" class="form-control categ-select" required="">
                                     <option value="">Select Category</option>
-                                    <option value="6">Demand Planning</option>
+                                    <?php
+                                    foreach($jobFunctionList as $joblist) {?>
+                                        <option value="<?= $joblist->Id ?>"><?= $joblist->option ?></option>
+                                    <?php
+                                    }
+                                    ?>
                                     <option value="4">Logistics</option>
                                     <option value="8">Manufacturing</option>
                                     <option value="7">Order Fulfillment</option>
@@ -415,7 +419,6 @@ function getPositionName($Id)
     </div>
     <!-- Start Location Panels-->
     <div class="business-partners">
-        <img style="position: absolute; top:0; width: 100%;" src="../include/assets/images/our-services-bg.png">
         <div class="container center-page slideanim" style="padding-top: 5%;">
             <h2 class="text-center m-t-30 business-title">Business Partners</h2>
             <div class="center-page"><p class="subtitle">Expanding our services around the world</p></div>

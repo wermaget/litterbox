@@ -3,7 +3,7 @@
     <head>
         <?php
           include_once($headScript);
-          $jfList = job_function()->lists("isDeleted=0 order by `option` asc");
+          //$jfList = job_function()->lists("isDeleted=0 order by `option` asc");
         ?>
         <link rel="stylesheet" type="text/css" href="../include/assets/css/footer_responsive.css">
     </head>
