@@ -249,7 +249,7 @@
                         <i class="fa fa-twitter-square fa-2x"></i>&nbsp;&nbsp;<span>Twitter</span><br><br>
                         <i class="fa fa-youtube-square fa-2x"></i>&nbsp;&nbsp;<span>Youtube</span><br><br>
                         <i class="fa fa-instagram fa-2x"></i>&nbsp;&nbsp;<span>Instagram</span> -->
-                        <h4 class="text-center text-white">Send us an email</h4>
+                        <h4 class="text-center form-title">Send us an email</h4>
                         <div class="">
                             <form class="footer-form" id="default-wizard" action="process.php?action=sendInquiry" method="POST" data-parsley-validate="">
                                 <div class="row">

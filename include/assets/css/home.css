@@ -4,6 +4,11 @@
 .home-supply-chain p b {
   color: #3D464D;
 }
+.distributed-teamire {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px 0;
+}
 .distributed-teamire.bgimg-3 {
   background-image: none;
 }
@@ -66,4 +71,32 @@
   text-align: center;
   font-size: 16px;
   font-family: latoregular;
+}
+.business-partners .annex-img {
+  background-color: rgba(0, 51, 51, 0.3);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.business-partners .annex-img h3 {
+  color: #ffffff;
+  font-family: latobold;
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  margin: auto !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.business-partners .annex-img .background-color {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 51, 51, 0.3);
+}
+.business-partners .annex-img img {
+  opacity: 0;
+  visibility: hidden;
 }

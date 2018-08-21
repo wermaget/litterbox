@@ -2,6 +2,13 @@
   background-color: #005371;
   padding: 25px;
 }
+.footer-updated h4 {
+  color: #5d7d87;
+  font-family: latobold;
+}
+.footer-updated h4.form-title {
+  text-transform: uppercase;
+}
 .footer-updated .footer-logo {
   max-width: 150px;
   margin: auto;
@@ -18,10 +25,8 @@
   list-style: none;
 }
 .footer-updated .footer-items-container .footer-items h4 {
-  color: #5d7d87;
   padding-left: 0;
   font-size: 16px;
-  font-family: latobold;
 }
 .footer-updated .footer-items-container .footer-items li,
 .footer-updated .footer-items-container .footer-items a {
@@ -37,4 +42,7 @@
 }
 .copyright-footer {
   background-color: #005371;
+}
+.copyright-footer .center-page {
+  border-top: 1px solid #3399CC;
 }
