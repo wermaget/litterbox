@@ -7,7 +7,7 @@ function getPositionName($Id)
     $job = position_type()->get("Id='$Id'");
     echo $job->option;
 }
-?>
+?>ss
 <div class="">
     <div class="home-hero-banner">
         <div class="container slogan text-center">
@@ -95,24 +95,24 @@ function getPositionName($Id)
                         <div class="col-lg-2">
                             <a href="../home?view=servicesDetail&code=dem">
                                 <div class="icons icons-container text-center">
-                                    <img src="../include/assets/images/demandPlanning.png">
-                                    <p class="text-white"><b>Demand Planning</b></p>
+                                    <img src="../include/assets/images/demandplanning.png">
+                                    <p><b>Demand Planning</b></p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-2">
                             <a href="../home?view=servicesDetail&code=sup">
                                 <div class="icons icons-container text-center">
-                                    <img src="../include/assets/images/supplyPlanning.png">
-                                    <p class="text-white"><b>Supply Planning</b></p>
+                                    <img src="../include/assets/images/supplyplanning.png">
+                                    <p><b>Supply Planning</b></p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-2">
                             <a href="../home?view=servicesDetail&code=ord">
                                 <div class="icons icons-container text-center">
-                                    <img src="../include/assets/images/orderFulfilment.png">
-                                    <p class="text-white"><b>Order Fulfillment</b></p>
+                                    <img src="../include/assets/images/orderfulfillment.png">
+                                    <p><b>Order Fulfillment</b></p>
                                 </div>
                             </a>
                         </div>
@@ -120,7 +120,7 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=log">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/logistics.png">
-                                    <p class="text-white"><b>Logistics</b></p>
+                                    <p><b>Logistics</b></p>
                                 </div>
                             </a>
                         </div>
@@ -128,7 +128,7 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=man">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/manufacturing.png">
-                                    <p class="text-white"><b>Manufacturing</b></p>
+                                    <p><b>Manufacturing</b></p>
                                 </div>
                             </a>
                         </div>
@@ -141,7 +141,7 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=tran">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/transportation.png">
-                                    <p class="text-white"><b>Transportation</b></p>
+                                    <p><b>Transportation</b></p>
                                 </div>
                             </a>
                         </div>
@@ -149,15 +149,15 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=pro">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/procurement.png">
-                                    <p class="text-white"><b>Procurement</b></p>
+                                    <p><b>Procurement</b></p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-2">
                             <a href="../home?view=servicesDetail&code=tra">
                                 <div class="icons icons-container text-center">
-                                    <img src="../include/assets/images/certificate.png">
-                                    <p class="text-white"><b>Training Certification</b></p>
+                                    <img src="../include/assets/images/trainingcertification.png">
+                                    <p><b>Training Certification</b></p>
                                 </div>
                             </a>
                         </div>
@@ -165,7 +165,7 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=war">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/warehousing.png">
-                                    <p class="text-white"><b>Warehousing</b></p>
+                                    <p><b>Warehousing</b></p>
                                 </div>
                             </a>
                         </div>
@@ -173,7 +173,7 @@ function getPositionName($Id)
                             <a href="../home?view=otherServices">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/others.png">
-                                    <p class="text-white"><b>Others</b></p>
+                                    <p><b>Others</b></p>
                                 </div>
                             </a>
                         </div>
