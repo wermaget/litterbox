@@ -12,8 +12,27 @@
 .distributed-teamire.bgimg-3 {
   background-image: none;
 }
+.distributed-teamire.bgimg-3 .nav-tabs {
+  margin-top: 20px;
+}
+.distributed-teamire.bgimg-3 .nav-tabs li span {
+  font-size: 14px;
+}
+.distributed-teamire.bgimg-3 .nav-tabs li:first-child {
+  border-right: 1px solid black;
+}
+.distributed-teamire.bgimg-3 .m-b-30 {
+  font-size: 15px;
+  font-family: latoregular;
+}
+.distributed-teamire.bgimg-3 .tab-content {
+  margin-top: 100px;
+}
 .distributed-teamire.bgimg-3 .stepy-header {
   display: none;
+}
+.distributed-teamire.bgimg-3 .title-tabs {
+  padding: 0 15px;
 }
 .distributed-teamire.bgimg-3 .title-tabs.hire-tab {
   text-align: right;
@@ -33,6 +52,13 @@
 .distributed-teamire.bgimg-3 .crew-content {
   text-align: center;
 }
+.distributed-teamire.bgimg-3 .crew-content h4 {
+  margin-bottom: 25px;
+}
+.distributed-teamire.bgimg-3 .crew-content h4 strong {
+  font-weight: normal;
+  font-family: latoregular;
+}
 .distributed-teamire.bgimg-3 .nav-tabs.nav-justified > .active > a {
   border: 0;
 }
@@ -42,6 +68,39 @@
 }
 .distributed-teamire.bgimg-3 .nav-tabs li a:hover {
   border: none;
+}
+.distributed-teamire .stepy-navigator {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.distributed-teamire .stepy-navigator .btn {
+  background-color: transparent!important;
+  border: none !important;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+.distributed-teamire .stepy-navigator .btn span {
+  content: '';
+}
+.distributed-teamire .stepy-navigator .btn .mdi {
+  display: none;
+}
+.distributed-teamire .stepy-navigator .btn.button-next {
+  background-image: url('../images/right-chevron.png');
+  background-position: right;
+}
+.distributed-teamire .stepy-navigator .btn.button-back {
+  background-image: url('../images/left-chevron.png');
+  background-position: left;
+}
+.distributed-teamire form {
+  position: relative;
 }
 .find-candidates {
   background-color: #3399CC;

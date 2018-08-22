@@ -216,7 +216,7 @@ function getPositionName($Id)
 <!--                                             style="width: 40%;height:40%;"-->
 <!--                                             class="img-circle img-circle-mobile  img-circle-md-mobile img-thumbnail">-->
 <!--                                    </div>-->
-                                    <div class="col-md-12 crew-content">
+                                    <div class="col-md-8 crew-content center-page">
                                         <h4 class=""><strong>1. Tell us about your hiring
                                                 needs</strong></h4>
                                         <p class="wizard-content-mobile">
@@ -241,7 +241,7 @@ function getPositionName($Id)
 <!--                                             style=" width: 40%;height:40%;"-->
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
-                                    <div class="col-md-12 crew-content">
+                                    <div class="col-md-8 crew-content center-page">
                                         <h4 class=""><strong>2. Your staffing options</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Teamire is known for providing a selection of highly skilled
@@ -265,7 +265,7 @@ function getPositionName($Id)
 <!--                                             style=" width: 40%;height:40%;"-->
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
-                                    <div class="col-md-12 crew-content">
+                                    <div class="col-md-8 crew-content center-page">
                                         <h4 class=""><strong>3. Review and select candidates</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
@@ -288,7 +288,7 @@ function getPositionName($Id)
 <!--                                             style=" width: 40%;height:40%;"-->
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
-                                    <div class="col-md-12 crew-content">
+                                    <div class="col-md-8 crew-content center-page">
                                         <h4 class=""><strong>4. Service and your happiness</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
@@ -303,8 +303,7 @@ function getPositionName($Id)
                                 </div>
                             </fieldset>
                             <center>
-                                <a href="../home/?view=hiringForm" class="btn btn-primary m-t-30 m-b-30">REQUEST
-                                    TALENT</a>
+                                <a href="../home/?view=hiringForm" class="btn m-t-30 m-b-30">Request Talent</a>
                             </center>
                             <button style="display: none;" type="submit" class="btn btn-blue btn-sm stepy-finish">
                                 Submit
@@ -322,7 +321,7 @@ function getPositionName($Id)
 <!--                                             style=" width: 40%;height:40%;"-->
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
-                                    <div class="col-md-12 crew-content">
+                                    <div class="col-md-8 crew-content center-page">
                                         <h4 class=""><strong>1. Search for jobs and apply</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
@@ -345,7 +344,7 @@ function getPositionName($Id)
 <!--                                             style=" width: 40%;height:40%;"-->
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
-                                    <div class="col-md-12 crew-content">
+                                    <div class="col-md-8 crew-content center-page">
                                         <h4 class=""><strong>2. Upload your resume</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Our online form makes it easy to send us your resume or upload the
@@ -366,7 +365,7 @@ function getPositionName($Id)
 <!--                                             style=" width: 40%;height:40%;"-->
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
-                                    <div class="col-md-12 crew-content">
+                                    <div class="col-md-8 crew-content center-page">
                                         <h4 class=""><strong>3. Getting to know you</strong></h4>
                                         <p class="wizard-content-mobile">
                                             You are more than just a resume or an application. That is why we work
@@ -384,7 +383,7 @@ function getPositionName($Id)
 <!--                                             style=" width: 40%;height:40%;"-->
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
-                                    <div class="col-md-12 crew-content">
+                                    <div class="col-md-8 crew-content center-page">
                                         <h4 class=""><strong>4. While we find the right fit</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
@@ -402,8 +401,7 @@ function getPositionName($Id)
                             </button>
                         </form>
                         <center>
-                            <a href="../home/?view=submitResume" class="btn m-t-30 m-b-30">SUBMIT
-                                RESUME</a>
+                            <a href="../home/?view=submitResume" class="btn m-t-30 m-b-30">Submit Resume</a>
                         </center>
                     </div>
                 </div>

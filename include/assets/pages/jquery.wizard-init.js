@@ -9,8 +9,8 @@ $(function() {
     $.fn.stepy.defaults.legend = false;
     $.fn.stepy.defaults.transition = 'fade';
     $.fn.stepy.defaults.duration = 200;
-    $.fn.stepy.defaults.backLabel = '<i class="mdi mdi-arrow-left-bold"></i> Back';
-    $.fn.stepy.defaults.nextLabel = 'Next <i class="mdi mdi-arrow-right-bold"></i>';
+    $.fn.stepy.defaults.backLabel = '<i class="mdi mdi-arrow-left-bold"></i><span>Back</span>';
+    $.fn.stepy.defaults.nextLabel = '<span>Next</span> <i class="mdi mdi-arrow-right-bold"></i>';
 
 
     $('#default-wizard').stepy();

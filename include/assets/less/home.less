@@ -24,11 +24,36 @@
   &.bgimg-3 {
     background-image: none;
 
+    .nav-tabs {
+      margin-top: 20px;
+
+      li {
+
+        span {
+          font-size: 14px;
+        }
+        &:first-child {
+          border-right: 1px solid black;
+        }
+      }
+    }
+
+    .m-b-30 {
+      font-size: 15px;
+      font-family: latoregular;
+    }
+
+    .tab-content {
+      margin-top: 100px;
+    }
+
     .stepy-header {
       display: none;
     }
 
     .title-tabs {
+      padding: 0 15px;
+
       &.hire-tab {
         text-align: right;
       }
@@ -51,6 +76,15 @@
 
     .crew-content {
       text-align: center;
+
+      h4 {
+        margin-bottom: 25px;
+
+        strong {
+          font-weight: normal;
+          font-family: latoregular;
+        }
+      }
     }
 
     .nav-tabs{
@@ -73,6 +107,48 @@
         }
       }
     }
+  }
+
+  .stepy-navigator {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    .btn {
+      background-color: transparent!important;
+      border: none !important;
+      background-repeat: no-repeat;
+      height: 100px;
+
+      span {
+        content: '';
+      }
+
+      .mdi {
+        display: none;
+      }
+
+      &.button-next {
+        background-image: url('../images/right-chevron.png');
+        background-position: right;
+      }
+
+      &.button-back {
+        background-image: url('../images/left-chevron.png');
+        background-position: left;
+
+      }
+    }
+
+  }
+
+  form {
+    position: relative;
   }
 }
 
