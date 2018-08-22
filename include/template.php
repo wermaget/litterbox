@@ -249,7 +249,7 @@
                         <i class="fa fa-twitter-square fa-2x"></i>&nbsp;&nbsp;<span>Twitter</span><br><br>
                         <i class="fa fa-youtube-square fa-2x"></i>&nbsp;&nbsp;<span>Youtube</span><br><br>
                         <i class="fa fa-instagram fa-2x"></i>&nbsp;&nbsp;<span>Instagram</span> -->
-                        <h4 class="text-center text-white">Send us an email</h4>
+                        <h4 class="text-center form-title">Send us an email</h4>
                         <div class="">
                             <form class="footer-form" id="default-wizard" action="process.php?action=sendInquiry" method="POST" data-parsley-validate="">
                                 <div class="row">
@@ -309,11 +309,11 @@
                                                   data-parsley-validation-threshold="10"></textarea>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12 col-lg-9">
-                                            <p class="font-13">This information will not be transferred, disclosed, or shared with a third party,
-                                                or used for marketing purposes.</p>
-                                        </div>
-                                        <div class="col-12 col-lg-3">
+<!--                                        <div class="col-12 col-lg-9">-->
+<!--                                            <p class="font-13">This information will not be transferred, disclosed, or shared with a third party,-->
+<!--                                                or used for marketing purposes.</p>-->
+<!--                                        </div>-->
+                                        <div class="col-12 col-lg-12">
                                             <button type="submit" class="btn-sm stepy-finish pull-right submit-button"><span>Submit</span></button>
                                         </div>
                                     </div>
@@ -327,21 +327,21 @@
             </div>
         </div>
 </div>
-<div style="background-color: #000;">
+<div class="copyright-footer">
 
-    <div class="row container center-page" style="background-color: #000;">
-        <b class="text-white m-r-5"><i class="fa fa-phone"></i> 1300 513 650 & +61 433 374 955</b> |
-        <b class="text-white m-l-5"><i class="fa fa-envelope"></i> info@teamire.com</b><br>
+    <div class="row container center-page">
+<!--        <b class="text-white m-r-5"><i class="fa fa-phone"></i> 1300 513 650 & +61 433 374 955</b> |-->
+<!--        <b class="text-white m-l-5"><i class="fa fa-envelope"></i> info@teamire.com</b><br>-->
         <span class="text-white">© 2018 Teamire. Catalyst for Continuous Improvement.</span>
     </div>
 
 </div>
-<div style="padding: 30px 0; margin-top: 0; bottom: 0; background-color: #000; flex: 0 0 100%; max-width: 100%;">
-    <div style="width: 95%; margin: 0 auto; height: 1px; background-color: #fff;"></div>
-    <p style="font-size: 40px;" class="text-center text-white">
-        LET US BE YOUR STRENGTH
-    </p>
-</div>
+<!--<div style="padding: 30px 0; margin-top: 0; bottom: 0; background-color: #000; flex: 0 0 100%; max-width: 100%;">-->
+<!--    <div style="width: 95%; margin: 0 auto; height: 1px; background-color: #fff;"></div>-->
+<!--    <p style="font-size: 40px;" class="text-center text-white">-->
+<!--        LET US BE YOUR STRENGTH-->
+<!--    </p>-->
+<!--</div>-->
 </footer><!-- End Footer -->
 <?php
 include_once($footScript);

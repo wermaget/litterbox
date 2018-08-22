@@ -82,7 +82,7 @@ function getPositionName($Id)
 </div>
 <div>
     <div>
-        <div class="home-supply-chain" style="min-height: 678px;">
+        <div class="home-supply-chain">
             <div class="container">
                 <div class="container-fluid m-t-30 m-b-30" style="padding-top: 6%;">
                     <div class="container-80 text-center center-page">
@@ -95,24 +95,24 @@ function getPositionName($Id)
                         <div class="col-lg-2">
                             <a href="../home?view=servicesDetail&code=dem">
                                 <div class="icons icons-container text-center">
-                                    <img src="../include/assets/images/demandPlanning.png">
-                                    <p class="text-white"><b>Demand Planning</b></p>
+                                    <img src="../include/assets/images/demandplanning.png">
+                                    <p><b>Demand Planning</b></p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-2">
                             <a href="../home?view=servicesDetail&code=sup">
                                 <div class="icons icons-container text-center">
-                                    <img src="../include/assets/images/supplyPlanning.png">
-                                    <p class="text-white"><b>Supply Planning</b></p>
+                                    <img src="../include/assets/images/supplyplanning.png">
+                                    <p><b>Supply Planning</b></p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-2">
                             <a href="../home?view=servicesDetail&code=ord">
                                 <div class="icons icons-container text-center">
-                                    <img src="../include/assets/images/orderFulfilment.png">
-                                    <p class="text-white"><b>Order Fulfillment</b></p>
+                                    <img src="../include/assets/images/orderfulfillment.png">
+                                    <p><b>Order Fulfillment</b></p>
                                 </div>
                             </a>
                         </div>
@@ -120,7 +120,7 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=log">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/logistics.png">
-                                    <p class="text-white"><b>Logistics</b></p>
+                                    <p><b>Logistics</b></p>
                                 </div>
                             </a>
                         </div>
@@ -128,7 +128,7 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=man">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/manufacturing.png">
-                                    <p class="text-white"><b>Manufacturing</b></p>
+                                    <p><b>Manufacturing</b></p>
                                 </div>
                             </a>
                         </div>
@@ -141,7 +141,7 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=tran">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/transportation.png">
-                                    <p class="text-white"><b>Transportation</b></p>
+                                    <p><b>Transportation</b></p>
                                 </div>
                             </a>
                         </div>
@@ -149,15 +149,15 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=pro">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/procurement.png">
-                                    <p class="text-white"><b>Procurement</b></p>
+                                    <p><b>Procurement</b></p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-2">
                             <a href="../home?view=servicesDetail&code=tra">
                                 <div class="icons icons-container text-center">
-                                    <img src="../include/assets/images/certificate.png">
-                                    <p class="text-white"><b>Training Certification</b></p>
+                                    <img src="../include/assets/images/trainingcertification.png">
+                                    <p><b>Training Certification</b></p>
                                 </div>
                             </a>
                         </div>
@@ -165,7 +165,7 @@ function getPositionName($Id)
                             <a href="../home?view=servicesDetail&code=war">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/warehousing.png">
-                                    <p class="text-white"><b>Warehousing</b></p>
+                                    <p><b>Warehousing</b></p>
                                 </div>
                             </a>
                         </div>
@@ -173,7 +173,7 @@ function getPositionName($Id)
                             <a href="../home?view=otherServices">
                                 <div class="icons icons-container text-center">
                                     <img src="../include/assets/images/others.png">
-                                    <p class="text-white"><b>Others</b></p>
+                                    <p><b>Others</b></p>
                                 </div>
                             </a>
                         </div>
@@ -184,7 +184,7 @@ function getPositionName($Id)
             </div>
         </div>
         <!-- Basic Form Wizard -->
-        <div class="bgimg-3 distributed-teamire">
+        <div class="bgimg-3 distributed-teamire" style="background-image: url('../include/assets/images/teamire-crew-bg.png')">
             <div class="text-center block-title">
                 Distributed Teamire Crew
             </div>
@@ -217,7 +217,7 @@ function getPositionName($Id)
 <!--                                             class="img-circle img-circle-mobile  img-circle-md-mobile img-thumbnail">-->
 <!--                                    </div>-->
                                     <div class="col-md-12 crew-content">
-                                        <h4 class=""><strong>Step 1: Tell us about your hiring
+                                        <h4 class=""><strong>1. Tell us about your hiring
                                                 needs</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Submit your job opening online in just minutes, or simply call us.
@@ -242,7 +242,7 @@ function getPositionName($Id)
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
                                     <div class="col-md-12 crew-content">
-                                        <h4 class=""><strong>Step 2: Your staffing options</strong></h4>
+                                        <h4 class=""><strong>2. Your staffing options</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Teamire is known for providing a selection of highly skilled
                                             professionals, and our staffing professionals can provide you with
@@ -266,7 +266,7 @@ function getPositionName($Id)
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
                                     <div class="col-md-12 crew-content">
-                                        <h4 class=""><strong>Step 3: Review and select candidates</strong>
+                                        <h4 class=""><strong>3. Review and select candidates</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
                                             Finding candidates who are just the right fit for your role is our top
@@ -289,7 +289,7 @@ function getPositionName($Id)
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
                                     <div class="col-md-12 crew-content">
-                                        <h4 class=""><strong>Step 4: Service and your happiness</strong>
+                                        <h4 class=""><strong>4. Service and your happiness</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
                                             Ensuring you are happy with your hiring experience is what defines
@@ -323,7 +323,7 @@ function getPositionName($Id)
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
                                     <div class="col-md-12 crew-content">
-                                        <h4 class=""><strong>Step 1: Search for jobs and apply</strong>
+                                        <h4 class=""><strong>1. Search for jobs and apply</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
                                             Quickly and easily search our open positions to find one that fits your
@@ -346,7 +346,7 @@ function getPositionName($Id)
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
                                     <div class="col-md-12 crew-content">
-                                        <h4 class=""><strong>Step 2: Upload your resume</strong></h4>
+                                        <h4 class=""><strong>2. Upload your resume</strong></h4>
                                         <p class="wizard-content-mobile">
                                             Our online form makes it easy to send us your resume or upload the
                                             details of your LinkedIn profile. We’ll then contact you if your
@@ -367,7 +367,7 @@ function getPositionName($Id)
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
                                     <div class="col-md-12 crew-content">
-                                        <h4 class=""><strong>Step 3: Getting to know you</strong></h4>
+                                        <h4 class=""><strong>3. Getting to know you</strong></h4>
                                         <p class="wizard-content-mobile">
                                             You are more than just a resume or an application. That is why we work
                                             so hard to understand your career goals, so that we can help you find a
@@ -385,7 +385,7 @@ function getPositionName($Id)
 <!--                                             class="img-circle img-circle-mobile img-circle-md-mobile  img-thumbnail">-->
 <!--                                    </div>-->
                                     <div class="col-md-12 crew-content">
-                                        <h4 class=""><strong>Step 4: While we find the right fit</strong>
+                                        <h4 class=""><strong>4. While we find the right fit</strong>
                                         </h4>
                                         <p class="wizard-content-mobile">
                                             In addition to helping find your next career move, we are also here to
@@ -397,12 +397,12 @@ function getPositionName($Id)
 
                             </fieldset>
 
-                            <button style="display: none;" type="submit" class="btn btn-blue btn-sm stepy-finish">
+                            <button style="display: none;" type="submit" class="btn btn-sm stepy-finish">
                                 Submit
                             </button>
                         </form>
                         <center>
-                            <a href="../home/?view=submitResume" class="btn btn-blue m-t-30 m-b-30">SUBMIT
+                            <a href="../home/?view=submitResume" class="btn m-t-30 m-b-30">SUBMIT
                                 RESUME</a>
                         </center>
                     </div>
@@ -425,39 +425,49 @@ function getPositionName($Id)
             <div class="row m-t-30">
                 <div class="col-lg-1"></div>
 
-                <div class="col-lg-2 text-center">
-                    <div class="annex-img">
-                        <img src="../include/assets/images/home-img4.png">
+                <div class="col-lg-12 text-center">
+                    <div class="annex-img first-block" style="background-image: url('../include/assets/images/home-img4.png')">
+                        <div class="background-color">
+                            <img src="../include/assets/images/home-img4.png">
+                        </div>
+                        <h3 class="center-page ">SYDNEY HQ</h3>
                     </div>
-                    <h3 class="center-page ">SYDNEY HQ</h3>
                 </div>
 
-                <div class="col-lg-2 text-center">
-                    <div class="annex-img">
-                        <img src="../include/assets/images/home-img1.png">
+                <div class="col-lg-3 text-center">
+                    <div class="annex-img" style="background-image: url('../include/assets/images/home-img1.png')">
+                        <h3 class="center-page ">MANILA</h3>
+                        <div class="background-color">
+                            <img src="../include/assets/images/home-img1.png">
+                        </div>
                     </div>
-                    <h3 class="center-page ">MANILA</h3>
                 </div>
 
-                <div class="col-lg-2 text-center">
-                    <div class="annex-img">
-                        <img src="../include/assets/images/home-img2.png">
+                <div class="col-lg-3 text-center">
+                    <div class="annex-img" style="background-image: url('../include/assets/images/home-img2.png')">
+                        <h3 class="center-page ">DELHI</h3>
+                        <div class="background-color">
+                            <img src="../include/assets/images/home-img2.png">
+                        </div>
                     </div>
-                    <h3 class="center-page ">DELHI</h3>
                 </div>
 
-                <div class="col-lg-2 text-center">
-                    <div class="annex-img">
-                        <img src="../include/assets/images/home-img3.png">
+                <div class="col-lg-3 text-center">
+                    <div class="annex-img" style="background-image: url('../include/assets/images/home-img3.png')">
+                        <h3 class="center-page ">BANGALORE</h3>
+                        <div class="background-color">
+                            <img src="../include/assets/images/home-img3.png">
+                        </div>
                     </div>
-                    <h3 class="center-page ">BANGALORE</h3>
                 </div>
 
-                <div class="col-lg-2 text-center">
-                    <div class="annex-img">
-                        <img src="../include/assets/images/home-img5.png">
+                <div class="col-lg-3 text-center">
+                    <div class="annex-img" style="background-image: url('../include/assets/images/home-img5.png')">
+                        <h3 class="center-page ">PROVIDENCE</h3>
+                        <div class="background-color">
+                            <img src="../include/assets/images/home-img5.png">
+                        </div>
                     </div>
-                    <h3 class="center-page ">PROVIDENCE</h3>
                 </div>
                 <div class="col-lg-1"></div>
             </div>
