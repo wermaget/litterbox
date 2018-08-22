@@ -169,7 +169,7 @@ select {
     color: #ddd;
 }
 .blog.grid-view {
-    padding-top: 40px;
+    padding: 40px 0 80px 0;
     width: 1200px;
 }
 .blog.grid-view .title {
@@ -223,7 +223,7 @@ select {
 }
 .cms-content {
     margin: 0 auto;
-    padding: 60px 40px 16px 40px;
+    padding: 60px 40px 70px 40px;
     max-width: 1024px;
 }
 .cms-content p {

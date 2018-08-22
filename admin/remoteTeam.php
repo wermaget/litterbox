@@ -11,7 +11,6 @@ function formatDate($val)
     return date_format($date, "F d, Y g:i A");
 }
 
-include 'scanImages.php';
 ?>
 <div class="row">
     <div class="col-sm-12">

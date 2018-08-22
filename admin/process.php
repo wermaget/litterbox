@@ -635,6 +635,9 @@ function login()
             $_SESSION['temp_session'] = $username;
             header('Location: index.php?view=changepassword');
         } else {
+            $_SESSION['KCFINDER'] = [
+                'disabled' => false
+            ];
             header('Location: index.php');
         }
     } else {

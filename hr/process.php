@@ -101,7 +101,7 @@ function login()
 			$_SESSION['temp_session'] = $username;
 			header('Location: index.php?view=changepassword');
 		}else{
-		header('Location: index.php');
+			header('Location: index.php');
 		}
 	}
 	else {

@@ -1,6 +1,12 @@
 <?php
 $jobFunctionList = job_function()->list("isDeleted='0' order by `option` asc");
-$projectList = projects()->list("isDeleted='0'");
+if(isset($_GET['sort']) && $_GET['sort'] == 'oldest') {
+    $projectList = projects()->list("isDeleted='0' order by `createDate` asc");
+    $sort = 'oldest';
+}else{
+    $projectList = projects()->list("isDeleted='0' order by `createDate` desc");
+    $sort = 'newest';
+}
 
 if (isset($_GET['Id']) && $_GET['Id'] != "") {
     include 'projectDetail.php';
@@ -10,6 +16,7 @@ if (isset($_GET['Id']) && $_GET['Id'] != "") {
     <div class="">
         <div class="container blog grid-view">
             <h2 class="title">Supply Chain Projects</h2>
+            <a href="../home/?view=projects<?php echo ($sort == 'oldest') ? '' : '&sort=oldest'?>">Sort by <?php echo ($sort == 'oldest') ? 'Newest' : 'Oldest'?></a>
             <hr>
             <!-- Start of Projects List-->
             <div class="row">
