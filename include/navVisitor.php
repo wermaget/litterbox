@@ -1,4 +1,4 @@
-<div class="nav-wrapper">
+<div class="container nav-wrapper">
     <div class="logo-wrapper">
         <a href="index.php" class="logo logo-mobile">
             <img class="logo-light" src="../include/assets/images/teamire-logo-light-min.png">

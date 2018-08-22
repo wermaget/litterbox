@@ -168,7 +168,59 @@ select {
 #btn-show-search-talent:hover {
     color: #ddd;
 }
+.blog.grid-view {
+    padding-top: 40px;
+    width: 1200px;
+}
+.blog.grid-view .title {
+    font-weight: 300;
+}
+.blog-item .blog-header-preview {
+    display: inline-block;
+    height: 175px;
+    width: 100%;
+}
+.blog-item .blog-header-preview img {
+    display: inline-block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.blog-item .blog-item-info {
 
+}
+.blog-item .blog-item-info .height-control {
+    height: 170px;
+}
+.blog-item .blog-short-desc {
+    display: block;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    margin: 15px;
+}
+.blog-item .blog-item-info .blog-date-posted {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Nunito Sans';
+}
+.blog-item .blog-title {
+    color: #3d464d;
+    display: block;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 15px;
+}
+.blog-item .blog-date-posted {
+    display: block;
+    border-top: 1px solid #ddd;
+    margin: 0 15px;
+}
+.blog-item {
+    display: block;
+    margin: 0 0 24px 0;
+}
 .cms-content {
     margin: 0 auto;
     padding: 60px 40px 16px 40px;

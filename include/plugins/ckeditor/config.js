@@ -19,7 +19,7 @@ CKEDITOR.editorConfig = function( config ) {
 
     // config.filebrowserBrowseUrl = '/ckfinder/ckfinder.html';
     // config.filebrowserUploadUrl = '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
-    config.extraPlugins = 'video';
+    config.extraPlugins = 'video,fakeobjects';
     config.removeButtons = 'Textarea,Form,Checkbox,Radio,TextField,Select,Button,HiddenField,ImageButton,Flash,Iframe';
     //config.removeButtons = 'Form,Checkbox,Radio,Textfield,Textarea,Select,Button,HiddenField,Iframe,InsertPie';
 };

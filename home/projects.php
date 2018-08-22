@@ -7,18 +7,29 @@ if (isset($_GET['Id']) && $_GET['Id'] != "") {
 } else {
     ?>
 
-    <div style="position: relative;">
-        <img style="position: absolute; top:0; right:0; height: 300px;"
-             src="../include/assets/images/homepage-bg-1.png">
-        <div class="container container-fluid m-b-30">
-            <h2 class="m-t-20 text-center">Supply Chain Projects</h2>
+    <div class="">
+        <div class="container blog grid-view">
+            <h2 class="title">Supply Chain Projects</h2>
             <hr>
             <!-- Start of Projects List-->
             <div class="row">
                 <?php foreach ($projectList as $row) { ?>
-                    <div class="col-lg-2">
-                        <div class="project-list">
-                            <a href="../home/?view=projects&Id=<?= $row->Id; ?>"><?= $row->title; ?></a>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="blog-item">
+                            <a class="blog-header-preview" href="../home/?view=projects&Id=<?= $row->Id; ?>">
+                                <?php if($row->headerImage) {?>
+                                    <img src="../media/<?= $row->headerImage; ?>" alt=""/>
+                                <?php }else{ ?>
+                                    <img src="../include/assets/images/no-image.png">
+                                <?php } ?>
+                            </a>
+                            <div class="blog-item-info">
+                                <div class="height-control">
+                                    <a class="blog-title" href="../home/?view=projects&Id=<?= $row->Id; ?>"><?= $row->title; ?></a>
+                                    <p class="blog-short-desc"><?php echo substr(strip_tags(html_entity_decode($row->content)),0,150).'...'; ?></p>
+                                </div>
+                                <span class="blog-date-posted"><?= date('F j, Y', strtotime($row->createDate)); ?></span>
+                            </div>
                         </div>
                     </div>
                 <?php } ?>
