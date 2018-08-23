@@ -81,7 +81,9 @@ function getPositionName($Id)
     </div>
 </div>
 <div>
-    <div>
+    <div style="    background: url(../include/assets/images/teamire-crew-bg.png) no-repeat;
+    background-position: 0 200%;
+    background-size: 100%;">
         <div class="home-supply-chain">
             <div class="container">
                 <div class="container-fluid m-t-30 m-b-30" style="padding-top: 6%;">
@@ -184,7 +186,7 @@ function getPositionName($Id)
             </div>
         </div>
         <!-- Basic Form Wizard -->
-        <div class="bgimg-3 distributed-teamire" style="background-image: url('../include/assets/images/teamire-crew-bg.png')">
+        <div class="bgimg-3 distributed-teamire">
             <div class="text-center block-title">
                 Distributed Teamire Crew
             </div>
