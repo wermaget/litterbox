@@ -174,7 +174,7 @@ function formatDate($val)
                             <button type="button" class="btn btn-default waves-effect btn-sm" data-dismiss="modal">
                                 Close
                             </button>
-                            <button type="submit" class="btn btn-primary stepy-finish btn-sm">Update Remote Team
+                            <button type="submit" class="btn btn-primary stepy-finish btn-sm">Save
                             </button>
                         </div>
                     </form>
