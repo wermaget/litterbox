@@ -1,0 +1,28 @@
+/* New Styling */
+#topnav {
+  position: fixed;
+}
+#topnav.scrolled {
+  background: #fff;
+  border-bottom: 1px solid #d0e9c6;
+}
+#topnav.scrolled nav a {
+  color: #3d464d;
+}
+#topnav .logo-wrapper img.logo-dark {
+  display: none;
+}
+#topnav .logo-wrapper img.logo-light {
+  display: block;
+}
+#topnav.scrolled .logo-wrapper img.logo-dark {
+  display: block;
+}
+#topnav.scrolled .logo-wrapper img.logo-light {
+  display: none;
+}
+#topnav .nav-wrapper {
+  font-size: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}

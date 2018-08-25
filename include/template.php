@@ -7,7 +7,7 @@
         ?>
         <link rel="stylesheet" type="text/css" href="../include/assets/css/footer_responsive.css">
     </head>
-    <body>
+    <body class="main-site">
         <!-- Navigation Bar-->
         <header id="topnav" class="<?= (($content != 'home.php') ? 'scrolled' : '') ?>">
               <?php

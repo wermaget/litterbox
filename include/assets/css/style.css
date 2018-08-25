@@ -802,14 +802,6 @@ a:focus {
     text-decoration: none;
 }
 
-.container {
-    width: 1200px;
-}
-
-.admin-page .container {
-    width: auto;
-}
-
 .container-80 {
     width: 80%;
 }
