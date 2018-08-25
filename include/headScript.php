@@ -42,21 +42,12 @@
 <!-- Bootstrap fileupload css -->
 <link href="../include/plugins/bootstrap-fileupload/bootstrap-fileupload.css" rel="stylesheet" />
 <!-- App css -->
-<link href="../include/assets/css/core.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/components.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/icons.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/fonts.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/fontello.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/style.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/pages.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/menu.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/menu.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/buttons.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/footer.css" rel="stylesheet" type="text/css"/>
-<link href="../include/assets/css/home.css" rel="stylesheet" type="text/css" />
-<link href="../include/assets/css/fonts.css" rel="stylesheet" type="text/css" />
 <link href="../include/assets/css/app.css" rel="stylesheet" type="text/css" />
+
+<!-- Compiled CSS -->
+<link href="../include/assets/css/styles.css" rel="stylesheet" type="text/css" />
 
 <link href="../include/assets/css/responsive.css" rel="stylesheet" type="text/css" />
 <script src="../include/assets/js/modernizr.min.js"></script>

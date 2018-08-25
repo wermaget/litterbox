@@ -40,7 +40,7 @@ function getPositionName($Id)
                                     <option value="9">Warehousing</option>
                                 </select>
                                 <button type="submit"
-                                        class="btn btn-sm btn-blue waves-effect waves-light categ-btn">
+                                        class="btn btn-blue waves-effect waves-light categ-btn">
                                     <i class="fa fa-search m-r-5"></i> Find Candidates
                                 </button>
                             </div>
@@ -67,7 +67,7 @@ function getPositionName($Id)
                                     <option value="1">Transportation</option>
                                     <option value="9">Warehousing</option>
                                 </select>
-                                <button type="submit" class="btn btn-sm waves-effect btn-blue search-job-btn"><i
+                                <button type="submit" class="btn waves-effect btn-blue search-job-btn"><i
                                         class="fa fa-search m-r-5"></i>Search Jobs
                                 </button>
 

@@ -1,47 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Karla:700|Nunito+Sans:600,700');
 
-
-@import "variables.less";
-@import "elements.less";
-
-/*
-Template Name: Adminox Dashboard
-Author: CoderThemes
-Email: coderthemes@gmail.com
-File: Core
-*/
-
-/* =============
-  == Core List==
-
-   - Common
-   - Helper classes
-   - Extra
-   - Bootstrap Custom
-   - Waves effect
-   - Print (Invoice css)
-   - Demo Css (Demo purpose only)
-
-============= */
-
-
-/* =============
-   Common
-============= */
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 body {
-  font-family: @font-primary;
+  font-family: @font-secondary,@font-primary;
+  line-height: 32px;
   margin: 0;
-  padding-bottom: 60px;
-  overflow-x: hidden;
-  color: @light7;
+  padding: 0;
+  background-color: @color-white;
   font-size: @font-size-base;
-  background-color: @bg-body;
+
+  // Font Smoothing
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
-html {
-    position: relative;
-    min-height: 100%;
-}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
   color: #666f7b;
   font-family: @font-secondary;

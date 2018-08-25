@@ -1,119 +1,15 @@
 
-body {
-    font-family: "Lato", "Futura BT W01 Book", OpenSansRegular, "Open Sans Regular", sans-serif;
-    line-height: 32px;
-    margin: 0;
-    padding: 0;
-    -webkit-text-size-adjust: 100%;
-    /* Font varient */
-    font-variant-ligatures: none;
-    -webkit-font-variant-ligatures: none;
-    /* Smoothing */
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-}
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-/* New Styling */
 
-#topnav {
-    position: fixed;
-}
-#topnav.scrolled {
-    background: #fff;
-    border-bottom: 1px solid #d0e9c6;
-}
-#topnav.scrolled nav a {
-    color: #3d464d;
-}
-#topnav .logo-wrapper img.logo-dark {
-    display: none;
-}
-#topnav .logo-wrapper img.logo-light {
-    display: block;
-}
-#topnav.scrolled .logo-wrapper img.logo-dark {
-    display: block;
-}
-#topnav.scrolled .logo-wrapper img.logo-light {
-    display: none;
-}
-#topnav .nav-wrapper {
-    font-size: 0;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.parallax-window {
-    min-height: 300px;
-}
 
-.nav-wrapper nav {
-    display: inline-block;
-    width: 80%;
-    vertical-align: middle;
-}
 
-.nav-wrapper .logo-wrapper {
-    display: inline-block;
-    width: 20%;
-    vertical-align: middle;
-    padding: 15px 0;
-    line-height: 0;
-}
-
-.nav-wrapper .logo-wrapper a {
-    display: inline-block;
-    line-height: 0;
-}
-
-.nav-wrapper .logo-wrapper a img {
-    width: 90px;
-    height: auto;
-}
-.nav-top-bar {
-    background: #2298d0;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    text-align: right;
-}
-.nav-top-bar:before,
-.nav-top-bar:after {
-    content: '';
-    position: absolute;
-    background: #2298d0;
-    width: 1000%;
-    top: 0;
-    height: 100%;
-}
-.nav-top-bar:before {
-    left: -1000%;
-}
-.nav-top-bar:after {
-    right: -1000%;
-}
-.nav-top-bar .nav-top-wrapper {
-    display: inline-block;
-    vertical-align: middle;
-}
-.nav-top-bar ul.social-links {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-}
-
-.nav-top-bar .social-links li {
-    display: inline-block;
-    vertical-align: middle;
-}
 .page-main .main-content {
     padding-top: 55px;
 }
@@ -168,83 +64,7 @@ select {
 #btn-show-search-talent:hover {
     color: #ddd;
 }
-.blog.grid-view {
-    padding: 40px 0 80px 0;
-    width: 1200px;
-}
-.blog.grid-view .title,
-.main-content .title {
-    font-weight: 300;
-}
-.blog-item .blog-header-preview {
-    display: inline-block;
-    height: 240px;
-    width: 100%;
-}
-.blog-item .blog-header-preview img {
-    display: inline-block;
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-.blog-item .blog-item-info {
 
-}
-.blog-item .blog-item-info .height-control {
-    height: 135px;
-}
-.blog-item .blog-short-desc {
-    display: block;
-    text-overflow: ellipsis;
-    word-break: break-word;
-    margin: 6px 15px;
-}
-.blog-item .blog-item-info .blog-date-posted {
-    color: #777;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: 'Nunito Sans';
-}
-.blog-item .blog-title {
-    color: #3d464d;
-    display: block;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 1.4;
-    margin: 15px 15px 0 15px;
-}
-.blog-item .blog-title:hover {
-    color: #2298d0;
-}
-.blog-item .blog-date-posted {
-    display: block;
-    border-top: 1px solid #ddd;
-    margin: 0 15px;
-}
-.blog-item {
-    display: block;
-    margin: 0 0 24px 0;
-    border: 1px solid #f4f3f4;
-}
-.cms-content {
-    margin: 0 auto;
-    padding: 60px 40px 150px 40px;
-    max-width: 1024px;
-}
-.cms-content p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
-}
-
-.cms-content h1,
-.cms-content h2,
-.cms-content h3,
-.cms-content h4,
-.cms-content h5,
-.cms-content h6 {
-    margin: 16px 0;
-}
 table tbody td {
     vertical-align: middle;
 }
@@ -394,12 +214,16 @@ nav .menu .nav-level2 li a:hover {
 }
 #home-search-job .search-job-btn,
 #home-search-talent .categ-btn {
+    padding: 8px 10px;
     /*border-top-right-radius: 4px;*/
     /*border-bottom-right-radius: 4px;*/
 }
 #home-search-job .job-categ {
     border: none;
     border-left: 1px solid #ddd;
+}
+#home-search-job .job-categ::after {
+    content: 'asd';
 }
 #home-search-job .form-control:focus {
     border: none;
@@ -1186,7 +1010,7 @@ li > a:only-child:after { content: ''; }
 }
 
 .form-control.job-search {
-    width: 278px;
+    width: 375px;
     border: none;
 }
 

@@ -10,7 +10,7 @@ if(!$currentSession)
         <?php include $headScript; ?>
     </head>
 
-    <body style="height: auto;">
+    <body class="admin-page">
 
         <!-- Begin page -->
         <div id="wrapper">
