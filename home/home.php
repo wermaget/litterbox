@@ -9,7 +9,21 @@ function getPositionName($Id)
 }
 ?>
 <div class="">
-    <div class="home-hero-banner">
+    <div id="home-hero-banner" class="home-hero-banner">
+        <div class="slideshow-wrapper">
+            <div id="home-slideshow">
+                <div class="slideshow-item">
+                    <img class="slideshow-img" src="../include/assets/images/home-hero-1.jpg">
+                </div>
+                <div class="slideshow-item">
+                    <img class="slideshow-img" src="../include/assets/images/home-hero-2.jpg">
+                </div>
+                <div class="slideshow-item">
+                    <img class="slideshow-img" src="../include/assets/images/home-hero-3.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="banner-overlay"></div>
         <div class="container slogan text-center">
             <h1 class="home-hero-title">Remote Supply Chain Data Driven Experts</h1>
             <p class="slideanim tagline">
@@ -30,14 +44,6 @@ function getPositionName($Id)
                                     <?php
                                     }
                                     ?>
-                                    <option value="4">Logistics</option>
-                                    <option value="8">Manufacturing</option>
-                                    <option value="7">Order Fulfillment</option>
-                                    <option value="2">Procurement</option>
-                                    <option value="3">Supply Planning</option>
-                                    <option value="5">Training Certification</option>
-                                    <option value="1">Transportation</option>
-                                    <option value="9">Warehousing</option>
                                 </select>
                                 <button type="submit"
                                         class="btn btn-blue waves-effect waves-light categ-btn">
@@ -57,15 +63,12 @@ function getPositionName($Id)
                                        placeholder="Job Title, Skills or Keywords">
                                 <select name="c" class="form-control job-categ" required="">
                                     <option value="">Select Category</option>
-                                    <option value="6">Demand Planning</option>
-                                    <option value="4">Logistics</option>
-                                    <option value="8">Manufacturing</option>
-                                    <option value="7">Order Fulfillment</option>
-                                    <option value="2">Procurement</option>
-                                    <option value="3">Supply Planning</option>
-                                    <option value="5">Training Certification</option>
-                                    <option value="1">Transportation</option>
-                                    <option value="9">Warehousing</option>
+                                    <?php
+                                    foreach($jobFunctionList as $joblist) {?>
+                                        <option value="<?= $joblist->Id ?>"><?= $joblist->option ?></option>
+                                        <?php
+                                    }
+                                    ?>
                                 </select>
                                 <button type="submit" class="btn waves-effect btn-blue search-job-btn"><i
                                         class="fa fa-search m-r-5"></i>Search Jobs
@@ -480,28 +483,6 @@ function getPositionName($Id)
 </div>
 <script>
     $(document).ready(function () {
-        if ($(window).scrollTop() != 0) {
-            $("#topnav").addClass('scrolled');
-        } else {
-            $("#topnav").removeClass('scrolled');
-        }
 
-        $('#btn-show-search-job').on("click", function (e) {
-            $('#home-search-talent').css('display', 'none');
-            $('#home-search-job').css('display', 'block');
-        });
-
-        $('#btn-show-search-talent').on("click", function (e) {
-            $('#home-search-talent').css('display', 'block');
-            $('#home-search-job').css('display', 'none');
-        });
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() != 0) {
-                $("#topnav").addClass('scrolled');
-            } else {
-                $("#topnav").removeClass('scrolled');
-            }
-        });
     });
 </script>

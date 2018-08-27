@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf9e280-a9de-4886-9f96-8301167e7f2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/assets/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/blog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/fontello.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/css/menu_sm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/global/typography.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/pages/contactus.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/plugins/ckeditor/plugins/autogrow/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/plugins/ckeditor/plugins/autogrow/samples/autogrow.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accountList.php" beforeDir="false" />
@@ -2395,15 +2381,19 @@
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/resumeList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetDetail.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/contactUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/contactUs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/menu_light_sm.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/menu_light_sm.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/global/buttons.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/global/buttons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/aboutUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/aboutUs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/assets/less/components/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/header.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/assets/less/components/menu_light.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/menu_light.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/less/global/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/global/core.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/less/global/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/global/variables.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/less/pages.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/pages.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/less/pages/blog.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/pages/blog.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/styles.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/assets/less/pages/contactus.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/pages/contactus.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/assets/less/pages/home.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/pages/home.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/template.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -2430,7 +2420,7 @@
     <session id="-913239408">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -2445,60 +2435,62 @@
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="2" />
+          <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="86" />
+          <entry key="css" value="89" />
           <entry key="html" value="2" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="30" />
+          <entry key="js" value="31" />
           <entry key="json" value="5" />
-          <entry key="less" value="66" />
+          <entry key="less" value="73" />
           <entry key="map" value="4" />
-          <entry key="php" value="121" />
+          <entry key="php" value="126" />
           <entry key="png" value="2" />
           <entry key="scss" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="86" />
+          <entry key="CSS" value="89" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="30" />
-          <entry key="Less" value="66" />
-          <entry key="PHP" value="121" />
+          <entry key="JavaScript" value="31" />
+          <entry key="Less" value="73" />
+          <entry key="PHP" value="126" />
           <entry key="SCSS" value="7" />
           <entry key="SourceMap" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="6222" />
-          <entry key="js" value="676" />
+          <entry key="css" value="6774" />
+          <entry key="js" value="1528" />
           <entry key="json" value="240" />
-          <entry key="less" value="1912" />
-          <entry key="php" value="9681" />
+          <entry key="less" value="2915" />
+          <entry key="php" value="10693" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="6222" />
+          <entry key="CSS" value="6774" />
           <entry key="JSON" value="240" />
-          <entry key="JavaScript" value="676" />
-          <entry key="Less" value="1912" />
-          <entry key="PHP" value="9681" />
+          <entry key="JavaScript" value="1528" />
+          <entry key="Less" value="2915" />
+          <entry key="PHP" value="10693" />
           <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
@@ -2540,78 +2532,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/assets/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="144">
+              <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/contactUs.php">
+        <entry file="file://$PROJECT_DIR$/include/assets/less/pages/home.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="65" column="83" selection-start-line="65" selection-start-column="83" selection-end-line="65" selection-end-column="83" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="311" column="29" lean-forward="true" selection-start-line="311" selection-start-column="29" selection-end-line="311" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/global/core.less">
+        <entry file="file://$PROJECT_DIR$/home/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/styles.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/global/typography.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="160">
+              <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/global/buttons.less">
+        <entry file="file://$PROJECT_DIR$/include/assets/less/components/header.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="193" column="16" lean-forward="true" selection-start-line="193" selection-start-column="16" selection-end-line="193" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/assets/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="154" column="11" lean-forward="true" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/assets/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/global/variables.less">
+        <entry file="file://$PROJECT_DIR$/include/assets/less/pages/blog.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+            <state relative-caret-position="1200">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/pages/contactus.less">
+        <entry file="file://$PROJECT_DIR$/include/assets/less/pages.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="352">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/servicesDetail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -2629,20 +2634,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;div style=&quot;position: relative;&quot;</find>
-      <find>contact-form-</find>
-      <find>payroll and</find>
-      <find>contact-form-container</find>
-      <find>contact-form</find>
-      <find>body style=&quot;heigh</find>
-      <find>.container {</find>
-      <find>margin-top: 19px</find>
-      <find>footer</find>
-      <find>search-job-btn</find>
-      <find>.popover</find>
-      <find>../include/assets/css</find>
-      <find>body</find>
-      <find>height-control</find>
       <find>../fonts/</find>
       <find>lato</find>
       <find>lato-regular.woff2</find>
@@ -2659,6 +2650,20 @@
       <find>search-job</find>
       <find>.main-content</find>
       <find>default-wizard</find>
+      <find>search-job-btn,</find>
+      <find>form-description</find>
+      <find>.form-description</find>
+      <find>select</find>
+      <find>footer-logo</find>
+      <find>teamire-aboutus</find>
+      <find>aboutus-img</find>
+      <find>.title {</find>
+      <find>teamire-abou</find>
+      <find>scrolled</find>
+      <find>purechat</find>
+      <find>id=&quot;topnav&quot;</find>
+      <find>.scrolled {</find>
+      <find>.nav-level2</find>
     </findStrings>
     <replaceStrings>
       <replace>Lato</replace>
@@ -2678,10 +2683,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/home/servicesDetail.php" />
-        <option value="$PROJECT_DIR$/home/searchJob.php" />
-        <option value="$PROJECT_DIR$/home/services.php" />
-        <option value="$PROJECT_DIR$/include/plugins/ckeditor/plugins/kcfinder/core/types/type_img.php" />
         <option value="$PROJECT_DIR$/include/footScript.php" />
         <option value="$PROJECT_DIR$/home/projectDetail.php" />
         <option value="$PROJECT_DIR$/home/remoteTeamDetail.php" />
@@ -2703,7 +2704,6 @@
         <option value="$PROJECT_DIR$/admin/jobCategory.php" />
         <option value="$PROJECT_DIR$/include/dashboard.php" />
         <option value="$PROJECT_DIR$/include/assets/less/home.less" />
-        <option value="$PROJECT_DIR$/include/assets/less/pages/home.less" />
         <option value="$PROJECT_DIR$/include/assets/less/buttons.less" />
         <option value="$PROJECT_DIR$/include/assets/less/variables.less" />
         <option value="$PROJECT_DIR$/include/plugins/ckeditor/config.js" />
@@ -2712,23 +2712,28 @@
         <option value="$PROJECT_DIR$/include/assets/less/global/fontello.less" />
         <option value="$PROJECT_DIR$/include/assets/less/responsive.less" />
         <option value="$PROJECT_DIR$/include/headScript.php" />
-        <option value="$PROJECT_DIR$/include/assets/less/components/header.less" />
-        <option value="$PROJECT_DIR$/home/home.php" />
         <option value="$PROJECT_DIR$/include/assets/less/css/components.css" />
         <option value="$PROJECT_DIR$/include/assets/less/components/components.less" />
-        <option value="$PROJECT_DIR$/include/assets/css/app.css" />
-        <option value="$PROJECT_DIR$/include/template.php" />
         <option value="$PROJECT_DIR$/include/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/include/assets/less/pages.less" />
-        <option value="$PROJECT_DIR$/include/assets/less/pages/blog.less" />
         <option value="$PROJECT_DIR$/include/assets/less/styles.less" />
-        <option value="$PROJECT_DIR$/include/assets/less/global/core.less" />
         <option value="$PROJECT_DIR$/include/assets/less/global/typography.less" />
         <option value="$PROJECT_DIR$/include/assets/less/components/menu_light_sm.less" />
-        <option value="$PROJECT_DIR$/include/assets/less/pages/contactus.less" />
         <option value="$PROJECT_DIR$/home/contactUs.php" />
-        <option value="$PROJECT_DIR$/include/assets/less/global/variables.less" />
         <option value="$PROJECT_DIR$/include/assets/less/global/buttons.less" />
+        <option value="$PROJECT_DIR$/include/assets/less/global/core.less" />
+        <option value="$PROJECT_DIR$/include/assets/less/pages/contactus.less" />
+        <option value="$PROJECT_DIR$/home/aboutUs.php" />
+        <option value="$PROJECT_DIR$/include/assets/less/pages.less" />
+        <option value="$PROJECT_DIR$/include/assets/less/global/variables.less" />
+        <option value="$PROJECT_DIR$/include/assets/less/components/menu_light.less" />
+        <option value="$PROJECT_DIR$/include/assets/less/pages/blog.less" />
+        <option value="$PROJECT_DIR$/include/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/include/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/include/assets/less/pages/home.less" />
+        <option value="$PROJECT_DIR$/home/home.php" />
+        <option value="$PROJECT_DIR$/include/template.php" />
+        <option value="$PROJECT_DIR$/include/assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/include/assets/less/components/header.less" />
       </list>
     </option>
   </component>
@@ -2787,14 +2792,6 @@
               <item name="include" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="less" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
-              <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="global" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
@@ -2875,12 +2872,14 @@
       <workItem from="1534948728011" duration="3837000" />
       <workItem from="1535034414397" duration="4610000" />
       <workItem from="1535120773421" duration="2706000" />
-      <workItem from="1535168787622" duration="16069000" />
+      <workItem from="1535168787622" duration="16800000" />
+      <workItem from="1535263816286" duration="13203000" />
+      <workItem from="1535360876411" duration="6549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154920000" />
+    <option name="totallyTimeSpent" value="175403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2895,7 +2894,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21104388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2944,80 +2943,21 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/site.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/site.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="1" lean-forward="true" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/site.css" />
+    <entry file="file://$PROJECT_DIR$/include/assets/css/footer.css" />
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/footer.less">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/pages/home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/blog.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/buttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="1" lean-forward="true" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/core.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="837" column="22" selection-start-line="837" selection-start-column="14" selection-end-line="837" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/global/core.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/global/core.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/home.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/components.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="3560" column="1" lean-forward="true" selection-end-line="3569" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/blog.less" />
+    <entry file="file://$PROJECT_DIR$/include/assets/css/buttons.css" />
+    <entry file="file://$PROJECT_DIR$/include/assets/css/core.css" />
+    <entry file="file://$PROJECT_DIR$/include/assets/less/global/core.css.map" />
+    <entry file="file://$PROJECT_DIR$/include/assets/less/global/core.css" />
+    <entry file="file://$PROJECT_DIR$/include/assets/css/home.css" />
+    <entry file="file://$PROJECT_DIR$/include/assets/css/components.css" />
     <entry file="file://$PROJECT_DIR$/include/plugins/ckeditor/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -3031,23 +2971,20 @@
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/menu.less">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/components/menu_light.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/menu.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/menu_sm.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/menu_light_sm.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/menu_light.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/menu_sm.less">
       <provider selected="true" editor-type-id="text-editor">
@@ -3056,13 +2993,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1233">
-          <caret line="11" column="21" lean-forward="true" selection-end-line="150" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/fonts.css" />
     <entry file="file://$PROJECT_DIR$/include/assets/less/global/fonts.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -3070,20 +3001,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="17978" column="96" selection-start-line="17978" selection-start-column="96" selection-end-line="17978" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/fontello.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="37" lean-forward="true" selection-end-line="58" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/fontello.css" />
     <entry file="file://$PROJECT_DIR$/include/assets/less/global/fontello.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -3105,13 +3023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/components/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/css/components.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -3122,41 +3033,6 @@
     <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-442" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/pages.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="1014" column="1" lean-forward="true" selection-start-line="1014" selection-start-column="1" selection-end-line="1014" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/pages/blog.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/css/style.css">
@@ -3190,17 +3066,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/pages/contactus.less">
+    <entry file="file://$PROJECT_DIR$/home/contactUs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/global/core.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="1040">
+          <caret line="65" column="83" selection-start-line="65" selection-start-column="83" selection-end-line="65" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -3214,33 +3083,119 @@
     <entry file="file://$PROJECT_DIR$/include/assets/less/global/typography.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/contactUs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="65" column="83" selection-start-line="65" selection-start-column="83" selection-end-line="65" selection-end-column="83" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/global/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/global/buttons.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/global/core.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="66" column="50" lean-forward="true" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/pages/contactus.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/global/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/components/menu_light.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/aboutUs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/pages/blog.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/pages.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/servicesDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="80" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/pages/home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="311" column="29" lean-forward="true" selection-start-line="311" selection-start-column="29" selection-end-line="311" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="154" column="11" lean-forward="true" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/components/header.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="193" column="16" lean-forward="true" selection-start-line="193" selection-start-column="16" selection-end-line="193" selection-end-column="16" />
         </state>
       </provider>
     </entry>
