@@ -418,7 +418,7 @@ function getPositionName($Id)
     <div class="find-candidates">
         <h3 class="block-title">Find great candidates fast.</h3>
         <p class="subtitle">We at Teamire do great things in helping you find the right candidates.</p>
-        <button class="request-button"><span>Request for Talent</span></button>
+        <a href="../home/?view=hiringForm" class="request-button">Request for Talent</a>
     </div>
     <!-- Start Location Panels-->
     <div class="business-partners">
