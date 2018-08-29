@@ -356,9 +356,9 @@
 --------------------------------------------- */
 
 @media all and (max-width : 1200px) {
-    #con {
-        display: none;
-    }
+    /*#con {*/
+        /*display: none;*/
+    /*}*/
     #emai_form{
       display: unset;
     }

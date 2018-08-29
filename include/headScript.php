@@ -49,6 +49,7 @@
 
 <!-- Compiled CSS -->
 <link href="../include/assets/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="../include/assets/css/styles_rwd.css" rel="stylesheet" type="text/css" />
 
 <link href="../include/assets/css/responsive.css" rel="stylesheet" type="text/css" />
 <script src="../include/assets/js/modernizr.min.js"></script>

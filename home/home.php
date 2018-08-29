@@ -196,13 +196,13 @@ function getPositionName($Id)
             <div class="container-80 center-page">
 
                 <ul class="nav nav-tabs navtab-bg nav-justified">
-                    <li class="active">
+                    <li class="">
                         <a class="title-tabs hire-tab" href="#home1" data-toggle="tab" aria-expanded="false">
                             <span class="visible-xs"><i class="mdi mdi-format-list-bulleted-type"></i></span>
                             <span class="hidden-xs ">Four Simple Steps to Hire</span>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="active">
                         <a class="title-tabs job-tab" href="#profile1" data-toggle="tab" aria-expanded="true">
                             <span class="visible-xs"><i class="mdi mdi-account-search"></i></span>
                             <span class="hidden-xs ">How We Help You Find a Job</span>
@@ -308,7 +308,7 @@ function getPositionName($Id)
                                 </div>
                             </fieldset>
                             <center>
-                                <a href="../home/?view=hiringForm" class="btn m-t-30 m-b-30">Request Talent</a>
+                                <a href="../home/?view=hiringForm" class="btn m-t-30 m-b-30">Request Talent  ></a>
                             </center>
                             <button style="display: none;" type="submit" class="btn btn-blue btn-sm stepy-finish">
                                 Submit
@@ -406,7 +406,7 @@ function getPositionName($Id)
                             </button>
                         </form>
                         <center>
-                            <a href="../home/?view=submitResume" class="btn m-t-30 m-b-30">Submit Resume</a>
+                            <a href="../home/?view=submitResume" class="btn m-t-30 m-b-30">Submit Resume ></a>
                         </center>
                     </div>
                 </div>

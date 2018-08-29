@@ -1,9 +1,76 @@
 @import "../global/variables.less";
 @import "elements.less";
 
-.footer-updated {
+#first-footer {
+  display: none;
+}
+
+.footer-updated, #first-footer {
   background-color: @regal-blue;
   padding: 25px;
+
+  .foot, .foot2, .foot3 {
+    padding: 0;
+    ul {
+      li {
+        background-color: transparent;
+
+        label, a {
+          padding: 0;
+          border-bottom: none !important;
+          font-family: latoregular;
+          font-size: 15px;
+          font-weight: normal;
+
+          &:hover {
+            background-color: @smalt-blue;
+          }
+        }
+      }
+    }
+  }
+
+  .toggle2, .toggle23, .toggle24 {
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    color: @smalt-blue;
+
+    .fa-chevron-right {
+      float: right;
+      display: inline-block;
+      line-height: inherit;
+    }
+  }
+
+  .toggle2, .toggle23, .toggle24, .foot, .foot2, .foot3 {
+    background-color: transparent;
+  }
+
+  #center_email {
+    .well {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+
+      #default-wizard {
+        .pull-left {
+          width: 100%;
+          padding: 0;
+        }
+
+        .email-info {
+          display: none;
+        }
+        .form-group {
+          text-align: left;
+
+          label {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 
   h4 {
     color: @smalt-blue;

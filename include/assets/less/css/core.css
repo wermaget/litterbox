@@ -1,78 +1,24 @@
-@font-face {
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Karla Bold'), local('Karla-Bold'), url(https://fonts.gstatic.com/s/karla/v6/qkBWXvYC6trAT7zuC8m5xL4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Nunito Sans SemiBold'), local('NunitoSans-SemiBold'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc9iB85tU1Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Nunito Sans Bold'), local('NunitoSans-Bold'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8GBs5tU1Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
-}
-/*
-Template Name: Adminox Dashboard
-Author: CoderThemes
-Email: coderthemes@gmail.com
-File: Core
-*/
-/* =============
-  == Core List==
-
-   - Common
-   - Helper classes
-   - Extra
-   - Bootstrap Custom
-   - Waves effect
-   - Print (Invoice css)
-   - Demo Css (Demo purpose only)
-
-============= */
-/* =============
-   Common
-============= */
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding-bottom: 60px;
-  overflow-x: hidden;
-  color: #797979;
-  font-size: 14px;
-  background-color: #f1f1f1;
-}
 html {
   position: relative;
   min-height: 100%;
+}
+body {
+  font-family: 'Lato', sans-serif, 'Open Sans', sans-serif;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 .h1,
 .h2,
@@ -86,7 +32,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: #666f7b;
   font-family: 'Lato', sans-serif;
   margin: 10px 0;
   font-weight: 700;
@@ -115,6 +60,12 @@ a:active {
 a:focus {
   outline: 0;
   text-decoration: none;
+}
+select.form-control {
+  background-image: url(../images/angle-down.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center right 5px;
 }
 .container {
   width: auto;
@@ -348,9 +299,8 @@ a:focus {
   padding: 20px;
   border: 1px solid #e2e2e2;
   -webkit-border-radius: 3px;
-  border-radius: 3px;
   -moz-border-radius: 3px;
-  background-clip: padding-box;
+  border-radius: 3px;
   margin-bottom: 20px;
   background-color: #ffffff;
 }
@@ -358,8 +308,8 @@ a:focus {
    Bootstrap-custom
 ============= */
 .row {
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: 0;
+  margin-left: 0;
 }
 .col-lg-1,
 .col-lg-10,

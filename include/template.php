@@ -27,10 +27,15 @@
 <!-- end wrapper -->
 <!-- Footer -->
 <footer>
-    <div class="row" style="padding: 0; padding-left: 0 !important; color: #FFFFFF; background-color: #000000;">
+    <div class="row" id="first-footer">
+        <div class="container-fluid col-12 col-lg-3 footer-items logo-block">
+            <img class="footer-logo" src="../include/assets/images/teamire-logo-light.png">
+            <div class="about-teamire">
+                <p>We transform the way candidates find jobs and companies hire talent.</p>
+            </div>
+        </div>
         <nav class="foot">
-            <label for="drop2" class="toggle2"
-                   style="background-color: #022664;color: #fff; padding: 5px 20px; padding-top: 10px; margin-bottom: 0px !important;">ABOUT
+            <label for="drop2" class="toggle2">ABOUT
                 US <b class="fa fa-chevron-right m-l-15 text-white"></b></label>
             <input type="checkbox" id="drop2"/>
             <ul class="menu1">
@@ -66,15 +71,14 @@
             </ul>
         </nav>
         <nav class="foot2">
-            <label for="drop23" class="toggle23"
-                   style="background-color: #022664;color: #fff; padding: 5px 20px; padding-top: 10px;">RESOURCES <b
-                        class="fa fa-chevron-right m-l-15 text-white"></b></label>
+            <label for="drop23" class="toggle23">RESOURCES <b
+                    class="fa fa-chevron-right m-l-15 text-white"></b></label>
             <input type="checkbox" id="drop23"/>
             <ul class="menu23">
                 <li>
                     <label for="drop-1" class="toggle23 footer-res" style="min-width: 1350px;"><a
-                                style="color: white;"
-                                href="../home/?view=services">Our
+                            style="color: white;"
+                            href="../home/?view=services">Our
                             Services</a></label>
                 </li>
                 <li>
@@ -88,31 +92,30 @@
             </ul>
         </nav>
         <nav class="foot3">
-            <label for="drop24" class="toggle24"
-                   style="background-color: #022664;color: #fff; padding: 5px 20px; padding-top: 10px;">LEGAL <b
-                        class="fa fa-chevron-right m-l-15 text-white"></b></label>
+            <label for="drop24" class="toggle24">LEGAL <b
+                    class="fa fa-chevron-right m-l-15 text-white"></b></label>
             <input type="checkbox" id="drop24"/>
             <ul class="menu24">
                 <li>
-                    <label for="drop-1" class="toggle24 text-white footer-res" style="padding: 10px 40px;">Fraud
+                    <label for="drop-1" class="toggle24 text-white footer-res">Fraud
                         Alert</label>
                 </li>
                 <li>
-                    <label for="drop-2" class="toggle24 text-white footer-res" style="padding: 10px 40px;">Privacy
+                    <label for="drop-2" class="toggle24 text-white footer-res">Privacy
                         Policy</label>
                 </li>
                 <li>
-                    <label for="drop-2" class="toggle24 text-white footer-res" style="padding: 10px 40px;">Terms of
+                    <label for="drop-2" class="toggle24 text-white footer-res">Terms of
                         Use</label>
                 </li>
                 <li>
-                    <label for="drop-2" class="toggle24 text-white" style="margin-bottom: 0; padding: 10px 40px;">Government
+                    <label for="drop-2" class="toggle24 text-white">Government
                         Notice</label>
                 </li>
             </ul>
         </nav>
         <div id="center_email">
-            <center class="well" style="background-color: #000;">
+            <center class="well">
                 <div class="container" id="emai_form">
                     <h4 class="text-center text-white">Send us an email</h4>
                     <div class="row">
@@ -123,29 +126,29 @@
                                 <div class="p-r-10 w-50-p pull-left">
                                     <div class="form-group">
                                         <label for="username"><span class="text-white">First Name </span><span
-                                                    style="color: red;">*</span></label>
+                                                style="color: red;">*</span></label>
                                         <input type="text" class="form-control font-13" style="height: 33px;"
-                                               name="firstName" required>
+                                               name="firstName" placeholder="First Name *" required>
                                     </div>
                                 </div>
 
                                 <div class="p-l-10 w-50-p pull-left">
                                     <div class="form-group">
                                         <label for="username"><span class="text-white">Last Name </span><span
-                                                    style="color: red;">*</span></label>
+                                                style="color: red;">*</span></label>
                                         <input type="text" class="form-control  font-13" style="height: 33px;"
-                                               name="lastName" required>
+                                               name="lastName" placeholder="Last Name *"required>
                                     </div>
                                 </div>
 
                                 <div class="p-r-10 w-50-p pull-left">
                                     <div class="form-group">
                                         <label for="firstname"><span class="text-white">Our Services </span><span
-                                                    style="color: red;">*</span></label>
+                                                style="color: red;">*</span></label>
                                         <select class="form-control font-13" style="height: 33px;"
                                                 name="jobFunctionId"
                                                 required>
-                                            <option>Please Select</option>
+                                            <option>Our Services *</option>
                                             <?php foreach ($jfList as $row) { ?>
                                                 <option value="<?= $row->Id; ?>"><?= $row->option; ?></option>
                                             <?php } ?>
@@ -156,40 +159,40 @@
                                 <div class="p-l-10 w-50-p pull-left">
                                     <div class="form-group">
                                         <label for="username"><span class="text-white">Business Email </span><span
-                                                    style="color: red;">*</span></label>
+                                                style="color: red;">*</span></label>
                                         <input type="text" class="form-control  font-13" style="height: 33px;"
-                                               name="workEmail" required>
+                                               name="workEmail" placeholder="Business Email *" required>
                                     </div>
                                 </div>
 
                                 <div class="p-r-10 w-50-p pull-left">
                                     <div class="form-group">
                                         <label for="username"><span class="text-white">Business Phone </span><span
-                                                    style="color: red;">*</span></label>
+                                                style="color: red;">*</span></label>
                                         <input type="text" class="form-control  font-13" style="height: 33px;"
-                                               name="phoneNumber" data-mask="(02) 9999-9999" required>
+                                               name="phoneNumber" placeholder="Business Phone *" data-mask="(02) 9999-9999" required>
                                     </div>
                                 </div>
 
                                 <div class="p-l-10 w-50-p pull-left">
                                     <div class="form-group">
                                         <label for="username"><span class="text-white">Postal Code </span><span
-                                                    style="color: red;">*</span></label>
+                                                style="color: red;">*</span></label>
                                         <input type="text" class="form-control font-13" style="height: 33px;"
-                                               name="zipCode" required>
+                                               name="zipCode" placeholder="Postal Code *" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="username"><span class="text-white">Message </span><span
-                                                style="color: red;">*</span></label>
-                                    <textarea id="message" class="form-control font-13" name="message"
-                                              data-parsley-trigger="keyup" data-parsley-minlength="20"
-                                              data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
-                                              data-parsley-validation-threshold="10"></textarea>
+                                            style="color: red;">*</span></label>
+                                        <textarea id="message" class="form-control font-13" name="message"
+                                                  data-parsley-trigger="keyup" data-parsley-minlength="20"
+                                                  data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
+                                                  data-parsley-validation-threshold="10" placeholder="Message *"></textarea>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 col-lg-9">
+                                    <div class="col-12 col-lg-9 email-info">
                                         <p class="font-13">This information will not be transferred, disclosed, or
                                             shared with a third party,
                                             or used for marketing purposes.</p>
@@ -208,7 +211,7 @@
     </div>
     <div class="container-fluid footer-updated" id="con">
         <div class="row center-page container">
-            <div class="container-fluid col-12 col-lg-3 footer-items">
+            <div class="container-fluid col-12 col-lg-3 footer-items logo-block">
                 <img class="footer-logo" src="../include/assets/images/teamire-logo-light.png">
                 <div class="about-teamire">
                     <p>We transform the way candidates find jobs and companies hire talent.</p>
@@ -218,8 +221,7 @@
                 <div class="container-fluid col-12 col-lg-4 footer-items">
                     <h4>ABOUT US</h4>
                     <ul>
-                        <li><a style="color: white; padding:none;" href="../home/?view=aboutUs#howWeDoThis">How we do
-                                this</a></li>
+                        <li><a style="color: white; padding:none;" href="../home/?view=aboutUs#howWeDoThis">How we do this</a></li>
                         <li><a style="color: white;" href="../home/?view=aboutUs#ourVision">Our Vision</a></li>
                         <li><a style="color: white;" href="../home/?view=aboutUs#ourObjectives">Our Objectives</a></li>
                         <li><a style="color: white;" href="../home/?view=logins">Timesheets</a></li>
@@ -244,7 +246,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="container-fluid col-12 col-lg-4">
+            <div class="container-fluid col-12 col-lg-4 email-block">
                 <!-- <h4 class="text-white">FOLLOW US</h4>
                 <i class="fa fa-facebook-square fa-2x"></i>&nbsp;&nbsp;<span>Facebook</span><br><br>
                 <i class="fa fa-linkedin-square fa-2x"></i>&nbsp;&nbsp;<span>LinkedIn</span><br><br>
@@ -253,37 +255,30 @@
                 <i class="fa fa-instagram fa-2x"></i>&nbsp;&nbsp;<span>Instagram</span> -->
                 <h4 class="text-center form-title">Send us an email</h4>
                 <div class="">
-                    <form class="footer-form" id="default-wizard" action="process.php?action=sendInquiry" method="POST"
-                          data-parsley-validate="">
+                    <form class="footer-form" id="default-wizard" action="process.php?action=sendInquiry" method="POST" data-parsley-validate="">
                         <div class="row">
                             <!-- Start Dropdown-->
                             <div class="p-r-10 w-50-p pull-left">
                                 <div class="form-group">
-                                    <label for="username"><span class="text-white">First Name </span><span
-                                                style="color: red;">*</span></label>
-                                    <input placeholder="First Name *" type="text" class="form-control font-13"
-                                           style="height: 33px;" name="firstName" required>
+                                    <label for="username"><span class="text-white">First Name </span><span style="color: red;">*</span></label>
+                                    <input placeholder="First Name *" type="text" class="form-control font-13" style="height: 33px;" name="firstName" required>
                                 </div>
                             </div>
 
                             <div class="p-l-10 w-50-p pull-left">
                                 <div class="form-group">
-                                    <label for="username"><span class="text-white">Last Name </span><span
-                                                style="color: red;">*</span></label>
-                                    <input placeholder="Last Name *" type="text" class="form-control  font-13"
-                                           style="height: 33px;" name="lastName" required>
+                                    <label for="username"><span class="text-white">Last Name </span><span style="color: red;">*</span></label>
+                                    <input placeholder="Last Name *" type="text" class="form-control  font-13" style="height: 33px;" name="lastName" required>
                                 </div>
                             </div>
 
                             <div class="p-r-10 w-50-p pull-left">
                                 <div class="form-group">
-                                    <label for="firstname"><span class="text-white">Our Services </span><span
-                                                style="color: red;">*</span></label>
-                                    <select class="form-control font-13" style="height: 33px;" name="jobFunctionId"
-                                            required>
+                                    <label for="firstname"><span class="text-white">Our Services </span><span style="color: red;">*</span></label>
+                                    <select  class="form-control font-13" style="height: 33px;" name="jobFunctionId" required>
                                         <option>Our Services</option>
-                                        <?php foreach ($jfList as $row) { ?>
-                                            <option value="<?= $row->Id; ?>"><?= $row->option; ?></option>
+                                        <?php foreach($jfList as $row) {?>
+                                            <option value="<?=$row->Id;?>"><?=$row->option;?></option>
                                         <?php } ?>
                                     </select>
                                 </div>
@@ -291,38 +286,31 @@
 
                             <div class="p-l-10 w-50-p pull-left">
                                 <div class="form-group">
-                                    <label for="username"><span class="text-white">Business Email </span><span
-                                                style="color: red;">*</span></label>
-                                    <input placeholder="Business Email *" type="text" class="form-control  font-13"
-                                           style="height: 33px;" name="workEmail" required>
+                                    <label for="username"><span class="text-white">Business Email </span><span style="color: red;">*</span></label>
+                                    <input placeholder="Business Email *" type="text" class="form-control  font-13" style="height: 33px;" name="workEmail" required>
                                 </div>
                             </div>
 
                             <div class="p-r-10 w-50-p pull-left">
                                 <div class="form-group">
-                                    <label for="username"><span class="text-white">Business Phone </span><span
-                                                style="color: red;">*</span></label>
-                                    <input placeholder="Business Phone *" type="text" class="form-control  font-13"
-                                           style="height: 33px;" name="phoneNumber" data-mask="(02) 9999-9999" required>
+                                    <label for="username"><span class="text-white">Business Phone </span><span style="color: red;">*</span></label>
+                                    <input placeholder="Business Phone *" type="text" class="form-control  font-13" style="height: 33px;" name="phoneNumber"  data-mask="(02) 9999-9999" required>
                                 </div>
                             </div>
 
                             <div class="p-l-10 w-50-p pull-left">
                                 <div class="form-group">
-                                    <label for="username"><span class="text-white">Postal Code </span><span
-                                                style="color: red;">*</span></label>
-                                    <input placeholder="Postal Code *" type="text" class="form-control font-13"
-                                           style="height: 33px;" name="zipCode" required>
+                                    <label for="username"><span class="text-white">Postal Code </span><span style="color: red;">*</span></label>
+                                    <input placeholder="Postal Code *" type="text" class="form-control font-13" style="height: 33px;" name="zipCode" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="username"><span class="text-white">Message </span><span style="color: red;">*</span></label>
-                                <textarea placeholder="Message *" id="message" class="form-control font-13"
-                                          name="message"
-                                          data-parsley-trigger="keyup" data-parsley-minlength="20"
-                                          data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
-                                          data-parsley-validation-threshold="10"></textarea>
+                                        <textarea placeholder="Message *" id="message" class="form-control font-13" name="message"
+                                                  data-parsley-trigger="keyup" data-parsley-minlength="20"
+                                                  data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
+                                                  data-parsley-validation-threshold="10"></textarea>
                             </div>
                             <div class="row">
                                 <!--                                        <div class="col-12 col-lg-9">-->
@@ -330,8 +318,7 @@
                                 <!--                                                or used for marketing purposes.</p>-->
                                 <!--                                        </div>-->
                                 <div class="col-12 col-lg-12">
-                                    <button type="submit" class="btn-sm stepy-finish pull-right submit-button"><span>Submit</span>
-                                    </button>
+                                    <button type="submit" class="btn-sm stepy-finish pull-right submit-button"><span>Submit</span></button>
                                 </div>
                             </div>
                         </div>
@@ -358,8 +345,7 @@
     <!--    <p style="font-size: 40px;" class="text-center text-white">-->
     <!--        LET US BE YOUR STRENGTH-->
     <!--    </p>-->
-    <!--</div>-->
-</footer><!-- End Footer -->
+    <!--</div>--></footer><!-- End Footer -->
 <?php
 include_once($footScript);
 ?>

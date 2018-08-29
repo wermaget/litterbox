@@ -195,46 +195,166 @@ nav ul ul ul li {
   /* has to be the same number as the "width" of "nav ul ul li" */
   left: 170px;
 }
-.footer-updated {
+#first-footer {
+  display: none;
+}
+.footer-updated,
+#first-footer {
   background-color: #005371;
   padding: 25px;
 }
-.footer-updated h4 {
+.footer-updated .foot,
+#first-footer .foot,
+.footer-updated .foot2,
+#first-footer .foot2,
+.footer-updated .foot3,
+#first-footer .foot3 {
+  padding: 0;
+}
+.footer-updated .foot ul li,
+#first-footer .foot ul li,
+.footer-updated .foot2 ul li,
+#first-footer .foot2 ul li,
+.footer-updated .foot3 ul li,
+#first-footer .foot3 ul li {
+  background-color: transparent;
+}
+.footer-updated .foot ul li label,
+#first-footer .foot ul li label,
+.footer-updated .foot2 ul li label,
+#first-footer .foot2 ul li label,
+.footer-updated .foot3 ul li label,
+#first-footer .foot3 ul li label,
+.footer-updated .foot ul li a,
+#first-footer .foot ul li a,
+.footer-updated .foot2 ul li a,
+#first-footer .foot2 ul li a,
+.footer-updated .foot3 ul li a,
+#first-footer .foot3 ul li a {
+  padding: 0;
+  border-bottom: none !important;
+  font-family: latoregular;
+  font-size: 15px;
+  font-weight: normal;
+}
+.footer-updated .foot ul li label:hover,
+#first-footer .foot ul li label:hover,
+.footer-updated .foot2 ul li label:hover,
+#first-footer .foot2 ul li label:hover,
+.footer-updated .foot3 ul li label:hover,
+#first-footer .foot3 ul li label:hover,
+.footer-updated .foot ul li a:hover,
+#first-footer .foot ul li a:hover,
+.footer-updated .foot2 ul li a:hover,
+#first-footer .foot2 ul li a:hover,
+.footer-updated .foot3 ul li a:hover,
+#first-footer .foot3 ul li a:hover {
+  background-color: #5d7d87;
+}
+.footer-updated .toggle2,
+#first-footer .toggle2,
+.footer-updated .toggle23,
+#first-footer .toggle23,
+.footer-updated .toggle24,
+#first-footer .toggle24 {
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  color: #5d7d87;
+}
+.footer-updated .toggle2 .fa-chevron-right,
+#first-footer .toggle2 .fa-chevron-right,
+.footer-updated .toggle23 .fa-chevron-right,
+#first-footer .toggle23 .fa-chevron-right,
+.footer-updated .toggle24 .fa-chevron-right,
+#first-footer .toggle24 .fa-chevron-right {
+  float: right;
+  display: inline-block;
+  line-height: inherit;
+}
+.footer-updated .toggle2,
+#first-footer .toggle2,
+.footer-updated .toggle23,
+#first-footer .toggle23,
+.footer-updated .toggle24,
+#first-footer .toggle24,
+.footer-updated .foot,
+#first-footer .foot,
+.footer-updated .foot2,
+#first-footer .foot2,
+.footer-updated .foot3,
+#first-footer .foot3 {
+  background-color: transparent;
+}
+.footer-updated #center_email .well,
+#first-footer #center_email .well {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.footer-updated #center_email .well #default-wizard .pull-left,
+#first-footer #center_email .well #default-wizard .pull-left {
+  width: 100%;
+  padding: 0;
+}
+.footer-updated #center_email .well #default-wizard .email-info,
+#first-footer #center_email .well #default-wizard .email-info {
+  display: none;
+}
+.footer-updated #center_email .well #default-wizard .form-group,
+#first-footer #center_email .well #default-wizard .form-group {
+  text-align: left;
+}
+.footer-updated #center_email .well #default-wizard .form-group label,
+#first-footer #center_email .well #default-wizard .form-group label {
+  display: none;
+}
+.footer-updated h4,
+#first-footer h4 {
   color: #5d7d87;
   font-family: latobold;
 }
-.footer-updated h4.form-title {
+.footer-updated h4.form-title,
+#first-footer h4.form-title {
   text-transform: uppercase;
 }
-.footer-updated .footer-logo {
+.footer-updated .footer-logo,
+#first-footer .footer-logo {
   max-width: 150px;
   margin: auto;
 }
-.footer-updated .about-teamire {
+.footer-updated .about-teamire,
+#first-footer .about-teamire {
   margin-top: 25px;
 }
-.footer-updated .about-teamire p {
+.footer-updated .about-teamire p,
+#first-footer .about-teamire p {
   font-size: 15px;
   font-family: latoregular;
 }
-.footer-updated .footer-items-container .footer-items ul {
+.footer-updated .footer-items-container .footer-items ul,
+#first-footer .footer-items-container .footer-items ul {
   padding-left: 0;
   list-style: none;
 }
-.footer-updated .footer-items-container .footer-items h4 {
+.footer-updated .footer-items-container .footer-items h4,
+#first-footer .footer-items-container .footer-items h4 {
   padding-left: 0;
   font-size: 16px;
 }
 .footer-updated .footer-items-container .footer-items li,
-.footer-updated .footer-items-container .footer-items a {
+#first-footer .footer-items-container .footer-items li,
+.footer-updated .footer-items-container .footer-items a,
+#first-footer .footer-items-container .footer-items a {
   color: #ffffff;
   font-size: 15px;
   font-family: latoregular;
 }
-.footer-updated .about-teamire p {
+.footer-updated .about-teamire p,
+#first-footer .about-teamire p {
   color: #ffffff;
 }
-.footer-updated .footer-form .form-group label {
+.footer-updated .footer-form .form-group label,
+#first-footer .footer-form .form-group label {
   display: none;
 }
 .copyright-footer {
@@ -17128,48 +17248,6 @@ File: Icons
   background-color: #f2f2f2;
   color: #333333;
 }
-@font-face {
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Karla Bold'), local('Karla-Bold'), url(https://fonts.gstatic.com/s/karla/v6/qkBWXvYC6trAT7zuC8m5xL4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Nunito Sans SemiBold'), local('NunitoSans-SemiBold'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc9iB85tU1Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Nunito Sans Bold'), local('NunitoSans-Bold'), url(https://fonts.gstatic.com/s/nunitosans/v3/pe03MImSLYBIv1o4X1M8cc8GBs5tU1Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
-}
 html {
   position: relative;
   min-height: 100%;
@@ -18613,7 +18691,7 @@ select.form-control {
   margin-left: 250px;
 }
 .main-site .container {
-  width: 1200px;
+  max-width: 1200px;
 }
 .main-content .title {
   font-weight: 300;
