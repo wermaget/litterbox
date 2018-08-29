@@ -18432,7 +18432,7 @@ select.form-control {
   display: block;
 }
 .page-main .main-content {
-  padding-top: 55px;
+  padding: 55px 0;
 }
 .page-main .main-content.index-page {
   padding-top: 0 !important;
