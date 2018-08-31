@@ -5,7 +5,9 @@ $firstProject = projects()->list("isDeleted='0' order by `Id` limit 1");
 ?>
 
 <div class="cms-container">
+    <?php if($projects->headerImage) {?>
     <div class="parallax-window" data-parallax="scroll" data-image-src="../media/<?= $projects->headerImage; ?>"></div>
+    <?php } ?>
     <div class="cms-content">
         <?php if($projects) {?>
             <h3 class="cms-page-title"><?= html_entity_decode($projects->title); ?></h3>

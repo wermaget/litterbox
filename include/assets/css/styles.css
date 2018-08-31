@@ -18388,24 +18388,28 @@ select.form-control {
   margin: auto;
 }
 .distributed-teamire .stepy-navigator .btn {
-  background-color: transparent!important;
+  background-color: transparent !important;
   border: none !important;
   background-repeat: no-repeat;
   height: 100px;
 }
-.distributed-teamire .stepy-navigator .btn span {
-  content: '';
-}
 .distributed-teamire .stepy-navigator .btn .mdi {
   display: none;
 }
-.distributed-teamire .stepy-navigator .btn.button-next {
-  background-image: url('../images/right-chevron.png');
-  background-position: right;
+.distributed-teamire .stepy-navigator .btn.button-next span:before,
+.distributed-teamire .stepy-navigator .btn.button-back span:before {
+  content: "\f054";
+  font-family: 'FontAwesome';
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.15);
 }
-.distributed-teamire .stepy-navigator .btn.button-back {
-  background-image: url('../images/left-chevron.png');
-  background-position: left;
+.distributed-teamire .stepy-navigator .btn.button-back span:before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
 }
 .distributed-teamire form {
   position: relative;
@@ -18521,11 +18525,11 @@ select.form-control {
   align-items: center;
   height: 550px;
   /*background:
-            linear-gradient(
-                    rgba(0, 0, 0, 0.45),
-                    rgba(0, 0, 0, 0.45)
-            ),
-            url("../images/home-hero-2.jpg") no-repeat;*/
+                linear-gradient(
+                        rgba(0, 0, 0, 0.45),
+                        rgba(0, 0, 0, 0.45)
+                ),
+                url("../images/home-hero-2.jpg") no-repeat;*/
   background-size: cover;
   background-position: center 100%;
 }

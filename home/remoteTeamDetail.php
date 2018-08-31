@@ -5,7 +5,9 @@ $remoteTeam = remote_team()->get("Id='$Id'");
 ?>
 
 <div class="cms-container">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="../media/<?= $remoteTeam->headerImage; ?>"></div>
+    <?php if($remoteTeam->headerImage) {?>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="../media/<?= $remoteTeam->headerImage; ?>"></div>
+    <?php }?>
     <div class="cms-content">
         <?php if ($remoteTeam) { ?>
             <h3 class="cms-page-title"><?= html_entity_decode($remoteTeam->title); ?></h3>
