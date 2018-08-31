@@ -41,6 +41,7 @@ function formatDate($val)
                     <th>Content</th>
                     <th>Posted Date</th>
                     <th></th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -54,9 +55,11 @@ function formatDate($val)
                             <td><?= formatDate($row->createDate); ?></td>
                             <td>
                                 <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
-                                   class="btn btn-xs" title="Click To View" data-trigger="hover"
+                                   class="btn btn-info btn-xs" title="Click To View" data-trigger="hover"
                                    data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
-                                <a id="<?php echo $row->Id; ?>" class="btn btn-xs btn-cms-remote-delete" title="Click To Edit"><span
+                            </td>
+                            <td>
+                                <a id="<?php echo $row->Id; ?>" class="btn btn-danger btn-xs tooltips btn-cms-remote-delete" title="Click To Edit"><span
                                             class="fa fa-close"></span>Remove</a>
                             </td>
                         </tr>
@@ -105,13 +108,6 @@ function formatDate($val)
                                           data-parsley-trigger="keyup" data-parsley-minlength="20"
                                           data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                           data-parsley-validation-threshold="10"></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Attach Image</label>
-                                <input type="file" class="form-control" name="upload_file" placeholder=""
-                                       accept=".png, .jpg, .jpeg">
-                                <span class="help-block"><small>Supported File: .png, .jpg, .jpeg</small></span>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,41 @@
+body {
+     &.admin-page {
+         #wrapper {
+             .topbar {
+                 .topbar-left {
+                     .logo {
+                         span {
+                             img {
+                                 width: auto;
+                                 height: 60%;
+                             }
+                         }
+                     }
+                 }
+
+                 i.fa {
+                     color: @white;
+                 }
+
+                 .navbar {
+                     ul.nav {
+                         li {
+                             button.button-menu-mobile {
+                                 color: @white;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+
+@media all and (min-width: 769px) {
+    body.admin-page {
+        // Admin Modal Styling
+        .modal-dialog {
+            width: 700px;
+        }
+    }
+}

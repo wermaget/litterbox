@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1200px) {
+  .nav-wrapper .logo-wrapper {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .footer-updated .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex: none;
+    -ms-flex: none;
+    -webkit-flex: none;
+    flex: none;
+  }
+  .footer-updated .footer-items-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex: none;
+    -ms-flex: none;
+    -webkit-flex: none;
+    flex: none;
+  }
+  #first-footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .footer-updated .container {
+    display: block;
+  }
+  .footer-updated .logo-block {
+    text-align: center;
+  }
+  .footer-updated .footer-items-container {
+    display: inline-block;
+    width: 64%;
+    vertical-align: top;
+  }
+  .footer-updated .footer-items-container .footer-items {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .footer-updated .email-block {
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+  }
+}
+@media (max-width: 1024px) and (min-width: 770px) {
+  .footer-updated .email-block .row .pull-left {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .footer-updated .footer-items-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex: none;
+    -ms-flex: none;
+    -webkit-flex: none;
+    flex: none;
+    width: 100%;
+  }
+  .footer-updated .email-block {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer #first-footer {
+    display: block;
+    background-color: #005371;
+    padding: 25px;
+  }
+  footer #first-footer .logo-block {
+    text-align: center;
+  }
+  footer #first-footer .footer-logo {
+    max-width: 150px;
+    margin: auto;
+  }
+  footer #con {
+    display: none;
+  }
+}

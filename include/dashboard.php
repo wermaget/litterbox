@@ -22,7 +22,7 @@ if(!$currentSession)
                 <div class="topbar-left">
                     <a href="index.php" class="logo">
                         <span>
-                            <img src="../include/assets/images/teamire-header.png" class="p-b-10" alt="" height="80">
+                            <img src="../include/assets/images/teamire-logo-light-min.png" class="p-b-10" alt="" height="80">
                         </span>
                         <i>
                             <img src="../include/assets/images/teamire-small.png" alt="" height="28">
@@ -38,7 +38,7 @@ if(!$currentSession)
                         <ul class="nav navbar-nav navbar-left nav-menu-left">
                             <li>
                                 <button type="button" class="button-menu-mobile open-left waves-effect">
-                                    <i class="dripicons-menu" style="color: #205e7d;"></i>
+                                    <i class="dripicons-menu"></i>
                                 </button>
                             </li>
 

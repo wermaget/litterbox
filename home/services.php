@@ -21,7 +21,7 @@ function getPositionName($Id){
     <div class="col-lg-2">
       <a href="../home?view=servicesDetail&code=dem">
         <div class="icons icons-container text-center">
-        <img src="../include/assets/images/demandPlanning.png">
+        <img src="../include/assets/images/demandplanning.png">
           <p class="text-white"><b>Demand Planning</b></p>
         </div>
       </a>
@@ -29,7 +29,7 @@ function getPositionName($Id){
     <div class="col-lg-2">
       <a href="../home?view=servicesDetail&code=sup">
         <div class="icons icons-container text-center">
-        <img src="../include/assets/images/supplyPlanning.png">
+        <img src="../include/assets/images/supplyplanning.png">
           <p class="text-white"><b>Supply Planning</b></p>
         </div>
       </a>

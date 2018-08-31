@@ -198,14 +198,12 @@ function getPositionName($Id)
                 <ul class="nav nav-tabs navtab-bg nav-justified">
                     <li class="">
                         <a class="title-tabs hire-tab" href="#home1" data-toggle="tab" aria-expanded="false">
-                            <span class="visible-xs"><i class="mdi mdi-format-list-bulleted-type"></i></span>
-                            <span class="hidden-xs ">Four Simple Steps to Hire</span>
+                            <span class="">Four Simple Steps to Hire</span>
                         </a>
                     </li>
                     <li class="active">
                         <a class="title-tabs job-tab" href="#profile1" data-toggle="tab" aria-expanded="true">
-                            <span class="visible-xs"><i class="mdi mdi-account-search"></i></span>
-                            <span class="hidden-xs ">How We Help You Find a Job</span>
+                            <span class="">How We Help You Find a Job</span>
                         </a>
                     </li>
 
