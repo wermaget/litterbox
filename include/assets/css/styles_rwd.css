@@ -1,7 +1,107 @@
-@media only screen and (max-width: 1200px) {
-  .nav-wrapper .logo-wrapper {
+@media (max-width: 1200px) and (min-width: 770px) {
+  header .toggle {
+    display: none;
+  }
+  header .toggle + a {
     display: block;
+  }
+  header .toggle + a:hover {
+    background-color: transparent;
+  }
+  header .menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex: none;
+    -ms-flex: none;
+    -webkit-flex: none;
+    flex: none;
     width: 100%;
+    float: right;
+  }
+  header .menu a {
+    background-color: transparent;
+  }
+  header .menu a:hover {
+    background-color: transparent;
+  }
+  header .top-navigation-mobi {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (min-width: 770px) {
+  header#topnav .nav-wrapper .logo-wrapper {
+    display: block;
+    margin: auto;
+  }
+  header#topnav .nav-wrapper nav {
+    width: 100%;
+  }
+  header#topnav .nav-wrapper nav a {
+    font-size: 12px;
+    text-align: center;
+  }
+  header#topnav .top-navigation-mobi {
+    display: none;
+  }
+}
+@media only screen and (max-width: 769px) {
+  header#topnav .nav-wrapper {
+    padding: 0;
+  }
+  header#topnav .nav-wrapper .logo-wrapper {
+    display: block;
+    margin: auto;
+  }
+  header#topnav .nav-wrapper .menu {
+    width: 100%;
+  }
+  header#topnav .nav-wrapper .menu .toggle-class {
+    display: block;
+    background-color: rgba(46, 46, 46, 0.5);
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+    margin-bottom: 0;
+    border-bottom: 2px solid rgba(46, 46, 46, 0.2);
+  }
+  header#topnav .nav-wrapper .menu li {
+    padding: 0;
+  }
+  header#topnav .nav-wrapper .menu li a {
+    color: #ffffff !important;
+    font-family: latobold;
+  }
+  header#topnav .nav-wrapper .menu li label {
+    font-family: latobold;
+    font-weight: normal;
+  }
+  header#topnav .nav-wrapper .menu li input[type="checkbox"]:checked + ul {
+    display: block !important;
+  }
+  header#topnav .nav-wrapper .menu li:hover .nav-level2 {
+    padding: 0;
+    display: none;
+  }
+  header#topnav .nav-wrapper .menu .nav-level2 {
+    position: relative;
+    top: 0;
+  }
+  header#topnav .nav-wrapper .menu .nav-level2:before {
+    display: none;
+  }
+  header#topnav .nav-wrapper nav {
+    width: 100%;
+  }
+  header#topnav .nav-wrapper nav .toggle {
+    min-width: 0;
+  }
+  header#topnav .top-navigation-mobi {
+    display: none;
   }
 }
 @media only screen and (max-width: 1200px) {

@@ -45,20 +45,20 @@
             </li>
             <li>
                 <!-- First Tier Drop Down -->
-                <label for="drop-3" class="toggle">Blog</label>
+                <label for="drop-4" class="toggle">Blog</label>
                 <a href="#" class="nav-item-drop">Blog</a>
-                <input type="checkbox" id="drop-3"/>
+                <input type="checkbox" id="drop-4"/>
                 <ul class="nav-level2">
                     <li><a class="m-l-3 m-r-3" href="../home/?view=projects">Supply Chain Projects</a></li>
                     <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
                 </ul>
             </li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=logins">Timesheets</a></li>
-            <li><a class="m-l-3 m-r-3" href="../home/?view=contactUs">Contact</a></li>
+            <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=logins">Timesheets</a></li>
+            <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=contactUs">Contact</a></li>
         </ul>
     </nav>
 </div>
-<div class="row">
+<div class="row top-navigation-mobi">
     <nav class="top">
         <label for="drop1" class="toggle1"
                style="background-color: rgba(2, 38, 100, 0);color: #fff; float: right; border-bottom: none; padding: 10px 20px;">Top

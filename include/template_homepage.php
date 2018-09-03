@@ -13,7 +13,7 @@
     <body>
         <!-- Navigation Bar-->
         <header id="topnav" style="position:relative;">
-          <div class="">
+          <div>
               <?php
                 include 'navVisitor.php';
               ?>

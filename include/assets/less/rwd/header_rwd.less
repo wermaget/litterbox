@@ -1,11 +1,135 @@
 @import "../global/variables.less";
 @import "../components/elements.less";
 
-@media only screen and (max-width: 1200px) {
-  .nav-wrapper {
-    .logo-wrapper {
-      display: block;
+@media (max-width: 1200px) and (min-width: 770px) {
+  header {
+    .toggle {
+      display: none;
+
+      + a {
+        display: block;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .menu {
+      .flex();
       width: 100%;
+      float: right;
+
+      a {
+        background-color: transparent;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .top-navigation-mobi {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 770px) {
+  header#topnav {
+    .nav-wrapper {
+      .logo-wrapper {
+        display: block;
+        margin: auto;
+      }
+
+      nav {
+        width: 100%;
+
+        a {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+
+    .top-navigation-mobi {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  header#topnav {
+    .nav-wrapper {
+      padding: 0;
+
+      .logo-wrapper {
+        display: block;
+        margin: auto;
+      }
+
+      .menu {
+        width: 100%;
+
+        .toggle-class {
+          display: block;
+          background-color: rgba(46, 46, 46, 0.5);
+          padding: 10px 20px;
+          color: @white;
+          font-size: 17px;
+          text-decoration: none;
+          border: none;
+          margin-bottom: 0;
+          border-bottom: 2px solid rgba(46, 46, 46, 0.2);
+        }
+
+        li {
+          padding: 0;
+
+          a {
+            color: @white!important;
+            font-family: latobold;
+          }
+
+          label {
+            font-family: latobold;
+            font-weight: normal;
+          }
+
+         input[type="checkbox"]:checked + ul {
+            display: block !important;
+          }
+
+          &:hover {
+            .nav-level2 {
+              padding: 0;
+              display: none;
+            }
+          }
+        }
+
+        .nav-level2 {
+          position: relative;
+          //display: block;
+          top: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      nav {
+        width: 100%;
+        
+        .toggle {
+          min-width: 0;
+        }
+      }
+    }
+
+    .top-navigation-mobi {
+      display: none;
     }
   }
 }
