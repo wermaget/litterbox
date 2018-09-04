@@ -18686,6 +18686,39 @@ select.form-control {
 .block.email {
   text-align: left;
 }
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us {
+  position: relative;
+  padding: 48px 0 0 0;
+}
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .row > .col-lg-3 {
+  position: static;
+}
+.sidebar:not(.main-site.aboutus .page-main.wrapper .main-content .container.about-us.sticky) {
+  background: red;
+}
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar {
+  position: fixed;
+}
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar ul {
+  padding: 0;
+  list-style-type: none;
+}
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar ul li a {
+  color: #939393;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+}
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar ul li a.active {
+  color: #333333;
+  font-weight: 700;
+}
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar.sticky {
+  position: fixed;
+}
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .right-content .paragraph h4 {
+  margin: 0 0 30px 0;
+  font-size: 28px;
+}
 body.admin-page #wrapper .topbar .topbar-left .logo span img {
   width: auto;
   height: 60%;

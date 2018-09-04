@@ -7,7 +7,7 @@
     ?>
     <link rel="stylesheet" type="text/css" href="../include/assets/css/footer_responsive.css">
 </head>
-<body class="main-site <?= (($content == 'home.php')) ? 'index' : 'non-index' ?>">
+<body class="main-site <?= (($content == 'home.php')) ? 'index' : 'non-index' ?> <?= strtolower($view) ?>">
 <!-- Navigation Bar-->
 
 <header id="topnav">
@@ -26,7 +26,7 @@
 </div>
 <!-- end wrapper -->
 <!-- Footer -->
-<footer>
+<footer class="">
     <div class="row" id="first-footer">
         <div class="container-fluid col-12 col-lg-3 footer-items logo-block">
             <img class="footer-logo" src="../include/assets/images/teamire-logo-light.png">
@@ -211,13 +211,13 @@
     </div>
     <div class="container-fluid footer-updated" id="con">
         <div class="row center-page container">
-            <div class="container-fluid col-12 col-lg-3 footer-items logo-block">
+            <div class="col-12 col-lg-3 footer-items logo-block">
                 <img class="footer-logo" src="../include/assets/images/teamire-logo-light.png">
                 <div class="about-teamire">
                     <p>We transform the way candidates find jobs and companies hire talent.</p>
                 </div>
             </div>
-            <div class="container-fluid col-12 col-lg-5 footer-items-container">
+            <div class="row col-12 col-lg-5 footer-items-container">
                 <div class="container-fluid col-12 col-lg-4 footer-items">
                     <h4>ABOUT US</h4>
                     <ul>
