@@ -41,7 +41,7 @@
 }
 #topnav .nav-wrapper nav {
   display: inline-block;
-  width: 80%;
+  float: right;
   vertical-align: middle;
 }
 .nav-wrapper .logo-wrapper {
@@ -18697,7 +18697,8 @@ select.form-control {
   background: red;
 }
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar {
-  position: fixed;
+  position: static;
+  transition: 0.5s;
 }
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar ul {
   padding: 0;
@@ -18707,17 +18708,29 @@ select.form-control {
   color: #939393;
   font-family: 'Nunito Sans';
   font-weight: 600;
+  transition: 0.5s;
 }
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar ul li a.active {
   color: #333333;
   font-weight: 700;
+  transition: 0.5s;
 }
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar.sticky {
   position: fixed;
 }
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .right-content hr.p-divider {
+  margin: 50px 0;
+}
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .right-content .paragraph h4 {
-  margin: 0 0 30px 0;
-  font-size: 28px;
+  margin: 0 0 20px 0;
+  font-size: 30px;
+}
+.main-site.aboutus .page-main.wrapper .main-content .container.about-us .right-content .paragraph p {
+  font-size: 15px;
+  font-family: 'Nunito Sans';
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: justify;
 }
 body.admin-page #wrapper .topbar .topbar-left .logo span img {
   width: auto;

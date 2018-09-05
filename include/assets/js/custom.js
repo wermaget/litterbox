@@ -42,7 +42,8 @@ $(document).ready(function () {
     }, 5000);
 
     $.fn.isInViewport = function() {
-        var elementTop = $(this).offset().top;
+        var offset = 75;
+        var elementTop = $(this).offset().top - offset;
         var elementBottom = elementTop + $(this).outerHeight();
 
         var viewportTop = $(window).scrollTop();
@@ -53,6 +54,12 @@ $(document).ready(function () {
     };
 
     $(window).on('resize scroll', function() {
+        if($(this).scrollTop() > 2600) {
+            $("#sidebar").css("opacity","0");
+        }else{
+            $("#sidebar").css("opacity","1");
+        }
+
         $('.paragraph').each(function() {
             var id = $(this).attr('id');
             var hash = "#"+id;
@@ -64,17 +71,13 @@ $(document).ready(function () {
             }
         });
 
-        if($(".sticky-content").offset().top > 1250) {
-            // if($("#sidebar").hasClass('sticky')){
-                $("#sidebar").removeClass('sticky');
-            // }
-        }else{
-            //alert("DAPAT MA BALIK");
-            // if(!$("#sidebar").hasClass('sticky')){
-                $("#sidebar").addClass('sticky');
-            // }
-        }
     });
+
+    if($(window).scrollTop() > 2560) {
+        $("#sidebar").css("opacity","0");
+    }else{
+        $("#sidebar").css("opacity","1");
+    }
 
     $('.director a').on('click',function(e) {
         e.preventDefault();

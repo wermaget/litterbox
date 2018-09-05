@@ -10,7 +10,7 @@ function getPositionName($Id)
 
 <div class="container about-us">
     <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col-lg-offset-1 col-lg-2 col-md-2 col-sm-2">
             <div id="sidebar" class="sidebar sticky">
                 <ul class="sticky-content">
                     <li class="director"><a href="#about">About Us</a></li>
@@ -21,11 +21,11 @@ function getPositionName($Id)
                 </ul>
             </div>
         </div>
-        <div class="col-lg-9 col-md-9 col-sm-9">
+        <div class="col-lg-7 col-md-7 col-sm-7">
             <div class="right-content container-fluid">
                 <div class="">
-                    <div id="about" class="row slideanim paragraph">
-                        <div class="col-md-12 slideleft">
+                    <div id="about" class="row paragraph">
+                        <div class="col-md-12 ">
                             <h4>About Us</h4>
                             <div>
                                 <p>Teamire (Aust) Pty Ltd is a consulting business in Supply Chain Management specializing in
@@ -54,18 +54,14 @@ function getPositionName($Id)
                             </div>
                         </div>
                     </div>
-
-                    <hr class="m-b-30 m-t-30" width="100%">
-
-                    <div id="howwedothis" class="row slideanim paragraph">
-                        <div class="col-md-9">
-                            <h4>How we do this</h4>
+                    <hr class="p-divider" width="100%">
+                    <div id="howwedothis" class="row paragraph">
+                        <div class="col-md-12">
+                            <h4>How We Do This</h4>
                             <div>
                                 <p>Often, vertical channel conflict (i.e. between layers of supply chain) occurs due to ambiguous
                                     roles and
-                                    responsibilities.<br><br>
-                                </p>
-                                <p>
+                                    responsibilities.
                                     With a clear definition of roles and responsibilities, our Synchronization process starts
                                     by making sure that all supply chain partners are fully aware what tasks they’re expected to
                                     perform
@@ -73,7 +69,7 @@ function getPositionName($Id)
                                     (e.g. lead-times and deadlines).<br><br>
                                     How they’re expected to perform (e.g. to what operating specifications) and what results are
                                     expected
-                                    (e.g. sales quota, customer satisfaction ratings).<br><br>
+                                    (e.g. sales quota, customer satisfaction ratings).
                                     For us it’s simple, we collaborate with our clients, evaluate roles & business functions and
                                     devise a plan
                                     (we call this our blueprint) to get all of our client’s partners (both internal & external)
@@ -96,18 +92,12 @@ function getPositionName($Id)
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="../include/assets/images/aboutus-img2.png" style="width: 100%; border-radius: 50%;">
-                        </div>
                     </div>
 
-                    <hr class="m-b-30 m-t-30" width="100%">
+                    <hr class="p-divider" width="100%">
 
-                    <div id="ourvision" class="row slideanim paragraph">
-                        <div class="col-md-3 slideleft">
-                            <img src="../include/assets/images/aboutus-img3.png" style="width: 100%; border-radius: 50%;">
-                        </div>
-                        <div class="col-md-9 slideleft">
+                    <div id="ourvision" class="row paragraph">
+                        <div class="col-md-12">
                             <h4>Our Vision</h4>
                             <div>
                                 <p>At Teamire our purpose is to help our client streamline their business processes by synchronizing
@@ -117,21 +107,16 @@ function getPositionName($Id)
                                     resolving
                                     all Supply Chain related
                                 </p>
-                            </div>
-                            <div id="more2">
                                 <p>
                                     process issues when it comes to re-alignment with our client’s key business
                                     objectives.
                                 </p>
                             </div>
-                            <span id="readMore2" class="">Read More</span>
                         </div>
                     </div>
-
-                    <hr class="m-b-30 m-t-30" width="100%">
-
-                    <div id="objectives" class="row slideanim paragraph">
-                        <div class="col-md-9">
+                    <hr class="p-divider" width="100%">
+                    <div id="objectives" class="row paragraph">
+                        <div class="col-md-12">
                             <h4>Our Objectives</h4>
                             <div>
                                 <p>Is to ensure that we always have a realistic plan in restructuring our client’s strategic
@@ -142,8 +127,6 @@ function getPositionName($Id)
                                     a
                                     competitive edge from all aspects to clients but
                                 </p>
-                            </div>
-                            <div id="more3">
                                 <p>
                                     most of all is making them money. Our highly skilled
                                     Supply Chain Professional are ready to take on all types of challenges from Change Management to
@@ -151,20 +134,11 @@ function getPositionName($Id)
                                     ever so demanding and complex Supply Chain Management.
                                 </p>
                             </div>
-                            <span class="" id="readMore3">Read More</span>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="../include/assets/images/aboutus-img4.png" style="width: 100%; border-radius: 50%;">
                         </div>
                     </div>
-
-                    <hr class="m-b-30 m-t-30" width="100%">
-
-                    <div id="ourservices" class="row slideanim paragraph">
-                        <div class="col-md-3 slideleft">
-                            <img src="../include/assets/images/aboutus-img5.png" style="width: 100%; border-radius: 50%;">
-                        </div>
-                        <div class="col-md-9 slideleft">
+                    <hr class="p-divider" width="100%">
+                    <div id="ourservices" class="row paragraph">
+                        <div class="col-md-12">
                             <h4>Our Services</h4>
                             <div>
                                 <p>Whilst a customized business solution is what we thrive on, TEAMIRE is also engaged in sourcing,
@@ -173,8 +147,6 @@ function getPositionName($Id)
                                     Logistics and Transport Coordinators, executive and management level roles in Business Change
                                     and Transformation,
                                 </p>
-                            </div>
-                            <div id="more4">
                                 <p>
                                     Demand Planning, Procurement, Purchasing, Supply Chain, Warehousing & Distribution, Logistics
                                     and Freight Management
@@ -202,12 +174,9 @@ function getPositionName($Id)
                                     or military status in any of its activities or operations.
                                 </p>
                             </div>
-                            <span class="" id="readMore4"><a>Read More</a></span>
                         </div>
                     </div>
-
-                    <hr class="m-b-30 m-t-30" width="100%">
-
+                    <hr class="p-divider" width="100%">
                 </div>
             </div>
         </div>

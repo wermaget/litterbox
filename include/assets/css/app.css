@@ -19,7 +19,7 @@ table tbody td {
 
 
 .header-img-wrapper {
-    height: 120px;
+    height: 120p1;
     border: 1px solid #c7c7c7;
     border-radius: 2px;
     padding: 8px;
@@ -96,7 +96,7 @@ li > a:only-child:after { content: ''; }
 /* Media Queries
 --------------------------------------------- */
 
-@media all and (max-width : 1200px) {
+@media all and (max-width : 768px) {
 
     #logo {
         display: block;
@@ -143,10 +143,6 @@ li > a:only-child:after { content: ''; }
 
 
     /* Change menu item's width to 100% */
-    nav ul li {
-        display: block;
-        width: 100%;
-    }
 
     nav ul ul .toggle,
     nav ul ul a {

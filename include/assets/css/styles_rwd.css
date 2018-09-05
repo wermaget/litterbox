@@ -1,7 +1,9 @@
-@media (max-width: 1200px) and (min-width: 770px) {
+@media (min-width: 901px) {
   header .toggle {
     display: none;
   }
+}
+@media (max-width: 900px) {
   header .toggle + a {
     display: block;
   }
@@ -31,7 +33,7 @@
     display: none;
   }
 }
-@media (max-width: 1024px) and (min-width: 770px) {
+@media (max-width: 768px) {
   header#topnav .nav-wrapper .logo-wrapper {
     display: block;
     margin: auto;
@@ -47,27 +49,33 @@
     display: none;
   }
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 900px) {
   header#topnav .nav-wrapper {
-    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex: none;
+    -ms-flex: none;
+    -webkit-flex: none;
+    flex: none;
   }
   header#topnav .nav-wrapper .logo-wrapper {
-    display: block;
-    margin: auto;
+    width: auto;
+    order: 2;
+  }
+  header#topnav .nav-wrapper nav {
+    order: 1;
+  }
+  header#topnav .nav-wrapper nav .toggle i {
+    font-size: 28px;
+  }
+  header#topnav .nav-wrapper nav ul li {
+    width: 100%;
   }
   header#topnav .nav-wrapper .menu {
     width: 100%;
-  }
-  header#topnav .nav-wrapper .menu .toggle-class {
-    display: block;
-    background-color: rgba(46, 46, 46, 0.5);
-    padding: 10px 20px;
-    color: #ffffff;
-    font-size: 17px;
-    text-decoration: none;
-    border: none;
-    margin-bottom: 0;
-    border-bottom: 2px solid rgba(46, 46, 46, 0.2);
   }
   header#topnav .nav-wrapper .menu li {
     padding: 0;
@@ -95,10 +103,18 @@
     display: none;
   }
   header#topnav .nav-wrapper nav {
-    width: 100%;
+    width: auto;
+    float: none;
   }
   header#topnav .nav-wrapper nav .toggle {
     min-width: 0;
+    color: #ffffff;
+    display: inline-block;
+    margin: 14px 30px 0 0;
+    line-height: 1;
+  }
+  header#topnav .nav-wrapper nav ul {
+    display: none;
   }
   header#topnav .top-navigation-mobi {
     display: none;

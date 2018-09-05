@@ -19,7 +19,8 @@
 
 
                     .sidebar {
-                        position: fixed;
+                        position: static;
+                        transition: .5s;
                         //bottom: 0;
 
                         ul {
@@ -31,10 +32,12 @@
                                     color: @gray;
                                     font-family: @font-tertiary;
                                     font-weight: @font-weight__semibold;
+                                    transition: .5s;
 
                                     &.active {
                                         color: @mine-shaft;
                                         font-weight: @font-weight__bold;
+                                        transition: .5s;
                                     }
                                 }
                             }
@@ -43,13 +46,29 @@
 
                     .sidebar.sticky {
                         position: fixed;
+                        //.sticky-content {
+                        //    position: absolute;
+                        //    background: red;
+                        //}
                     }
 
                     .right-content {
+                        hr.p-divider {
+                            margin: 50px 0;
+                        }
+
                         .paragraph {
                             h4 {
-                                margin: 0 0 30px 0;
-                                font-size: 28px;
+                                margin: 0 0 20px 0;
+                                font-size: 30px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                                font-family: @font-tertiary;
+                                font-weight: @font-weight__medium;
+                                line-height: 1.8;
+                                text-align: justify;
                             }
                         }
                     }
