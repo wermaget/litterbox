@@ -18,7 +18,7 @@ function formatDate($val){
 
 <div style="position: relative;">
   <img class="pages-bg-grey" src="../include/assets/images/homepage-bg-1.png" style="z-index: -1;">
-<div class="container-fluid">
+<div class="container-fluid search-content">
   <div class="container-80 center-page">
   <div class="col-md-10 center-page p-b-30">
     <h2 class="m-b-30 m-t-20 text-center">Search Jobs</h2>
@@ -89,10 +89,11 @@ function formatDate($val){
 <?php if(!$jobList && !$s && $c){?>
   <h3 class="text-center text-muted"><i class="mdi mdi-account-off mdi-48px m-t-30"></i><br>No Jobs Found</h3>
 <?php }else{?>
+    <div class="search-items-wrapper">
   <?php foreach($jobList as $row) {
     if ($row->isApproved==1){
   ?>
-  <div class="form-container container m-t-30 m-b-30">
+  <div class="form-container container m-t-30 m-b-30 search-items">
     <div class="row center-page job-list-row">
         <div class="col-lg-4 job-list-summary">
 
@@ -119,9 +120,9 @@ function formatDate($val){
         </div>
         <?php } ?>
     </div>
-    <br>
   </div> <!-- End List Container -->
 <?php } }?>
+    </div>
 
 </div>
 <br>

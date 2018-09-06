@@ -9,13 +9,14 @@ function getPositionName($Id){
 
 <div style="position: relative;">
   <img style="position: absolute; top:0; width: 100%;" src="../include/assets/images/our-services-bg.png">
-<div class="container-fluid">
+<div class="container-fluid services-page">
   <div class="container-fluid m-t-30">
     <div class="container-80 text-center center-page">
       <h2 class="slideanim">
         Our Supply Chain Services
       </h2>
     </div>
+    <div class="services-tiles">
   <div class="row slideanim">
     <div class="col-lg-1"></div>
     <div class="col-lg-2">
@@ -105,6 +106,7 @@ function getPositionName($Id){
     </div>
     <div class="col-lg-1"></div>
   </div>
+    </div>
 
   </div> <!-- container -->
 </div>

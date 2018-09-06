@@ -210,3 +210,45 @@
     display: none;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .home-supply-chain {
+    display: none;
+  }
+  .home-supply-chain.mobile {
+    display: block;
+  }
+  .home-supply-chain.mobile .row.slideanim.slide {
+    display: block;
+  }
+  .home-supply-chain.mobile .row.slideanim.slide .col-lg-2 {
+    display: inline-block;
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .home-supply-chain.mobile .row.slideanim.slide .col-lg-2 {
+    display: inline-block;
+    width: 49%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .distributed-teamire .center-page {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .home-search .search-job-btn,
+  .home-search .job-categ,
+  .home-search .job-search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .home-supply-chain.mobile .row.slideanim.slide .col-lg-2 {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+}

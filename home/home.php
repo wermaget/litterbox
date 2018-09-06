@@ -188,6 +188,99 @@ function getPositionName($Id)
                 </div> <!-- container -->
             </div>
         </div>
+        <div class="home-supply-chain mobile">
+            <div class="container">
+                <div class="container-fluid m-t-30 m-b-30" style="padding-top: 6%;">
+                    <div class="container-80 text-center center-page">
+                        <h2 class="slideanim">
+                            Our Supply Chain Services
+                        </h2>
+                    </div>
+                    <div class="row slideanim">
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=dem">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/demandplanning.png">
+                                    <p><b>Demand Planning</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=sup">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/supplyplanning.png">
+                                    <p><b>Supply Planning</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=ord">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/orderfulfillment.png">
+                                    <p><b>Order Fulfillment</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=log">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/logistics.png">
+                                    <p><b>Logistics</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=man">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/manufacturing.png">
+                                    <p><b>Manufacturing</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=tran">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/transportation.png">
+                                    <p><b>Transportation</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=pro">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/procurement.png">
+                                    <p><b>Procurement</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=tra">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/trainingcertification.png">
+                                    <p><b>Training Certification</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=servicesDetail&code=war">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/warehousing.png">
+                                    <p><b>Warehousing</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="../home?view=otherServices">
+                                <div class="icons icons-container text-center">
+                                    <img src="../include/assets/images/others.png">
+                                    <p><b>Others</b></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- container -->
+            </div>
+        </div>
         <!-- Basic Form Wizard -->
         <div class="bgimg-3 distributed-teamire">
             <div class="text-center block-title">

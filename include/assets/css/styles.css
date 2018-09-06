@@ -18312,6 +18312,9 @@ select.form-control {
 .home-supply-chain p b {
   color: #3D464D;
 }
+.home-supply-chain.mobile {
+  display: none;
+}
 .distributed-teamire {
   background-size: cover;
   background-repeat: no-repeat;
@@ -18746,6 +18749,43 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   body.admin-page .modal-dialog {
     width: 700px;
   }
+}
+.search-content .form-inline {
+  text-align: center;
+}
+.search-content .search-items-wrapper {
+  width: 80%;
+  margin: auto;
+}
+.search-content .search-items {
+  padding: 0;
+  margin: 0;
+  width: 33%;
+  display: inline-block;
+}
+.search-content .search-items .job-list-summary {
+  width: 100%;
+  float: none;
+}
+.search-content .search-items .job-list-desc {
+  width: 100%;
+  float: none;
+}
+.search-content .search-items .job-list-desc .job-list-link {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+.search-content .search-items .job-list-row {
+  height: auto;
+  background-color: white;
+  padding: 10px;
+}
+.services-page .services-tiles .icons-container {
+  background-color: transparent;
+}
+.services-page .services-tiles .icons-container .text-white {
+  color: #333333 !important;
 }
 .inbox-leftbar {
   width: 240px;
