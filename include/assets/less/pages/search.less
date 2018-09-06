@@ -2,41 +2,89 @@
 @import "../components/elements.less";
 
 .search-content {
-  .form-inline {
-    text-align: center;
-  }
+    margin-bottom: 100px;
+    
+    .container {
+        .form-inline {
+            .form-group {
+                input {
+                    width: 500px;
+                }
 
-  .search-items-wrapper {
-    width: 80%;
-    margin: auto;
-  }
+                select {
+                    width: 250px;
+                }
 
-  .search-items {
-    padding: 0;
-    margin: 0;
-    width: 33%;
-    display: inline-block;
-
-    .job-list-summary {
-      width: 100%;
-      float: none;
+                button {
+                    padding: 7px 40px;
+                }
+            }
+        }
     }
 
-    .job-list-desc {
-      width: 100%;
-      float: none;
-
-      .job-list-link {
-        width: 100%;
-        display: block;
-        text-align: left;
-      }
+    .search-items-wrapper {
+        margin-top: 48px;
     }
 
-    .job-list-row {
-      height: auto;
-      background-color: white;
-      padding: 10px;
+    .search-items {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        border: 1px solid #ddd;
+
+        .job-list-summary {
+            height: 100%;
+            padding: 20px 33px;
+            width: 100%;
+            float: none;
+            position: relative;
+        }
+
+        .job-list-title {
+            display: block;
+            font-size: 17px;
+            line-height: 28px;
+            font-weight: 700;
+            color: @curious-blue;
+            margin-bottom: 10px;
+        }
+
+        .job-list-zipcode,
+        .job-list-rate {
+            line-height: 1.4;
+        }
+        .job-list-zipcode {
+            font-size: 14px;
+            color: #6c7881;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .job-list-rate {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .job-list-desc {
+            width: 100%;
+            float: none;
+
+            .job-list-link {
+                width: 100%;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .job-list-date {
+
+        }
+
+        .job-list-row {
+            height: auto;
+            background-color: white;
+        }
     }
-  }
 }

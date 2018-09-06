@@ -9,7 +9,6 @@
 </head>
 <body class="main-site <?= (($content == 'home.php')) ? 'index' : 'non-index' ?> <?= strtolower($view) ?>">
 <!-- Navigation Bar-->
-
 <header id="topnav">
     <?php
     include 'navVisitor.php';

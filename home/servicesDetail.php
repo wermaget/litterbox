@@ -152,7 +152,7 @@ $jobFunc = job_function()->get("code='$code'");
       </div>
     </div>
 </div>
-      <div class="row form-container container-80 center-page">
+      <div class="row form-container container-80 center-page" style="display: none;">
           <div class="col-md-12 center-page">
               <div class="input-group m-t-5">
                 <form class="form-inline" method="GET">

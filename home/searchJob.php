@@ -17,11 +17,10 @@ function formatDate($val){
 ?>
 
 <div style="position: relative;">
-  <img class="pages-bg-grey" src="../include/assets/images/homepage-bg-1.png" style="z-index: -1;">
-<div class="container-fluid search-content">
-  <div class="container-80 center-page">
-  <div class="col-md-10 center-page p-b-30">
-    <h2 class="m-b-30 m-t-20 text-center">Search Jobs</h2>
+<div class="search-content">
+  <div class="container">
+  <div class="">
+    <h2 class="m-b-30 m-t-20 title">Search Jobs</h2>
     <form class="form-inline" method="GET">
     <div class="form-group">
       <input type="hidden" name="view" value="searchJob">
@@ -41,19 +40,7 @@ function formatDate($val){
   <div class="clearfix"></div>
 
   <!-- Display contact and email buttons -->
-  <div align="center" class="m-t-30">
-    <div>
-      <button class="m-r-5 btn-primary btn-candidate-contact btn-mobile" style="margin-left: 9px; line-height: 1.4em;" onclick="myFunction()">
-        <i class="fa fa-phone fa-2x"></i><br>
-        <span class="text-center">Call (+61) 433 374 955</span>
-      </button>
 
-      <button class="m-l-5 btn-primary btn-candidate-contact btn-mobile" style="line-height: 1.4em;" onclick="location.href='../home/?view=inquiryForm'">
-        <i class="fa fa-envelope-o fa-2x"></i><br>
-        <span class="text-center">Send an Email</span>
-      </button>
-    </div>
-  </div>
 
   <!-- Start Filter Panel and Results-->
 
@@ -86,42 +73,35 @@ function formatDate($val){
         <option>Select City</option>
     </select> -->
     <!-- </div> -->
-<?php if(!$jobList && !$s && $c){?>
+<?php if(!$jobList){?>
   <h3 class="text-center text-muted"><i class="mdi mdi-account-off mdi-48px m-t-30"></i><br>No Jobs Found</h3>
 <?php }else{?>
-    <div class="search-items-wrapper">
-  <?php foreach($jobList as $row) {
+    <div class="search-items-wrapper container">
+        <div class="search-items col-lg-9">
+
+        <?php foreach($jobList as $row) {
     if ($row->isApproved==1){
   ?>
-  <div class="form-container container m-t-30 m-b-30 search-items">
-    <div class="row center-page job-list-row">
-        <div class="col-lg-4 job-list-summary">
+    <div class="job-list-row">
+        <div class="row job-list-summary">
+            <div class="col-lg-6">
+                <a href="?view=jobDetail&id=<?=$row->Id;?>" class="job-list-title"><?=$row->position;?></a>
+                <span class="job-list-zipcode"><?=$row->address;?>, PC <?=$row->zipCode;?></span>
+                <span class="job-list-rate"><?=$row->rate;?></span>
 
-            <a href="?view=jobDetail&id=<?=$row->Id;?>" class="job-list-title"><?=$row->position;?></a>
-            <br>
-            <span class="m-b-5"><?=$row->address;?>, PC <?=$row->zipCode;?></span>
-            <br>
-            <span class="m-b-5"><?=$row->rate;?></span>
-            <br>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
             <span class="m-b-5"><?=getPositionName($row->positionTypeId);?></span>
-            <br>
             <span class="job-list-date">Posted <?=formatDate($row->createDate);?></span>
-            <br>
         </div>
 
-        <div class="col-lg-8 job-list-desc m-b-10">
-          <div class="truncate">
-            <p><?=nl2br($row->comment);?></p>
-          </div>
-          <br>
-          <span>
-            <a style="font-weight: 600;" class="job-list-link" href="?view=jobDetail&id=<?=$row->Id;?>">Read More &gt;</a>
-          </span>
-        </div>
         <?php } ?>
     </div>
-  </div> <!-- End List Container -->
 <?php } }?>
+        </div> <!-- End List Container -->
+
     </div>
 
 </div>

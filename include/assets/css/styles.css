@@ -17259,6 +17259,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   font-size: 14px;
+  position: relative;
   -webkit-text-size-adjust: 100%;
   /* Font varient */
   font-variant-ligatures: none;
@@ -18570,6 +18571,11 @@ select.form-control {
 #btn-show-search-talent:hover {
   color: #ddd;
 }
+@media only screen and (max-width: 800px) {
+  #btn-show-search-talent {
+    margin-top: 0;
+  }
+}
 .blog.grid-view {
   padding-top: 40px;
   width: 1200px;
@@ -18750,22 +18756,57 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
     width: 700px;
   }
 }
-.search-content .form-inline {
-  text-align: center;
+.search-content {
+  margin-bottom: 100px;
+}
+.search-content .container .form-inline .form-group input {
+  width: 500px;
+}
+.search-content .container .form-inline .form-group select {
+  width: 250px;
+}
+.search-content .container .form-inline .form-group button {
+  padding: 7px 40px;
 }
 .search-content .search-items-wrapper {
-  width: 80%;
-  margin: auto;
+  margin-top: 48px;
 }
 .search-content .search-items {
   padding: 0;
   margin: 0;
-  width: 33%;
   display: inline-block;
+  border: 1px solid #ddd;
 }
 .search-content .search-items .job-list-summary {
+  height: 100%;
+  padding: 20px 33px;
   width: 100%;
   float: none;
+  position: relative;
+}
+.search-content .search-items .job-list-title {
+  display: block;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #3399CC;
+  margin-bottom: 10px;
+}
+.search-content .search-items .job-list-zipcode,
+.search-content .search-items .job-list-rate {
+  line-height: 1.4;
+}
+.search-content .search-items .job-list-zipcode {
+  font-size: 14px;
+  color: #6c7881;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.search-content .search-items .job-list-rate {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .search-content .search-items .job-list-desc {
   width: 100%;
@@ -18779,7 +18820,6 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
 .search-content .search-items .job-list-row {
   height: auto;
   background-color: white;
-  padding: 10px;
 }
 .services-page .services-tiles .icons-container {
   background-color: transparent;
@@ -18799,7 +18839,7 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   max-width: 1200px;
 }
 .main-content .title {
-  font-weight: 300;
+  font-weight: 600;
   font-family: 'Open Sans';
 }
 .admin-page .container {

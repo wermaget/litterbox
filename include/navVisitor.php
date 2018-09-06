@@ -6,50 +6,48 @@
         </a>
     </div>
     <nav>
-        <label for="drop" class="toggle"><i
-                    class="fa fa-bars"></i></label>
+        <label for="drop" class="toggle"><i class="fa fa-bars"></i></label>
         <input type="checkbox" id="drop"/>
-        <ul class="menu">
-            <li>
-                <a href="#" class="nav-item-drop">Employers</a>
-                <input type="checkbox" id="drop-1"/>
-                <ul class="nav-level2">
-                    <li><a href="../home/?view=hiringForm">Request Talent</a></li>
-                    <li><a href="../home/?view=searchResume">Search Candidates</a></li>
-                    <li><a href="../home/?view=clientForm">Employer Registration</a></li>
-                </ul>
+        <div class="menu-wrapper">
+            <ul class="menu">
+                <li>
+                    <a href="#" class="nav-item-drop">Employers</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul class="nav-level2">
+                        <li><a href="../home/?view=hiringForm">Request Talent</a></li>
+                        <li><a href="../home/?view=searchResume">Search Candidates</a></li>
+                        <li><a href="../home/?view=clientForm">Employer Registration</a></li>
+                    </ul>
 
-            </li>
-            <li>
-                <a href="#" class="nav-item-drop">Job Seekers</a>
-                <input type="checkbox" id="drop-2"/>
-                <ul class="nav-level2">
-                    <li><a href="../home/?view=searchJob">Search Job</a></li>
-                    <li><a href="../home/?view=submitResume">Submit Resume</a></li>
+                </li>
+                <li>
+                    <a href="#" class="nav-item-drop">Job Seekers</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul class="nav-level2">
+                        <li><a href="../home/?view=searchJob">Search Job</a></li>
+                        <li><a href="../home/?view=submitResume">Submit Resume</a></li>
 
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="nav-item-drop">Work With Us</a>
-                <input type="checkbox" id="drop-3"/>
-                <ul class="nav-level2">
-                    <li><a href="../home/?view=services">Our Services</a></li>
-                    <li><a href="../home/?view=aboutUs">About Us</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" class="nav-item-drop">Blog</a>
-                <input type="checkbox" id="drop-4"/>
-                <ul class="nav-level2">
-                    <li><a class="m-l-3 m-r-3" href="../home/?view=projects">Supply Chain Projects</a></li>
-                    <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
-                </ul>
-            </li>
-            <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=logins">Timesheets</a></li>
-            <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=contactUs">Contact</a></li>
-        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-item-drop">Work With Us</a>
+                    <input type="checkbox" id="drop-3"/>
+                    <ul class="nav-level2">
+                        <li><a href="../home/?view=services">Our Services</a></li>
+                        <li><a href="../home/?view=aboutUs">About Us</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-item-drop">Blog</a>
+                    <input type="checkbox" id="drop-4"/>
+                    <ul class="nav-level2">
+                        <li><a class="m-l-3 m-r-3" href="../home/?view=projects">Supply Chain Projects</a></li>
+                        <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
+                    </ul>
+                </li>
+                <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=logins">Timesheets</a></li>
+                <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=contactUs">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-</div>
-<div class="row" style="max-width: 1350px; margin: 0 auto;">
-
 </div>

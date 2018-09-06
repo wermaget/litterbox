@@ -5,13 +5,13 @@ $jfList = job_function()->list("isDeleted=0 order by `option` asc");
 <div class="row m-b-30">
     <div class="col-md-12">
       <div class="text-center" style="position:relative;">
-        <h2 style="position: absolute;top: 23%; left: 44%;" class="text-white"> Inquiry Form </h2>
-        <img style="top:0;" src="../include/assets/images/submit-header.png">
       </div>
-      <div class="jumbotron center-page container" style="width: 1139px;">
+      <div class="center-page container" style="width: 1139px;">
             <form id="default-wizard" action="process.php?action=sendInquiry" method="POST" data-parsley-validate="">
                     <div class="row m-t-20">
                         <div class="col-md-8 center-page">
+
+                            <h2 class="title" style="padding: 27px 0;">Inquiry Form</h2>
                             <div class="p-r-10 w-50-p pull-left">
                               <div class="form-group">
                                 <label for="username">First Name <span style="color: red;">*</span></label>
@@ -65,11 +65,13 @@ $jfList = job_function()->list("isDeleted=0 order by `option` asc");
                                                 data-parsley-trigger="keyup" data-parsley-minlength="20"
                                                 data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                                 data-parsley-validation-threshold="10"></textarea>
+
+                                  <div class="m-t-30">
+                                      <button type="submit" class="btn btn-primary"> SUBMIT </button>
+                                  </div>
                             </div>
                           </div>
-                    <div class="text-center m-t-30">
-                        <button type="submit" class="btn btn-primary"> SUBMIT </button>
-                    </div>
+
             </form>
           </div>
     </div>

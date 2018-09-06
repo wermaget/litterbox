@@ -9,7 +9,7 @@ $jfList = job_function()->list("isDeleted='0' order by `option` asc");
         <h2 style="position: absolute;top: 25%; width: 900px; left: 17%;" class="text-white text-mobile"> Employer Registration Form </h2>
         <img style="top:0;" src="../include/assets/images/submit-header.png">
       </div>
-      <div class="jumbotron center-page container" style="width: 1139px;">
+      <div class="center-page container" style="width: 1139px;">
             <form id="default-wizard" action="process.php?action=clientRequest" method="POST" data-parsley-validate="">
               <?php if($error){?>
                 <div>
