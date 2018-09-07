@@ -2,8 +2,10 @@
 @import "../components/elements.less";
 
 .search-content {
-    margin-bottom: 100px;
-    
+    padding-bottom: 100px;
+    padding-top: 40px;
+    background: #fafafa;
+
     .container {
         .form-inline {
             .form-group {
@@ -30,41 +32,56 @@
         padding: 0;
         margin: 0;
         display: inline-block;
-        border: 1px solid #ddd;
+        background-color: @white;
+        border: 1px solid @border-color;
 
         .job-list-summary {
             height: 100%;
-            padding: 20px 33px;
+            padding: 20px;
             width: 100%;
             float: none;
             position: relative;
         }
 
         .job-list-title {
-            display: block;
-            font-size: 17px;
+            display: inline-block;
+            font-size: 20px;
             line-height: 28px;
-            font-weight: 700;
             color: @curious-blue;
             margin-bottom: 10px;
+
+            &:hover {
+                color: lighten(@curious-blue, 30%);
+            }
         }
 
         .job-list-zipcode,
-        .job-list-rate {
+        .job-list-rate,
+        .job-list-date {
             line-height: 1.4;
+            color: @pale-sky;
         }
         .job-list-zipcode {
-            font-size: 14px;
-            color: #6c7881;
+            font-size: 12px;
             display: block;
             margin: 0;
             padding: 0;
         }
 
-        .job-list-rate {
-            display: block;
-            margin: 0;
-            padding: 0;
+
+
+        .job-list-info {
+            text-align: right;
+
+            .job-list-employment-type {
+                display: block;
+            }
+
+            .job-list-date {
+                display: block;
+                font-size: 12px;
+            }
+
         }
 
         .job-list-desc {
@@ -78,13 +95,29 @@
             }
         }
 
-        .job-list-date {
-
+        .job-list-rate {
+            display: block;
+            padding-bottom: 14px;
+            font-size: 12px;
+            font-weight: @font-weight__bold;
         }
 
         .job-list-row {
             height: auto;
-            background-color: white;
+
+            &:not(:first-child) {
+                border-top: 1px solid @border-color;
+            }
+        }
+
+        .empty-result-label {
+            padding: 100px 0;
+            font-size: 14px;
+            font-weight: 400;
+
+            i {
+                font-size: 20px;
+            }
         }
     }
 }

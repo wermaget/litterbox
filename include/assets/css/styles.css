@@ -363,6 +363,15 @@ nav ul ul ul li {
 .copyright-footer .center-page {
   border-top: 1px solid #3399CC;
 }
+.lozenge {
+  border: 1px solid #85c2e0;
+  border-radius: 3px;
+  color: #3399CC;
+  font-size: 11px;
+  padding: 2px 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .popover {
   font-family: inherit;
   border: none;
@@ -18757,7 +18766,9 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   }
 }
 .search-content {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  padding-top: 40px;
+  background: #fafafa;
 }
 .search-content .container .form-inline .form-group input {
   width: 500px;
@@ -18775,38 +18786,47 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   padding: 0;
   margin: 0;
   display: inline-block;
+  background-color: #ffffff;
   border: 1px solid #ddd;
 }
 .search-content .search-items .job-list-summary {
   height: 100%;
-  padding: 20px 33px;
+  padding: 20px;
   width: 100%;
   float: none;
   position: relative;
 }
 .search-content .search-items .job-list-title {
-  display: block;
-  font-size: 17px;
+  display: inline-block;
+  font-size: 20px;
   line-height: 28px;
-  font-weight: 700;
   color: #3399CC;
   margin-bottom: 10px;
 }
+.search-content .search-items .job-list-title:hover {
+  color: #add6eb;
+}
 .search-content .search-items .job-list-zipcode,
-.search-content .search-items .job-list-rate {
+.search-content .search-items .job-list-rate,
+.search-content .search-items .job-list-date {
   line-height: 1.4;
+  color: #6c7881;
 }
 .search-content .search-items .job-list-zipcode {
-  font-size: 14px;
-  color: #6c7881;
+  font-size: 12px;
   display: block;
   margin: 0;
   padding: 0;
 }
-.search-content .search-items .job-list-rate {
+.search-content .search-items .job-list-info {
+  text-align: right;
+}
+.search-content .search-items .job-list-info .job-list-employment-type {
   display: block;
-  margin: 0;
-  padding: 0;
+}
+.search-content .search-items .job-list-info .job-list-date {
+  display: block;
+  font-size: 12px;
 }
 .search-content .search-items .job-list-desc {
   width: 100%;
@@ -18817,9 +18837,25 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   display: block;
   text-align: left;
 }
+.search-content .search-items .job-list-rate {
+  display: block;
+  padding-bottom: 14px;
+  font-size: 12px;
+  font-weight: 700;
+}
 .search-content .search-items .job-list-row {
   height: auto;
-  background-color: white;
+}
+.search-content .search-items .job-list-row:not(:first-child) {
+  border-top: 1px solid #ddd;
+}
+.search-content .search-items .empty-result-label {
+  padding: 100px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.search-content .search-items .empty-result-label i {
+  font-size: 20px;
 }
 .services-page .services-tiles .icons-container {
   background-color: transparent;

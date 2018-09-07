@@ -182,6 +182,9 @@
     display: none;
   }
 }
+body.non-index header#topnav nav label.toggle:hover {
+  cursor: pointer;
+}
 body.non-index header#topnav nav label.toggle i {
   color: #333333;
 }
