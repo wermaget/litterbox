@@ -18770,6 +18770,9 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   padding-top: 40px;
   background: #fafafa;
 }
+.search-content .container div {
+  text-align: center;
+}
 .search-content .container .form-inline .form-group input {
   width: 500px;
 }
@@ -18784,10 +18787,11 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
 }
 .search-content .search-items {
   padding: 0;
-  margin: 0;
-  display: inline-block;
+  display: block;
   background-color: #ffffff;
   border: 1px solid #ddd;
+  float: none;
+  margin: 0 auto;
 }
 .search-content .search-items .job-list-summary {
   height: 100%;
@@ -18795,6 +18799,10 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   width: 100%;
   float: none;
   position: relative;
+  border-bottom: 1px solid #ddd;
+}
+.search-content .search-items .job-list-row:last-child .job-list-summary {
+  border-bottom: none;
 }
 .search-content .search-items .job-list-title {
   display: inline-block;
@@ -18862,6 +18870,54 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
 }
 .services-page .services-tiles .icons-container .text-white {
   color: #333333 !important;
+}
+.searchresume .form-inline {
+  text-align: center;
+}
+.searchresume .select-md-mobile {
+  width: 480px;
+  display: inline-block;
+}
+.searchresume ul.candidates-list {
+  border: 1px solid #ddd;
+  padding: 0;
+  margin: 0 auto;
+  float: none;
+}
+.searchresume ul.candidates-list li {
+  padding: 20px 33px;
+}
+.searchresume ul.candidates-list li .row {
+  margin: 0;
+  padding: 0;
+}
+.searchresume ul.candidates-list li .row div {
+  margin: 0;
+  padding: 0;
+}
+.searchresume ul.candidates-list li .row div .text-primary {
+  display: block;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #3399CC;
+  margin-bottom: 10px;
+}
+.searchresume ul.candidates-list li .row div .text-primary u {
+  text-decoration: none;
+}
+.searchresume ul.candidates-list li .row div .reference {
+  font-size: 14px;
+  color: #6c7881;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.searchresume ul.candidates-list li .row div .truncate {
+  height: auto;
+}
+.clientform .main-content {
+  margin-bottom: 20px;
 }
 .inbox-leftbar {
   width: 240px;

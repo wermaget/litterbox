@@ -5,14 +5,13 @@ $ptList = position_type()->list();
 
 
 <div class="row">
-    <div class="col-md-12">
-      <div class="text-center" style="position:relative;">
-        <h2 style="position: absolute;top: 18%; width: 900px; left: 17%;" class="text-white text-center text-mobile"> Request Talent </h2>
-        <p class="text-center text-white text-xs-mobile" style="position:absolute; top: 47%; width: 900px; left: 17%;">We will help you build the workforce you desire quickly and effectively</p>
-        <img style="top:0;" src="../include/assets/images/submit-header.png">
+    <div class="col-sm-7 center-page">
+      <div class="text-center" style="position:relative; padding: 27px 0;">
+        <h2 class="text-left"> Request Talent </h2>
+        <p class="text-left">We will help you build the workforce you desire quickly and effectively</p>
       </div>
      <form  action="process.php?action=create" method="POST" id="default-wizard" data-parsley-validate="">
-      <div class="center-page container" style="width: 1139px;">
+      <div class="center-page container">
 
 
                                     <div class="alert alert-warning hidden fade in">
@@ -25,8 +24,8 @@ $ptList = position_type()->list();
                                         <p>Everything seems to be ok :)</p>
                                     </div>
 
-                    <div class="row m-t-20">
-                        <div class="col-sm-7 center-page">
+                    <div>
+                        <div>
                             <div class="row">
                               <div class="form-group">
                                   <label for="firstname">Job Category <span style="color: red;">*</span></label>

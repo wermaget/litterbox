@@ -1,5 +1,4 @@
 <div style="position: relative;">
-  <img style="position: absolute; top:0; right:0; height: 300px;" src="../include/assets/images/homepage-bg-1.png">
   <div class="container-fluid">
   <h2 class="text-center m-t-30 m-b-20">Timesheets and Logins</h2>
   <div class="text-center m-b-20" style="font-size: 90px; color: #98a6ad;"><i class="fa fa-file-text-o"></i></div>

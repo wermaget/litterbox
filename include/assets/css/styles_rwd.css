@@ -320,3 +320,49 @@ body.non-index header#topnav nav label.toggle i {
     padding: 0;
   }
 }
+@media only screen and (max-width: 480px) {
+  .submitresume .row .form-group,
+  .submitresume .row .w-50-p {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 935px) {
+  .searchjob .search-content .container .form-inline .form-group input,
+  .searchjob .search-content .container .form-inline .form-group .form-control {
+    width: auto;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .searchjob .btn-sm-mobile {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hiringform .row .form-group,
+  .hiringform .row .w-50-p {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 798px) {
+  .searchresume .container-80.center-page {
+    width: 100%;
+  }
+  .searchresume ul.candidates-list li .row div {
+    text-align: left !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .clientform .row .form-group,
+  .clientform .row .w-50-p {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logins .row .col-12 {
+    padding: 0 !important;
+  }
+}

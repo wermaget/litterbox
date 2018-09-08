@@ -7,6 +7,9 @@
     background: #fafafa;
 
     .container {
+        div {
+            text-align: center;
+        }
         .form-inline {
             .form-group {
                 input {
@@ -30,10 +33,11 @@
 
     .search-items {
         padding: 0;
-        margin: 0;
-        display: inline-block;
+        display: block;
         background-color: @white;
         border: 1px solid @border-color;
+        float: none;
+        margin: 0 auto;
 
         .job-list-summary {
             height: 100%;
@@ -41,6 +45,16 @@
             width: 100%;
             float: none;
             position: relative;
+            border-bottom: 1px solid #ddd;
+
+        }
+
+        .job-list-row {
+            &:last-child {
+                .job-list-summary {
+                    border-bottom: none;
+                }
+            }
         }
 
         .job-list-title {

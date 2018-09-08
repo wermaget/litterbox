@@ -21,7 +21,6 @@ function getCity($Id){
 ?>
 
 <div style="position: relative;" >
-  <img style="position: absolute; top:0; right:0; height: 300px; z-index:-1;" src="../include/assets/images/homepage-bg-1.png">
 <div class="container-fluid m-b-30">
   <div class="container-80 center-page">
   <div class="col-md-10 center-page p-b-30">
@@ -44,7 +43,7 @@ function getCity($Id){
 
 <div class="col-md-12 clearfix">
   <!-- Display contact and email buttons -->
-  <div align="center" class="m-t-30">
+  <div align="center" style="display: none" class="m-t-30">
     <div>
       <button class="m-r-5 btn-primary btn-candidate-contact btn-mobile" style="margin-left: 9px; line-height: 1.4em;" onclick="myFunction()">
         <i class="fa fa-phone fa-2x"></i><br>
@@ -67,15 +66,15 @@ function getCity($Id){
     <h3 class="text-center text-muted"><i class="mdi mdi-account-off mdi-48px"></i><br>No Candidates Found</h3>
   <?php }else{?>
 
-  <ul style="padding-left: 0;">
+  <ul class="candidates-list col-lg-9">
     <?php foreach($candidateList as $row) {?>
     <li class="candidates">
 <div class="row m-t-10">
-  <div style="width: 100%; padding: 10px; padding-left: 25px;">
+  <div>
     <!-- Start Job List -->
     <div class="row">
       <div class="col-md-10">
-      <span style="font-size: 25px; font-weight: bold;" class="text-primary">
+      <span class="text-primary">
         <a href="../home/?view=candidateDetail&Id=<?=$row->Id;?>">
           <u><?=getJobFunction($row->jobFunctionId); ?></u>
         </a>
@@ -83,18 +82,18 @@ function getCity($Id){
       </div>
     </div>
     <!-- Reference -->
-    <span>Reference: <?=$row->refNum;?></span>
+    <span class="reference">Reference: <?=$row->refNum;?></span>
     <div class="clearfix"></div>
     <!-- Location -->
     <div class="col-md-4">
       <i class="fa fa-map-marker"></i> <?=$row->address1;?>
     </div>
     <!-- College -->
-    <div class="col-md-4">
+    <div class="col-md-4" style="text-align: center">
       <i class="fa fa-map-o"></i> <?=$row->address2;?>
     </div>
     <!-- Experience -->
-    <div class="col-md-4 m-b-10">
+    <div class="col-md-4 m-b-10" style="text-align: center">
       <i class="fa fa-globe"></i> <?=getCity($row->city);?>&nbsp;<?=$row->state;?>&nbsp;<?=$row->zipCode;?>
     </div>
 
