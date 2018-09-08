@@ -1,6 +1,18 @@
 @import "../global/variables.less";
 @import "../components/elements.less";
 
+.home-search {
+    .search-job-btn,
+    .categ-btn {
+        font-family: @font-primary;
+        text-transform: uppercase;
+        font-weight: @font-weight__bold;
+        vertical-align: top;
+        font-size: 13px;
+        line-height: 1.1;
+        padding: 11px 18px;
+    }
+}
 //Home Supply Chain
 .home-supply-chain {
     .icons-container {
@@ -23,27 +35,33 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 90px 0;
+    position: relative;
 
     &.bgimg-3 {
         background-image: none;
 
         .nav-tabs {
-            margin-top: 20px;
+            text-align: center;
 
             li {
+                display: inline-block !important;
+                width: auto;
 
                 span {
-                    font-size: 14px;
+                    font-size: 13px;
+                    font-family: @font-primary;
                 }
                 &:first-child {
-                    border-right: 1px solid black;
+                    border-right: 1px solid @border-color;
                 }
             }
         }
 
-        .m-b-30 {
-            font-size: 15px;
-            font-family: latoregular;
+        .btn {
+            font-size: 13px;
+            font-family: @font-primary;
+            font-weight: @font-weight__semibold;
+            color: @curious-blue;
         }
 
         .tab-content {
@@ -115,7 +133,7 @@
     .stepy-navigator {
         position: absolute;
         width: 100%;
-        height: 200px;
+        height: 100%;
         top: 0;
         bottom: 0;
         left: 0;
@@ -126,7 +144,20 @@
             background-color: transparent !important;
             border: none !important;
             background-repeat: no-repeat;
-            height: 100px;
+            height: 100%;
+            position: absolute;
+            padding: 0;
+
+            &:active,
+            &:focus {
+                box-shadow: none;
+
+                span {
+                    &:before {
+                        color: @curious-blue !important;
+                    }
+                }
+            }
 
             .mdi {
                 display: none;
@@ -134,17 +165,27 @@
 
             &.button-next,
             &.button-back {
+                top: 48px;
+
                 span {
+                    font-size: 0;
+
                     &:before {
                         content: "\f054";
                         font-family: 'FontAwesome';
-                        font-size: 60px;
+                        font-size: 28px;
                         color: rgba(0, 0, 0, 0.15);
                     }
                 }
             }
 
+            &.button-next {
+                right: 0;
+            }
+
             &.button-back {
+                left: 0;
+
                 span {
                     &:before {
                         .lib-rotate(180deg);
@@ -154,10 +195,6 @@
             }
         }
 
-    }
-
-    form {
-        position: relative;
     }
 }
 
@@ -346,4 +383,13 @@
     #btn-show-search-talent {
         margin-top: 0;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .distributed-teamire {
+        .stepy-navigator {
+            position: static;
+        }
+    }
+
 }

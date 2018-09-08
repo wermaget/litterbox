@@ -2,58 +2,57 @@
 @import "../components/elements.less";
 
 .searchresume {
-  .form-inline {
-    text-align: center;
-  }
+    background: @dim-bg;
 
-  .select-md-mobile {
-    width: 480px;
-    display: inline-block;
-  }
+    .form-inline {
+        text-align: center;
+    }
 
-  ul.candidates-list {
-    border: 1px solid #ddd;
-    padding: 0;
-    margin: 0 auto;
-    float: none;
+    .select-md-mobile {
+        width: 480px;
+        display: inline-block;
+    }
 
-    li {
-      padding: 20px 33px;
-
-      .row {
-        margin: 0;
+    ul.candidates-list {
         padding: 0;
 
-        div {
-          margin: 0;
-          padding: 0;
+        li {
+            padding: 20px 33px;
 
-          .text-primary {
-            display: block;
-            font-size: 17px;
-            line-height: 28px;
-            font-weight: 700;
-            color: #3399CC;
-            margin-bottom: 10px;
+            .row {
+                margin: 0;
+                padding: 0;
 
-            u {
-              text-decoration: none;
+                div {
+                    margin: 0;
+                    padding: 0;
+
+                    .text-primary {
+                        display: block;
+                        font-size: 17px;
+                        line-height: 28px;
+                        font-weight: 700;
+                        color: #3399CC;
+                        margin-bottom: 10px;
+
+                        u {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .reference {
+                        font-size: 14px;
+                        color: #6c7881;
+                        display: block;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .truncate {
+                        height: auto;
+                    }
+                }
             }
-          }
-
-          .reference {
-            font-size: 14px;
-            color: #6c7881;
-            display: block;
-            margin: 0;
-            padding: 0;
-          }
-
-          .truncate {
-            height: auto;
-          }
         }
-      }
     }
-  }
 }

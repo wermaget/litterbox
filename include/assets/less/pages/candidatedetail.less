@@ -1,0 +1,47 @@
+
+body.candidatedetail{
+    background: @dim-bg;
+
+    .candidate-detail-wrapper {
+        margin-top: 24px;
+        margin-bottom: 74px;
+
+        .candidate-detail-content {
+            border: 1px solid @border-color;
+            background: @white;
+            padding: 23px 35px;
+
+            .candidate-detail-upper,
+            .candidate-detail-lower {
+
+            }
+
+            .candidate-detail-upper {
+                margin-bottom: 34px;
+
+                .candidate-detail {
+                    &-title {
+                        h2 {
+                            font-size: 21px;
+                        }
+                    }
+
+                    &-reference {
+                        span {
+                            font-size: 12px;
+                            color: @pale-sky;
+                        }
+                    }
+
+                    &-address1,
+                    &-address2,
+                    &-location {
+                        color: @pale-sky;
+                        font-size: 12px;
+                        line-height: 1.9;
+                    }
+                }
+            }
+        }
+    }
+}

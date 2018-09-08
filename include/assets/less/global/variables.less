@@ -1,5 +1,5 @@
-
 @border-color: #ddd;
+@dim-bg: #fafafa;
 
 @custom: #2289d0;
 @regal-blue: #005371;
@@ -33,8 +33,6 @@
 
 @shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
 
-
-
 //Background left-sidebar
 @bg-leftbar: #343c49;
 
@@ -62,102 +60,112 @@
 
 //Mixins
 .flex() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .inline-flex() {
-  display: -moz-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 }
 
 .flex-direction(@direction) {
-  -webkit-flex-direction: @direction;
-  -ms-flex-direction: @direction;
-  flex-direction: @direction;
+    -webkit-flex-direction: @direction;
+    -ms-flex-direction: @direction;
+    flex-direction: @direction;
+}
+
+.flex-value(@value) {
+    -webkit-flex: @value; /* Chrome */
+    -ms-flex: @value; /* IE 10 */
+    -webkit-box-flex: @value; /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: @value;
+    flex: @value;
 }
 
 .flex-wrap(@wrap) {
-  -webkit-flex-wrap: @wrap;
-  -ms-flex-wrap: @wrap;
-  flex-wrap: @wrap;
+    -webkit-flex-wrap: @wrap;
+    -ms-flex-wrap: @wrap;
+    flex-wrap: @wrap;
 }
 
 .flex-flow(@flow) {
-  -webkit-flex-flow: @flow;
-  -ms-flex-flow: @flow;
-  flex-flow: @flow;
+    -webkit-flex-flow: @flow;
+    -ms-flex-flow: @flow;
+    flex-flow: @flow;
 }
 
 .flex-order(@order) {
-  -webkit-order: @order;
-  -ms-order: @order;
-  order: @order;
+    -webkit-order: @order;
+    -ms-order: @order;
+    order: @order;
 }
 
 .flex-grow(@grow) {
-  -webkit-flex-grow: @grow;
-  -ms-flex-grow: @grow;
-  flex-grow: @grow;
+    -webkit-flex-grow: @grow;
+    -ms-flex-grow: @grow;
+    flex-grow: @grow;
 }
 
 .flex-shrink(@shrink) {
-  -webkit-flex-shrink: @shrink;
-  -ms-flex-shrink: @shrink;
-  flex-shrink: @shrink;
+    -webkit-flex-shrink: @shrink;
+    -ms-flex-shrink: @shrink;
+    flex-shrink: @shrink;
 }
 
 .flex-basis(@width) {
-  -webkit-flex-basis: @width;
-  -ms-flex-basis: @width;
-  flex-basis: @width;
+    -webkit-flex-basis: @width;
+    -ms-flex-basis: @width;
+    flex-basis: @width;
 }
 
 .justify-content(@justify) {
-  -webkit-justify-content: @justify;
-  -ms-justify-content: @justify;
-  justify-content: @justify;
+    -webkit-justify-content: @justify;
+    -ms-justify-content: @justify;
+    justify-content: @justify;
 }
 
 .align-content(@align) {
-  -webkit-align-content: @align;
-  -ms-align-content: @align;
-  align-content: @align;
+    -webkit-align-content: @align;
+    -ms-align-content: @align;
+    align-content: @align;
 }
 
 .align-items(@align) {
-  -webkit-align-items: @align;
-  -ms-align-items: @align;
-  align-items: @align;
+    -webkit-align-items: @align;
+    -ms-align-items: @align;
+    align-items: @align;
 }
 
 .align-self(@align) {
-  -webkit-align-self: @align;
-  -ms-align-self: @align;
-  align-self: @align;
+    -webkit-align-self: @align;
+    -ms-align-self: @align;
+    align-self: @align;
 }
 
 .appearance(@appearance) {
-  -webkit-webkit-appearance: @appearance;
-  -moz-webkit-appearance:  @appearance;
-  -ms-webkit-appearance:  @appearance;
-  -o-webkit-appearance:  @appearance;
-  webkit-appearance:  @appearance;
+    -webkit-webkit-appearance: @appearance;
+    -moz-webkit-appearance: @appearance;
+    -ms-webkit-appearance: @appearance;
+    -o-webkit-appearance: @appearance;
+    webkit-appearance: @appearance;
 }
 
 .border-radius(@radius) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
 }
+
 .box-shadow() {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
 }
+
 .lib-rotate(@value) {
     -webkit-transform: rotate(@value);
     -moz-transform: rotate(@value);

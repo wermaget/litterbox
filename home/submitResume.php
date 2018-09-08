@@ -176,9 +176,10 @@ $ptList = position_type()->list();
                                                                               class="filestyle form-control"
                                                                               data-input="false"
                                                                               accept=".pdf, .doc, .docx" required></div>
-                            <div class="m-t-30">
-                                <button type="submit" class="btn btn-primary stepy-finish"> SUBMIT RESUME </button>
-                            </div>
+
+                        </div>
+                        <div class="actions-toolbar">
+                            <button type="submit" class="action btn btn-primary stepy-finish"> SUBMIT RESUME </button>
                         </div>
                     </div>
                 </div>

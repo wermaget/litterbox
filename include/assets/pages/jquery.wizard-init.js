@@ -35,6 +35,6 @@ $(function() {
     });
 
     // Apply "Back" and "Next" button styling
-    $('.stepy-navigator').find('.button-next').addClass('btn btn-primary waves-effect waves-light');
-    $('.stepy-step').find('.button-back').addClass('btn btn-default waves-effect pull-left');
+    $('.stepy-navigator').find('.button-next').addClass('btn btn-primary');
+    $('.stepy-step').find('.button-back').addClass('btn btn-primary');
 });

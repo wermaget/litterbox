@@ -18,79 +18,52 @@ function formatDate($val)
 }
 
 ?>
-
 <div>
     <div class="search-content">
-        <div class="container">
-            <div class="">
-                <h2 class="m-b-30 m-t-20 title">Search Jobs</h2>
+        <div class="search-items-wrapper container">
+            <div>
+                <div class="row">
+                    <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+                        <h2 class="m-b-30 m-t-20 title">Search Jobs</h2>
+                    </div>
+                </div>
                 <form class="form-inline" method="GET">
-                    <div class="form-group">
-                        <input type="hidden" name="view" value="searchJob">
-                        <input type="text" name="s" class="form-control select-sm-mobile"
-                               placeholder="Job Title, Skills or Keywords">
-                        <select name="c" class="form-control select-sm-mobile" required>
-                            <option value="">Select Category</option>
-                            <?php foreach ($jobFunctionList as $row) { ?>
-                                <option value="<?= $row->Id; ?>"><?= $row->option; ?></option>
-                            <?php } ?>
-                        </select>
-                        <button type="submit" class="btn waves-effect waves-light btn-primary btn-sm-mobile">Search
-                        </button>
+                    <div class="form-group actions-toolbar">
+                        <div class="row">
+                            <input type="hidden" name="view" value="searchJob">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 no-padding col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+                                <input type="text" name="s" class="form-control select-sm-mobile"
+                                       placeholder="Job Title, Skills or Keywords">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 no-padding">
+                                <select name="c" class="form-control select-sm-mobile" required>
+                                    <option value="">Select Category</option>
+                                    <?php foreach ($jobFunctionList as $row) { ?>
+                                        <option value="<?= $row->Id; ?>"><?= $row->option; ?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 no-padding">
+                                <button type="submit" class="action btn btn-primary">Search</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
-        </div>
-
-        <!-- Display contact and email buttons -->
-
-
-        <!-- Start Filter Panel and Results-->
-
-        <!-- TODO: Filters -->
-        <!-- <h4>Filters: </h4>
-        <div class="form-inline m-b-30" style="padding: 0; margin: 0; width: 100%;">
-        <select class="form-control" style="height: 50px; width:199px; border-right: none; ">
-            <option>Select City</option>
-        </select>
-        <select class="form-control" style="height: 50px;width:199px; border-right: none; border-radius: 0px; margin-left: -6px;">
-            <option>Select City</option>
-        </select>
-        <select class="form-control" style="height: 50px;width:199px; border-right: none; border-radius: 0px; margin-left: -5px;">
-            <option>Select City</option>
-        </select>
-        <select class="form-control" style="height: 50px;width:199px; border-right: none; border-radius: 0px; margin-left: -5px;">
-            <option>Select City</option>
-        </select>
-        <select class="form-control" style="height: 50px;width:199px; border-radius: 0px; margin-left: -3px;">
-            <option>Select City</option>
-        </select>
-        <select class="form-control" style="height: 50px;width:199px; border-left:none; margin-left: -5px;">
-            <option>Select City</option>
-        </select>
-        </div> -->
-        <!-- TODO: Filters -->
-        <!-- <h4>Sort by: </h4> -->
-        <!-- <div class="form-inline m-b-30" style=""> -->
-        <!-- <select class="form-control" style="height: 50px; width:199px;">
-            <option>Select City</option>
-        </select> -->
-        <!-- </div> -->
-        <div class="search-items-wrapper container">
-            <div class="search-items col-lg-9">
+            <div class="search-items col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
                 <?php if ($jobList){ ?>
                     <?php foreach ($jobList as $row) {
                         if ($row->isApproved == 1) {
                             ?>
                             <div class="job-list-row">
                                 <div class="row job-list-summary">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <a href="?view=jobDetail&id=<?= $row->Id; ?>"
                                            class="job-list-title"><?= $row->position; ?></a>
                                         <span class="job-list-zipcode"><?= $row->address; ?>, PC <?= $row->zipCode; ?></span>
                                         <span class="job-list-rate"><?= $row->rate; ?></span>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <div class="job-list-info">
                                             <span class="job-list-date">Posted on <?= formatDate($row->createDate); ?></span>
                                             <span class="job-list-employment-type">

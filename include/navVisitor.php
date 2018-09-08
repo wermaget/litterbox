@@ -10,6 +10,7 @@
         <input type="checkbox" id="drop"/>
         <div class="menu-wrapper">
             <ul class="menu">
+                <li class="home-button"><a href="../home">Home</a></li>
                 <li>
                     <a href="#" class="nav-item-drop">Employers</a>
                     <input type="checkbox" id="drop-1"/>

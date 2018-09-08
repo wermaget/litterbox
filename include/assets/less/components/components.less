@@ -11,6 +11,22 @@
     text-transform: uppercase;
 }
 
+.page-controls {
+    margin-bottom: 24px;
+
+    .page-returner {
+        color: @curious-blue;
+        font-family: @font-primary;
+        font-weight: @font-weight__semibold;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
 .popover {
     font-family: inherit;
     border: none;
@@ -1199,7 +1215,7 @@
 }
 
 .nav-tabs > li > a {
-    color: @dark;
+    color: @curious-blue;
     font-weight: 700;
 
     &:hover {
@@ -1208,7 +1224,7 @@
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
-    color: @custom;
+    color: @pale-sky;
 }
 
 /* Vertial tab */
@@ -2640,6 +2656,7 @@ textarea.form-control {
 /* Form wizard */
 .stepy-step {
     padding: 0 20px;
+    position: relative;
 }
 
 .stepy-header {

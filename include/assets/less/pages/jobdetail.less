@@ -1,0 +1,129 @@
+
+body {
+    &.jobdetail {
+        background: @dim-bg;
+
+        .job-detail-content,
+        .job-detail-minisearch {
+            background: @white;
+        }
+
+        .job-detail-wrapper {
+            margin-top:24px;
+            margin-bottom: 74px;
+
+            .job-detail-content {
+                border: 1px solid @border-color;
+
+                .job-detail-upper {
+                    border-bottom: 1px solid @border-color;
+                    padding: 30px 24px;
+
+                    .job-detail{
+                        &-title {
+                            h2 {
+                                font-size: 21px;
+                                margin: 0;
+                            }
+                        }
+
+                        &-sub-info{
+                            .employment-type {
+                                margin-right: 4px;
+                            }
+
+                            .job-function {
+                                display: inline-block;
+                                color: @pale-sky;
+                                font-size: 12px;
+                            }
+                        }
+
+                        &-sub-desc {
+                            .location,
+                            .salary {
+                                color: @pale-sky;
+                                font-size: 12px;
+                            }
+
+                            .dot {
+                                font-size: 7px;
+                                vertical-align: middle;
+                                color: @pale-sky;
+                            }
+                        }
+
+                        &-reference-number {
+                            line-height: 1;
+
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+
+                        &-date {
+                            line-height: 1;
+
+                            .posted,
+                            .expiration {
+                                font-size: 12px;
+                                color: @pale-sky;
+                            }
+                        }
+
+                        &-counters {
+                            margin-top: 20px;
+                            text-align: right;
+
+                            .counter-item {
+                                display: inline-block;
+                                margin-left: 28px;
+                                text-align: center;
+
+                                h2,
+                                p {
+                                    margin: 0;
+                                }
+
+                                h2 {
+                                    font-family: @font-primary;
+                                    font-weight: @font-weight__semibold;
+                                    font-size: 24px;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    color: @pale-sky;
+                                }
+                            }
+                        }
+
+                        &-actions {
+                            margin-top: 16px;
+
+                            .closed {
+                                background: @border-color;
+                                outline: none;
+                                border: none;
+                                color: @gray;
+                            }
+                        }
+                    }
+
+                }
+
+                .job-detail-lower {
+                    padding: 24px 30px 70px 30px;
+
+                    .description-title {
+                        font-size: 21px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
