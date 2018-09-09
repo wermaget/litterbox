@@ -18955,6 +18955,9 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
 .searchresume ul.candidates-list li {
   padding: 20px 33px;
 }
+.searchresume ul.candidates-list li:not(:first-child) {
+  border-top: 1px solid #ddd;
+}
 .searchresume ul.candidates-list li .row {
   margin: 0;
   padding: 0;

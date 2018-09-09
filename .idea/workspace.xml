@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf9e280-a9de-4886-9f96-8301167e7f2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/assets/less/pages/candidatedetail.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/pages/jobdetail.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/rwd/jobdetail_rwd.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/employeeList.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/employeeList.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accountList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accounts.php" beforeDir="false" />
@@ -2384,35 +2382,10 @@
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/resumeList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetDetail.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/application.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/candidateDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/candidateDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/clientForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/clientForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/hiringForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/hiringForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/jobDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/jobDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/searchJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/searchJob.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/searchResume.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/searchResume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/aboutUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/aboutUs.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/servicesDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/servicesDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/submitResume.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/submitResume.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/styles_rwd.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/styles_rwd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/components.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/components.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/header.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/global/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/global/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/pages/clientform.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/pages/clientform.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/pages/home.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/pages/home.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/pages/search.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/pages/search.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/rwd/header_rwd.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/rwd/header_rwd.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/rwd/home_rwd.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/rwd/home_rwd.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/rwd/searchjob_rwd.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/rwd/searchjob_rwd.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/styles.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/styles_rwd.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/styles_rwd.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/pages/jquery.wizard-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/pages/jquery.wizard-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/navVisitor.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/navVisitor.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2481,9 +2454,9 @@
           <entry key="jpg" value="1" />
           <entry key="js" value="38" />
           <entry key="json" value="5" />
-          <entry key="less" value="130" />
+          <entry key="less" value="131" />
           <entry key="map" value="4" />
-          <entry key="php" value="168" />
+          <entry key="php" value="171" />
           <entry key="png" value="2" />
           <entry key="scss" value="7" />
           <entry key="vmoptions" value="1" />
@@ -2496,8 +2469,8 @@
           <entry key="Image" value="3" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="38" />
-          <entry key="Less" value="130" />
-          <entry key="PHP" value="168" />
+          <entry key="Less" value="131" />
+          <entry key="PHP" value="171" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="7" />
           <entry key="SourceMap" value="4" />
@@ -2508,8 +2481,8 @@
           <entry key="css" value="7082" />
           <entry key="js" value="6004" />
           <entry key="json" value="240" />
-          <entry key="less" value="13168" />
-          <entry key="php" value="17823" />
+          <entry key="less" value="13223" />
+          <entry key="php" value="17865" />
           <entry key="scss" value="1" />
           <entry key="vmoptions" value="6" />
         </counts>
@@ -2519,8 +2492,8 @@
           <entry key="CSS" value="7082" />
           <entry key="JSON" value="240" />
           <entry key="JavaScript" value="6004" />
-          <entry key="Less" value="13168" />
-          <entry key="PHP" value="17823" />
+          <entry key="Less" value="13223" />
+          <entry key="PHP" value="17865" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="1" />
         </counts>
@@ -2562,18 +2535,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/jobDetail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="34" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/candidateDetail.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -2617,11 +2578,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/services.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
+            <state relative-caret-position="206">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/aboutUs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/timesheetList.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/employeeList.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -2644,15 +2641,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/styles.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -2666,9 +2654,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>request talent</find>
-      <find>employer re</find>
-      <find>.clientform</find>
       <find>.search-content</find>
       <find>width: 250px;</find>
       <find>flex:</find>
@@ -2691,11 +2676,14 @@
       <find>.toggle</find>
       <find>logo-wrapper</find>
       <find>dim-bg</find>
-      <find>.candidates</find>
       <find>search jobs</find>
       <find>page-controls</find>
       <find>can</find>
       <find>visible</find>
+      <find>more</find>
+      <find>.candidates</find>
+      <find>sidebar</find>
+      <find>orderfulfillment.png</find>
     </findStrings>
     <replaceStrings>
       <replace>Lato</replace>
@@ -2716,7 +2704,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/include/assets/less/components/menu.css" />
         <option value="$PROJECT_DIR$/include/assets/less/components/menu.less" />
         <option value="$PROJECT_DIR$/admin/projects.php" />
         <option value="$PROJECT_DIR$/admin/remoteTeam.php" />
@@ -2728,7 +2715,6 @@
         <option value="$PROJECT_DIR$/include/assets/less/pages/aboutus.less" />
         <option value="$PROJECT_DIR$/include/assets/less/global/fonts.less" />
         <option value="$APPLICATION_CONFIG_DIR$/phpstorm64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/home/aboutUs.php" />
         <option value="$PROJECT_DIR$/include/assets/less/pages/about.less" />
         <option value="$PROJECT_DIR$/include/assets/less/global/core.less" />
         <option value="$PROJECT_DIR$/include/template.php" />
@@ -2757,7 +2743,6 @@
         <option value="$PROJECT_DIR$/include/assets/css/style.css" />
         <option value="$PROJECT_DIR$/include/assets/less/pages/searchresume.less" />
         <option value="$PROJECT_DIR$/home/searchJob.php" />
-        <option value="$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less" />
         <option value="$PROJECT_DIR$/home/searchResume.php" />
         <option value="$PROJECT_DIR$/include/assets/less/styles.less" />
         <option value="$PROJECT_DIR$/include/assets/less/pages/jobdetail.less" />
@@ -2767,6 +2752,9 @@
         <option value="$PROJECT_DIR$/home/servicesDetail.php" />
         <option value="$PROJECT_DIR$/home/hiringForm.php" />
         <option value="$PROJECT_DIR$/home/services.php" />
+        <option value="$PROJECT_DIR$/home/aboutUs.php" />
+        <option value="$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less" />
+        <option value="$PROJECT_DIR$/admin/employeeList.php" />
       </list>
     </option>
   </component>
@@ -2811,13 +2799,7 @@
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
-              <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2905,12 +2887,12 @@
       <workItem from="1536239927924" duration="14255000" />
       <workItem from="1536331988576" duration="4839000" />
       <workItem from="1536378031202" duration="3041000" />
-      <workItem from="1536381761142" duration="23723000" />
+      <workItem from="1536381761142" duration="28767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265242000" />
+    <option name="totallyTimeSpent" value="270286000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2925,7 +2907,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2954,20 +2936,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/assets/less/global/fonts.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="87" column="16" lean-forward="true" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hr/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-38" />
@@ -2990,13 +2958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/aboutUs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="68" column="76" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -3220,13 +3181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/components.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -3311,8 +3265,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home/services.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
+        <state relative-caret-position="206">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/aboutUs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/timesheetList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/employeeList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
         </state>
       </provider>
     </entry>

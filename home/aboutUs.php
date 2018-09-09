@@ -11,7 +11,7 @@ function getPositionName($Id)
 <div class="container about-us">
     <div class="row">
         <div class="col-lg-offset-1 col-lg-2 col-md-2 col-sm-2">
-            <div id="sidebar" class="sidebar sticky">
+            <div id="sidebar" class="sidebar sticky hidden-xs">
                 <ul class="sticky-content">
                     <li class="director"><a href="#about">About Us</a></li>
                     <li class="director"><a href="#howwedothis">How We Do This</a></li>

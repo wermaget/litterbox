@@ -38,7 +38,7 @@ function getPositionName($Id)
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
                         <a href="../home?view=servicesDetail&code=ord">
                             <div class="icons icons-container text-center">
-                                <img src="../include/assets/images/orderFulfillment.png">
+                                <img src="../include/assets/images/orderfulfillment.png">
                                 <p class="text-white"><b>Order Fulfillment</b></p>
                             </div>
                         </a>
