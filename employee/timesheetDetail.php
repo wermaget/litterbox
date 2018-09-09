@@ -21,7 +21,8 @@ function get_time_difference($record)
 
 // Get time difference of break and lunch
 function time_rendered($timeIn, $timeOut){
-  $result = (strtotime("1/1/1980 $timeIn") - strtotime("1/1/1980 $timeOut")) / 3600;
+//   $result = (strtotime("1/1/1980 $timeIn") - strtotime("1/1/1980 $timeOut")) / 3600;
+  $result = (strtotime($timeIn) - strtotime($timeOut));
   return number_format((float)$result, 2, '.', '');
 }
 
