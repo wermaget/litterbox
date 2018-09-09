@@ -24,7 +24,6 @@ function time_rendered($timeIn, $timeOut)
     return number_format((float)$tominutes, 2, '.', '');
 }
 
-
 if ($app) {
 
     $login = 0;
@@ -119,26 +118,29 @@ if ($app) {
                         <tr>
                             <td><?= date_format(date_create($app->createDate), 'F j, Y'); ?></td>
                             <td><?= date_format(date_create($app->checkIn), 'g:ia'); ?></td>
-                            <td><?= date_format(date_create($app->breakOut), 'g:ia'); ?>
-                                - <?= date_format(date_create($app->breakIn), 'g:ia'); ?> <br>
+                            <td>
                                 <?php if ($app->breakIn) { ?>
+                                    <?= date_format(date_create($app->breakOut), 'g:ia'); ?>
+                                    - <?= date_format(date_create($app->breakIn), 'g:ia'); ?>
+                                    </br>
                                     Duration: <b><?= time_rendered($app->breakIn, $app->breakOut); ?> mins</b>
                                 <?php } ?>
                             </td>
-                            <td><?= date_format(date_create($app->lunchOut), 'g:ia'); ?>
-                                - <?= date_format(date_create($app->lunchIn), 'g:ia'); ?> <br>
-                                <?php if ($app->lunchIn) { ?>
+                            <td><?php if ($app->lunchIn) { ?>
+                                    <?= date_format(date_create($app->lunchOut), 'g:ia'); ?>
+                                    - <?= date_format(date_create($app->lunchIn), 'g:ia'); ?> <br>
                                     Duration: <b><?= time_rendered($app->lunchIn, $app->lunchOut); ?> mins</b>
                                 <?php } ?>
                             </td>
-                            <td><?= date_format(date_create($app->breakOut2), 'g:ia'); ?>
-                                - <?= date_format(date_create($app->breakIn2), 'g:ia'); ?> <br>
+                            <td>
                                 <?php if ($app->breakIn2) { ?>
+                                    <?= date_format(date_create($app->breakOut2), 'g:ia'); ?>
+                                    - <?= date_format(date_create($app->breakIn2), 'g:ia'); ?> <br>
                                     Duration: <b><?= time_rendered($app->breakIn2, $app->breakOut2); ?> mins</b>
                                 <?php } ?>
                             </td>
 
-                            <td><?= date_format(date_create($app->checkOut), 'g:ia'); ?></td>
+                            <td><?php if($app->checkOut) { echo date_format(date_create($app->checkOut), 'g:ia'); }?></td>
                             <td><b><?php
                                     if ($app->status == 4) {
                                         echo total_time_rendered($app);
