@@ -4,12 +4,12 @@ $company = company()->get("username='$user'");
 
 function getJobFunction($Id){
     $jf = job_function()->get("Id='$Id'");
-    echo $jf->option;
+    return $jf->option;
 }
-
 ?>
-
 <div class="container container-fluid">
+    <h2 class="text-center m-t-50">Welcome to Employer's Dashboard</h2>
+    <hr>
   <br>
   <div class="pull-right">
     <button type="button" onclick="location.href='../home/?view=hiringForm'" class="btn btn-primary waves-effect waves-light btn-sm"><i class="fa fa-plus"></i> Request new Talent</button>
@@ -35,7 +35,7 @@ function getJobFunction($Id){
       </div>
     </div>
     </div>
-    <h4 class="m-t-30 m-b-30">Job Category: <?=getJobFunction($company->jobFunctionId);?></h4>
+    <h4 class="m-t-30 m-b-30">Job Category: <?= getJobFunction($company->jobFunctionId);?></h4>
     <div class="row">
       <div class="col-lg-6">
         <label class="m-r-5">Australian Business Number: </label><?=$company->abn;?>

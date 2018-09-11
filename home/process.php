@@ -73,47 +73,56 @@ function create()
 
 function clientRequest()
 {
-	$email = $_POST['email'];
-	$jobFunctionId = $_POST['jobFunctionId'];
-	$refNum = bin2hex(openssl_random_pseudo_bytes(4));
-	$checkEmail = company()->get("email='$email'");
+    header('Location: ../home?view=clientForm&error='.$_POST['jobFunctionId']);
 
-	if($checkEmail){
-		header('Location: ../home?view=clientForm&error=Email already exist!');
-	}else{
-		$comp = company();
-		$comp->obj = $_POST;
-		$comp->obj['refNum'] = strtoupper($refNum);
-		$comp->obj['department'] = htmlspecialchars($_POST['department'], ENT_QUOTES);
-		$comp->obj['name'] = htmlspecialchars($_POST['name'], ENT_QUOTES);
-		$comp->obj['contactPerson'] = htmlspecialchars($_POST['contactPerson'], ENT_QUOTES);
-		$comp->obj['address'] = htmlspecialchars($_POST['address'], ENT_QUOTES);
-		$comp->obj['description'] = htmlspecialchars($_POST['description'], ENT_QUOTES);
-		$comp->obj['isApproved '] = "1";
-		$comp->create();
+    /*
+    if($_POST['jobFunctionId'] != null) {
 
-		$company = company()->get("email='$email'");
+        $email = $_POST['email'];
+        $jobFunctionId = $_POST['jobFunctionId'];
+        $refNum = bin2hex(openssl_random_pseudo_bytes(4));
+        $checkEmail = company()->get("email='$email'");
 
-		__createClientLogin($company->Id);
+        if ($checkEmail) {
+            header('Location: ../home?view=clientForm&error=Email already exist!');
+        } else {
+            $comp = company();
+            $comp->obj = $_POST;
+            $comp->obj['refNum'] = strtoupper($refNum);
+            $comp->obj['department'] = htmlspecialchars($_POST['department'], ENT_QUOTES);
+            $comp->obj['name'] = htmlspecialchars($_POST['name'], ENT_QUOTES);
+            $comp->obj['contactPerson'] = htmlspecialchars($_POST['contactPerson'], ENT_QUOTES);
+            $comp->obj['address'] = htmlspecialchars($_POST['address'], ENT_QUOTES);
+            $comp->obj['description'] = htmlspecialchars($_POST['description'], ENT_QUOTES);
+            $comp->obj['isApproved '] = "1";
+            $comp->create();
 
-		$hrList = admin()->list("jobFunctionId='$jobFunctionId'");
-		$adminList = admin()->list("level='admin'");
+            $company = company()->get("email='$email'");
 
-		// Send email
-		$hrmessage = __hrClientMessage();
-		$adminmessage = __adminClientMessage();
+            __createClientLogin($company->Id);
 
-		//for HR
-		foreach($hrList as $row){
-			sendEmail($row->email,$hrmessage);
-		}
-		//for admin
-		foreach($adminList as $row){
-			sendEmail($row->email,$adminmessage);
-		}
+            $hrList = admin()->list("jobFunctionId='$jobFunctionId'");
+            $adminList = admin()->list("level='admin'");
 
-		header('Location: ../home/?view=success&email='.$email);
-	}
+            // Send email
+            $hrmessage = __hrClientMessage();
+            $adminmessage = __adminClientMessage();
+
+            //for HR
+            foreach ($hrList as $row) {
+                sendEmail($row->email, $hrmessage);
+            }
+            //for admin
+            foreach ($adminList as $row) {
+                sendEmail($row->email, $adminmessage);
+            }
+
+            header('Location: ../home/?view=success&email=' . $email);
+        }
+    }else{
+        header('Location: ../home?view=clientForm&error=Please select from the dropdown list');
+    }
+    */
 }
 
 function __createClientLogin($Id){

@@ -64,24 +64,13 @@ function getCity($Id)
                                         <div class="col-md-10">
                                             <span class="text-primary">
                                                 <a href="../home/?view=candidateDetail&Id=<?= $row->Id; ?>">
-                                                    <?= getJobFunction($row->jobFunctionId); ?></a>
+                                                    <?= $row->firstName.' '.$row->lastName; ?>
+                                                </a>
                                             </span>
                                         </div>
                                     </div>
-                                    
                                     <span class="reference">Reference: <?= $row->refNum; ?></span>
-                                    <?php if($_SESSION['role'] != 'hr' && $_SESSION['role'] != null): ?>
-                                        <div class="col-md-12">
-                                            <i class="fa fa-map-marker"></i> <?= $row->address1; ?>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <i class="fa fa-map-o"></i> <?= $row->address2; ?>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <i class="fa fa-globe"></i> <?= getCity($row->city); ?>&nbsp;<?= $row->state; ?>
-                                            &nbsp;<?= $row->zipCode; ?>
-                                        </div>
-                                    <?php endif;?>
+                                    <small>Posted on <?= $row->createDate; ?></small>
                                 </div>
                             </div>
                         </li>

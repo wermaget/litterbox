@@ -196,7 +196,7 @@ function logout()
 	//logout.php
 session_start();
 session_destroy();
-header('Location: ../home/?view=logins');
+header('Location: ../home');
 	exit;
 }
 
