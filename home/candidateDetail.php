@@ -33,17 +33,19 @@ function getCity($Id)
                     <div class="candidate-detail-reference">
                         <span>Reference Number:<strong> <?= $candidate->refNum; ?></strong></span>
                     </div>
-                    <div class="candidate-detail-address1">
-                        <i class="fa fa-map-marker"></i> <?= $candidate->address1; ?>
-                    </div>
-                    <?php if ($candidate->address2) { ?>
-                        <div class="candidate-detail-address2">
-                            <i class="fa fa-map-o"></i> <?= $candidate->address2; ?>
+                    <?php if($_SESSION['role'] != null && $_SESSION['role'] != 'hr'): ?>
+                        <div class="candidate-detail-address1">
+                            <i class="fa fa-map-marker"></i> <?= $candidate->address1; ?>
                         </div>
-                    <?php } ?>
-                    <div class="candidate-detail-location">
-                        <i class="fa fa-globe"></i> <?= getCity($candidate->city); ?> <?= $candidate->state; ?> <?= $candidate->zipCode; ?>
-                    </div>
+                        <?php if ($candidate->address2) { ?>
+                            <div class="candidate-detail-address2">
+                                <i class="fa fa-map-o"></i> <?= $candidate->address2; ?>
+                            </div>
+                        <?php } ?>
+                        <div class="candidate-detail-location">
+                            <i class="fa fa-globe"></i> <?= getCity($candidate->city); ?> <?= $candidate->state; ?> <?= $candidate->zipCode; ?>
+                        </div>
+                    <?php endif;?>
                 </div>
             </div>
         </div>
