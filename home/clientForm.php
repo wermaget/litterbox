@@ -23,7 +23,7 @@ $jfList = job_function()->list("isDeleted='0' order by `option` asc");
                             </div>
                         <?php } ?>
                         <div class="form-group">
-                            <label for="firstname">Industry <span style="color: red;">*</span></label>
+                            <label for="firstname">Job Category <span style="color: red;">*</span></label>
                             <select class="form-control" name="jobFunctionId" required>
                                 <option value="" disabled selected>Please Select</option>
                                 <?php foreach ($jfList as $row) { ?>
