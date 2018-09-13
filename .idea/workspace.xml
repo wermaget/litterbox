@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fdf9e280-a9de-4886-9f96-8301167e7f2c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/employeeDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/employeeDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/timesheetDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/timesheetDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/timesheetList.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/timesheetList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/CRUD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/dtr.php" beforeDir="false" afterPath="$PROJECT_DIR$/employee/dtr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/employee/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/timesheetDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/employee/timesheetDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/timesheets.php" beforeDir="false" afterPath="$PROJECT_DIR$/employee/timesheets.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accountList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accounts.php" beforeDir="false" />
@@ -2381,8 +2389,6 @@
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/resumeList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetDetail.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/clientForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/clientForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/process.php" beforeDir="false" afterPath="$PROJECT_DIR$/home/process.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2422,7 +2428,7 @@
           <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.37" value="2" />
+          <entry key="project.open.time.37" value="3" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="1" />
@@ -2442,7 +2448,7 @@
           <entry key="project.open.time.75" value="2" />
           <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -2454,7 +2460,7 @@
           <entry key="json" value="5" />
           <entry key="less" value="132" />
           <entry key="map" value="4" />
-          <entry key="php" value="206" />
+          <entry key="php" value="216" />
           <entry key="png" value="2" />
           <entry key="scss" value="7" />
           <entry key="vmoptions" value="1" />
@@ -2468,7 +2474,7 @@
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="38" />
           <entry key="Less" value="132" />
-          <entry key="PHP" value="206" />
+          <entry key="PHP" value="216" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="7" />
           <entry key="SourceMap" value="4" />
@@ -2480,7 +2486,7 @@
           <entry key="js" value="6004" />
           <entry key="json" value="240" />
           <entry key="less" value="13255" />
-          <entry key="php" value="20132" />
+          <entry key="php" value="20864" />
           <entry key="scss" value="1" />
           <entry key="vmoptions" value="6" />
         </counts>
@@ -2491,7 +2497,7 @@
           <entry key="JSON" value="240" />
           <entry key="JavaScript" value="6004" />
           <entry key="Less" value="13255" />
-          <entry key="PHP" value="20132" />
+          <entry key="PHP" value="20864" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="1" />
         </counts>
@@ -2533,29 +2539,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home/process.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/timesheets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-33">
-              <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+            <state relative-caret-position="160">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hr/employeeDetail.php">
+        <entry file="file://$PROJECT_DIR$/employee/dtr.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+            <state relative-caret-position="490">
+              <caret line="91" column="25" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="91" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/candidateDetail.php">
+        <entry file="file://$PROJECT_DIR$/employee/timesheetDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            <state relative-caret-position="144">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -2563,62 +2569,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/Models.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
+            <state relative-caret-position="-422">
               <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/company/main.php">
+        <entry file="file://$PROJECT_DIR$/employee/timesheets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="496">
+              <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/clientForm.php">
+        <entry file="file://$PROJECT_DIR$/admin/timesheetList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+            <state relative-caret-position="10">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/submitResume.php">
+        <entry file="file://$PROJECT_DIR$/admin/timesheetDetail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
-              <caret line="181" column="64" selection-start-line="181" selection-start-column="64" selection-end-line="181" selection-end-column="64" />
+            <state relative-caret-position="208">
+              <caret line="31" column="221" selection-start-line="31" selection-start-column="221" selection-end-line="31" selection-end-column="221" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/employeeDetail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="50" column="97" selection-start-line="50" selection-start-column="97" selection-end-line="50" selection-end-column="97" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/hiringForm.php">
+        <entry file="file://$PROJECT_DIR$/config/CRUD.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="214" column="7" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
+            <state relative-caret-position="448">
+              <caret line="52" column="47" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/navVisitor.php">
+        <entry file="file://$PROJECT_DIR$/employee/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hr/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            <state relative-caret-position="288">
+              <caret line="18" selection-start-line="18" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -2636,9 +2642,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'application</find>
-      <find>job-detail-search-</find>
-      <find>tax file</find>
       <find>.toggle</find>
       <find>logo-wrapper</find>
       <find>dim-bg</find>
@@ -2666,6 +2669,9 @@
       <find>success</find>
       <find>error</find>
       <find>clientrequ</find>
+      <find>get_time_difference</find>
+      <find>stdclass</find>
+      <find>getCity</find>
     </findStrings>
     <replaceStrings>
       <replace>Lato</replace>
@@ -2686,10 +2692,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/include/assets/less/global/fonts.less" />
-        <option value="$APPLICATION_CONFIG_DIR$/phpstorm64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/include/assets/less/pages/about.less" />
-        <option value="$PROJECT_DIR$/include/template.php" />
         <option value="$PROJECT_DIR$/include/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/include/assets/less/_pages.less" />
         <option value="$PROJECT_DIR$/home/inquiryForm.php" />
@@ -2718,11 +2720,7 @@
         <option value="$PROJECT_DIR$/home/aboutUs.php" />
         <option value="$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less" />
         <option value="$PROJECT_DIR$/admin/employeeList.php" />
-        <option value="$PROJECT_DIR$/employee/timesheetDetail.php" />
-        <option value="$PROJECT_DIR$/employee/main.php" />
-        <option value="$PROJECT_DIR$/employee/dtr.php" />
         <option value="$PROJECT_DIR$/home/searchJob.php" />
-        <option value="$PROJECT_DIR$/config/CRUD.php" />
         <option value="$PROJECT_DIR$/home/home.php" />
         <option value="$PROJECT_DIR$/admin/services.php" />
         <option value="$PROJECT_DIR$/home/jobDetail.php" />
@@ -2737,6 +2735,14 @@
         <option value="$PROJECT_DIR$/home/hiringForm.php" />
         <option value="$PROJECT_DIR$/home/clientForm.php" />
         <option value="$PROJECT_DIR$/home/process.php" />
+        <option value="$PROJECT_DIR$/employee/main.php" />
+        <option value="$PROJECT_DIR$/employee/dtr.php" />
+        <option value="$PROJECT_DIR$/employee/timesheetDetail.php" />
+        <option value="$PROJECT_DIR$/employee/timesheets.php" />
+        <option value="$PROJECT_DIR$/admin/timesheetList.php" />
+        <option value="$PROJECT_DIR$/config/CRUD.php" />
+        <option value="$PROJECT_DIR$/admin/timesheetDetail.php" />
+        <option value="$PROJECT_DIR$/admin/employeeDetail.php" />
       </list>
     </option>
   </component>
@@ -2782,7 +2788,17 @@
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teamire" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teamire" type="462c0819:PsiDirectoryNode" />
+              <item name="employee" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2874,11 +2890,12 @@
       <workItem from="1536587091087" duration="5947000" />
       <workItem from="1536680253980" duration="7166000" />
       <workItem from="1536758287309" duration="2126000" />
+      <workItem from="1536848950134" duration="4597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290287000" />
+    <option name="totallyTimeSpent" value="294884000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2893,7 +2910,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2708018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2922,16 +2939,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/assets/less/rwd/home_rwd.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="59" column="13" lean-forward="true" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/icons/flags-icon/css/variables.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/global/variables.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -3010,13 +3017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/timesheetList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/pages/candidatedetail.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -3031,13 +3031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee/timesheetDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/timekeeping.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -3048,46 +3041,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/timesheets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/company/timesheets.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee/timesheets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/employee/enterCode.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2272">
-          <caret line="142" column="64" selection-start-line="142" selection-start-column="64" selection-end-line="142" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee/dtr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/CRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/employee/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -3183,6 +3141,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home/process.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="98" column="56" lean-forward="true" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hr/employeeDetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -3197,17 +3162,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Models.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/company/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/clientForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/submitResume.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2896">
+          <caret line="181" column="64" selection-start-line="181" selection-start-column="64" selection-end-line="181" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/hiringForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3424">
+          <caret line="214" column="7" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -3225,31 +3204,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/hiringForm.php">
+    <entry file="file://$PROJECT_DIR$/employee/dtr.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="214" column="7" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
+        <state relative-caret-position="490">
+          <caret line="91" column="25" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="91" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/submitResume.php">
+    <entry file="file://$PROJECT_DIR$/employee/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2800">
-          <caret line="181" column="64" selection-start-line="181" selection-start-column="64" selection-end-line="181" selection-end-column="64" />
+        <state relative-caret-position="288">
+          <caret line="18" selection-start-line="18" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/clientForm.php">
+    <entry file="file://$PROJECT_DIR$/admin/timesheets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        <state relative-caret-position="160">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/process.php">
+    <entry file="file://$PROJECT_DIR$/employee/timesheets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+        <state relative-caret-position="496">
+          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee/timesheetDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/timesheetList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/CRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="52" column="47" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Models.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/timesheetDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="31" column="221" selection-start-line="31" selection-start-column="221" selection-end-line="31" selection-end-column="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/employeeDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="50" column="97" selection-start-line="50" selection-start-column="97" selection-end-line="50" selection-end-column="97" />
         </state>
       </provider>
     </entry>

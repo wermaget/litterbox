@@ -21,7 +21,7 @@ function time_rendered($timeIn, $timeOut)
 {
     $result = (strtotime($timeIn) - strtotime($timeOut)) / 3600;
     $tominutes = $result * 60;
-    return number_format((float)$tominutes, 2, '.', '');
+    return number_format((float)$tominutes, 1, '.', '');
 }
 
 if ($app) {
@@ -147,7 +147,6 @@ if ($app) {
                                     }
                                     ?></b></td>
                         </tr>
-
                         </tbody>
                     </table>
                 </div>
