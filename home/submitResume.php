@@ -130,7 +130,7 @@ $ptList = position_type()->list();
                         </div>
 
                         <div class="form-group">
-                            <label for="username">Cover Letter <span style="color: red;">*</span></label>
+                            <label for="username">Describe Yourself <span style="color: red;">*</span></label>
                             <textarea id="message" class="form-control" name="coverLetter"
                                       data-parsley-trigger="keyup" data-parsley-minlength="20"
                                       data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
