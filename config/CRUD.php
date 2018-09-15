@@ -158,8 +158,5 @@ function sendEmail($email, $content){
 		echo "Error:";
 		print_r($errors);
 	}
-
-
 }
-
 ?>

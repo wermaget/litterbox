@@ -55,7 +55,7 @@ function __setStatus($s){
           ?>
 
           <tr>
-            <td><a href="?view=timesheetDetail&tsId=<?=$row->Id;?>"><?=$row->name;?></a></td>
+            <td><a href="?view=timesheetDetail&tsId=<?=$row->Id;?>">Timesheet as of <?= date_format(date_create($row->createDate), "F j, Y");?></a></td>
             <td><?=__setStatus($row->status);?></td>
             <?php
               }

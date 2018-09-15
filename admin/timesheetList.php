@@ -2,13 +2,13 @@
 $jobId = (isset($_GET['jobId']) && $_GET['jobId'] != '') ? $_GET['jobId'] : '';
 $employee = (isset($_GET['employee']) && $_GET['employee'] != '') ? $_GET['employee'] : '';
 
-if ($jobId){
+if ($jobId) {
     $timesheetList = timesheet()->list("jobId='$jobId'");
     $job = job()->get("Id=$jobId");
-    $headerTitle= $job->position;
+    $headerTitle = $job->position;
 }
 
-if ($employee){
+if ($employee) {
     $timesheetList = timesheet()->list("employee='$employee'");
     $application = application()->get("username='$employee'");
     $headerTitle = "Timesheet of " . $application->firstName . " " . $application->lastName;
@@ -16,52 +16,58 @@ if ($employee){
 
 // Functions
 
-function __getName($username){
+function __getName($username)
+{
     $get = application()->get("username='$username'");
     return $get ? $get->firstName . " " . $get->lastName : "Name not in database";
 }
 
-function __setStatus($s){
-  switch($s){
-      case '0':
-          return "Pending";
-          break;
-      case '1':
-          return "Verified";
-          break;
-      case '2':
-          return "Disputed";
-          break;
-      case '3':
-          return "Approved";
-          break;
-  }
+function __setStatus($s)
+{
+    switch ($s) {
+        case '0':
+            return "Pending";
+            break;
+        case '1':
+            return "Verified";
+            break;
+        case '2':
+            return "Disputed";
+            break;
+        case '3':
+            return "Approved";
+            break;
+    }
 }
 
 ?>
 <div class="row">
-  <div class="col-sm-12">
-    <div class="card-box table-responsive">
-        <h4 class="page-title"><?=$headerTitle;?></h4><br>
-      <table id="datatable" class="table table-striped table-bordered">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php foreach($timesheetList as $row) {
-          ?>
+    <div class="col-sm-12">
+        <div class="card-box table-responsive">
+            <h4 class="page-title"><?= $headerTitle; ?></h4><br>
+            <table id="datatable" class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th>Timesheet</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($timesheetList
 
-          <tr>
-            <td><a href="?view=timesheetDetail&tsId=<?=$row->Id;?>"><?=$row->name;?></a></td>
-            <td><?=__setStatus($row->status);?></td>
-            <?php
-              }
-            ?>
-        </tbody>
-      </table>
+                as $row) {
+                ?>
+
+                <tr>
+                    <td>
+                        <a href="?view=timesheetDetail&tsId=<?= $row->Id; ?>"><?= date_format(date_create($row->createDate), 'F j, Y'); ?> </a>
+                    </td>
+                    <td><?= __setStatus($row->status); ?></td>
+                    <?php
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
 </div>
