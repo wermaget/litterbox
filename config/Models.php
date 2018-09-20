@@ -1,6 +1,18 @@
 <?php
 include "CRUD.php";
 
+function community() {
+    $crud = new CRUD;
+    $crud->table = 'community';
+    return $crud;
+}
+
+function community_users() {
+    $crud = new CRUD;
+    $crud->table = 'community_users';
+    return $crud;
+}
+
 // User Models
 function admin() {
 	$crud = new CRUD;
