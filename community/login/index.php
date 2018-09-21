@@ -6,7 +6,7 @@ require_once '../../config/Models.php';
 
 function login()
 {
-    // if we found an error save the error message in this variable
+    
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -16,6 +16,6 @@ function login()
         $_SESSION['community_user_session'] = $username;
         header('Location: /community');
     } 
-    header('Location: index.php?error=User not found in the Database');
+    header('Location: /community?error=User not found in the Database');
     
 }

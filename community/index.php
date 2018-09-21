@@ -14,7 +14,11 @@
             <div class="row">
                 <div class="left-sb col-lg-2">
                     <div>
-                        <strong><a data-toggle="modal" data-target="#login-modal">Login</a><span>&nbsp;or&nbsp;</span><a href="#">Register</a></strong>
+                        <strong>
+                            <a data-toggle="modal" data-target="#login-modal" href="#">Login</a>
+                            <span>&nbsp;or&nbsp;</span>
+                            <a data-toggle="modal" data-target="#register-modal" href="#">Register</a>
+                        </strong>
                     </div>
                     <ul>
                         <li><a href="#">Category 1</a></li>
