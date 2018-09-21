@@ -53,9 +53,7 @@ function __setStatus($s)
                 </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($timesheetList
-
-                as $row) {
+                <?php foreach ($timesheetList as $row) {
                 ?>
 
                 <tr>

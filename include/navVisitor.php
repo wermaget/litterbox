@@ -1,6 +1,6 @@
 <div class="container nav-wrapper">
     <div class="logo-wrapper">
-        <a href="index.php" class="logo logo-mobile">
+        <a href="../index.php" class="logo logo-mobile">
             <img class="logo-light" src="../include/assets/images/teamire-logo-light-min.png">
             <img class="logo-dark" src="../include/assets/images/teamire-logo-min.png">
         </a>
@@ -46,6 +46,7 @@
                         <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
                     </ul>
                 </li>
+                <li><a class="toggle-class" href="../community">Community</a></li>
                 <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=logins">Timesheets</a></li>
                 <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=contactUs">Contact</a></li>
             </ul>
