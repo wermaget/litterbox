@@ -64,7 +64,7 @@ File: Menu
   color: #ffffff !important;
   font-size: 24px;
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 70px;
@@ -220,7 +220,7 @@ File: Menu
   font-size: 11px;
   text-transform: uppercase;
   color: #98a6ad;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
 }
 .enlarged .slimScrollDiv,
 .enlarged .slimscroll-menu {
@@ -543,3 +543,4 @@ body.enlarged.bg-transparent {
 .mega-menu .yamm-content {
   padding: 20px;
 }
+/*# sourceMappingURL=menu_light_sm.css.map */
