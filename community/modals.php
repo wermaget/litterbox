@@ -8,7 +8,7 @@
                 <h4 class="modal-title" id="myModalLabel">Register</h4>
             </div>
             <div class="modal-body">
-                <form id="default-wizard" action="process.php?action=addRemoteTeam" method="POST"
+                <form id="default-wizard" action="./register/" method="post"
                       enctype="multipart/form-data">
                     <?php if($error):?>
                     <div class="alert alert-danger">
@@ -33,12 +33,12 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="form-group">
-                                    <select class="form-control">
-                                        <option value="">Select Specialization</option>
-                                        <option value="">Hi</option>
-                                        <option value="">Hello</option>
-                                        <option value="">Not Working</option>
-                                        <option value="">Yet</option>
+                                    <select name="role" class="form-control">
+                                        <option value="0">Select Specialization</option>
+                                        <option value="0">Hi</option>
+                                        <option value="0">Hello</option>
+                                        <option value="0">Not Working</option>
+                                        <option value="0">Yet</option>
                                     </select>
                                 </div>
                             </div>

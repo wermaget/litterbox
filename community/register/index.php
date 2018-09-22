@@ -21,12 +21,13 @@ if( ! community_users()->get('email="' . $email . '"')){
     $user->obj['last_name'] = $last_name;
     $user->obj['password'] = sha1($password);
     $user->obj['role'] = $role;
+    
     $user->create();
-
-    header('Location: ../index.php/?&message=You have successfully created an account.');
+    // header('Location: ../index.php/?&message=You have successfully created an account.');
+    header('Location: /community/?message=successful registration.');
     return;
 }
-header('Location: ../index.php/?&message=Email taken.');
+header('Location: /community/?&message=Email taken.');
 
 //user exists. do action here
 
