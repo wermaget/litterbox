@@ -2,44 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5f4754-9fce-40f2-86a7-392ea30b9c3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Black-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Black-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Black-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Black-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Black-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Bold-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Condensed Semibold-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Condensed Semibold-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Condensed Semibold-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Condensed Semibold-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova ScOsf Thin-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Semibold-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Semibold-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Semibold-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Semibold-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Thin-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Thin-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Thin-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Thin-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/fonts/Mark Simonson - Proxima Nova Thin-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/components/modals.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/assets/less/pages/community.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/community/logout/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/community/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/community/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/community/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/community/login/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/community/modals.php" beforeDir="false" afterPath="$PROJECT_DIR$/community/modals.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/community/register/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/community/register/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accountList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accounts.php" beforeDir="false" />
@@ -2418,30 +2386,9 @@
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/resumeList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetDetail.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetList.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/css/styles_rwd.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/css/styles_rwd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/_pages.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/_pages.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/assets/less/components/components.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/components.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/header.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/menu_light.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/menu_light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/menu_light.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/menu_light.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/menu_light_sm.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/menu_light_sm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/menu_light_sm.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/menu_light_sm.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/menu_sm.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/menu_sm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/components/menu_sm.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/menu_sm.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/css/components.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/css/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/css/core.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/css/menu_light.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/css/menu_light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/css/menu_light_sm.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/css/menu_light_sm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/css/menu_sm.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/css/menu_sm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/global/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/global/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/global/fonts.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/global/fonts.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/global/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/global/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/responsive.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/responsive.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/assets/less/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/styles.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/assets/less/components/modals.less" beforeDir="false" afterPath="$PROJECT_DIR$/include/assets/less/components/modals.less" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2465,7 +2412,7 @@
           <entry key="css" value="6" />
           <entry key="html" value="3" />
           <entry key="less" value="17" />
-          <entry key="php" value="19" />
+          <entry key="php" value="24" />
           <entry key="svg" value="2" />
         </counts>
       </usages-collector>
@@ -2474,31 +2421,49 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="3" />
           <entry key="Less" value="17" />
-          <entry key="PHP" value="19" />
+          <entry key="PHP" value="24" />
           <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="less" value="761" />
-          <entry key="php" value="1810" />
+          <entry key="less" value="779" />
+          <entry key="php" value="3009" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Less" value="761" />
-          <entry key="PHP" value="1810" />
+          <entry key="Less" value="779" />
+          <entry key="PHP" value="3009" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/community/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="77" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="77" />
+            <state relative-caret-position="288">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/community/logout/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/community/register/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -2506,68 +2471,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/community/modals.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="151" column="177" selection-start-line="151" selection-start-column="177" selection-end-line="151" selection-end-column="177" />
+            <state relative-caret-position="-20">
+              <caret line="129" column="41" lean-forward="true" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
               <folding>
-                <element signature="e#776#782#1#HTML" expanded="true" />
-                <element signature="e#1321#1327#1#HTML" expanded="true" />
-                <element signature="e#1430#1436#1#HTML" expanded="true" />
-                <element signature="e#5428#5434#1#HTML" expanded="true" />
+                <element signature="e#994#1000#1#HTML" expanded="true" />
+                <element signature="e#1300#1306#1#HTML" expanded="true" />
+                <element signature="e#1407#1413#1#HTML" expanded="true" />
+                <element signature="e#6912#6918#1#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/components/modals.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/components/components.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="2291" column="35" selection-start-line="2291" selection-start-column="35" selection-end-line="2291" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/pages/community.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/_pages.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/assets/less/styles.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -2611,6 +2522,7 @@
       <find>form-control {</find>
       <find>focus</find>
       <find>#e5e5e5;</find>
+      <find>alert</find>
     </findStrings>
     <replaceStrings>
       <replace>../../fonts/Mark Simonson</replace>
@@ -2631,7 +2543,6 @@
         <option value="$PROJECT_DIR$/include/navVisitor.php" />
         <option value="$PROJECT_DIR$/include/footer.php" />
         <option value="$PROJECT_DIR$/admin/main.php" />
-        <option value="$PROJECT_DIR$/community/index.php" />
         <option value="$PROJECT_DIR$/include/assets/less/global/fonts.less" />
         <option value="$PROJECT_DIR$/include/assets/less/global/variables.less" />
         <option value="$PROJECT_DIR$/include/assets/less/components/header.less" />
@@ -2639,10 +2550,14 @@
         <option value="$PROJECT_DIR$/include/assets/less/_pages.less" />
         <option value="$PROJECT_DIR$/include/assets/less/styles.less" />
         <option value="$PROJECT_DIR$/include/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/include/assets/less/components/components.less" />
         <option value="$PROJECT_DIR$/include/assets/less/pages/community.less" />
-        <option value="$PROJECT_DIR$/community/modals.php" />
+        <option value="$PROJECT_DIR$/community/register/index.php" />
+        <option value="$PROJECT_DIR$/include/assets/less/components/components.less" />
         <option value="$PROJECT_DIR$/include/assets/less/components/modals.less" />
+        <option value="$PROJECT_DIR$/community/modals.php" />
+        <option value="$PROJECT_DIR$/community/login/index.php" />
+        <option value="$PROJECT_DIR$/community/logout/index.php" />
+        <option value="$PROJECT_DIR$/community/index.php" />
       </list>
     </option>
   </component>
@@ -2687,28 +2602,25 @@
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="logout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2723,7 +2635,7 @@
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -2754,12 +2666,12 @@
       <updated>1537023298102</updated>
       <workItem from="1537023299501" duration="3368000" />
       <workItem from="1537541760006" duration="5524000" />
-      <workItem from="1537609358893" duration="13220000" />
+      <workItem from="1537609358893" duration="18660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22112000" />
+    <option name="totallyTimeSpent" value="27552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -2793,13 +2705,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/CRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hr/employeeDetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -2858,9 +2763,6 @@
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/community/register/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/community/register/register.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -2994,33 +2896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/assets/less/components/components.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="2291" column="35" selection-start-line="2291" selection-start-column="35" selection-end-line="2291" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/community/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="77" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/community/modals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="151" column="177" selection-start-line="151" selection-start-column="177" selection-end-line="151" selection-end-column="177" />
-          <folding>
-            <element signature="e#776#782#1#HTML" expanded="true" />
-            <element signature="e#1321#1327#1#HTML" expanded="true" />
-            <element signature="e#1430#1436#1#HTML" expanded="true" />
-            <element signature="e#5428#5434#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/pages/community.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -3028,10 +2903,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/components/components.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="1435" column="19" selection-start-line="1435" selection-start-column="19" selection-end-line="1435" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/assets/less/components/modals.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        <state relative-caret-position="160">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/CRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/register/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/modals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="129" column="41" lean-forward="true" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+          <folding>
+            <element signature="e#994#1000#1#HTML" expanded="true" />
+            <element signature="e#1300#1306#1#HTML" expanded="true" />
+            <element signature="e#1407#1413#1#HTML" expanded="true" />
+            <element signature="e#6912#6918#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/logout/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>

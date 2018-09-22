@@ -1,6 +1,7 @@
 <!-- sample modal content -->
 <div id="register-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
+    <?php $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : ''; ?>
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -10,10 +11,14 @@
             <div class="modal-body">
                 <form id="default-wizard" action="./register/" method="post"
                       enctype="multipart/form-data">
-                    <?php if($error):?>
-                    <div class="alert alert-danger">
-                        <strong>ERROR: </strong>&nbsp;<span><?= $error ?></span>
-                    </div>
+                    <?php if($status == "register_failed"):?>
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-lg-10">
+                                <div class="alert alert-danger">
+                                    <strong>Failed: </strong>&nbsp;<span><?= $msg ?></span>
+                                </div>
+                            </div>
+                        </div>
                     <?php endif; ?>
                     <form>
                         <div class="row">
@@ -119,12 +124,16 @@
                 <h4 class="modal-title" id="myModalLabel">Login</h4>
             </div>
             <div class="modal-body">
-                <form id="default-wizard" action="process.php?action=addRemoteTeam" method="POST"
+                <form id="default-wizard" action="./login/" method="POST"
                       enctype="multipart/form-data">
-                    <?php if ($error): ?>
-                    <div class="alert alert-danger">
-                        <strong>ERROR: </strong>&nbsp;<span><?= $error ?></span>
-                    </div>
+                    <?php if($status == "login_failed"):?>
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-lg-10">
+                                <div class="alert alert-danger">
+                                    <strong>Failed: </strong>&nbsp;<span><?= $msg ?></span>
+                                </div>
+                            </div>
+                        </div>
                     <?php endif; ?>
                     <form>
                         <div class="row">

@@ -1,5 +1,8 @@
 <?php
+session_start();
 $error = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error'] : '';
+$status = (isset($_GET['status']) && $_GET['status'] != '') ? $_GET['status'] : '';
+$msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,9 +21,13 @@ $error = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error'] : '';
                 <div class="left-sb col-lg-2">
                     <div>
                         <strong>
-                            <a data-toggle="modal" data-target="#login-modal" href="#">Login</a>
-                            <span>&nbsp;or&nbsp;</span>
-                            <a data-toggle="modal" data-target="#register-modal" href="#">Register</a>
+                            <?php if (!isset($_SESSION['community_user_session'])): ?>
+                                <a data-toggle="modal" data-target="#login-modal" href="#">Login</a>
+                                <span>&nbsp;or&nbsp;</span>
+                                <a data-toggle="modal" data-target="#register-modal" href="#">Register</a>
+                            <?php else: ?>
+                                <a href="logout/" href="#">Logout</a>
+                            <?php endif; ?>
                         </strong>
                     </div>
                     <ul>

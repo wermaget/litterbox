@@ -1,21 +1,18 @@
 <?php
-
 session_start();
 require_once '../../config/database.php';
 require_once '../../config/Models.php';
 
-function login()
-{
-    
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-    $result = community_users()->get("username='$username' and password = '" . sha1($password) . "'.");
+$result = community_users()->get("email='".$email."' and password = '".sha1($password)."'");
 
-    if ($result) {
-        $_SESSION['community_user_session'] = $username;
-        header('Location: /community');
-    } 
-    header('Location: /community?error=User not found in the Database');
-    
+if ($result) {
+    $_SESSION['community_user_session'] = $result->community_user_id;
+    header('Location: ../');
+}else{
+    header('Location: ../?error=User not found in the Database');
 }
+
+
