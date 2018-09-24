@@ -27,7 +27,7 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                                 <span>&nbsp;or&nbsp;</span>
                                 <a data-toggle="modal" data-target="#register-modal" href="#">Register</a>
                             <?php else: ?>
-                                <a href="logout/" href="#">Logout</a>
+                                Hello <?= $_SESSION['community_user_session'] ?>, <a href="logout/" href="#">Logout</a>
                             <?php endif; ?>
                         </strong>
                     </div>
@@ -44,13 +44,13 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                     <div>
                         <form id="" class="" method="POST" action="post">
                             <div class="form-group">
-                                <input type="text" name="title" placeholder="What is your question?">
+                                <input type="text" name="title" class="form-control" placeholder="What is your question?">
                             </div>
                             <div class="form-group">
-                                <textarea name="description" placeholder="Description" cols="30" rows="10"></textarea>
+                                <textarea name="description" class="form-control" placeholder="Description" cols="30" rows="10"></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="tags" placeholder="Tags">
+                                <input type="text" name="tags" class="form-control" placeholder="Tags">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="action">Submit</button>
