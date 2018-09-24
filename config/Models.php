@@ -1,6 +1,13 @@
 <?php
 include "CRUD.php";
 
+
+function model($table) {
+    $crud = new CRUD;
+    $crud->table = $table;
+    return $crud;
+}
+
 function community() {
     $crud = new CRUD;
     $crud->table = 'community';
@@ -11,6 +18,10 @@ function community_users() {
     $crud = new CRUD;
     $crud->table = 'community_users';
     return $crud;
+}
+
+function community_categories() {
+    
 }
 
 // User Models
