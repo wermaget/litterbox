@@ -14,59 +14,61 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
 <header id="topnav" class="scrolled">
     <?php include_once '../include/navVisitor.php'; ?>
 </header>
-<div class="page-main wrapper">
-    <div class="main-content">
-        <div class="container">
-            <div class="row">
-                <!-- Left Sidebar -->
-                <div class="left-sb col-lg-2">
-                    <div>
-                        <strong>
-                            <?php if (!isset($_SESSION['community_user_session'])): ?>
-                                <a data-toggle="modal" data-target="#login-modal" href="#">Login</a>
-                                <span>&nbsp;or&nbsp;</span>
-                                <a data-toggle="modal" data-target="#register-modal" href="#">Register</a>
-                            <?php else: ?>
-                                Hello <?= $_SESSION['community_user_session'] ?>, <a href="logout/" href="#">Logout</a>
-                            <?php endif; ?>
-                        </strong>
+<div id="app">
+    <div class="page-main wrapper">
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Sidebar -->
+                    <div class="left-sb col-lg-2">
+                        <div>
+                            <strong>
+                                <?php if (!isset($_SESSION['community_user_session'])): ?>
+                                    <a data-toggle="modal" data-target="#login-modal" href="#">Login</a>
+                                    <span>&nbsp;or&nbsp;</span>
+                                    <a data-toggle="modal" data-target="#register-modal" href="#">Register</a>
+                                <?php else: ?>
+                                    Hello <?= $_SESSION['community_user_session'] ?>, <a href="logout/" href="#">Logout</a>
+                                <?php endif; ?>
+                            </strong>
+                        </div>
+                        <ul>
+                            <li><a href="#">Category 1</a></li>
+                            <li><a href="#">Category 2</a></li>
+                            <li><a href="#">Category 3</a></li>
+                            <li><a href="#">Category 4</a></li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li><a href="#">Category 1</a></li>
-                        <li><a href="#">Category 2</a></li>
-                        <li><a href="#">Category 3</a></li>
-                        <li><a href="#">Category 4</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-7">content</div>
-                <!-- Right Sidebar -->
-                <div class="right-sb col-lg-3">
-                    <div>
-                        <form id="" class="" method="POST" action="post">
-                            <div class="form-group">
-                                <input type="text" name="title" class="form-control" placeholder="What is your question?">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="description" class="form-control" placeholder="Description" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="tags" class="form-control" placeholder="Tags">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="action">Submit</button>
-                            </div>
-                        </form>
+                    <div class="col-lg-7">content</div>
+                    <!-- Right Sidebar -->
+                    <div class="right-sb col-lg-3">
+                        <div>
+                            <form id="" class="" method="POST" action="post">
+                                <div class="form-group">
+                                    <input type="text" name="title" class="form-control" placeholder="What is your question?">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="description" class="form-control" placeholder="Description" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="tags" class="form-control" placeholder="Tags">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="action">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <?php
+    include_once '../include/footer.php';
+    include_once 'modals.php';
+    include_once '../include/footScript.php';
+    ?>
 </div>
-<?php
-include_once '../include/footer.php';
-include_once 'modals.php';
-include_once '../include/footScript.php';
-?>
 
 <!-- Purechat Chatbot -->
 <script type='text/javascript' data-cfasync='false'>window.purechatApi = {
@@ -88,6 +90,29 @@ include_once '../include/footScript.php';
             }
         };
     })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate.js"></script>
+
+<script>
+    Vue.use(VeeValidate);
+    var vue = new Vue({
+        el: "#app",
+        mounted(){
+            console.log('mounted');
+        },
+
+        methods: {
+            validateBeforeSubmit(){
+                this.$validator.validate().then(result => {
+                    if (!result) {
+                        e.preventDefault();
+                    }
+                });
+            }
+        }
+
+    })
 </script>
 </body>
 </html>
