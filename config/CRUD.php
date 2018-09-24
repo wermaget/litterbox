@@ -56,6 +56,7 @@ class CRUD {
 		$pdo = $db->prepare("insert into $this->table set $object");
 		$pdo->execute();
 		Database::disconnect();
+		return $db->lastInsertId();
 	}
 
 	function update($args){
