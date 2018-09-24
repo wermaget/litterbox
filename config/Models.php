@@ -1,6 +1,14 @@
 <?php
 include "CRUD.php";
 
+
+function model($table) {
+    $crud = new CRUD;
+    $crud->table = $table;
+    return $crud;
+}
+
+
 function community_categories() {
     $crud = new CRUD;
     $crud->table = 'community_categories';
