@@ -39,25 +39,47 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                             <li><a href="#">Category 4</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-7">content</div>
-                    <!-- Right Sidebar -->
-                    <div class="right-sb col-lg-3">
-                        <div>
-                            <form id="" class="" method="POST" action="post">
-                                <div class="form-group">
-                                    <input type="text" name="title" class="form-control" placeholder="What is your question?">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="description" class="form-control" placeholder="Description" cols="30" rows="10"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="tags" class="form-control" placeholder="Tags">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="action">Submit</button>
-                                </div>
-                            </form>
+                    <ul>
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                        <li><a href="#">Category 3</a></li>
+                        <li><a href="#">Category 4</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">content</div>
+                <!-- Right Sidebar -->
+                <div class="right-sb col-lg-3">
+                    <div>
+                        <span>Create A Post</span>
+                        <?php if($status == "no_session"):?>
+                        <div class="alert alert-danger m-t-10">
+                            <p><?= $msg ?></p>
                         </div>
+                        <?php endif; ?>
+                        <form id="" class="" method="POST" action="./post/create/" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="text" name="title" class="form-control" placeholder="What is your question?" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="description" class="form-control" placeholder="Description" cols="30" rows="10" autocomplete="off"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <select name="category" class="form-control" placeholder="Select Category">
+                                    <option value="" selected disabled>Select Category</option>
+                                    <option value="">Supply Planning</option>
+                                    <option value="">Demand Planning</option>
+                                    <option value="">Logistics</option>
+                                    <option value="">Test</option>
+                                    <option value="">Not Working</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="tags" class="form-control" placeholder="Tags" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="action">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
