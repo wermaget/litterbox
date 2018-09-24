@@ -1,9 +1,21 @@
 <?php
 include "CRUD.php";
 
-function community() {
+function community_categories() {
     $crud = new CRUD;
-    $crud->table = 'community';
+    $crud->table = 'community_categories';
+    return $crud;
+}
+
+function community_posts() {
+    $crud = new CRUD;
+    $crud->table = 'community_posts';
+    return $crud;
+}
+
+function community_responses() {
+    $crud = new CRUD;
+    $crud->table = 'community_responses';
     return $crud;
 }
 
