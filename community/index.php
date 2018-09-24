@@ -39,13 +39,7 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                             <li><a href="#">Category 4</a></li>
                         </ul>
                     </div>
-                    <ul>
-                        <li><a href="#">Category 1</a></li>
-                        <li><a href="#">Category 2</a></li>
-                        <li><a href="#">Category 3</a></li>
-                        <li><a href="#">Category 4</a></li>
-                    </ul>
-                </div>
+                    
                 <div class="col-lg-7">content</div>
                 <!-- Right Sidebar -->
                 <div class="right-sb col-lg-3">
