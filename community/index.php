@@ -18,6 +18,7 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
     <div class="main-content">
         <div class="container">
             <div class="row">
+                <!-- Left Sidebar -->
                 <div class="left-sb col-lg-2">
                     <div>
                         <strong>
@@ -38,7 +39,25 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                     </ul>
                 </div>
                 <div class="col-lg-7">content</div>
-                <div class="right-sb col-lg-3">right sidebar</div>
+                <!-- Right Sidebar -->
+                <div class="right-sb col-lg-3">
+                    <div>
+                        <form id="" class="" method="POST" action="post">
+                            <div class="form-group">
+                                <input type="text" name="title" placeholder="What is your question?">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="description" placeholder="Description" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="tags" placeholder="Tags">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="action">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
