@@ -3,7 +3,7 @@ session_start();
 require_once '../../config/database.php';
 require_once '../../config/Models.php';
 
-if(! $_POST) return header('Location: /community/?status=register_failed&msg=Method not allowed.');;
+if(! $_POST) return header('Location: ../?status=register_failed&msg=Method not allowed.');
 
 $first_name = htmlspecialchars($_POST['first_name'], ENT_QUOTES);
 $last_name = htmlspecialchars($_POST['last_name'], ENT_QUOTES);
@@ -24,10 +24,10 @@ if( ! community_users()->get('email="' . $email . '"')){
     
     $user->create();
     // header('Location: ../index.php/?&message=You have successfully created an account.');
-    header('Location: /community/?status=register_success&msg=Successful registration.');
+    header('Location: ../?status=register_success&msg=Successful registration.');
     return;
 }
-header('Location: /community/?status=register_failed&msg=Email taken.');
+header('Location: ../?status=register_failed&msg=Email taken.');
 
 //user exists. do action here
 

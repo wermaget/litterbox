@@ -42,15 +42,31 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                 <!-- Right Sidebar -->
                 <div class="right-sb col-lg-3">
                     <div>
-                        <form id="" class="" method="POST" action="post">
+                        <span>Create A Post</span>
+                        <?php if($status == "no_session"):?>
+                        <div class="alert alert-danger m-t-10">
+                            <p><?= $msg ?></p>
+                        </div>
+                        <?php endif; ?>
+                        <form id="" class="" method="POST" action="./post/create/" enctype="multipart/form-data">
                             <div class="form-group">
-                                <input type="text" name="title" class="form-control" placeholder="What is your question?">
+                                <input type="text" name="title" class="form-control" placeholder="What is your question?" autocomplete="off">
                             </div>
                             <div class="form-group">
-                                <textarea name="description" class="form-control" placeholder="Description" cols="30" rows="10"></textarea>
+                                <textarea name="description" class="form-control" placeholder="Description" cols="30" rows="10" autocomplete="off"></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="tags" class="form-control" placeholder="Tags">
+                                <select name="category" class="form-control" placeholder="Select Category">
+                                    <option value="" selected disabled>Select Category</option>
+                                    <option value="">Supply Planning</option>
+                                    <option value="">Demand Planning</option>
+                                    <option value="">Logistics</option>
+                                    <option value="">Test</option>
+                                    <option value="">Not Working</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="tags" class="form-control" placeholder="Tags" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="action">Submit</button>
