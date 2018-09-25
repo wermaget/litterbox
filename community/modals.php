@@ -124,7 +124,7 @@
                 <h4 class="modal-title" id="myModalLabel">Login</h4>
             </div>
             <div class="modal-body">
-                <form id="default-wizard" action="./login/" method="POST"
+                <form @submit.prevent="validateBeforeSubmit" id="default-wizard" action="./login/" method="POST"
                       enctype="multipart/form-data">
                     <?php if($status == "login_failed"):?>
                         <div class="row">
@@ -142,7 +142,8 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control">
+                                    <input v-validate="'required|email'" type="email" name="email" id="email" class="form-control">
+                                    <span v-show="errors.has('email')">{{ errors.first('email') }}</span>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +153,8 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="form-group">
-                                    <input type="password" name="password" id="password" class="form-control">
+                                    <input v-validate="'required'" type="password" name="password" id="password" class="form-control">
+                                    <span v-show="errors.has('email')">{{ errors.first('password') }}</span>
                                 </div>
                             </div>
                         </div>
