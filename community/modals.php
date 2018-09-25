@@ -153,7 +153,8 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="form-group">
-                                    <input type="password" name="password" id="password" class="form-control">
+                                    <input v-validate="'required'" type="password" name="password" id="password" class="form-control">
+                                    <span v-show="errors.has('email')">{{ errors.first('password') }}</span>
                                 </div>
                             </div>
                         </div>
