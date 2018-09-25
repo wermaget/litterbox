@@ -66,7 +66,7 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="tags" class="form-control" placeholder="Tags" autocomplete="off">
+                                <input type="text" name="tags" data-role="tagsinput" class="form-control" placeholder="Tags" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="action">Submit</button>
@@ -78,12 +78,12 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
         </div>
     </div>
 </div>
+
 <?php
 include_once '../include/footer.php';
 include_once 'modals.php';
 include_once '../include/footScript.php';
 ?>
-
 <!-- Purechat Chatbot -->
 <script type='text/javascript' data-cfasync='false'>window.purechatApi = {
         l: [], t: [], on: function () {

@@ -1,3 +1,4 @@
 <?php
+session_start();
 
-echo "this is the view post page";
+die("post view page");

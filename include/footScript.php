@@ -368,3 +368,6 @@ $(document).ready(function() {
 
 });
 </script>
+<script src="../include/assets/js/jquery.min.js"></script>
+<script src="../include/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
