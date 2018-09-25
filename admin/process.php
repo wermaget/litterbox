@@ -401,7 +401,7 @@ function addAccount()
     $username = $_POST['username'];
     $level = $_POST['level'];
     $checkUser = admin()->get("username='$username'");
-
+    
     if ($checkUser != 1) {
         if ($level == 'hr') {
             $admin = admin();
@@ -628,9 +628,14 @@ function login()
     $password = $_POST['password'];
 
     $result = admin()->get("username='$username' and password = '" . sha1($password) . "' and level='admin'");
-
+    
+    if( ! $result) {
+        $result = admin()->get("username='$username' and password = '" . sha1($password) . "' and level='blogger'");
+    }
+    
     if ($result) {
         $_SESSION['admin_session'] = $username;
+        $_SESSION['role'] = $result->level;
         if (sha1($password) == sha1('temppassword')) {
             $_SESSION['temp_session'] = $username;
             header('Location: index.php?view=changepassword');
