@@ -29,7 +29,8 @@
     <link href="../include/plugins/fullcalendar/css/fullcalendar.min.css" rel="stylesheet" />
 
          <!-- Plugins css-->
-    <link href="../include/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet" />
+    <link href="../include/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet">
+
     <link href="../include/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
     <link href="../include/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
     <link href="../include/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
@@ -54,7 +55,7 @@
     <link href="../include/assets/css/responsive.css" rel="stylesheet" type="text/css" />
     <script src="../include/assets/js/modernizr.min.js"></script>
     <script src="../include/assets/js/float-panel.js"></script>
-    <script src="../include/assets/js/jquery.min.js"></script>
+<!--    <script src="../include/assets/js/jquery.min.js"></script>-->
     <script src="../include/plugins/ckeditor/ckeditor.js"></script>
     <script src="../include/plugins/parallax/parallax.js"></script>
     <script src="../include/plugins/ckeditor/adapters/jquery.js"></script>

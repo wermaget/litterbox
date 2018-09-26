@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe5f4754-9fce-40f2-86a7-392ea30b9c3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Helper/Helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/community/post/create/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/community/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/community/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/community/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/community/post/index.php" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/community/register/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/community/register/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/CRUD.php" afterDir="false" />
 =======
@@ -20,6 +19,8 @@
       <change beforePath="$PROJECT_DIR$/employee/timesheetDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/employee/timesheetDetail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee/timesheets.php" beforeDir="false" afterPath="$PROJECT_DIR$/employee/timesheets.php" afterDir="false" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
       <change beforePath="$PROJECT_DIR$/gitbackup/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accountList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/admin/accounts.php" beforeDir="false" />
@@ -2398,6 +2399,8 @@
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/resumeList.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetDetail.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gitbackup/payroll/timesheetList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/footScript.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/footScript.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/headScript.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/headScript.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2410,11 +2413,17 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <entry key="project.closed" value="3" />
+=======
+          <entry key="project.closed" value="4" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.67" value="1" />
+<<<<<<< HEAD
           <entry key="project.opened" value="4" />
 =======
           <entry key="project.closed" value="40" />
@@ -2453,15 +2462,23 @@
           <entry key="project.open.time.9" value="1" />
           <entry key="project.opened" value="42" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+          <entry key="project.opened" value="5" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <entry key="css" value="6" />
+=======
+          <entry key="css" value="13" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
           <entry key="html" value="3" />
-          <entry key="less" value="17" />
-          <entry key="php" value="33" />
+          <entry key="js" value="5" />
+          <entry key="less" value="20" />
+          <entry key="php" value="42" />
           <entry key="svg" value="2" />
 =======
           <entry key="css" value="107" />
@@ -2481,10 +2498,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <entry key="CSS" value="6" />
+=======
+          <entry key="CSS" value="13" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
           <entry key="HTML" value="3" />
-          <entry key="Less" value="17" />
-          <entry key="PHP" value="33" />
+          <entry key="JavaScript" value="5" />
+          <entry key="Less" value="20" />
+          <entry key="PHP" value="42" />
           <entry key="SVG" value="2" />
 =======
           <entry key="CSS" value="107" />
@@ -2503,6 +2525,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <entry key="less" value="779" />
           <entry key="php" value="5495" />
 =======
@@ -2514,10 +2537,15 @@
           <entry key="scss" value="1" />
           <entry key="vmoptions" value="6" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+          <entry key="less" value="788" />
+          <entry key="php" value="6323" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <entry key="Less" value="779" />
           <entry key="PHP" value="5495" />
@@ -2563,16 +2591,21 @@
           <entry key="CSS" value="1" />
           <entry key="PHP" value="20" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+          <entry key="Less" value="788" />
+          <entry key="PHP" value="6323" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/community/index.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="384">
               <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
 =======
@@ -2581,10 +2614,15 @@
             <state relative-caret-position="160">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+            <state relative-caret-position="112">
+              <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/index.php">
@@ -2601,11 +2639,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="490">
               <caret line="91" column="25" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="91" selection-end-column="25" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/community/post/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/employee/timesheetDetail.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -2671,12 +2717,27 @@
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/include/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/assets/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
         </entry>
       </file>
 <<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/CRUD.php">
+        <entry file="file://$PROJECT_DIR$/include/footScript.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="47">
               <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
 =======
@@ -2686,11 +2747,16 @@
             <state relative-caret-position="320">
               <caret line="50" column="97" selection-start-line="50" selection-start-column="97" selection-end-line="50" selection-end-column="97" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+            <state relative-caret-position="443">
+              <caret line="372" lean-forward="true" selection-start-line="372" selection-end-line="372" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -2702,11 +2768,20 @@
             <state relative-caret-position="448">
               <caret line="52" column="47" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="47" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+        <entry file="file://$PROJECT_DIR$/include/assets/js/jquery.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/community/modals.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -2718,6 +2793,12 @@
             <state relative-caret-position="288">
               <caret line="18" selection-start-line="18" selection-end-line="24" selection-end-column="1" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+        <entry file="file://$PROJECT_DIR$/include/headScript.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="31" column="101" selection-start-line="31" selection-start-column="101" selection-end-line="31" selection-end-column="101" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
             </state>
           </provider>
         </entry>
@@ -2734,6 +2815,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <find>add remote</find>
       <find>mymodal</find>
       <find>add new remote team</find>
@@ -2741,6 +2823,8 @@
       <find>$error</find>
       <find>.form-control</find>
       <find>border-radius: 0</find>
+=======
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
       <find>:root</find>
       <find>Mark Simonson</find>
       <find>../../fonts</find>
@@ -2760,10 +2844,10 @@
       <find>focus</find>
       <find>#e5e5e5;</find>
       <find>alert</find>
-      <find>.woff2</find>
       <find>disconnec</find>
       <find>database::disc</find>
       <find>create(){</find>
+<<<<<<< HEAD
 =======
       <find>.toggle</find>
       <find>logo-wrapper</find>
@@ -2796,12 +2880,23 @@
       <find>stdclass</find>
       <find>getCity</find>
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+      <find>tags</find>
+      <find>proxima</find>
+      <find>.woff2</find>
+      <find>bootstrap.min</find>
+      <find>parsley</find>
+      <find>jquery.min.js</find>
+      <find>.js</find>
+      <find>tagsinput</find>
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
     </findStrings>
     <replaceStrings>
       <replace>../../fonts/Mark Simonson</replace>
       <replace>../fonts</replace>
     </replaceStrings>
     <dirStrings>
+      <dir>C:\xampp\htdocs\teamire\employee</dir>
       <dir>C:\xampp\htdocs\teamire</dir>
     </dirStrings>
   </component>
@@ -2812,7 +2907,10 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/include/headScript.php" />
+=======
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
         <option value="$PROJECT_DIR$/include/navVisitor.php" />
         <option value="$PROJECT_DIR$/include/footer.php" />
         <option value="$PROJECT_DIR$/admin/main.php" />
@@ -2821,6 +2919,7 @@
         <option value="$PROJECT_DIR$/include/assets/less/components/header.less" />
         <option value="$PROJECT_DIR$/include/assets/less/global/core.less" />
         <option value="$PROJECT_DIR$/include/assets/less/_pages.less" />
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/include/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/include/assets/less/_pages.less" />
@@ -2843,6 +2942,8 @@
         <option value="$PROJECT_DIR$/include/assets/less/pages/searchresume.less" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
         <option value="$PROJECT_DIR$/include/assets/less/styles.less" />
+=======
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
         <option value="$PROJECT_DIR$/include/assets/css/style.css" />
         <option value="$PROJECT_DIR$/include/assets/less/pages/community.less" />
         <option value="$PROJECT_DIR$/include/assets/less/components/components.less" />
@@ -2855,9 +2956,8 @@
         <option value="$PROJECT_DIR$/community/register/index.php" />
         <option value="$PROJECT_DIR$/config/CRUD.php" />
         <option value="$PROJECT_DIR$/Helper/Helper.php" />
-        <option value="$PROJECT_DIR$/community/post/index.php" />
-        <option value="$PROJECT_DIR$/community/index.php" />
         <option value="$PROJECT_DIR$/community/post/create/index.php" />
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/include/assets/less/pages/candidatedetail.less" />
         <option value="$PROJECT_DIR$/home/servicesDetail.php" />
@@ -2889,6 +2989,13 @@
         <option value="$PROJECT_DIR$/admin/timesheetDetail.php" />
         <option value="$PROJECT_DIR$/admin/employeeDetail.php" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+        <option value="$PROJECT_DIR$/include/assets/less/styles.less" />
+        <option value="$PROJECT_DIR$/include/headScript.php" />
+        <option value="$PROJECT_DIR$/include/footScript.php" />
+        <option value="$PROJECT_DIR$/community/index.php" />
+        <option value="$PROJECT_DIR$/community/post/index.php" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
       </list>
     </option>
   </component>
@@ -2953,10 +3060,43 @@
               <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
               <item name="teamire" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <item name="config" type="462c0819:PsiDirectoryNode" />
 =======
               <item name="employee" type="462c0819:PsiDirectoryNode" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teamire" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teamire" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-tagsinput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teamire" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-tagsinput" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teamire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teamire" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-tagsinput" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
             </path>
           </expand>
           <select />
@@ -2975,11 +3115,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\xampp\htdocs\teamire\include\assets\images" />
       <recent name="C:\xampp\htdocs\teamire" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
 <<<<<<< HEAD
+=======
+      <recent name="C:\xampp\htdocs\teamire\include\plugins\bootstrap-tagsinput\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\teamire\include\plugins\bootstrap-tagsinput\js" />
+      <recent name="C:\xampp\htdocs\teamire\community\post" />
+      <recent name="C:\xampp\htdocs\teamire\include\assets\less\components" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
       <recent name="C:\xampp\htdocs\teamire\include\assets\fonts" />
 =======
       <recent name="C:\xampp\htdocs\teamire\config" />
@@ -3016,6 +3165,7 @@
       <workItem from="1537023299501" duration="3368000" />
       <workItem from="1537541760006" duration="5524000" />
       <workItem from="1537609358893" duration="18954000" />
+<<<<<<< HEAD
       <workItem from="1537795145874" duration="6630000" />
 =======
       <updated>1533918569373</updated>
@@ -3063,10 +3213,15 @@
       <workItem from="1536758287309" duration="2126000" />
       <workItem from="1536848950134" duration="4597000" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+      <workItem from="1537795145874" duration="7266000" />
+      <workItem from="1537883512103" duration="8197000" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="34476000" />
 =======
@@ -3081,18 +3236,26 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+    <option name="totallyTimeSpent" value="43309000" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35930407" />
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2708018" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2246596" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
@@ -3118,6 +3281,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/hr/employeeDetail.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -3157,6 +3321,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
     <entry file="file://$PROJECT_DIR$/include/navVisitor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -3262,6 +3428,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/include/assets/less/pages/searchcandidates.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -3295,6 +3462,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
     <entry file="file://$PROJECT_DIR$/include/assets/less/global/core.css" />
     <entry file="file://$PROJECT_DIR$/include/assets/less/css/core.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -3359,6 +3528,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/include/assets/less/styles.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -3376,6 +3546,9 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/employee/index.php">
+=======
+    <entry file="file://$PROJECT_DIR$/include/assets/css/style.css">
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
@@ -3546,10 +3719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/community/modals.php">
+    <entry file="file://$PROJECT_DIR$/Helper/Helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="127" column="51" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="51" />
+        <state relative-caret-position="16">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -3560,12 +3733,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
+    <entry file="file://$PROJECT_DIR$/community/register/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="496">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config/CRUD.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -3574,39 +3750,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/community/register/index.php">
+    <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        <state relative-caret-position="139">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/community/index.php">
+    <entry file="file://$PROJECT_DIR$/community/modals.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+        <state relative-caret-position="112">
+          <caret line="127" column="51" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/community/post/index.php">
+    <entry file="file://$PROJECT_DIR$/include/assets/less/components/bootstrap-tagsinput.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        <state relative-caret-position="192">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Helper/Helper.php">
+    <entry file="file://$PROJECT_DIR$/include/assets/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="-386">
+          <caret line="4507" column="12" lean-forward="true" selection-start-line="4507" selection-start-column="12" selection-end-line="4507" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/less/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/community/post/create/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="236">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
 =======
@@ -3704,6 +3885,68 @@
         <state relative-caret-position="320">
           <caret line="50" column="97" selection-start-line="50" selection-start-column="97" selection-end-line="50" selection-end-column="97" />
 >>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
+=======
+        <state relative-caret-position="464">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/post/jquery.tagsinput.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/post/jquery.tagsinput.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/post/bootstrap-tagsinput.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/post/bootstrap-tagsinput.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/assets/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/headScript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="31" column="101" selection-start-line="31" selection-start-column="101" selection-end-line="31" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/footScript.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="372" lean-forward="true" selection-start-line="372" selection-end-line="372" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/community/post/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+>>>>>>> 811713f6e3df99e440fc42f6895347d53172293d
         </state>
       </provider>
     </entry>

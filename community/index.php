@@ -14,32 +14,30 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
 <header id="topnav" class="scrolled">
     <?php include_once '../include/navVisitor.php'; ?>
 </header>
-<div id="app">
-    <div class="page-main wrapper">
-        <div class="main-content">
-            <div class="container">
-                <div class="row">
-                    <!-- Left Sidebar -->
-                    <div class="left-sb col-lg-2">
-                        <div>
-                            <strong>
-                                <?php if (!isset($_SESSION['community_user_session'])): ?>
-                                    <a data-toggle="modal" data-target="#login-modal" href="#">Login</a>
-                                    <span>&nbsp;or&nbsp;</span>
-                                    <a data-toggle="modal" data-target="#register-modal" href="#">Register</a>
-                                <?php else: ?>
-                                    Hello <?= $_SESSION['community_user_session'] ?>, <a href="logout/" href="#">Logout</a>
-                                <?php endif; ?>
-                            </strong>
-                        </div>
-                        <ul>
-                            <li><a href="#">Category 1</a></li>
-                            <li><a href="#">Category 2</a></li>
-                            <li><a href="#">Category 3</a></li>
-                            <li><a href="#">Category 4</a></li>
-                        </ul>
+<div class="page-main wrapper">
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <!-- Left Sidebar -->
+                <div class="left-sb col-lg-2">
+                    <div>
+                        <strong>
+                            <?php if (!isset($_SESSION['community_user_session'])): ?>
+                                <a data-toggle="modal" data-target="#login-modal" href="#">Login</a>
+                                <span>&nbsp;or&nbsp;</span>
+                                <a data-toggle="modal" data-target="#register-modal" href="#">Register</a>
+                            <?php else: ?>
+                                Hello <?= $_SESSION['community_user_session'] ?>, <a href="logout/" href="#">Logout</a>
+                            <?php endif; ?>
+                        </strong>
                     </div>
-                    
+                    <ul>
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                        <li><a href="#">Category 3</a></li>
+                        <li><a href="#">Category 4</a></li>
+                    </ul>
+                </div>
                 <div class="col-lg-7">content</div>
                 <!-- Right Sidebar -->
                 <div class="right-sb col-lg-3">
@@ -68,7 +66,7 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="tags" class="form-control" placeholder="Tags" autocomplete="off">
+                                <input type="text" name="tags" data-role="tagsinput" class="form-control" placeholder="Tags" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="action">Submit</button>
@@ -79,13 +77,13 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
             </div>
         </div>
     </div>
-    <?php
-    include_once '../include/footer.php';
-    include_once 'modals.php';
-    include_once '../include/footScript.php';
-    ?>
 </div>
 
+<?php
+include_once '../include/footer.php';
+include_once 'modals.php';
+include_once '../include/footScript.php';
+?>
 <!-- Purechat Chatbot -->
 <script type='text/javascript' data-cfasync='false'>window.purechatApi = {
         l: [], t: [], on: function () {
@@ -106,29 +104,6 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
             }
         };
     })();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate.js"></script>
-
-<script>
-    Vue.use(VeeValidate);
-    var vue = new Vue({
-        el: "#app",
-        mounted(){
-            console.log('mounted');
-        },
-
-        methods: {
-            validateBeforeSubmit(){
-                this.$validator.validate().then(result => {
-                    if (!result) {
-                        e.preventDefault();
-                    }
-                });
-            }
-        }
-
-    })
 </script>
 </body>
 </html>
