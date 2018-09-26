@@ -41,14 +41,23 @@ class CRUD {
 		return $pdo->rowCount();
 	}
 
-	function get($args){
-		$db = Database::connect();
-		$pdo = $db->prepare("select * from $this->table where $args");
-		$pdo->execute();
-		$result = $pdo->fetch(PDO::FETCH_OBJ);
-		Database::disconnect();
-		return $result;
-	}
+    function get($args){
+        $db = Database::connect();
+        $pdo = $db->prepare("select * from $this->table where $args");
+        $pdo->execute();
+        $result = $pdo->fetch(PDO::FETCH_OBJ);
+        Database::disconnect();
+        return $result;
+    }
+
+    function getColumnValue($columnName, $args){
+        $db = Database::connect();
+        $pdo = $db->prepare("select $columnName from $this->table where $args");
+        $pdo->execute();
+        $result = $pdo->fetch(PDO::FETCH_OBJ);
+        Database::disconnect();
+        return $result;
+    }
 
 	function create(){
 		$object = $this->arrayToQuery($this->obj);

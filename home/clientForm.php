@@ -5,27 +5,27 @@ $jfList = job_function()->list("isDeleted='0' order by `option` asc");
 <div class="row">
     <div class="col-md-12">
         <div class="center-page container">
-            <form id="default-wizard" action="process.php?action=clientRequest" method="POST" data-parsley-validate="">
-                <?php if ($error) { ?>
-                    <div>
-                        <div class="alert alert-danger alert-dismissible fade in" role="alert">
-                            <button type="button" class="close" data-dismiss="alert"
-                                    aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <?= $error; ?>
-                        </div>
-                    </div>
-                <?php } ?>
+            <form id="default-wizard" action="process.php?action=clientRequest" method="POST" data-parsley-validate=""
                 <div class="row m-t-20">
                     <div class="col-sm-7 center-page">
                         <div class="" style="position:relative;">
                             <h2> Employer Registration Form </h2>
                         </div>
+                        <?php if ($error) { ?>
+                            <div>
+                                <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert"
+                                            aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <?= $error; ?>
+                                </div>
+                            </div>
+                        <?php } ?>
                         <div class="form-group">
-                            <label for="firstname">Industry <span style="color: red;">*</span></label>
+                            <label for="firstname">Job Category <span style="color: red;">*</span></label>
                             <select class="form-control" name="jobFunctionId" required>
-                                <option>Please Select</option>
+                                <option value="" disabled selected>Please Select</option>
                                 <?php foreach ($jfList as $row) { ?>
                                     <option value="<?= $row->Id; ?>"><?= $row->option; ?></option>
                                 <?php } ?>
