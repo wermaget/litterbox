@@ -391,6 +391,9 @@ nav ul ul ul li {
 .no-padding {
   padding: 0 !important;
 }
+.block {
+  display: block;
+}
 .popover {
   font-family: inherit;
   border: none;
