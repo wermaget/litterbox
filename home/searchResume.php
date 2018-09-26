@@ -2,10 +2,7 @@
 $j = (isset($_GET['j']) && $_GET['j'] != '') ? $_GET['j'] : '';
 
 $cityList = city_option()->list();
-
-if($j != '') $candidateList = candidate()->list("jobFunctionId=$j and isDeleted=0");
-else $candidateList = candidate()->list("isDeleted=0");
-
+$candidateList = candidate()->list("jobFunctionId=$j and isDeleted=0");
 $jobFunctionList = job_function()->list("isDeleted=0 order by `option` asc");
 
 function getJobFunction($Id)
@@ -37,7 +34,7 @@ function getCity($Id)
                 <div class="form-group actions-toolbar">
                     <input type="hidden" name="view" value="searchResume">
                     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 no-padding col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
-                        <select name="j" class="form-control">
+                        <select name="j" class="form-control" required>
                             <option value="">Select Category</option>
                             <?php foreach ($jobFunctionList as $row) { ?>
                                 <option value="<?= $row->Id; ?>"><?= $row->option; ?></option>
@@ -64,13 +61,22 @@ function getCity($Id)
                                         <div class="col-md-10">
                                             <span class="text-primary">
                                                 <a href="../home/?view=candidateDetail&Id=<?= $row->Id; ?>">
-                                                    <?= $row->firstName.' '.$row->lastName; ?>
-                                                </a>
+                                                    <?= getJobFunction($row->jobFunctionId); ?></a>
                                             </span>
                                         </div>
                                     </div>
+
                                     <span class="reference">Reference: <?= $row->refNum; ?></span>
-                                    <small>Posted on <?= $row->createDate; ?></small>
+                                    <div class="col-md-12">
+                                        <i class="fa fa-map-marker"></i> <?= $row->address1; ?>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <i class="fa fa-map-o"></i> <?= $row->address2; ?>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <i class="fa fa-globe"></i> <?= getCity($row->city); ?>&nbsp;<?= $row->state; ?>
+                                        &nbsp;<?= $row->zipCode; ?>
+                                    </div>
                                 </div>
                             </div>
                         </li>

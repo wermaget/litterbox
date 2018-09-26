@@ -2,19 +2,6 @@
 $error = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error'] : '';
 $jfList = job_function()->list("isDeleted=0 order by `option` asc");
 $ptList = position_type()->list();
-$appId = $_GET['id'];
-$job = job()->get("Id='$appId' where isDeleted = 0 and isApproved = 1");
-
-function getJobName($Id){
-    if($Id=='0'){
-        echo 'N/A';
-    }else{
-        $job = job()->get("Id='$Id'");
-        echo $job->position;
-    }
-}
-
-if ($job) {
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -34,7 +21,7 @@ if ($job) {
                 <?php } ?>
                 <div class="row m-t-20">
                     <div class="col-sm-7 center-page">
-                        <h2 class="title mobile-title" style="padding: 27px 0;"> Application for <?= getJobName($_GET['id']) ?></h2>
+                        <h2 class="title mobile-title" style="padding: 27px 0;"> Submit Resume </h2>
                         <input type="hidden" name="jobId" value=<?= $_GET['id'] ?>>
                         <div class="form-group">
                             <label for="firstname">Job Category <span style="color: red;">*</span></label>
@@ -193,8 +180,3 @@ if ($job) {
 </div>
 
 <!-- End row -->
-<?php
-}else{
-    echo "job not available";
-}
-?>

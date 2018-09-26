@@ -30,23 +30,20 @@ function getCity($Id)
                     <div class="candidate-detail-title">
                         <h2><?= getJobFunction($candidate->jobFunctionId); ?></h2>
                     </div>
-                    <small>Posted on <?= $candidate->createDate ?></small>
                     <div class="candidate-detail-reference">
                         <span>Reference Number:<strong> <?= $candidate->refNum; ?></strong></span>
                     </div>
-                    <?php if(isset($_SESSION['role']) && $_SESSION['role'] != null && $_SESSION['role'] != 'hr'): ?>
-                        <div class="candidate-detail-address1">
-                            <i class="fa fa-map-marker"></i> <?= $candidate->address1; ?>
+                    <div class="candidate-detail-address1">
+                        <i class="fa fa-map-marker"></i> <?= $candidate->address1; ?>
+                    </div>
+                    <?php if ($candidate->address2) { ?>
+                        <div class="candidate-detail-address2">
+                            <i class="fa fa-map-o"></i> <?= $candidate->address2; ?>
                         </div>
-                        <?php if ($candidate->address2) { ?>
-                            <div class="candidate-detail-address2">
-                                <i class="fa fa-map-o"></i> <?= $candidate->address2; ?>
-                            </div>
-                        <?php } ?>
-                        <div class="candidate-detail-location">
-                            <i class="fa fa-globe"></i> <?= getCity($candidate->city); ?> <?= $candidate->state; ?> <?= $candidate->zipCode; ?>
-                        </div>
-                    <?php endif;?>
+                    <?php } ?>
+                    <div class="candidate-detail-location">
+                        <i class="fa fa-globe"></i> <?= getCity($candidate->city); ?> <?= $candidate->state; ?> <?= $candidate->zipCode; ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,10 +55,19 @@ function getCity($Id)
                         <span class="">Skills</span>
                     </a>
                 </li>
+                <li style="background-color: #f2f2f2; border-radius:5px;">
+                    <a href="#profile1" class="text-left" data-toggle="tab" aria-expanded="true" style="text-align: left;">
+                        <span class=""><i class="mdi mdi-comment-text m-r-10"></i></span>
+                        <span class="">Description</span>
+                    </a>
+                </li>
             </ul>
             <div class="tab-content" style="border: 1px solid #d2d2d2; border-top: none;">
                 <div class="tab-pane active" id="home1" style="padding: 10px 40px 48px 40px;">
                     <?= $candidate->keySkills; ?>
+                </div>
+                <div class="tab-pane" id="profile1" style="padding: 10px 40px 48px 40px;">
+                    <?= nl2br($candidate->coverLetter); ?>
                 </div>
             </div>
         </div>

@@ -29,11 +29,7 @@ function time_rendered($timeIn, $timeOut)
 ?>
         <div class="col-sm-12">
             <div class="card-box table-responsive">
-<<<<<<< HEAD
                 <h4 class="page-title">Timesheet as of <?= date_format(date_create($ts->createDate),"F j, Y");?> by <?php $getName = user()->get("username='$ts->employee'"); echo $getName->firstName." ".$getName->lastName; echo " (".$ts->employee.")"; ?> </h4><br>
-=======
-                <h4 class="page-title">Timesheet as of <?= date_format(date_create($ts->createDate),"F j, Y");?> by <?php $getName = user()->get("username='$ts->employee'"); echo $getName->firstName." ".$getName->lastName; ?></h4><br>
->>>>>>> 8182a1b24adc44e9fa94fdfb52d792d011be46be
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
