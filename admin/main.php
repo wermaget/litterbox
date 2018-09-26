@@ -20,6 +20,7 @@ function getJobFunction($Id)
 }
 
 ?>
+<?php if(! $_SESSION['role'] == "blogger"):?>
 <center><h1>Welcome to Admin Home Page</h1></center>
 
 <div class="row">
@@ -185,3 +186,11 @@ function getJobFunction($Id)
 
 
 </div>
+<?php else: ?>
+<div class="m-t-50">
+    <h1 class="text-center">Hello there, Blogger!</h1>
+    <hr>
+    <h5 class="text-center m-t-50">Welcome to the Blog Control Panel</h5>
+    <span class="block text-center">To create a blog, click Blogs from the navigation menu and select a blog page.</span>
+</div>
+<?php endif; ?>
