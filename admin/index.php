@@ -10,6 +10,8 @@ $headScript = 'headScript.php';
 $footScript = 'footScript.php';
 $navigation = '../include/navAdmin.php';
 
+if($_SESSION['role'] == 'blogger') $navigation = '../include/navBlogger.php';
+
 switch ($view) {
 
 	case 'login' :

@@ -56,14 +56,18 @@ function formatDate($val)
                             <td style="word-break:break-all;"><?= $row->content; ?></td>
                             <td><?= formatDate($row->createDate); ?></td>
                             <td>
+                                <?php if($_SESSION['role'] == 'admin'): ?>
                                 <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
                                    class="btn btn-info btn-xs" title="Click To View" data-trigger="hover"
                                    data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
+                                <?php endif; ?>
                             </td>
                             <td>
+                                <?php if($_SESSION['role'] == 'admin'): ?>
                                 <a id="<?= $row->Id; ?>"
                                    class="btn btn-danger btn-xs btn-cms-project-delete" title="Click To Edit"><span
                                             class="fa fa-close"></span>Remove</a>
+                                <?php endif; ?>
                             </td>
                         </tr>
                         <?php

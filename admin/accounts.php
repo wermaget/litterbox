@@ -136,6 +136,7 @@ function getJobFunction($Id){
                   <option value="admin">Admin</option>
                   <option id="admOption" value="hr">HR</option>
                   <option value="payroll">Payroll</option>
+                  <option value="blogger">Blogger</option>
                 </select>
               </div>
 
