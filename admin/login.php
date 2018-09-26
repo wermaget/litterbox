@@ -1,5 +1,7 @@
 <?php
 $error = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error'] : '';
+
+if(isset($_SESSION['admin_session'])) header("Location: ../admin/index.php");
 ?>
 <!DOCTYPE html>
 <html>
