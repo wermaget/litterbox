@@ -1,3 +1,5 @@
 config/database.php
-config/database.php
 gitbackup/
+*.map
+.idea/workspace.xml
+include/assets/less/css
