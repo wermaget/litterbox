@@ -96,7 +96,8 @@ function login()
 	$result = admin()->get("username='$username' and password = '".sha1($password)."' and level='hr'");
 
 	if ($result){
-		$_SESSION['hr_session'] = $username;
+        $_SESSION['hr_session'] = $username;
+        $_SESSION['role'] = 'hr';
 		if (sha1($password) == sha1('temppassword')){
 			$_SESSION['temp_session'] = $username;
 			header('Location: index.php?view=changepassword');

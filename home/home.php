@@ -37,7 +37,7 @@ function getPositionName($Id)
                         <form class="form-inline" method="GET">
                             <div class="form-group">
                                 <input type="hidden" name="view" value="searchResume">
-                                <select name="j" class="form-control categ-select" required="">
+                                <select name="jjj" class="form-control categ-select" required="">
                                     <option value="">Select Category</option>
                                     <?php
                                     foreach ($jobFunctionList as $joblist) { ?>
@@ -62,7 +62,7 @@ function getPositionName($Id)
                                 <input type="hidden" name="view" value="searchJob">
                                 <input type="text" name="s" class="form-control job-search"
                                        placeholder="Job Title, Skills or Keywords">
-                                <select name="c" class="form-control job-categ" required="">
+                                <select name="c" class="form-control job-categ">
                                     <option value="">Select Category</option>
                                     <?php
                                     foreach ($jobFunctionList as $joblist) { ?>
