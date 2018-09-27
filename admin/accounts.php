@@ -106,17 +106,17 @@ function getJobFunction($Id){
             <div class="col-sm-12">
               <div class="form-group">
                 <label>First Name</label>
-                <input type="text" class="form-control" name="firstName" placeholder="">
+                <input type="text" class="form-control" name="firstName" placeholder="" required>
               </div>
 
               <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" class="form-control" name="lastName" placeholder="">
+                <input type="text" class="form-control" name="lastName" placeholder="" required>
               </div>
 
               <div class="form-group">
                 <label>Username</label>
-                <input type="text" class="form-control" name="username"  placeholder="">
+                <input type="text" class="form-control" name="username"  placeholder="" required>
               </div>
 
               <div class="form-group">
@@ -126,13 +126,13 @@ function getJobFunction($Id){
 
               <div class="form-group">
                 <label>Email</label>
-                <input type="email" class="form-control" name="email"  placeholder="">
+                <input type="email" class="form-control" name="email"  placeholder="" required>
               </div>
 
               <div class="form-group">
                 <label>Level</label>
-                <select id="level" onchange="admSelectCheck(this);" class="form-control select2" name="level">
-                  <option>Select Position</option>
+                <select id="level" onchange="admSelectCheck(this);" class="form-control select2" name="level" required>
+                  <option disabled>Select Position</option>
                   <option value="admin">Admin</option>
                   <option id="admOption" value="hr">HR</option>
                   <option value="payroll">Payroll</option>

@@ -40,8 +40,10 @@ function formatDate($val)
                     <th>Title</th>
                     <th>Content</th>
                     <th>Posted Date</th>
-                    <th></th>
-                    <th></th>
+                    <?php if ($_SESSION['role'] == 'admin'): ?>
+                        <th></th>
+                        <th></th>
+                    <?php endif; ?>
                 </tr>
                 </thead>
                 <tbody>
@@ -53,21 +55,19 @@ function formatDate($val)
                             <td><?= $row->title; ?></td>
                             <td style="word-break:break-all;"><?= $row->content; ?></td>
                             <td><?= formatDate($row->createDate); ?></td>
-                            <td>
-                                <?php if($_SESSION['role'] == 'admin'): ?>
-                                <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
-                                   class="btn btn-info btn-xs" title="Click To View" data-trigger="hover"
-                                   data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
-                                <?php endif; ?>
-                            </td>
-                            <td>
-                                <?php if($_SESSION['role'] == 'admin'): ?>
-
-                                <a id="<?php echo $row->Id; ?>" class="btn btn-danger btn-xs tooltips btn-cms-remote-delete" title="Click To Edit"><span
-                                            class="fa fa-close"></span>Remove</a>
-                                <?php endif; ?>
-
-                            </td>
+                            <?php if ($_SESSION['role'] == 'admin'): ?>
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
+                                       class="btn btn-info btn-xs" title="Click To View" data-trigger="hover"
+                                       data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
+                                </td>
+                                <td>
+                                    <a id="<?php echo $row->Id; ?>"
+                                       class="btn btn-danger btn-xs tooltips btn-cms-remote-delete"
+                                       title="Click To Edit"><span
+                                                class="fa fa-close"></span>Remove</a>
+                                </td>
+                            <?php endif; ?>
                         </tr>
                         <?php
                     }
@@ -105,7 +105,8 @@ function formatDate($val)
                             </div>
                             <div class="form-group">
                                 <label>Title</label>
-                                <input type="text" class="form-control" name="title" placeholder="">
+                                <input type="text" class="form-control" name="title" placeholder="" autocomplete="off"
+                                       required>
                             </div>
 
                             <div class="form-group">
@@ -186,14 +187,14 @@ function formatDate($val)
     </div><!-- /.modal -->
 <?php } ?>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $(".btn-cms-remote-delete").on("click", function(e){
+    $(document).ready(function () {
+        $(".btn-cms-remote-delete").on("click", function (e) {
             var id = $(this).attr('id');
 
-            if(confirm("Are you sure you want to delete this?")){
-                window.location = "process.php?action=removeRemoteTeam&Id="+id;
+            if (confirm("Are you sure you want to delete this?")) {
+                window.location = "process.php?action=removeRemoteTeam&Id=" + id;
             }
-            else{
+            else {
                 return false;
             }
         });
