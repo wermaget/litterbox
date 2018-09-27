@@ -20,7 +20,7 @@ function getJobFunction($Id)
 }
 
 ?>
-<?php if(! $_SESSION['role'] == "blogger"):?>
+<?php if($_SESSION['role'] != "blogger"):?>
     <center><h1>Welcome to Admin Home Page</h1></center>
 
     <div class="row">

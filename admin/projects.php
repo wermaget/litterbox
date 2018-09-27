@@ -33,15 +33,17 @@ function formatDate($val)
             </div>
         <?php } ?>
         <div class="card-box table-responsive">
-            <h4 class="page-title">Special Projects</h4><br>
+            <h4 class="page-title">Supply Chain Projects</h4><br>
             <table id="projects-table" class="table table-striped table-bordered">
                 <thead>
                 <tr>
                     <th>Project Name</th>
                     <th>Content</th>
                     <th>Posted Date</th>
+                    <?php if ($_SESSION['role'] == 'admin'): ?>
                     <th></th>
                     <th></th>
+                    <?php endif; ?>
                 </tr>
                 </thead>
                 <tbody>
@@ -55,20 +57,18 @@ function formatDate($val)
                             <td><?= $row->title; ?></td>
                             <td style="word-break:break-all;"><?= $row->content; ?></td>
                             <td><?= formatDate($row->createDate); ?></td>
-                            <td>
-                                <?php if($_SESSION['role'] == 'admin'): ?>
-                                <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
-                                   class="btn btn-info btn-xs" title="Click To View" data-trigger="hover"
-                                   data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
-                                <?php endif; ?>
-                            </td>
-                            <td>
-                                <?php if($_SESSION['role'] == 'admin'): ?>
-                                <a id="<?= $row->Id; ?>"
-                                   class="btn btn-danger btn-xs btn-cms-project-delete" title="Click To Edit"><span
-                                            class="fa fa-close"></span>Remove</a>
-                                <?php endif; ?>
-                            </td>
+                            <?php if ($_SESSION['role'] == 'admin'): ?>
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
+                                       class="btn btn-info btn-xs" title="Click To View" data-trigger="hover"
+                                       data-toggle="tooltip"><span class="fa fa-pencil"></span> Edit</a>
+                                </td>
+                                <td>
+                                    <a id="<?= $row->Id; ?>"
+                                       class="btn btn-danger btn-xs btn-cms-project-delete" title="Click To Edit"><span
+                                                class="fa fa-close"></span>Remove</a>
+                                </td>
+                            <?php endif; ?>
                         </tr>
                         <?php
                     }
@@ -106,7 +106,7 @@ function formatDate($val)
                             </div>
                             <div class="form-group">
                                 <label>Project Title</label>
-                                <input type="text" class="form-control" name="title" placeholder="">
+                                <input type="text" class="form-control" name="title" placeholder="" required>
                             </div>
                             <div class="form-group">
                                 <label>Content</label>
@@ -187,14 +187,14 @@ function formatDate($val)
     </div><!-- /.modal -->
 <?php } ?>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $(".btn-cms-project-delete").on("click", function(e){
+    $(document).ready(function () {
+        $(".btn-cms-project-delete").on("click", function (e) {
             var id = $(this).attr('id');
 
-            if(confirm("Are you sure you want to delete this?")){
-                window.location = "process.php?action=removeProjects&Id="+id;
+            if (confirm("Are you sure you want to delete this?")) {
+                window.location = "process.php?action=removeProjects&Id=" + id;
             }
-            else{
+            else {
                 return false;
             }
         });
