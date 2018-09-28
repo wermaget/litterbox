@@ -391,6 +391,9 @@ nav ul ul ul li {
 .no-padding {
   padding: 0 !important;
 }
+.block {
+  display: block;
+}
 .popover {
   font-family: inherit;
   border: none;
@@ -17315,6 +17318,9 @@ h6 {
   font-family: 'Lato', sans-serif;
   margin: 10px 0;
   font-weight: 700;
+}
+small {
+  color: #6c7881;
 }
 h5 {
   font-size: 15px;

@@ -401,7 +401,7 @@ function addAccount()
     $username = $_POST['username'];
     $level = $_POST['level'];
     $checkUser = admin()->get("username='$username'");
-
+    
     if ($checkUser != 1) {
         if ($level == 'hr') {
             $admin = admin();
@@ -446,18 +446,17 @@ function addProject()
 
     $projects = projects();
 
-    if ($header_upload) {
-        $projects->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
-        $projects->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
+    $projects->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
+    $projects->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
+
+    $projects->obj['createDate'] = "NOW()";
+
+    if($header_upload) {
         $projects->obj['headerImage'] = $header_upload;
-
-        $projects->obj['createDate'] = "NOW()";
-        $projects->create();
-
-        header('Location: ../admin/?view=projects&message=You have successfully added a new project.');
-    }else{
-        header('Location: ../admin/?view=projects&error=Not uploaded');
     }
+
+    $projects->create();
+    header('Location: ../admin/?view=projects&message=You have successfully added a new project post.');
 }
 
 function addRemoteTeam()
@@ -466,17 +465,18 @@ function addRemoteTeam()
 
     $remoteTeam = remote_team();
 
-    if ($header_upload) {
-        $remoteTeam->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
-        $remoteTeam->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
-        $remoteTeam->obj['headerImage'] = $header_upload;
-        $remoteTeam->obj['createDate'] = "NOW()";
-        $remoteTeam->create();
+    $remoteTeam ->obj['title'] = htmlspecialchars($_POST['title'], ENT_QUOTES);
+    $remoteTeam ->obj['content'] = htmlspecialchars($_POST['content'], ENT_QUOTES);
 
-        header('Location: ../admin/?view=remoteTeam&message=You have successfully added a new article.');
-    } else {
-        header('Location: ../admin/?error=Not uploaded');
+    $remoteTeam ->obj['createDate'] = "NOW()";
+
+    if($header_upload) {
+        $remoteTeam ->obj['headerImage'] = $header_upload;
     }
+
+    $remoteTeam->create();
+    header('Location: ../admin/?view=projects&message=You have successfully added a new remote team post.');
+
 }
 
 function addJobFunction()
@@ -628,9 +628,14 @@ function login()
     $password = $_POST['password'];
 
     $result = admin()->get("username='$username' and password = '" . sha1($password) . "' and level='admin'");
-
+    
+    if( ! $result) {
+        $result = admin()->get("username='$username' and password = '" . sha1($password) . "' and level='blogger'");
+    }
+    
     if ($result) {
         $_SESSION['admin_session'] = $username;
+        $_SESSION['role'] = $result->level;
         if (sha1($password) == sha1('temppassword')) {
             $_SESSION['temp_session'] = $username;
             header('Location: index.php?view=changepassword');
