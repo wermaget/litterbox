@@ -1,3 +1,6 @@
+<?php
+include '../config/Models.php';
+?>
 <!-- Footer -->
 <footer class="">
     <div class="row" id="first-footer">
@@ -89,10 +92,10 @@
         </nav>
         <div id="center_email">
             <center class="well">
-                <div class="container" id="emai_form">
+                <div class="container" id="">
                     <h4 class="text-center text-white">Send us an email</h4>
                     <div class="row">
-                        <form id="default-wizard" action="process.php?action=sendInquiry" method="POST"
+                        <form action="process.php?action=sendInquiry" method="POST"
                               data-parsley-validate="">
                             <div class="col-md-12">
                                 <!-- Start Dropdown-->
@@ -122,6 +125,8 @@
                                                 name="jobFunctionId"
                                                 required>
                                             <option>Our Services *</option>
+                                            <?php include_once("../config/database.php"); ?>
+                                            <?php $jfList = job_function()->list();?>
                                             <?php foreach ($jfList as $row) { ?>
                                                 <option value="<?= $row->Id; ?>"><?= $row->option; ?></option>
                                             <?php } ?>
@@ -160,7 +165,7 @@
                                 <div class="form-group">
                                     <label for="username"><span class="text-white">Message </span><span
                                             style="color: red;">*</span></label>
-                                    <textarea id="message" class="form-control font-13" name="message"
+                                    <textarea class="form-control font-13" name="message"
                                               data-parsley-trigger="keyup" data-parsley-minlength="20"
                                               data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."
                                               data-parsley-validation-threshold="10" placeholder="Message *"></textarea>
@@ -295,7 +300,7 @@
 
                             <div class="form-group">
                                 <label for="username"><span class="text-white">Message </span><span style="color: red;">*</span></label>
-                                <textarea placeholder="Message *" id="message" class="form-control font-13"
+                                <textarea placeholder="Message *" class="form-control font-13"
                                           name="message"
                                           data-parsley-trigger="keyup" data-parsley-minlength="20"
                                           data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.."

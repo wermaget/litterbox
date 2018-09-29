@@ -9,7 +9,7 @@
                 <h4 class="modal-title" id="myModalLabel">Register</h4>
             </div>
             <div class="modal-body">
-                <form id="default-wizard" action="./register/" method="post"
+                <form id="register-form" action="./register/" method="post"
                       enctype="multipart/form-data">
                     <?php if($status == "register_failed"):?>
                         <div class="row">
@@ -74,7 +74,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control">
+                                    <input type="email" name="email" id="register-email" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                 <h4 class="modal-title" id="myModalLabel">Login</h4>
             </div>
             <div class="modal-body">
-                <form @submit.prevent="validateBeforeSubmit" id="default-wizard" action="./login/" method="POST"
+                <form @submit.prevent="validateBeforeSubmit" id="login-form" action="./login/" method="POST"
                       enctype="multipart/form-data">
                     <?php if($status == "login_failed"):?>
                         <div class="row">
@@ -142,8 +142,8 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="form-group">
-                                    <input v-validate="'required|email'" type="email" name="email" id="email" class="form-control">
-                                    <span v-show="errors.has('email')">{{ errors.first('email') }}</span>
+                                    <input v-validate="'required|email'" type="email" name="login-email" id="login-email" class="form-control">
+                                    <span v-show="errors.has('login-email')">{{ errors.first('login-email') }}</span>
                                 </div>
                             </div>
                         </div>
@@ -153,8 +153,8 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="form-group">
-                                    <input v-validate="'required'" type="password" name="password" id="password" class="form-control">
-                                    <span v-show="errors.has('email')">{{ errors.first('password') }}</span>
+                                    <input v-validate="'required'" type="password" name="password" id="login-password" class="form-control">
+                                    <span v-show="errors.has('login-email')">{{ errors.first('login-password') }}</span>
                                 </div>
                             </div>
                         </div>

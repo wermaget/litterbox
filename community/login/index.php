@@ -3,7 +3,7 @@ session_start();
 require_once '../../config/database.php';
 require_once '../../config/Models.php';
 
-$email = $_POST['email'];
+$email = $_POST['login-email'];
 $password = $_POST['password'];
 
 $result = community_users()->get("email='".$email."' and password = '".sha1($password)."'");
