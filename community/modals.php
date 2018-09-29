@@ -176,3 +176,5 @@
 
     <!-- /Login modal -->
 </div>
+<!-- /vue closing div -->
+</div> 

@@ -14,7 +14,8 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
 <header id="topnav" class="scrolled">
     <?php include_once '../include/navVisitor.php'; ?>
 </header>
-<div class="page-main wrapper">
+<div id="vm-app">
+    <div class="page-main wrapper">
     <div class="main-content">
         <div class="container">
             <div class="row">
@@ -77,11 +78,42 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 <?php
 include_once '../include/footer.php';
 include_once 'modals.php';
+?>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate.js"></script>
+<script>
+    Vue.use(VeeValidate, {
+        events: 'blur',
+    })
+
+    let VM = new Vue({
+        el: "#vm-app",
+        mounted() {
+            console.log('mounted');
+        },
+
+        methods: {
+            validateBeforeSubmit() {
+                this.$validator.validate().then(result => {
+                    if (!result) {
+                        e.preventDefault();
+                    }
+                });
+            }
+        }
+    });
+
+
+</script>
+
+<?php
 include_once '../include/footScript.php';
 ?>
 <!-- Purechat Chatbot -->
