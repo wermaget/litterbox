@@ -102,8 +102,8 @@ include_once 'modals.php';
         methods: {
             validateBeforeSubmit() {
                 this.$validator.validate().then(result => {
-                    if (!result) {
-                        e.preventDefault();
+                    if (result) {
+                        document.querySelector('#community-login-form').submit();
                     }
                 });
             }
