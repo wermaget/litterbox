@@ -1,13 +1,4 @@
-<<<<<<< HEAD
 config/database.php
-gitbackup/
+/.idea/
+/include/assets/less/css
 *.map
-.idea/workspace.xml
-include/assets/less/css
-=======
-gitbackup/
-*.map
-/include/assets/less/css/
-.idea/workspace.xml
-config/database.php
->>>>>>> a30eef6abc611a21875ed1724bd5513d81c83892

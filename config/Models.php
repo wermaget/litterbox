@@ -1,6 +1,38 @@
 <?php
 include "CRUD.php";
 
+
+function model($table) {
+    $crud = new CRUD;
+    $crud->table = $table;
+    return $crud;
+}
+
+
+function community_categories() {
+    $crud = new CRUD;
+    $crud->table = 'community_categories';
+    return $crud;
+}
+
+function community_posts() {
+    $crud = new CRUD;
+    $crud->table = 'community_posts';
+    return $crud;
+}
+
+function community_responses() {
+    $crud = new CRUD;
+    $crud->table = 'community_responses';
+    return $crud;
+}
+
+function community_users() {
+    $crud = new CRUD;
+    $crud->table = 'community_users';
+    return $crud;
+}
+
 // User Models
 function admin() {
 	$crud = new CRUD;

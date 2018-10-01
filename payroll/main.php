@@ -76,7 +76,7 @@ function __setFullName($owner){
                       <?php foreach(timesheet()->list("Id>0 order by Id desc limit 5") as $row){?>
                         <tr>
                             <td width="150">
-                              <?=$row->name;?>
+                              <?= date_format(date_create($row->createDate),"F j, Y");?>
                             </td>
                             <td>
                                 <?=__setFullName($row->employee);?>

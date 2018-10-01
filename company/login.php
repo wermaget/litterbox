@@ -46,7 +46,7 @@ $error = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error'] : '';
                                       <h5 class="text-uppercase text-center text-white">
                                             Enter your login information to access our Time Reporting and Approval System<br><br>
                                             <div class="center-page login-label">
-                                            Employer Login
+                                            Company Login
                                             </div>
                                       </h5>
                                         <p class="m-b-0">

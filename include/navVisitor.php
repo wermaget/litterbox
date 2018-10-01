@@ -1,6 +1,6 @@
 <div class="container nav-wrapper">
     <div class="logo-wrapper">
-        <a href="index.php" class="logo logo-mobile">
+        <a href="../index.php" class="logo logo-mobile">
             <img class="logo-light" src="../include/assets/images/teamire-logo-light-min.png">
             <img class="logo-dark" src="../include/assets/images/teamire-logo-min.png">
         </a>
@@ -12,32 +12,22 @@
             <ul class="menu">
                 <li class="home-button"><a href="../home">Home</a></li>
                 <li>
+                    <a href="#" class="nav-item-drop">Employers</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul class="nav-level2">
+                        <li><a href="../home/?view=hiringForm">Request Talent</a></li>
+                        <li><a href="../home/?view=searchResume">Search Candidates</a></li>
+                        <li><a href="../home/?view=clientForm">Employer Registration</a></li>
+                    </ul>
+
+                </li>
+                <li>
                     <a href="#" class="nav-item-drop">Job Seekers</a>
                     <input type="checkbox" id="drop-2"/>
                     <ul class="nav-level2">
                         <li><a href="../home/?view=searchJob">Search Job</a></li>
                         <li><a href="../home/?view=submitResume">Submit Resume</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="nav-item-drop">Employers</a>
-                    <input type="checkbox" id="drop-1"/>
-                    <ul class="nav-level2">
-                        <?php if (isset($_SESSION['company_session'])): ?>
-                            <li><a href="../company">Dashboard</a></li>
-                        <?php else: ?>
-                            <li><a href="../company">Employer Login</a></li>
-                        <?php endif; ?>
-                        <?php if (isset($_SESSION['company_session'])): ?>
-                            <li><a href="../home/?view=hiringForm">Request Talent</a></li>
-                        <?php endif; ?>
-                        <li><a href="../home/?view=searchResume">Find Candidates</a></li>
-                        <?php if (!isset($_SESSION['company_session'])): ?>
-                            <li><a href="../home/?view=clientForm">Employer Registration</a></li>
-                        <?php endif; ?>
-                        <?php if (isset($_SESSION['company_session'])): ?>
-                            <li><a href="../company/process.php?action=logout">Logout</a></li>
-                        <?php endif; ?>
+
                     </ul>
                 </li>
                 <li>
@@ -56,6 +46,7 @@
                         <li><a class="m-l-3 m-r-3" href="../home/?view=remoteTeam">Remote Team</a></li>
                     </ul>
                 </li>
+                <li><a class="toggle-class" href="../community">Community</a></li>
                 <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=logins">Timesheets</a></li>
                 <li><a class="m-l-3 m-r-3 toggle-class" href="../home/?view=contactUs">Contact</a></li>
             </ul>

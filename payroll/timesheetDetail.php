@@ -8,7 +8,8 @@ $dispute = timesheet_dispute()->get("timesheetId='$timesheetId'");
 
 $job = job()->get("Id='$ts->jobId'");
 
-function get_time_difference($record)
+// Get to total hours rendered
+function total_time_rendered($record)
 {
     $workTime = (strtotime($record->checkOut) - strtotime($record->checkIn)) / 3600;
     $firstBreak = (strtotime($record->breakIn) - strtotime($record->breakOut)) / 3600;
@@ -16,14 +17,21 @@ function get_time_difference($record)
     $lunch = (strtotime($record->lunchIn) - strtotime($record->lunchOut)) / 3600;
 
     $totalTime = $workTime - ($firstBreak + $secondBreak + $lunch);
-
     return number_format((float)$totalTime, 2, '.', '');
+}
+
+// Get time difference of break and lunch
+function time_rendered($timeIn, $timeOut)
+{
+    $result = (strtotime($timeIn) - strtotime($timeOut)) / 3600;
+    $tominutes = $result * 60;
+    return number_format((float)$tominutes, 1, '.', '');
 }
 
 ?>
         <div class="col-sm-12">
             <div class="card-box table-responsive">
-                <h4 class="page-title"><?=$ts->name;?> by <?=$ts->employee;?></h4><br>
+                <h4 class="page-title">Timesheet as of <?= date_format(date_create($ts->createDate),"F j, Y");?> by <?php $getName = user()->get("username='$ts->employee'"); echo $getName->firstName." ".$getName->lastName; echo " (".$ts->employee.")"; ?> </h4><br>
                 Job Reference Number: <?=$job->refNum;?><br>
                 Client Name: <?=$job->company;?><br>
                 Job Classification: <?=$job->position;?><br>
@@ -34,8 +42,8 @@ function get_time_difference($record)
                             <th>Date</th>
                             <th>Login</th>
                             <th>First Break</th>
-                            <th>Second Break</th>
                             <th>Lunch</th>
+                            <th>Second Break</th>
                             <th>Logout</th>
                             <th>Total</th>
                         </tr>
@@ -44,15 +52,40 @@ function get_time_difference($record)
                      <?php foreach($dtrList as $row) {
                        if ($row->timesheetId==$timesheetId){
                        ?>
-                          <tr>
-                            <td> <?=$row->createDate;?></td>
-                            <td> <?=$row->checkIn;?></td>
-                            <td> <?=$row->breakOut;?> - <?=$row->breakIn;?></td>
-                            <td> <?=$row->breakOut2;?> - <?=$row->breakIn2;?></td>
-                            <td> <?=$row->lunchOut;?> - <?=$row->lunchIn;?></td>
-                            <td> <?=$row->checkOut;?></td>
-                            <td> <?=get_time_difference($row)?></td>
-                         </tr>
+
+                           <!-- Updated Code -->
+                           <tr>
+                               <td><?= date_format(date_create($row->createDate), 'F j, Y'); ?></td>
+                               <td><?= date_format(date_create($row->checkIn), 'g:ia'); ?></td>
+                               <td>
+                                   <?php if ($row->breakIn) { ?>
+                                       <?= date_format(date_create($row->breakOut), 'g:ia'); ?>
+                                       - <?= date_format(date_create($row->breakIn), 'g:ia'); ?>
+                                       </br>
+                                       Duration: <b><?= time_rendered($row->breakIn, $row->breakOut); ?> mins</b>
+                                   <?php } ?>
+                               </td>
+                               <td><?php if ($row->lunchIn) { ?>
+                                       <?= date_format(date_create($row->lunchOut), 'g:ia'); ?>
+                                       - <?= date_format(date_create($row->lunchIn), 'g:ia'); ?> <br>
+                                       Duration: <b><?= time_rendered($row->lunchIn, $row->lunchOut); ?> mins</b>
+                                   <?php } ?>
+                               </td>
+                               <td>
+                                   <?php if ($row->breakIn2) { ?>
+                                       <?= date_format(date_create($row->breakOut2), 'g:ia'); ?>
+                                       - <?= date_format(date_create($row->breakIn2), 'g:ia'); ?> <br>
+                                       Duration: <b><?= time_rendered($row->breakIn2, $row->breakOut2); ?> mins</b>
+                                   <?php } ?>
+                               </td>
+
+                               <td><?php if($row->checkOut) { echo date_format(date_create($row->checkOut), 'g:ia'); }?></td>
+                               <td><b><?php
+                                       if ($row->status == 4) {
+                                           echo total_time_rendered($row);
+                                       }
+                                       ?></b></td>
+                           </tr>
                   <?php } } ?>
 
                             </tbody>
