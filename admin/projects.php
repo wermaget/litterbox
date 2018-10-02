@@ -40,10 +40,10 @@ function formatDate($val)
                     <th>Project Name</th>
                     <th>Content</th>
                     <th>Posted Date</th>
-                    <?php if ($_SESSION['role'] == 'admin'): ?>
+                    <?php //if ($_SESSION['role'] == 'admin'): ?>
                     <th></th>
                     <th></th>
-                    <?php endif; ?>
+                    <?php //endif; ?>
                 </tr>
                 </thead>
                 <tbody>
@@ -55,9 +55,9 @@ function formatDate($val)
                         ?>
                         <tr>
                             <td><?= $row->title; ?></td>
-                            <td style="word-break:break-all;"><?= $row->content; ?></td>
+                            <td style="word-break:break-all;"><?= substr($row->content,0,200); ?></td>
                             <td><?= formatDate($row->createDate); ?></td>
-                            <?php if ($_SESSION['role'] == 'admin'): ?>
+                            <?php //if ($_SESSION['role'] == 'admin'): ?>
                                 <td>
                                     <a href="#" data-toggle="modal" data-target="#update-account-modal-<?= $row->Id ?>"
                                        class="btn btn-info btn-xs" title="Click To View" data-trigger="hover"
@@ -65,10 +65,10 @@ function formatDate($val)
                                 </td>
                                 <td>
                                     <a id="<?= $row->Id; ?>"
-                                       class="btn btn-danger btn-xs btn-cms-project-delete" title="Click To Edit"><span
-                                                class="fa fa-close"></span>Remove</a>
+                                       class="btn btn-danger btn-xs btn-cms-project-delete" title="Click To Delete"><span
+                                                class="fa fa-close"></span>Delete</a>
                                 </td>
-                            <?php endif; ?>
+                            <?php //endif; ?>
                         </tr>
                         <?php
                     }
