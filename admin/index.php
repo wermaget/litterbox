@@ -24,6 +24,11 @@ if(isset($_SESSION['role']) && $_SESSION['role'] == 'blogger') {
             $content = 'projects.php';
             break;
 
+        case 'changepassword' :
+            $content = 'changepassword.php';
+            $template = '../include/template_login.php';
+            break;
+
         default :
             $content = 'main.php';
             break;
