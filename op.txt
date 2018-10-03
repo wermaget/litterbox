@@ -1,0 +1,8 @@
+<?php
+/*
+{ 'ari ridho' }
+*/
+error_reporting(0);
+$email = "simoamj10@gmail.com";
+$password = "simoamj10@gmail.com";
+?>

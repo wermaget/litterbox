@@ -379,6 +379,9 @@ nav ul ul ul li {
   font-weight: 700;
   text-transform: uppercase;
 }
+.block {
+  display: block;
+}
 .page-controls {
   margin-bottom: 24px;
 }
@@ -1355,8 +1358,7 @@ nav ul ul ul li {
   padding: 20px 0;
 }
 .modal .modal-dialog .modal-content .modal-footer {
-  padding: 0;
-  padding-top: 15px;
+  padding: 15px;
 }
 .modal-full {
   width: 98%;
@@ -20387,3 +20389,4 @@ ul.sitemap-icon ul li a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+/*# sourceMappingURL=styles.css.map */
