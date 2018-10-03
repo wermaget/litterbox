@@ -3,3 +3,4 @@ gitbackup/
 /.idea/
 /include/assets/less/css
 *.map
+/node_modules
