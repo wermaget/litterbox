@@ -1,3 +1,6 @@
+<script src="../include/assets/js/jquery.min.js"></script>
+<script src="../include/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
 <!-- jQuery  -->
 <script src="../include/assets/js/tether.min.js"></script><!-- Tether for Bootstrap -->
 <script src="../include/assets/js/bootstrap.min.js"></script>
@@ -251,6 +254,7 @@ $( "#myLinkShowResume" ).click(function() {
 });
 </script>
 
+
  <!-- Parsley js -->
 <script type="text/javascript" src="../include/plugins/parsleyjs/parsley.min.js"></script>
 
@@ -368,6 +372,5 @@ $(document).ready(function() {
 
 });
 </script>
-<!-- <script src="../include/assets/js/jquery.min.js"></script> -->
-<script src="../include/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
 
