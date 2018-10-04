@@ -136,6 +136,7 @@ include_once 'modals.php';
         el: "#vm-app",
         mounted() {
             console.log('mounted');
+            this.getPosts();
         },
 
         methods: {
@@ -144,6 +145,15 @@ include_once 'modals.php';
                     if (result) {
                         document.querySelector('#community-login-form').submit();
                     }
+                });
+            },
+
+            getPosts() {
+                fetch('/community/post/listing').then( function (response) {
+                    console.log(response);
+                    return response.json;
+                }).then( function (json) {
+                    console.log(json);
                 });
             }
         }
