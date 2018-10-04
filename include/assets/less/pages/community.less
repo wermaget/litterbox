@@ -4,20 +4,71 @@ body.community {
         margin-top: 24px;
     }
 
-    .left-sb {
+    .main-column {
+        border: 1px solid @border-color__light;
+    }
 
+    .left-sb {
+        .block {
+            &.block-auth {
+                border-bottom: 1px solid @border-color__light;
+                padding: 8px 0;
+
+                strong {
+                    a {
+                        color: @curious-blue;
+
+                        &:hover {
+                            color: lighten(@curious-blue, 25%);
+                        }
+                    }
+
+                    span {
+                        font-weight: @font-weight__regular;
+                    }
+                }
+            }
+
+            &.block-categories {
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin-top: 10px;
+                    line-height: 1;
+
+                    li {
+                        padding: 6px 0;
+
+                        a {
+                            color: @curious-blue;
+
+                            &:hover {
+                                color: lighten(@curious-blue, 25%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .right-sb {
         .top-list {
             .list {
+                margin-bottom: 0;
                 padding: 0 0 0 4px;
 
                 li {
                     list-style-type: none;
+                    line-height: 1;
+                    padding: 6px 0;
 
                     a {
+                        color: @curious-blue;
 
+                        &:hover {
+
+                        }
                     }
                 }
             }
