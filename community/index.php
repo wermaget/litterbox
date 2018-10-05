@@ -39,7 +39,7 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                         <li><a href="#">Category 4</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-7">content</div>
+                <div class="col-lg-7">content {{ posts }}</div>
                 <!-- Right Sidebar -->
                 <div class="right-sb col-lg-3">
                     <div class="block block-post">
@@ -137,6 +137,11 @@ include_once 'modals.php';
         mounted() {
             console.log('mounted');
             this.getPosts();
+            
+        },
+
+        data: {
+            posts: {}
         },
 
         methods: {
@@ -149,11 +154,13 @@ include_once 'modals.php';
             },
 
             getPosts() {
+                let self = this;
                 fetch('/community/post/listing').then( function (response) {
-                    console.log(response);
-                    return response.json;
+                    return response.json();
                 }).then( function (json) {
                     console.log(json);
+                    self.posts = json
+                    
                 });
             }
         }
