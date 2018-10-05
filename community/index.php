@@ -21,7 +21,7 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
             <div class="row">
                 <!-- Left Sidebar -->
                 <div class="left-sb col-lg-2">
-                    <div>
+                    <div class="block block-auth">
                         <strong>
                             <?php if (!isset($_SESSION['community_user_session'])): ?>
                                 <a data-toggle="modal" data-target="#login-modal" href="#">Login</a>
@@ -32,12 +32,33 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                             <?php endif; ?>
                         </strong>
                     </div>
-                    <ul>
-                        <li><a href="#">Category 1</a></li>
-                        <li><a href="#">Category 2</a></li>
-                        <li><a href="#">Category 3</a></li>
-                        <li><a href="#">Category 4</a></li>
-                    </ul>
+                    <div class="block block-categories">
+                        <ul>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">Supply Chain</a></li>
+                            <li><a href="#">Demand Planning</a></li>
+                            <li><a href="#">Technical Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-column col-lg-7">
+                    <div class="block block-search">
+                        <input type="text" placeholder="Search the community..">
+                    </div>
+                    <div class="block block-listing">
+                        <ul>
+                            <li><a href="">Lorem Ipsum dolor</a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-7">content {{ posts }}</div>
                 <!-- Right Sidebar -->

@@ -19181,11 +19181,48 @@ body.candidatedetail .candidate-detail-wrapper .candidate-detail-content .candid
 body.community .container {
   margin-top: 24px;
 }
+body.community .main-column {
+  border: 1px solid #ebecee;
+}
+body.community .left-sb .block.block-auth {
+  border-bottom: 1px solid #ebecee;
+  padding: 8px 0;
+}
+body.community .left-sb .block.block-auth strong a {
+  color: #3399CC;
+}
+body.community .left-sb .block.block-auth strong a:hover {
+  color: #99cce6;
+}
+body.community .left-sb .block.block-auth strong span {
+  font-weight: 400;
+}
+body.community .left-sb .block.block-categories ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 1;
+}
+body.community .left-sb .block.block-categories ul li {
+  padding: 6px 0;
+}
+body.community .left-sb .block.block-categories ul li a {
+  color: #3399CC;
+}
+body.community .left-sb .block.block-categories ul li a:hover {
+  color: #99cce6;
+}
 body.community .right-sb .top-list .list {
+  margin-bottom: 0;
   padding: 0 0 0 4px;
 }
 body.community .right-sb .top-list .list li {
   list-style-type: none;
+  line-height: 1;
+  padding: 6px 0;
+}
+body.community .right-sb .top-list .list li a {
+  color: #3399CC;
 }
 body.community .block .block-header {
   border-bottom: 1px solid #ebecee;
