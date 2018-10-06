@@ -48,25 +48,13 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                         </div>
                         <div class="actions-toolbar">
                             <input type="text" class="input-search" name="search" placeholder="Search the community..">
-                            <button type="submit" class="action btn-primary stephy-finish">Search</button>
+                            <button type="submit" class="action btn-primary stepy-finish">Search</button>
                         </div>
                     </div>
                     <div class="block block-listing">
-                        <ul>
-                            <li><a href="">Lorem Ipsum dolor</a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
+                        <?php include_once('post/listing/posts_partial.php') ?>
                     </div>
                 </div>
-                <div class="col-lg-7">content {{ posts }}</div>
                 <!-- Right Sidebar -->
                 <div class="right-sb col-lg-3">
                     <div class="block block-post">
@@ -102,7 +90,7 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                                 </div>
                                 <div class="form-group">
                                     <div class="actions-toolbar">
-                                        <button type="submit" class="action btn-primary">Submit</button>
+                                        <button type="submit" class="action btn-primary stepy-finish">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -164,7 +152,7 @@ include_once 'modals.php';
         mounted() {
             console.log('mounted');
             this.getPosts();
-            
+            console.log(window.location.hostname);
         },
 
         data: {
@@ -182,7 +170,7 @@ include_once 'modals.php';
 
             getPosts() {
                 let self = this;
-                fetch('/community/post/listing').then( function (response) {
+                fetch( '/teamire/community/post/listing').then( function (response) {
                     return response.json();
                 }).then( function (json) {
                     console.log(json);

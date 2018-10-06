@@ -382,6 +382,16 @@ nav ul ul ul li {
 .block {
   display: block;
 }
+.no-gap {
+  padding: 0 !important;
+}
+.v-center {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  font-size: initial;
+  line-height: normal;
+}
 .input-label {
   font-size: 12px;
   color: #8e8e8e;
@@ -18900,7 +18910,7 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
 .search-content {
   padding-bottom: 100px;
   padding-top: 40px;
-  background: #fafafa;
+  background: #f8f9fb;
 }
 .search-content .container .form-inline .form-group {
   margin-bottom: 15px;
@@ -19008,7 +19018,7 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   color: #333333 !important;
 }
 .searchresume {
-  background: #fafafa;
+  background: #f8f9fb;
 }
 .searchresume .form-inline {
   text-align: center;
@@ -19059,7 +19069,7 @@ body.admin-page #wrapper .topbar .navbar ul.nav li button.button-menu-mobile {
   margin-bottom: 80px;
 }
 body.jobdetail {
-  background: #fafafa;
+  background: #f8f9fb;
 }
 body.jobdetail .job-detail-content,
 body.jobdetail .job-detail-minisearch {
@@ -19150,7 +19160,7 @@ body.jobdetail .job-detail-wrapper .job-detail-content .job-detail-lower .descri
   font-size: 21px;
 }
 body.candidatedetail {
-  background: #fafafa;
+  background: #f8f9fb;
 }
 body.candidatedetail .candidate-detail-wrapper {
   margin-top: 24px;
@@ -19178,12 +19188,18 @@ body.candidatedetail .candidate-detail-wrapper .candidate-detail-content .candid
   font-size: 12px;
   line-height: 1.9;
 }
-body.community .container {
+body.community {
+  background: #f8f9fb;
+}
+body.community .page-main .container {
   margin-top: 24px;
+  width: 1200px;
 }
 body.community .main-column .block.block-search {
-  border: 1px solid #ebecee;
+  border: 1px solid #e1e2e4;
   padding: 22px 26px 26px 26px;
+  margin-bottom: 20px;
+  background: #ffffff;
 }
 body.community .main-column .block.block-search .page-title-wrapper {
   margin-bottom: 12px;
@@ -19209,8 +19225,57 @@ body.community .main-column .block.block-search .actions-toolbar {
   display: -ms-flexbox;
   display: flex;
 }
+body.community .main-column .block.block-listing {
+  border: 1px solid #e1e2e4;
+  background: #ffffff;
+}
+body.community .main-column .block.block-listing .actions-bar .list-controls {
+  padding: 20px 26px 16px 26px;
+}
+body.community .main-column .block.block-listing .list-labels {
+  border-bottom: 1px solid #e1e2e4;
+  padding: 0 16px;
+}
+body.community .main-column .block.block-listing .list-labels .list-label-wrapper:not(.first) {
+  text-align: center;
+}
+body.community .main-column .block.block-listing .list-labels .list-label-wrapper strong {
+  color: #939393;
+  font-size: 13px;
+  font-weight: 400;
+}
+body.community .main-column .block.block-listing .list-items .item {
+  padding: 20px 16px;
+  line-height: 1;
+}
+body.community .main-column .block.block-listing .list-items .item .post-item {
+  font-size: 0;
+}
+body.community .main-column .block.block-listing .list-items .item .post-info .link-title {
+  display: block;
+  margin-bottom: 6px;
+  color: #3399CC;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+body.community .main-column .block.block-listing .list-items .item .post-info .description {
+  display: block;
+  font-size: 13px;
+  color: #717171;
+}
+body.community .main-column .block.block-listing .list-items .item .post-counter,
+body.community .main-column .block.block-listing .list-items .item .post-activity {
+  text-align: center;
+  display: block;
+  color: #939393;
+  font-size: 13px;
+}
+body.community .main-column .block.block-listing .list-items .item:not(:first-child) {
+  border-top: 1px solid #e1e2e4;
+}
 body.community .left-sb .block.block-auth {
-  border-bottom: 1px solid #ebecee;
+  border-bottom: 1px solid #e1e2e4;
   padding: 8px 0;
 }
 body.community .left-sb .block.block-auth strong a {
@@ -19250,7 +19315,7 @@ body.community .right-sb .top-list .list li a {
   color: #3399CC;
 }
 body.community .block .block-header {
-  border-bottom: 1px solid #ebecee;
+  border-bottom: 1px solid #e1e2e4;
   padding: 12px 16px;
   line-height: 1;
 }
@@ -19267,8 +19332,12 @@ body.community .block .block-content .actions-toolbar .action {
 body.community .block.block-post,
 body.community .block.block-answer,
 body.community .block.block-trending {
-  border: 1px solid #ebecee;
-  margin-bottom: 16px;
+  border: 1px solid #e1e2e4;
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+body.community .block.block-post .alert {
+  margin: 15px 12px 0 12px;
 }
 body.community label {
   margin-bottom: 0;

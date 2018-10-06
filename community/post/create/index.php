@@ -7,9 +7,9 @@ require_once '../../../config/Models.php';
 $user_id = $_SESSION['community_user_session'];
 
 // Check if user has session
-if(! $user_id) return header('Location: ../?status=no_session&msg=You must be logged in to create a post.');
+if(! $user_id) return header('Location: ../../?status=no_session&msg=You must be logged in to create a post.');
 
-if(! $_POST) return header('Location: ../?status=post_failed&msg=Method not allowed.');
+if(! $_POST) return header('Location: ../../?status=post_failed&msg=Method not allowed.');
 
 $title = $_POST['title'];
 $description = $_POST['description'];

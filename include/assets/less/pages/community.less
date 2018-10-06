@@ -1,7 +1,11 @@
 body.community {
+    background: @dim-bg;
 
-    .container {
-        margin-top: 24px;
+    .page-main {
+        .container {
+            margin-top: 24px;
+            width: 1200px;
+        }
     }
 
     .main-column {
@@ -9,6 +13,8 @@ body.community {
             &.block-search {
                 border: 1px solid @border-color__light;
                 padding: 22px 26px 26px 26px;
+                margin-bottom: 20px;
+                background: @white;
 
                 .page-title-wrapper {
                     margin-bottom: 12px;
@@ -28,6 +34,76 @@ body.community {
 
                 .actions-toolbar {
                     .flex();
+                }
+            }
+
+            &.block-listing{
+                border: 1px solid @border-color__light;
+                background: @white;
+
+                .actions-bar {
+                    .list-controls {
+                        padding: 20px 26px 16px 26px;
+                    }
+                }
+
+                .list-labels {
+                    border-bottom: 1px solid @border-color__light;
+                    padding: 0 16px;
+
+                    .list-label-wrapper {
+
+                        &:not(.first) {
+                            .text-center();
+                        }
+
+                        strong {
+                            color: @gray;
+                            font-size: 13px;
+                            font-weight: @font-weight__regular;
+                        }
+                    }
+                }
+
+                .list-items {
+                    .item {
+                        padding: 20px 16px;
+                        line-height: 1;
+
+                        .post-item {
+                            font-size: 0;
+                        }
+
+                        .post-info {
+                            .link-title {
+                                display: block;
+                                margin-bottom: 6px;
+                                color: @curious-blue;
+                                font-size: 15px;
+                                font-weight: @font-weight__bold;
+                                line-height: 1.2;
+                            }
+
+                            .description {
+                                display: block;
+                                font-size: 13px;
+                                color: #717171;
+                            }
+                        }
+
+                        .post-counter,
+                        .post-activity {
+                            .text-center();
+
+                            display: block;
+                            color: @gray;
+                            font-size: 13px;
+                        }
+
+                        &:not(:first-child) {
+                            border-top: 1px solid @border-color__light;
+                        }
+                    }
                 }
             }
         }
@@ -128,11 +204,14 @@ body.community {
         &.block-answer,
         &.block-trending {
             border: 1px solid @border-color__light;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
+            background: @white;
         }
 
         &.block-post {
-
+            .alert {
+                margin: 15px 12px 0 12px;
+            }
         }
     }
 
