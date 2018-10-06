@@ -19181,8 +19181,33 @@ body.candidatedetail .candidate-detail-wrapper .candidate-detail-content .candid
 body.community .container {
   margin-top: 24px;
 }
-body.community .main-column {
+body.community .main-column .block.block-search {
   border: 1px solid #ebecee;
+  padding: 22px 26px 26px 26px;
+}
+body.community .main-column .block.block-search .page-title-wrapper {
+  margin-bottom: 12px;
+}
+body.community .main-column .block.block-search .page-title-wrapper .page-title {
+  margin-top: 0;
+  font-size: 22px;
+}
+body.community .main-column .block.block-search .input-search {
+  display: block;
+  padding: 0 10px;
+  width: 100%;
+  font-size: 14px;
+}
+body.community .main-column .block.block-search .actions-toolbar {
+  -moz-flex: none;
+  -ms-flex: none;
+  -webkit-flex: none;
+  flex: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 body.community .left-sb .block.block-auth {
   border-bottom: 1px solid #ebecee;

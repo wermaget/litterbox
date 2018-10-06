@@ -43,7 +43,13 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                 </div>
                 <div class="main-column col-lg-7">
                     <div class="block block-search">
-                        <input type="text" placeholder="Search the community..">
+                        <div class="page-title-wrapper">
+                            <h3 class="page-title"><?= 'Welcome to the Community!' ?></h3>
+                        </div>
+                        <div class="actions-toolbar">
+                            <input type="text" class="input-search" name="search" placeholder="Search the community..">
+                            <button type="submit" class="action btn-primary stephy-finish">Search</button>
+                        </div>
                     </div>
                     <div class="block block-listing">
                         <ul>

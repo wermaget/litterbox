@@ -5,7 +5,32 @@ body.community {
     }
 
     .main-column {
-        border: 1px solid @border-color__light;
+        .block {
+            &.block-search {
+                border: 1px solid @border-color__light;
+                padding: 22px 26px 26px 26px;
+
+                .page-title-wrapper {
+                    margin-bottom: 12px;
+
+                    .page-title {
+                        margin-top: 0;
+                        font-size: 22px;
+                    }
+                }
+
+                .input-search {
+                    display: block;
+                    padding: 0 10px;
+                    width: 100%;
+                    font-size: 14px;
+                }
+
+                .actions-toolbar {
+                    .flex();
+                }
+            }
+        }
     }
 
     .left-sb {
