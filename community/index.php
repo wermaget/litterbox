@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+require '../config/site.php';
+
+
 $error = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error'] : '';
 $status = (isset($_GET['status']) && $_GET['status'] != '') ? $_GET['status'] : '';
 $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
@@ -152,7 +156,6 @@ include_once 'modals.php';
         mounted() {
             console.log('mounted');
             this.getPosts();
-            console.log(window.location.hostname);
         },
 
         data: {
@@ -170,12 +173,13 @@ include_once 'modals.php';
 
             getPosts() {
                 let self = this;
-                fetch( '/teamire/community/post/listing').then( function (response) {
+                
+                fetch('<?= $config['base_url'] ?>' + 'community/post/listing').then( function (response) {
                     return response.json();
                 }).then( function (json) {
                     console.log(json);
                     self.posts = json
-                    
+
                 });
             }
         }
