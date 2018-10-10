@@ -55,8 +55,13 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                             <button type="submit" class="action btn-primary stepy-finish">Search</button>
                         </div>
                     </div>
+                    
                     <div class="block block-listing">
+                    <?php if( ! isset($post)): ?>
                         <?php include_once('post/listing/posts_partial.php') ?>
+                    <?php else: ?>
+                        <?php include_once('post/listing/posts_partial.php') ?>
+                    <?php endif; ?>
                     </div>
                 </div>
                 <!-- Right Sidebar -->
@@ -179,9 +184,10 @@ include_once 'modals.php';
                 }).then( function (json) {
                     console.log(json);
                     self.posts = json
-
                 });
-            }
+            },
+
+
         }
     });
 
