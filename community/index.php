@@ -1,12 +1,21 @@
 <?php
 session_start();
 
+// require '../config/database.php';
+// require '../config/Models.php';
 require '../config/site.php';
 
 
 $error = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error'] : '';
 $status = (isset($_GET['status']) && $_GET['status'] != '') ? $_GET['status'] : '';
 $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
+
+$post = (isset($_GET['post']) && $_GET['post'] != '') ? $_GET['post'] : '';
+
+$post = $_SESSION['post'];
+unset($_SESSION['post']);
+
+// $post = model('community_posts')->get('permalink=' . $post);
 ?>
 <!doctype html>
 <html lang="en">
@@ -57,10 +66,11 @@ $msg = (isset($_GET['msg']) && $_GET['msg'] != '') ? $_GET['msg'] : '';
                     </div>
                     
                     <div class="block block-listing">
-                    <?php if( ! isset($post)): ?>
+                    <?php if(!$post): ?>
                         <?php include_once('post/listing/posts_partial.php') ?>
-                    <?php else: ?>
-                        <?php include_once('post/listing/posts_partial.php') ?>
+                    <?php endif; ?>
+                    <?php if($post): ?>
+                        <?php include_once('post/listing/post.php') ?>
                     <?php endif; ?>
                     </div>
                 </div>
@@ -186,6 +196,17 @@ include_once 'modals.php';
                     self.posts = json
                 });
             },
+
+            getPost(permalink) {
+                let self = this;
+                fetch('<?= $config['base_url'] ?>' + 'community?post=' + permalink).then( function (response) {
+                    return response.json();
+                }).then( function (json) {
+                    console.log(json);
+                    self.posts = json
+                });
+
+            }
 
 
         }
