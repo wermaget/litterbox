@@ -1,6 +1,3 @@
-<?php
-include '../config/Models.php';
-?>
 <!-- Footer -->
 <footer class="">
     <div class="row" id="first-footer">

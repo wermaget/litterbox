@@ -48,7 +48,7 @@
         <div class="row post-item">
             <div class="col-lg-9 v-center first">
                 <div class="post-info">
-                    <a :href="'<?= $config['base_url'] ?>community/post?permalink=' + post.permalink" class="link-title">{{ post.title }}</a>
+                    <a :href="'<?= $config['base_url'] ?>community/?permalink=' + post.permalink" class="link-title">{{ post.title }}</a>
                     <span class="description">{{ post.description }}</span>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                 <span class="post-counter">32</span>
             </div>
             <div class="col-lg-1 v-center no-gap">
-                <span class="post-counter">44</span>
+                <span class="post-counter">{{ post.views }}</span>
             </div>
             <div class="col-lg-1 v-center no-gap">
                 <span class="post-activity">2h ago</span>
