@@ -7,7 +7,7 @@ require '../../config/site.php';
 $permalink = $_GET['permalink'];
 
 if(isset($permalink) && $permalink != '' ) {
-    $post = model('community_posts')->get("community_post_id='$permalink'");
+    $post = model('community_posts')->get("permalink='$permalink'");
 
 }
 
