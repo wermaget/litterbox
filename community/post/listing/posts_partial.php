@@ -48,7 +48,7 @@
         <div class="row post-item">
             <div class="col-lg-9 v-center first">
                 <div class="post-info">
-                    <a href="#" class="link-title">{{ post.title }}</a>
+                    <a :href="'<?= $config['base_url'] ?>community/post?permalink=' + post.permalink" class="link-title">{{ post.title }}</a>
                     <span class="description">{{ post.description }}</span>
                 </div>
             </div>
