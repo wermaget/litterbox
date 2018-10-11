@@ -1,3 +1,4 @@
+<?php if($post_data): ?>
 <div class="block block-viewpost">
     <div class="block-post">
         <div class="tags">
@@ -55,3 +56,6 @@
         </div>
     </div>
 </div>
+<?php else: ?>
+<h1>Record does not exist.</h1>
+<?php endif; ?>
