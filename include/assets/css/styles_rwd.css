@@ -16,10 +16,6 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -moz-flex: none;
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
     width: 100%;
     float: right;
   }
@@ -69,10 +65,6 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -moz-flex: none;
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
   }
   body header#topnav .nav-wrapper .logo-wrapper {
     width: auto;
@@ -197,10 +189,6 @@ body.non-index header#topnav nav label.toggle i {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -moz-flex: none;
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
   }
   .footer-updated .footer-items-container {
     display: -webkit-box;
@@ -208,10 +196,6 @@ body.non-index header#topnav nav label.toggle i {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -moz-flex: none;
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
   }
   #first-footer {
     display: none;
@@ -252,10 +236,6 @@ body.non-index header#topnav nav label.toggle i {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -moz-flex: none;
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
     width: 100%;
   }
   .footer-updated .email-block {

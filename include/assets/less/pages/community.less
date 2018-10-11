@@ -37,10 +37,13 @@ body.community {
                 }
             }
 
-            &.block-listing{
+            &.block-listing,
+            &.block-viewpost {
                 border: 1px solid @border-color__light;
                 background: @white;
+            }
 
+            &.block-listing{
                 .actions-bar {
                     .list-controls {
                         padding: 20px 26px 16px 26px;
@@ -102,6 +105,77 @@ body.community {
 
                         &:not(:first-child) {
                             border-top: 1px solid @border-color__light;
+                        }
+                    }
+                }
+            }
+
+            &.block-viewpost {
+                .block {
+                    &-post {
+                        padding: 24px;
+
+                        .tags {
+                            line-height: 1;
+                        }
+
+                        > .title {
+                            h1 {
+                                font-size: 28px;
+                                line-height: 1.2;
+                            }
+                        }
+
+                        .details {
+                            line-height: 1;
+                            margin-bottom: 20px;
+
+                            .user-link {
+                                color: @curious-blue;
+                            }
+
+                            .time-posted {
+                                &:before {
+                                    margin-right: 4px;
+                                    content: '\00B7';
+                                }
+                            }
+                        }
+
+                        .description {
+                            padding-bottom: 16px;
+                        }
+
+                        .info-bar {
+                            .flex();
+
+                            .statistics {
+                                .flex-value(1);
+
+                                .responses,
+                                .views {
+                                    display: inline-block;
+
+                                    .label {
+                                        color: initial;
+                                        font-size: 13px;
+                                        font-weight: @font-weight__regular;
+                                        padding: 0;
+                                    }
+                                }
+
+                                .views {
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .actions {
+                                .action {
+                                    &.report {
+                                        color: @danger;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

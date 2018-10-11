@@ -1341,10 +1341,10 @@ nav ul ul ul li {
   top: 11px;
   position: absolute;
   right: 12px;
-  opacity: .3;
+  opacity: 0.3;
 }
 .modal .modal-dialog .close:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 .modal .modal-dialog .modal-content {
   -moz-box-shadow: none;
@@ -3541,10 +3541,10 @@ table.dataTable thead th.sorting_desc:after {
   text-align: center;
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: opacity .2s linear;
-  -moz-transition: opacity .2s linear;
-  -o-transition: opacity .2s linear;
-  transition: opacity .2s linear;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 .chartist-tooltip.tooltip-show {
   opacity: 1;
@@ -3967,9 +3967,9 @@ File: Menu
   -webkit-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
-  -webkit-transition-duration: .35s;
-  -o-transition-duration: .35s;
-  transition-duration: .35s;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
   -webkit-transition-property: height, visibility;
   -o-transition-property: height, visibility;
   transition-property: height, visibility;
@@ -4106,7 +4106,7 @@ File: Menu
 #sidebar-menu .menu-arrow {
   -webkit-transition: -webkit-transform 0.15s;
   -o-transition: -o-transform 0.15s;
-  transition: transform .15s;
+  transition: transform 0.15s;
   position: absolute;
   right: 20px;
   display: inline-block;
@@ -4182,7 +4182,7 @@ File: Menu
 }
 .menu-title {
   padding: 12px 20px !important;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   pointer-events: none;
   cursor: default;
   font-size: 11px;
@@ -4246,7 +4246,7 @@ File: Menu
   left: 35px;
   text-indent: 0;
   display: block !important;
-  padding: .2em .6em .3em !important;
+  padding: 0.2em 0.6em 0.3em !important;
 }
 .enlarged #wrapper .left.side-menu #sidebar-menu ul > li {
   position: relative;
@@ -4576,9 +4576,9 @@ File: Icons
   left: -1.85714286em;
 }
 .fa-border {
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eee;
-  border-radius: .1em;
+  border-radius: 0.1em;
 }
 .fa-pull-left {
   float: left;
@@ -4587,10 +4587,10 @@ File: Icons
   float: right;
 }
 .fa.fa-pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 .fa.fa-pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 /* Deprecated as of 4.4.0 */
 .pull-right {
@@ -4600,10 +4600,10 @@ File: Icons
   float: left;
 }
 .fa.pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 .fa.pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
@@ -17784,7 +17784,7 @@ select.form-control {
 }
 /* Labels */
 .label {
-  padding: 0.3em .6em;
+  padding: 0.3em 0.6em;
   font-family: 'Proxima Nova', sans-serif;
 }
 .label-white {
@@ -18376,7 +18376,7 @@ select.form-control {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -18386,7 +18386,7 @@ select.form-control {
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -18858,7 +18858,7 @@ select.form-control {
 }
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar {
   position: static;
-  transition: .5s;
+  transition: 0.5s;
 }
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar ul {
   padding: 0;
@@ -18868,12 +18868,12 @@ select.form-control {
   color: #939393;
   font-family: 'Proxima Nova';
   font-weight: 600;
-  transition: .5s;
+  transition: 0.5s;
 }
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar ul li a.active {
   color: #333333;
   font-weight: 700;
-  transition: .5s;
+  transition: 0.5s;
 }
 .main-site.aboutus .page-main.wrapper .main-content .container.about-us .sidebar.sticky {
   position: fixed;
@@ -19215,17 +19215,14 @@ body.community .main-column .block.block-search .input-search {
   font-size: 14px;
 }
 body.community .main-column .block.block-search .actions-toolbar {
-  -moz-flex: none;
-  -ms-flex: none;
-  -webkit-flex: none;
-  flex: none;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-body.community .main-column .block.block-listing {
+body.community .main-column .block.block-listing,
+body.community .main-column .block.block-viewpost {
   border: 1px solid #e1e2e4;
   background: #ffffff;
 }
@@ -19273,6 +19270,64 @@ body.community .main-column .block.block-listing .list-items .item .post-activit
 }
 body.community .main-column .block.block-listing .list-items .item:not(:first-child) {
   border-top: 1px solid #e1e2e4;
+}
+body.community .main-column .block.block-viewpost .block-post {
+  padding: 24px;
+}
+body.community .main-column .block.block-viewpost .block-post .tags {
+  line-height: 1;
+}
+body.community .main-column .block.block-viewpost .block-post > .title h1 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+body.community .main-column .block.block-viewpost .block-post .details {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+body.community .main-column .block.block-viewpost .block-post .details .user-link {
+  color: #3399CC;
+}
+body.community .main-column .block.block-viewpost .block-post .details .time-posted:before {
+  margin-right: 4px;
+  content: '\00B7';
+}
+body.community .main-column .block.block-viewpost .block-post .description {
+  padding-bottom: 16px;
+}
+body.community .main-column .block.block-viewpost .block-post .info-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.community .main-column .block.block-viewpost .block-post .info-bar .statistics {
+  -webkit-flex: 1;
+  /* Chrome */
+  -ms-flex: 1;
+  /* IE 10 */
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;
+  flex: 1;
+}
+body.community .main-column .block.block-viewpost .block-post .info-bar .statistics .responses,
+body.community .main-column .block.block-viewpost .block-post .info-bar .statistics .views {
+  display: inline-block;
+}
+body.community .main-column .block.block-viewpost .block-post .info-bar .statistics .responses .label,
+body.community .main-column .block.block-viewpost .block-post .info-bar .statistics .views .label {
+  color: initial;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0;
+}
+body.community .main-column .block.block-viewpost .block-post .info-bar .statistics .views {
+  margin-left: 10px;
+}
+body.community .main-column .block.block-viewpost .block-post .info-bar .actions .action.report {
+  color: #f96a74;
 }
 body.community .left-sb .block.block-auth {
   border-bottom: 1px solid #e1e2e4;
@@ -19373,14 +19428,14 @@ body.community .form-control {
   height: 50px;
   line-height: 50px;
   cursor: default;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 .message-list li a {
   color: #797979;
 }
 .message-list li:hover {
   background: rgba(152, 166, 173, 0.15);
-  transition-duration: .05s;
+  transition-duration: 0.05s;
 }
 .message-list li .col {
   float: left;
@@ -19448,7 +19503,7 @@ body.community .form-control {
 .message-list li.active,
 .message-list li.selected {
   background: rgba(152, 166, 173, 0.15);
-  transition-duration: .05s;
+  transition-duration: 0.05s;
 }
 .message-list li.active,
 .message-list li.active:hover {
@@ -19493,7 +19548,7 @@ body.community .form-control {
   background: #98a6ad;
   opacity: 0;
   margin-bottom: 0px !important;
-  transition-duration: .05s;
+  transition-duration: 0.05s;
 }
 .message-list .checkbox-wrapper-mail label:active {
   background: #87949b;
@@ -20390,7 +20445,7 @@ ul.sitemap {
   padding-left: 0;
 }
 ul.sitemap li {
-  line-height: 2.5rem ;
+  line-height: 2.5rem;
   vertical-align: top ;
   list-style: none;
   position: relative ;
@@ -20404,8 +20459,8 @@ ul.sitemap li a:hover {
   color: #2289d0;
 }
 ul.sitemap ul {
-  margin-left: 1.5rem ;
-  margin-bottom: 1.5rem ;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
   padding-top: 10px;
 }
 ul.sitemap ul li {
@@ -20424,8 +20479,8 @@ ul.sitemap ul li::before {
   content: "";
   display: inline-block;
   width: 3rem;
-  height: 2.5rem ;
-  border-bottom: 1px #ccc solid ;
+  height: 2.5rem;
+  border-bottom: 1px #ccc solid;
   position: absolute ;
   top: -1.25rem;
 }

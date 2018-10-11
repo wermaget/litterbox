@@ -51,27 +51,26 @@ $permalink = (isset($_GET['permalink']) && $_GET['permalink'] != '') ? $_GET['pe
                         </div>
                     </div>
                     <div class="main-column col-lg-7">
-                        <?php if(!$permalink):?>
-                        <div class="block block-search">
-                            <div class="page-title-wrapper">
-                                <h3 class="page-title"><?= 'Welcome to the Community!' ?></h3>
+                        <?php if (!$permalink): ?>
+                            <div class="block block-search">
+                                <div class="page-title-wrapper">
+                                    <h3 class="page-title"><?= 'Welcome to the Community!' ?></h3>
+                                </div>
+                                <div class="actions-toolbar">
+                                    <input type="text" class="input-search" name="search"
+                                           placeholder="Search the community..">
+                                    <button type="submit" class="action btn-primary stepy-finish">Search</button>
+                                </div>
                             </div>
-                            <div class="actions-toolbar">
-                                <input type="text" class="input-search" name="search"
-                                       placeholder="Search the community..">
-                                <button type="submit" class="action btn-primary stepy-finish">Search</button>
-                            </div>
-                        </div>
                         <?php endif; ?>
 
-                        <div class="block block-listing">
-                            <?php if (!$permalink): ?>
-                                <?php include_once('post/listing/posts_partial.php') ?>
-                            <?php endif; ?>
-                            <?php if ($permalink): ?>
-                                <?php include_once('post/index.php') ?>
-                            <?php endif; ?>
-                        </div>
+                        <?php if (!$permalink): ?>
+                            <?php include_once('post/listing/posts_partial.php') ?>
+                        <?php endif; ?>
+
+                        <?php if ($permalink): ?>
+                            <?php include_once('post/index.php') ?>
+                        <?php endif; ?>
                     </div>
                     <!-- Right Sidebar -->
                     <div class="right-sb col-lg-3">
