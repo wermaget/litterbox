@@ -72,7 +72,14 @@ class CRUD {
 		$pdo = $db->prepare("delete from $this->table where $args");
 		$pdo->execute();
 		Database::disconnect();
-	}
+    }
+    
+    function loadMore($offset, $limit){
+        $db = Database::connect();
+        $pdo = $db->prepare("select * from $this->table where $args limit $limit offset $offset");
+        $pdo->execute();
+        Database::disconnect();
+    }
 }
 
 /* =====================================Functions===================================== */
