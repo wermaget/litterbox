@@ -1,6 +1,14 @@
 <?php
 include "CRUD.php";
 
+
+//generic model
+function model($table){
+    $crud = new CRUD;
+    $crud->table = $table;
+    return $crud;
+}
+
 // User Models
 function admin() {
 	$crud = new CRUD;
