@@ -53,9 +53,15 @@
           </a>
       </li>
 
-      <li>
-          <a href="?view=accounts">
-              <i class="mdi mdi-account-plus"></i><span> Accounts </span>
-          </a>
-      </li>
+    <li>
+        <a href="?view=accounts">
+            <i class="mdi mdi-account-plus"></i><span> Accounts </span>
+        </a>
+    </li>
+
+    <li>
+        <a href="?view=reports">
+            <i class="mdi mdi-file-document-box"></i><span> Reports </span>
+        </a>
+    </li>
 </ul>
