@@ -16,7 +16,7 @@
             </form>
         </div>
         <div class="items-right">
-            <a href="#" class="btn btn-primary waves-effect waves-light btn-sm">Download All Resume as .ZIP</a>
+            <a href="./resumeExport.php" class="btn btn-primary waves-effect waves-light btn-sm">Download All Resume as .ZIP</a>
             <!-- <a href="./clientExportCsv.php" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a> -->
             <a href="#" id="export_btn" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a>
         </div>
