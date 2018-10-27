@@ -5,11 +5,11 @@
     <div class="actions-topbar">
         <div class="items-left">
             <form id="report-generator" name="report-generator" class="report-generator" method="POST" action="">
-                <select id="" class="input-select" name="report-type">
+                <select id="report_type" class="input-select" name="report-type">
                     <option value="" selected disabled> - Select A Report Type -</option>
-                    <option>Candidates</option>
-                    <option>Clients</option>
-                    <option>Inquiries</option>
+                    <option value="candidate">Candidates</option>
+                    <option value="company">Clients</option>
+                    <option value="inquiries">Inquiries</option>
                     <option>Request Talent</option>
                 </select>
                 <button type="submit" class="btn btn-primary">Generate</button>
@@ -17,7 +17,8 @@
         </div>
         <div class="items-right">
             <a href="#" class="btn btn-primary waves-effect waves-light btn-sm">Download All Resume as .ZIP</a>
-            <a href="./clientExportCsv.php" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a>
+            <!-- <a href="./clientExportCsv.php" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a> -->
+            <a href="#" id="export_btn" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a>
         </div>
     </div>
     <div class="" style="border-top: 1px solid black;">
@@ -69,3 +70,15 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let export_btn = document.querySelector('#export_btn');
+        
+        export_btn.addEventListener('click', (e) => {
+            let report_type = document.querySelector('#report_type');
+            e.preventDefault();
+            window.location = './clientExportCsv.php?report_type=' + report_type.value;
+        })
+    });
+</script>
