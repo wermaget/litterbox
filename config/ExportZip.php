@@ -8,8 +8,6 @@ class ExportZip {
         'filename' => '',
     ];
 
-    protected $resumes = [];
-
     public function __construct($params) {
         $this->params = $params;
     }
