@@ -17,14 +17,9 @@ class ExportZip {
     }
 
     public function export() {
+
         $records = $this->getRecords();
-
-        foreach($records as $r) {
-            $resumes[] = $r->uploadedResume;
-        }
-
-        $this->zipFiles($resumes);
-
+        $this->zipFiles($records);
     }
 
     public function zipFiles($resumes) {
@@ -39,10 +34,14 @@ class ExportZip {
         }
 
         foreach($resumes as $r) {
-            $zip->addFile('../media/' . $r, $r);
+            $zip->addFile('../media/' . $r->uploadedResume, $r->uploadedResume);
         }
 
         $zip->close();
+        $this->download($root_dir);
+    }
+
+    public function download($root_dir) {
 
         header('Content-Type: application/zip; charset=utf-8');
         header('Content-Disposition: attachment; filename=' . $this->params['filename']);
