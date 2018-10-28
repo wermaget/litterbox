@@ -8,7 +8,7 @@ include_once('../config/ExportZip.php');
 $params = [
     'table' => 'candidate',
     'folder' => 'exports',
-    'filename' => 'resumes.zip',
+    'filename' => 'resumes',
 ];
 
 

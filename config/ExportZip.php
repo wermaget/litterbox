@@ -29,12 +29,14 @@ class ExportZip {
         }
 
         $zip = new ZipArchive();        
-        if ($zip->open($root_dir . '/' . $this->params['folder'] .'/' . $this->params['filename'], ZipArchive::CREATE)!==TRUE) {
+        if ($zip->open($root_dir . '/' . $this->params['folder'] .'/' . $this->params['filename'] . '.zip', ZipArchive::CREATE)!==TRUE) {
             exit("cannot open <$this->params['filename']>\n");
         }
 
         foreach($resumes as $r) {
-            $zip->addFile('../media/' . $r->uploadedResume, $r->uploadedResume);
+            $archive_filename = $r->firstName . '_' . $r->lastName . '_' . $r->uploadedResume;           
+            $zip->addFile($root_dir . '/media/' . $r->uploadedResume, 
+                $archive_filename);
         }
 
         $zip->close();
@@ -43,8 +45,9 @@ class ExportZip {
 
     public function download($root_dir) {
 
+        $generation_date = date('Y-m-d');
         header('Content-Type: application/zip; charset=utf-8');
-        header('Content-Disposition: attachment; filename=' . $this->params['filename']);
-        readfile($root_dir . '/' . $this->params['folder'] . '/' . $this->params['filename']);
+        header('Content-Disposition: attachment; filename='. $this->params['filename'] . '_' . $generation_date . '.zip');
+        readfile($root_dir . '/' . $this->params['folder'] . '/' . $this->params['filename'] . '.zip');
     }
 }
