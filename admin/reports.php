@@ -1,84 +1,149 @@
 <?php
+include_once('reportsConfig.php');
 
+print_r($data);
+
+$rtype = $_GET['type'];
+
+if(isset($rtype) && $rtype != ''):
+    $rlist = model($rtype)->list();
+endif;
 ?>
 <div class="admin-reports-view">
     <div class="actions-topbar">
         <div class="items-left">
-            <form id="report-generator" name="report-generator" class="report-generator" method="POST" action="">
-                <select id="report_type" class="input-select" name="report-type">
-                    <option value="" selected disabled> - Select A Report Type -</option>
-                    <option value="candidate">Candidates</option>
-                    <option value="company">Clients</option>
-                    <option value="inquiries">Inquiries</option>
-                    <option>Request Talent</option>
+            <form id="report-generator" name="report-generator" class="report-generator" method="GET" action="index.php?view=reports">
+                <p><strong>Select Report Type:</strong></p>
+                <select id="report_type" class="input-select form-control" name="report-type">
+                    <option value="" selected disabled>Select Report Type</option>
+                    <?php
+                    foreach($options as $option):
+                        if($rtype == $option):
+                    ?>
+                        <option value="<?= $option ?>" selected><?= ucwords($option) ?></option>
+                    <?php
+                        else:
+                    ?>
+                        <option value="<?= $option ?>"><?= ucwords($option) ?></option>
+                    <?php
+                        endif;
+                    endforeach;
+                    ?>
                 </select>
-                <button type="submit" class="btn btn-primary">Generate</button>
+<!--                <button type="submit" class="btn btn-primary">Generate</button>-->
             </form>
         </div>
         <div class="items-right">
-            <a href="./resumeExport.php" class="btn btn-primary waves-effect waves-light btn-sm">Download All Resume as .ZIP</a>
+            <?php
+            if($rtype == 'candidate'):
+            ?>
+            <a href="./resumeExport.php" class="btn btn-primary waves-effect waves-light btn-sm">Download All Resume as
+                .ZIP</a>
+            <?php
+            endif;
+
+            if($rlist):
+            ?>
             <!-- <a href="./clientExportCsv.php" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a> -->
             <a href="#" id="export_btn" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a>
+            <?php
+            endif;
+            ?>
         </div>
     </div>
-    <div class="" style="border-top: 1px solid black;">
-        <div class="row">
-            <div class="col-lg-2">
-                <strong>First Name</strong>
-            </div>
-            <div class="col-lg-2">
-                <strong>Last Name</strong>
-            </div>
-            <div class="col-lg-2">
-                <strong>Email</strong>
-            </div>
-            <div class="col-lg-1">
-                <strong>Mobile</strong>
-            </div>
-            <div class="col-lg-2">
-                <strong>City</strong>
-            </div>
-            <div class="col-lg-1">
-                <strong>State</strong>
-            </div>
-            <div class="col-lg-2">
-                <strong>Resume</strong>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-2">
-                <span>John Michael</span>
-            </div>
-            <div class="col-lg-2">
-                <span>Doe</span>
-            </div>
-            <div class="col-lg-2">
-                <span>johnmichael@email.com</span>
-            </div>
-            <div class="col-lg-1">
-                <span>0987612862</span>
-            </div>
-            <div class="col-lg-2">
-                <span>Bacolod City</span>
-            </div>
-            <div class="col-lg-1">
-                <span>State</span>
-            </div>
-            <div class="col-lg-2">
-                <span><a href="#">152349234.pdf</a></span>
-            </div>
-        </div>
+    <div class="">
+        <table id="datatable" class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <?php
+                //foreach():
+                ?>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Address</th>
+                <th>State</th>
+                <th>Resume</th>
+                <?php
+                //endforeach;
+                ?>
+            </tr>
+            </thead>
+        <?php
+        if($rlist):
+        ?>
+            <tbody>
+            <?php
+            foreach($rlist as $row):
+            ?>
+            <tr>
+                <td><?= $row->firstName ?></td>
+                <td><?= $row->lastName ?></td>
+                <td><?= $row->email ?></td>
+                <td><?= $row->phoneNumber ?></td>
+                <td><?= $row->address1 ?></td>
+                <td>California</td>
+                <td><a href="../media/<?= $row->uploadedResume ?>"><?= $row->uploadedResume ?></a></td>
+            </tr>
+            <?php
+            endforeach;
+            ?>
+            </tbody>
+        <?php
+        endif;
+        ?>
+        </table>
+
     </div>
 </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         let export_btn = document.querySelector('#export_btn');
-        
+
         export_btn.addEventListener('click', (e) => {
             let report_type = document.querySelector('#report_type');
             e.preventDefault();
             window.location = './clientExportCsv.php?report_type=' + report_type.value;
         })
     });
+
+    $("#report_type").bind("change", function(e){
+       $("#report-generator").submit();
+    });
+
+    $("#report-generator").on("submit", function(e) {
+        e.preventDefault();
+
+        var rt = $(this).serializeArray();
+        insertParam("type", rt[0]['value']);
+    });
+
+    /* Add parameter to url */
+    function insertParam(key, value) {
+        key = encodeURI(key);
+        value = encodeURI(value);
+
+        var kvp = document.location.search.substr(1).split('&');
+
+        var i = kvp.length;
+        var x;
+        while (i--) {
+            x = kvp[i].split('=');
+
+            if (x[0] == key) {
+                x[1] = value;
+                kvp[i] = x.join('=');
+                break;
+            }
+        }
+
+        if (i < 0) {
+            kvp[kvp.length] = [key, value].join('=');
+        }
+
+        //this will reload the page, it's likely better to store this until finished
+        document.location.search = kvp.join('&');
+    }
 </script>
