@@ -26,9 +26,10 @@ class ExportCsv {
         
         if($this->getReportType != '') $filename = $this->getReportType();
 
+        $generation_date = date('Y-m-d');
         // output headers so that the file is downloaded rather than displayed
         header('Content-Type: text/csv; charset=utf-8');
-        header('Content-Disposition: attachment; filename=' . $filename . '.csv');
+        header('Content-Disposition: attachment; filename=' . $filename . '_' . $generation_date . '.csv');
         
         $csv = fopen('php://output', w);
 
