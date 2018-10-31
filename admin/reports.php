@@ -1,8 +1,7 @@
 <?php
 include_once('reportsConfig.php');
 
-print_r($data);
-
+//print_r($data);
 $rtype = $_GET['type'];
 
 if(isset($rtype) && $rtype != ''):
@@ -56,17 +55,13 @@ endif;
             <thead>
             <tr>
                 <?php
-                //foreach():
-                ?>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Mobile</th>
-                <th>Address</th>
-                <th>State</th>
-                <th>Resume</th>
-                <?php
-                //endforeach;
+                    foreach($data as $d){
+                        if($d['option'] == $rtype){
+                            foreach($d['values'] as $v){
+                                echo '<th>' . $v . '</th>';
+                            }
+                        }
+                    }
                 ?>
             </tr>
             </thead>

@@ -2,6 +2,7 @@
 
 class CRUD {
 
+    var $database = 'teamire';
 	var $table;
 
 	var $obj = array();
@@ -30,6 +31,18 @@ class CRUD {
 		Database::disconnect();
 		return $result;
 	}
+
+    function getColumns(){
+        $db = Database::connect();
+        $pdo = $db->prepare("SELECT `COLUMN_NAME` 
+            FROM `INFORMATION_SCHEMA`.`COLUMNS` 
+            WHERE `TABLE_SCHEMA`='$this->database' 
+            AND `TABLE_NAME`='$this->table'");
+        $pdo->execute();
+        $result = $pdo->fetchAll(PDO::FETCH_OBJ);
+        Database::disconnect();
+        return $result;
+    }
 
 	function count($query=""){
 		$query = $query ? "where " . $query: "";
