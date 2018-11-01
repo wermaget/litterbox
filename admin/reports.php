@@ -55,9 +55,9 @@ endif;
             <thead>
             <tr>
                 <?php
-                    foreach($data as $d){
-                        if($d['option'] == $rtype){
-                            foreach($d['values'] as $v){
+                    foreach($data as $ndx => $d){
+                        if($ndx == $rtype){
+                            foreach($d['headers'] as $v){
                                 echo '<th>' . $v . '</th>';
                             }
                         }
@@ -73,13 +73,21 @@ endif;
             foreach($rlist as $row):
             ?>
             <tr>
-                <td><?= $row->firstName ?></td>
-                <td><?= $row->lastName ?></td>
-                <td><?= $row->email ?></td>
-                <td><?= $row->phoneNumber ?></td>
-                <td><?= $row->address1 ?></td>
-                <td>California</td>
-                <td><a href="../media/<?= $row->uploadedResume ?>"><?= $row->uploadedResume ?></a></td>
+                <?php
+
+                    foreach($data as $ndx => $d){
+                        if($ndx == $rtype){
+                            foreach($d['cols'] as $v){
+                                if($v == 'uploadedResume'){
+                                    echo '<td><a href="../media/' . $row->{$v} . '">' . $row->{$v} . '</a></td>';
+                                } else {
+                                    echo '<td>' . $row->{$v} . '</td>';
+
+                                }
+                           }
+                        }
+                    }
+                ?>
             </tr>
             <?php
             endforeach;
