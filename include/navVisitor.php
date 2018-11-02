@@ -28,9 +28,7 @@
                         <?php else: ?>
                             <li><a href="../company">Employer Login</a></li>
                         <?php endif; ?>
-                        <?php if (isset($_SESSION['company_session'])): ?>
-                            <li><a href="../home/?view=hiringForm">Request Talent</a></li>
-                        <?php endif; ?>
+                        <li><a href="../home/?view=hiringForm">Request Talent</a></li>
                         <li><a href="../home/?view=searchResume">Find Candidates</a></li>
                         <?php if (!isset($_SESSION['company_session'])): ?>
                             <li><a href="../home/?view=clientForm">Employer Registration</a></li>
