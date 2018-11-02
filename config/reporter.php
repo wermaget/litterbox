@@ -50,7 +50,6 @@ class Reporter {
         $this->getReports();
         $this->setTableColumns();
 
-        return $this->data;
     }
 
     public function getReports(){
@@ -103,6 +102,6 @@ class Reporter {
     }
 
     public function getJobCategory($category_id){
-        return model('job_function')->getColumnValue('option', $category_id)->option;
+        return model('job_function')->getColumnValue('option', 'Id=' . $category_id)->option;
     }
 }
