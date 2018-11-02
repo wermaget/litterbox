@@ -60,6 +60,7 @@ endif;
                             foreach($d['headers'] as $v){
                                 echo '<th>' . $v . '</th>';
                             }
+                            break;
                         }
                     }
                 ?>
