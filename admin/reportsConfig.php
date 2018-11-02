@@ -5,6 +5,7 @@ $options = ['candidate','company','inquiries','talents'];
 //table headers
 $_candidate = ['First Name','Last Name','Email','Mobile','Address','State','Resume'];
 $_company = ['Company Name','Description','Email','Contact Person','Phone Number','Address'];
+$_inquiries = ['First Name','Last Name','Email','Mobile','Message'];
 
 $data = [
 
@@ -24,7 +25,12 @@ $data = [
         
     ],
 
-    'inquiries' => [],
+    'inquiries' => [
+        'headers' => $_inquiries,
+        'cols' => [
+            'firstName', 'lastName', 'workEmail', 'phoneNumber','message'
+        ]
+    ],
     'talents' => [],
 ];
 
