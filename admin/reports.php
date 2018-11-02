@@ -1,7 +1,6 @@
 <?php
 include_once('reportsConfig.php');
 
-//print_r($data);
 $rtype = $_GET['type'];
 
 if(isset($rtype) && $rtype != ''):
@@ -15,19 +14,13 @@ endif;
                 <p><strong>Select Report Type:</strong></p>
                 <select id="report_type" class="input-select form-control" name="report-type">
                     <option value="" selected disabled>Select Report Type</option>
-                    <?php
-                    foreach($options as $option):
-                        if($rtype == $option):
-                    ?>
-                        <option value="<?= $option ?>" selected><?= ucwords($option) ?></option>
-                    <?php
-                        else:
-                    ?>
-                        <option value="<?= $option ?>"><?= ucwords($option) ?></option>
-                    <?php
-                        endif;
-                    endforeach;
-                    ?>
+                    <?php foreach($data as $ndx => $d): ?>
+                    <?php if($rtype == $ndx): ?>
+                        <option value="<?= $ndx ?>" selected><?= $d['title'] ?></option>
+                    <?php else: ?>
+                        <option value="<?= $ndx ?>"><?= $d['title'] ?></option>
+                    <?php endif; ?>
+                    <?php endforeach; ?>
                 </select>
 <!--                <button type="submit" class="btn btn-primary">Generate</button>-->
             </form>
