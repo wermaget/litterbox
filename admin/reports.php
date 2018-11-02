@@ -1,11 +1,14 @@
 <?php
 include_once('reportsConfig.php');
-
+include_once('../config/reporter.php');
 $rtype = $_GET['type'];
 
 if(isset($rtype) && $rtype != ''):
     $rlist = model($rtype)->list();
 endif;
+
+$report = new Reporter($rtype);
+$report = $report->getData();
 ?>
 <div class="admin-reports-view">
     <div class="actions-topbar">
@@ -48,49 +51,25 @@ endif;
             <thead>
             <tr>
                 <?php
-                    foreach($data as $ndx => $d){
-                        if($ndx == $rtype){
-                            foreach($d['headers'] as $v){
-                                echo '<th>' . $v . '</th>';
-                            }
-                            break;
-                        }
+                    foreach($report['headers'] as $r){
+                        echo '<th>' . $r . '</th>';
                     }
                 ?>
             </tr>
             </thead>
-        <?php
-        if($rlist):
-        ?>
             <tbody>
-            <?php
-            foreach($rlist as $row):
-            ?>
-            <tr>
+            <?php if(isset($report['result'])): ?>
                 <?php
-
-                    foreach($data as $ndx => $d){
-                        if($ndx == $rtype){
-                            foreach($d['cols'] as $v){
-                                if($v == 'uploadedResume'){
-                                    echo '<td><a href="../media/' . $row->{$v} . '">' . $row->{$v} . '</a></td>';
-                                } else {
-                                    echo '<td>' . $row->{$v} . '</td>';
-
-                                }
-                           }
-                            break;
+                    foreach($report['result'] as $result){
+                        echo '<tr>';
+                        foreach($report['cols'] as $col){
+                            echo '<td>' . $result->{$col} . '</td>';
                         }
+                        echo '</tr>';
                     }
                 ?>
-            </tr>
-            <?php
-            endforeach;
-            ?>
+            <?php endif; ?>
             </tbody>
-        <?php
-        endif;
-        ?>
         </table>
 
     </div>
