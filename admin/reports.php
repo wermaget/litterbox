@@ -1,14 +1,16 @@
 <?php
 include_once('reportsConfig.php');
 include_once('../config/reporter.php');
-$rtype = $_GET['type'];
+if(isset($_GET['type'])){
+    $rtype = $_GET['type'];
 
-if(isset($rtype) && $rtype != ''):
-    $rlist = model($rtype)->list();
-endif;
+    if(isset($rtype) && $rtype != ''):
+        $rlist = model($rtype)->list();
+        $report = new Reporter($rtype);
+        $report = $report->getData();
+    endif;
+} 
 
-$report = new Reporter($rtype);
-$report = $report->getData();
 ?>
 <div class="admin-reports-view">
     <div class="actions-topbar">
@@ -51,8 +53,10 @@ $report = $report->getData();
             <thead>
             <tr>
                 <?php
-                    foreach($report['headers'] as $r){
-                        echo '<th>' . $r . '</th>';
+                    if(isset($report['headers'])){
+                        foreach($report['headers'] as $r){
+                            echo '<th>' . $r . '</th>';
+                        }
                     }
                 ?>
             </tr>
