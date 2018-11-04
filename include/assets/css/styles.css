@@ -19180,6 +19180,11 @@ body.candidatedetail .candidate-detail-wrapper .candidate-detail-content .candid
 .admin-reports-view .reports-table {
   height: 100%;
 }
+.admin-reports-view .reports-table .dataTables_wrapper {
+  height: calc(100% - 179px);
+  padding-bottom: 40px;
+  overflow: scroll;
+}
 .admin-reports-view .reports-table .empty-table {
   -webkit-align-items: center;
   -ms-align-items: center;

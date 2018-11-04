@@ -24,7 +24,7 @@ if(isset($_GET['type'])){
                 <select id="report_type" class="input-select form-control" name="report-type">
                     <option value="" selected disabled>Select Report Type</option>
                     <?php foreach($options as $key => $o): ?>
-                        <option value="<?= $key ?>" <?= ($rtype == $key) ? 'selected': ''?> ><?= $o['title'] ?></option>
+                        <option value="<?= $key ?>" <?= (isset($rtype) && $rtype == $key) ? 'selected': ''?> ><?= $o['title'] ?></option>
                     <?php endforeach;?>
                 </select>
 <!--                <button type="submit" class="btn btn-primary">Generate</button>-->
