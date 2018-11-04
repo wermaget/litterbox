@@ -39,21 +39,22 @@ if(isset($_GET['type'])){
             if($rt_check):
                 if($rtype == 'candidate'):
                 ?>
-                <a href="./resumeExport.php" class="btn btn-primary waves-effect waves-light btn-sm">Download All Resume as
+                <a href="./resumeExport.php" class="btn btn-info btn-sm">Download All Resume as
                     .ZIP</a>
                 <?php
                 endif;
 
                 if($rlist):
                 ?>
-                <a href="#" id="export_btn" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a>
+                <a href="#" id="export_btn" class="btn btn-info btn-sm">Export as CSV</a>
                 <?php
                 endif;
             endif;
             ?>
         </div>
     </div>
-    <div class="">
+    <div class="reports-table">
+        <?php if($rt_check): ?>
         <table id="datatable" class="table table-striped table-bordered">
             <thead>
             <tr>
@@ -80,7 +81,11 @@ if(isset($_GET['type'])){
             <?php endif; ?>
             </tbody>
         </table>
-
+        <?php else: ?>
+        <div class="empty-table">
+            <span>Please select a report type to generate report</span>
+        </div>
+        <?php endif; ?>
     </div>
 </div>
 

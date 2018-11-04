@@ -17285,8 +17285,10 @@ File: Icons
 html {
   position: relative;
   min-height: 100%;
+  height: 100%;
 }
 body {
+  height: 100%;
   font-family: 'Lato', sans-serif, 'Open Sans', sans-serif;
   line-height: 32px;
   margin: 0;
@@ -18822,6 +18824,18 @@ select.form-control {
   line-height: 1.8;
   text-align: justify;
 }
+body.admin-page .content-page {
+  height: 100%;
+}
+body.admin-page .content-page .content {
+  height: 100%;
+}
+body.admin-page .content-page .content > .container {
+  height: 100%;
+}
+body.admin-page .content-page .content > .container > .row {
+  height: 100%;
+}
 body.admin-page #wrapper .topbar .topbar-left .logo span img {
   width: auto;
   height: 60%;
@@ -19121,6 +19135,9 @@ body.candidatedetail .candidate-detail-wrapper .candidate-detail-content .candid
   font-size: 12px;
   line-height: 1.9;
 }
+.admin-reports-view {
+  height: 100%;
+}
 .admin-reports-view .input-select {
   display: inline-block;
   padding: 0 10px;
@@ -19141,8 +19158,10 @@ body.candidatedetail .candidate-detail-wrapper .candidate-detail-content .candid
   -moz-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
+  border-bottom: 1px solid #ddd;
   margin-bottom: 16px;
   margin-top: 12px;
+  padding-bottom: 20px;
   width: 100%;
 }
 .admin-reports-view .actions-topbar .items-left {
@@ -19157,6 +19176,30 @@ body.candidatedetail .candidate-detail-wrapper .candidate-detail-content .candid
 }
 .admin-reports-view .actions-topbar .items span {
   display: block;
+}
+.admin-reports-view .reports-table {
+  height: 100%;
+}
+.admin-reports-view .reports-table .empty-table {
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  height: calc(100% - 200px);
+}
+.admin-reports-view .reports-table .empty-table span {
+  color: #6d6d6d;
+  font-weight: 300;
 }
 .inbox-leftbar {
   width: 240px;

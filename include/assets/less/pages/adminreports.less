@@ -1,4 +1,6 @@
 .admin-reports-view {
+    height: 100%;
+
     .input-select {
         display: inline-block;
         padding: 0 10px;
@@ -11,9 +13,10 @@
     .actions-topbar {
         .flex();
         .align-items(flex-end);
-
+        border-bottom: 1px solid @border-color;
         margin-bottom: 16px;
         margin-top: 12px;
+        padding-bottom: 20px;
         width: 100%;
 
         .items {
@@ -27,6 +30,22 @@
 
             span {
                 display: block;
+            }
+        }
+    }
+
+    .reports-table {
+        height: 100%;
+
+        .empty-table {
+            .align-items(center);
+            .flex();
+            .justify-content(center);
+            height: ~"calc(100% - 200px)";
+
+            span {
+                color: #6d6d6d;
+                font-weight: @font-weight__light;
             }
         }
     }
