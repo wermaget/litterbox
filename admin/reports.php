@@ -1,10 +1,14 @@
 <?php
 include_once('reportsConfig.php');
 include_once('../config/reporter.php');
+
+$rt_check = false;
+
 if(isset($_GET['type'])){
     $rtype = $_GET['type'];
 
     if(isset($rtype) && $rtype != ''):
+        $rt_check = true;
         $rlist = model($rtype)->list();
         $report = new Reporter($rtype);
         $report = $report->getData();
@@ -32,18 +36,19 @@ if(isset($_GET['type'])){
         </div>
         <div class="items-right">
             <?php
-            if($rtype == 'candidate'):
-            ?>
-            <a href="./resumeExport.php" class="btn btn-primary waves-effect waves-light btn-sm">Download All Resume as
-                .ZIP</a>
-            <?php
-            endif;
+            if($rt_check):
+                if($rtype == 'candidate'):
+                ?>
+                <a href="./resumeExport.php" class="btn btn-primary waves-effect waves-light btn-sm">Download All Resume as
+                    .ZIP</a>
+                <?php
+                endif;
 
-            if($rlist):
-            ?>
-            <!-- <a href="./clientExportCsv.php" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a> -->
-            <a href="#" id="export_btn" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a>
-            <?php
+                if($rlist):
+                ?>
+                <a href="#" id="export_btn" class="btn btn-primary waves-effect waves-light btn-sm">Export as CSV</a>
+                <?php
+                endif;
             endif;
             ?>
         </div>
@@ -86,7 +91,7 @@ if(isset($_GET['type'])){
         export_btn.addEventListener('click', (e) => {
             let report_type = document.querySelector('#report_type');
             e.preventDefault();
-            window.location = './clientExportCsv.php?report_type=' + report_type.value;
+            window.location = './exportCsvHandler.php?report_type=' + report_type.value;
         })
     });
 

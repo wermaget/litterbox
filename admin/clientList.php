@@ -6,7 +6,6 @@ $companyList = company()->list("isDeleted=0");
   <br>
   <div class="pull-right">
     <button type="button" onclick="location.href='../home/?view=clientForm'" class="btn btn-primary waves-effect waves-light btn-sm"><i class="fa fa-plus"></i> Add New Client</button>
-    <a href="./clientExportCsv.php" class="btn btn-primary waves-effect waves-light btn-sm">Export CSV</a>
   </div>
   <br>
   <br>

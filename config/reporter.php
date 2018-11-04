@@ -96,12 +96,13 @@ class Reporter {
 
     public function formatJob() {
         foreach($this->data['result'] as $r){
-            $r->jobFunctionId = $this->getJobCategory($r->jobFunctionId);
+            $r->jobFunctionId = $this->getJobCategoryName($r->jobFunctionId);
             $r->isApproved = ($r->isApproved ) ? 'Active' : 'Pending';
         }
     }
 
-    public function getJobCategory($category_id){
-        return model('job_function')->getColumnValue('option', 'Id=' . $category_id)->option;
+    public function getJobCategoryName($category_id){
+        //return model('job_function')->getColumnValue('option', 'Id=' . $category_id)->option;
+        return model('job_function')->get('Id='.$category_id)->option;
     }
 }
