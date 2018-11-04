@@ -12,11 +12,34 @@ class Reporter {
     ];
 
     //key = table name in db, values = header name for frontend
-    protected $headers = [
-        'candidate' => ['First Name','Last Name','Email','Mobile','Address','State','Resume'],
-        'company' => ['Company Name','Description','Email','Contact Person','Phone Number','Address'],
-        'inquiries' => ['First Name','Last Name','Email','Mobile','Message'],
-        'job' => ['Job Reference','Job Category','Job Classification','Company Name','Company Email','Status'],
+    protected static $headers = [
+        'candidate' => [
+            'title' => 'Candidates',
+            'th' => [
+                'First Name','Last Name','Email','Mobile','Address','State','Resume'
+            ]
+        ],
+
+        'company' => [
+            'title' => 'Clients',
+            'th' => [
+                'Company Name','Description','Email','Contact Person','Phone Number','Address'
+            ]
+        ],
+
+        'inquiries' => [
+            'title' => 'Inquiries',
+            'th' => [
+                'First Name','Last Name','Email','Mobile','Message'
+            ]
+        ],
+
+        'job' => [
+            'title' => 'Talent Request',
+            'th' => [
+                'Job Reference','Job Category','Job Classification','Company Name','Company Email','Status'
+            ]
+        ],
     ];
 
 
@@ -57,7 +80,11 @@ class Reporter {
     }
 
     public function setTableHeaders(){
-        $this->data['headers'] = $this->headers[$this->rtype];
+        $this->data['headers'] = self::$headers[$this->rtype]['th'];
+    }
+
+    public static function getHeaders(){
+        return self::$headers;
     }
 
     public function setTableColumns(){
