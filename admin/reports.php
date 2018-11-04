@@ -1,9 +1,9 @@
 <?php
-include_once('reportsConfig.php');
 include_once('../config/reporter.php');
 
 $rt_check = false;
 
+$options = Reporter::getHeaders();
 if(isset($_GET['type'])){
     $rtype = $_GET['type'];
 
@@ -23,13 +23,9 @@ if(isset($_GET['type'])){
                 <p><strong>Select Report Type:</strong></p>
                 <select id="report_type" class="input-select form-control" name="report-type">
                     <option value="" selected disabled>Select Report Type</option>
-                    <?php foreach($data as $ndx => $d): ?>
-                    <?php if($rtype == $ndx): ?>
-                        <option value="<?= $ndx ?>" selected><?= $d['title'] ?></option>
-                    <?php else: ?>
-                        <option value="<?= $ndx ?>"><?= $d['title'] ?></option>
-                    <?php endif; ?>
-                    <?php endforeach; ?>
+                    <?php foreach($options as $key => $o): ?>
+                        <option value="<?= $key ?>" <?= ($rtype == $key) ? 'selected': ''?> ><?= $o['title'] ?></option>
+                    <?php endforeach;?>
                 </select>
 <!--                <button type="submit" class="btn btn-primary">Generate</button>-->
             </form>
