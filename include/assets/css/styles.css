@@ -19177,6 +19177,9 @@ body.candidatedetail .candidate-detail-wrapper .candidate-detail-content .candid
 .admin-reports-view .actions-topbar .items span {
   display: block;
 }
+.admin-reports-view .actions-topbar .btn {
+  font-weight: 700;
+}
 .admin-reports-view .reports-table {
   height: 100%;
 }
